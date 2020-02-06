@@ -1,0 +1,156 @@
+\documentclass[letterpaper,aps,showpacs,floatfix,10pt,prc]{revtex4-1}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage{float}
+
+\begin{document}
+\title{Just some notes at this point}
+\author{Scott Pratt}
+\affiliation{Department of Physics and Astronomy and National Superconducting Cyclotron Laboratory\\
+Michigan State University, East Lansing, MI 48824~~USA}
+\author{Dmitro Oliinchenko}
+\affiliation{Nuclear Science Division, Lawrence Berkeley National Laboratory, Berkeley, CA, 94720, USA}
+\date{\today}
+
+\pacs{}
+
+\begin{abstract}
+blah blah
+\end{abstract}
+
+\maketitle
+
+\section{Iterative Calculation of Canonical Partition Function}
+
+We consider the canonical partition function for independent hadrons where $B$, $Q$ and $S$ are all conserved integral quantities, $Z(B,Q,S)$. We add an additional index, $N$, referencing the number of hadrons.
+\begin{eqnarray}
+\label{eq:Zsum}
+Z(B,Q,S)&=&\sum_N Z_N(B,Q,S).
+\end{eqnarray}
+One can write $Z_N$ as
+\begin{eqnarray}
+Z_N(B,Q,S)&=&\sum_{\langle \vec{n} \rm{~s.t.}\sum n_i=N\rangle}\prod_i\frac{z_i^{n_i}}{n_i!}\delta[\sum_in_ib_i-B]\delta[\sum_in_iq_i-Q]\delta[\sum_in_is_i-S]\delta[\sum_in_i-N].
+\end{eqnarray}
+Now, to derive the iterative relation. First, insert $(\sum_i n_i/N)$, which is unity, into the expression. Then, rewrite,
+\begin{eqnarray}\label{eq:iterativeN}
+\nonumber
+Z_N(B,Q,S)&=&\sum_{\langle \vec{n} \rm{~s.t.}\sum n_i=N\rangle}\prod_i\frac{z_i^{n_i}}{n_i!}
+\left(\frac{\sum_jn_j}{N}\right)
+\delta[\sum_in_ib_i-B]\delta[\sum_in_iq_i-Q]\delta[\sum_in_is_i-S]\delta[\sum_in_i-N]\\
+\nonumber
+&=&\frac{1}{N}\sum_j z_j\sum_{\langle \vec{n} \rm{~s.t.}\sum n_i=N\rangle}\prod_i\frac{z_i^{n_i}}{n_i!}\left(\frac{n_j}{z_j}\right)
+\delta[\sum_in_ib_i-B]\delta[\sum_in_iq_i-Q]\delta[\sum_in_is_i-S]\delta[\sum_in_i-N]\\
+\nonumber
+&=&\frac{1}{N}\sum_j z_j
+\sum_{\langle \vec{n} \rm{~s.t.}\sum n_i=N-1\rangle}\prod_i\frac{z_i^{n_i}}{n_i!}
+\delta[\sum_in_ib_i-B-b_j]\delta[\sum_in_iq_i-Q-q_j]\delta[\sum_in_is_i-S-s_j]
+\delta[\sum_in_i-N-1]\\
+&=&\frac{1}{N}\sum_jz_jZ_{N-1}(B-b_j,Q-q_j,S-s_j).
+\end{eqnarray}
+Thus, beginning with $Z_0(0,0,0)=1$, one can find all $Z_N(B,Q,S)$ iteratively.
+
+Equation (\ref{eq:iterativeN}) is the main result of this section. It provides a mechanism for calculating $Z(B,Q,S)$, but only after first calculating $Z_N(B,Q,S)$, then summing over $N$, see Eq. (\ref{eq:Zsum}), to obtain the actual partition function. A natural question is whether one can design an iterative procedure without first calculating as a function of $N$. Adding this index increases the dimensionality of the calculation, which increases both the numerical cost and the amount of memory for calculating $Z(B,Q,S)$. Indeed, one can derive recursion relations using any of the three charges, $B,Q$ or $S$, and forego any mention of $N$. For example, one can write a relation with respect to $B$ using the analogous steps above,
+\begin{equation}
+\label{eq:iterateB}
+Z(B,Q,S)=\frac{1}{B}\sum_i b_iz_i Z(B-b_i,Q-q_i,S-s_i).
+\end{equation}
+Unfortunately, in order for this procedure to iterate from $Z(0,0,0)$ it relies on the label, in this case $B$, being only positive. For non-relativistic physics, this is not a problem, however for relativistic physics $B$ can be both positive and negative, which destroys the chance of treating this as an iterative procedure. Even if one only considers baryons, $Z(0,0,0)\ne 1$ because the system might be composed of some number of mesons, which would require an iterative procedure be applied using $Q$ and $S$ and $N_{\rm{mesons}}$ as indices to calculate $Z(0,0,0)$.
+
+\section{Higher Moments and Fluctuations}
+One can generate quantities of the form, $\langle n_in_j\cdots\rangle$, rather easily once one has $Z_N(B,Q,S)$. For example,
+\begin{eqnarray}label{eq:hadfluc}
+\langle n_in_jn_k\rangle&=&
+\frac{1}{Z(B,Q,S)}
+\sum_N \sum_{\langle \vec{n} \rm{~s.t.}\sum n_i=N\rangle}
+\prod_i\frac{z_\ell^{n_\ell}}{n_\ell!}n_in_jn_k\\
+\nonumber
+&&\cdot\delta[\sum_\ell n_\ell b_\ell-B]\delta[\sum_\ell n_\ell q_\ell-Q]\delta[\sum_\ell n_is_\ell-S]
+\delta[\sum_\ell n_\ell-N]\\
+\nonumber
+&=&
+\frac{z_iz_jz_k}{Z(B,Q,S)}
+\sum_N \sum_{\langle \vec{n} \rm{~s.t.}\sum n_i=N-3\rangle}
+\prod_i\frac{z_\ell^{n_\ell}}{n_\ell!}n_in_jn_k\\
+\nonumber
+&&\cdot\delta[\sum_\ell n_\ell b_\ell-B-b_i-b_j-b_k]
+\delta[\sum_\ell n_\ell q_\ell-Q-q_i-q_j-q_k]
+\delta[\sum_\ell n_is_\ell-S-s_i-s_j-s_k]
+\delta[\sum_\ell n_\ell-N]\\
+\nonumber
+&=&\frac{z_iz_jz_k}{Z(B,Q,S)}
+\sum_N Z_{N-3}(B-b_i-b_j-b_k,Q-q_i-q_j-q_k,S-s_i-s_j-s_k)\\
+\nonumber
+&=&\frac{z_iz_jz_k}{Z(B,Q,S)}
+Z(B-b_i-b_j-b_k,Q-q_i-q_j-q_k,S-s_i-s_j-s_k).
+\end{eqnarray}
+Expressions for fluctuations indexed by hadron species then become straightforward.
+
+Equation \ref{eq:hadfluc} can be extended to the calculation of charge fluctuation, by writing $Q=\sum_i q_in_i$.  Of course, charges in a canonical ensemble don't fluctuate, but it is a good thing to check. For example, From Eq. (\ref{eq:hadfluc}) the quantity 
+\begin{eqnarray}
+\label{eq:Q2step1}
+\langle Q^2\rangle&=&
+\sum_i\sum_j \frac{q_iz_iq_jz_j}{Z(B,Q,S)}Z(B-b_i-b_j,Q-q_iq_j,S-s_i-s_j).
+\end{eqnarray}
+Using Eq. (\ref{eq:iterateB}), but with $Q$ serving as the iterative variable,
+\begin{eqnarray}
+Z(B,Q,S)&=&\sum\frac{q_iz_i}{Q}Z(B-b_i,Q-q_i,S-s_i),
+\end{eqnarray}
+one can eliminate the terms with the index $i$ from Eq. (\ref{eq:Q2step1}) and get
+\begin{eqnarray}
+\langle Q^2\rangle&=&Q
+\sum_j\frac{q_jz_j}{Z(B,Q,S)}Z(B-b_j,Q-q_j,S-s_j).
+\end{eqnarray}
+Again using Eq. (\ref{eq:iterateB}), one finds the desired result,
+\begin{eqnarray}
+\langle Q^2\rangle=Q^2,
+\end{eqnarray}
+which shows that
+\begin{eqnarray}
+\langle(Q-\langle Q\rangle)^2\rangle &=&\langle Q^2\rangle-\langle Q\rangle^2
+=Q^2-Q^2=0.
+\end{eqnarray}
+Similarly, as expected all charge fluctuations involving powers of the charges $B-\langle B\rangle$, $Q-\langle Q\rangle$ and $S-\langle S\rangle$ can be shown to vanish.
+
+\section{Generating sets of particles via Monte Carlo}
+
+Here, we describe how one creates a group of particles at temperature $T$ in a finites volume $V$ with fixed $B$, $Q$ and $S$, using the partition function $Z_N(B,Q,S)$, presented earlier. The first step is to choose $N$, proportional to the probability,
+\begin{eqnarray}
+P_N=\frac{Z_N(B,Q,S)}{Z(B,Q,S)}.
+\end{eqnarray}
+Using Eq. (\ref{eq:Zsum}), it is clear that $\sum_N P_N=1$ for any $B,Q,S$. 
+
+Once $N$ is chosen, one can imagine having $N$ hadrons in the gas, then randomly picking one hadron. The chance one picks a species $i$ is
+\begin{eqnarray}
+p_i&=&\frac{\langle n_i\rangle}{N}\\
+\nonumber
+&=&z_i\frac{Z_{N-1}(B-b_i,Q-Q_i,S-S_i)}{Z_N(B,Q,S)},
+\end{eqnarray}
+which sums to unity. The system is now in the new set of states, $N-1,B-b_1,Q-q_1,S-s_1$, where the subscript ``$1$'' identifies the charge of the first particle. Because the first particle was chosen randomly, the remainder of the system is also randomly, or thermally, populated, and the second particle can be chosen in the same manner,
+\begin{eqnarray}
+p_j&=&\frac{\langle n_n\rangle}{N}\\
+\nonumber
+&=&z_j\frac{Z_{N-2}(B-b_i,Q-Q_i,S-S_i)}{Z_{N-1}(B-b_1,Q-q_1,S-s_1)}.
+\end{eqnarray}
+One then simply repeats the procedure until $N$ hadrons have been chosen to finish the generation of one event. 
+
+Evaluating a system where the average number of hadrons is $\langle N\rangle\sim 100$ requires one to generate and store $Z_N(B,Q,S)$ up to some maximum number $N_{\rm max}$. A cutoff $\gtrsim 200$ seems to be sufficient as the system tends to fall off with characteristic scale $\sqrt{\langle N\rangle}$. Calculating these partition functions can take $\sim 5$ minutes on a single CPU, and the time increases proportional to $N_{\rm max}^4$. Thus, this method may not be reasonable for a system of sizes $\gtrsim 1000$. 
+
+In order to increase the efficiency, one may neglect any combination $B,Q,S$ that is not reachable via the decay from an original system with $N_{\rm max}$ hadrons. For example, if one is considering a system with $B=Q=S=0$, there is no reason to calculate for combinations where $B>N_{\rm max}-N$. Once a specific value of $B$ is being considered, one can calculate the cutoff for electric charge, because there is only one hadron with more than unit charge, the $\Delta^{++}$. Given $B$ and $Q$ one can calculate the cutoffs for $S$ given that the only multiply strange hadrons are baryons of specific charge. A detailed criteria of cutoffs can reduce the storage by a factor of 8.
+
+If one were to ignore anti-baryons, and work with $Z(B,Q,S)$, it would be difficult to deal with the fact that the zero-baryon case holds many particles. Thus, if one wished to produce samples of hadrons, one might still prefer to retain the index $N$ even though one could calculate the partition function, integrated over $N$, without actually referencing $N$.
+
+\section{Multi-bosons}
+
+One could include Bose effects of pions by treating the case where $n_+$ positive pions, $n_-$ negative pions and $n_0$ neutral pions were all in a specific single particle level as a single state of charge $+n_+$, $-n_-$ or zero respectively. When calculating $z_i$ for this species, one would simply calculate $z$ of one pion species, but evaluated as a function of $T/n_{+,-,0}$. For instance, one could calculate to third order by adding resonances representing $1,2$ and 3-pion states. Thus, instead of three pion resonances, there would be 9. When one would Monte-Carlo the ``resonance'' one would put all the pions into the same single-particle state. This is straight-forward, but would increase the storage by a factor of $\approx 3$, because the 5-pion state would have an electric charge of $+5,-5,0$, requiring the partition function to be calculated for a much larger range of $Q$ for a given $N$. Only pions are significantly affected by Bose effects at the temperatures and densities expected at the RHIC energy scan. At very low temperatures, $T\lesssim 50$ MeV, Fermi effects of baryons can play a role. This can easily be included when calculating the partition function to a given order of the degeneracy. The difference being that the $2,4,6\cdots$ degeneracies contribute a negative weight, $z_i<0$. Negative weights might be problematic for the Monte Carlo generation of multi-particle states.  
+
+%\begin{acknowledgments}
+%This work was supported by the Department of Energy Office of Science through grant number DE-FG02-03ER41259.
+%\end{acknowledgments}
+
+%\input{biblio.tex}
+
+\end{document}
+
+
