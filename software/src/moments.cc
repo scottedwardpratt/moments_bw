@@ -156,7 +156,7 @@ void Cmoments::Summarize(double Omega,double rhoB,double rhoQ,double roots,doubl
 
 	char ffnn[120];
 	string fn;
-	filename=parameter::getS(*parmap,"MOMENTS_OUTPUT_FILE",string("moments.dat"));
+	sprintf(ffnn,"moments.dat");
 	fn=string(ffnn);
 	if((bool)ifstream(fn)){
 		fptr=fopen(fn.c_str(),"a");
