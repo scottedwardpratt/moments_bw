@@ -96,7 +96,7 @@ void Cmoments::IncrementMoments(vector<Cpart> &partvec){
 	TotQbar+=TotQ; TotPbar+=TotP; TotKbar+=TotK; TotPibar+=TotPi;
 }
 
-void Cmoments::Summarize(double Omega,double rhoB,double rhoQ,double roots,double T){
+void Cmoments::Summarize(string file,double Omega,double rhoB,double rhoQ,double roots,double T){
 	double qbar,kappaq2,kappaq3,kappaq4;
 	double pbar,kappap2,kappap3,kappap4;
 	double kbar,kappak2,kappak3,kappak4;
@@ -154,15 +154,11 @@ void Cmoments::Summarize(double Omega,double rhoB,double rhoQ,double roots,doubl
 	printf("K: <K>=%g, sigma^2=%g, Ssigma=%g, Ksigma^2=%g\n",kbar,sigma2k,Ssigmak,Ksigma2k);
 	printf("Pi: <Pi>=%g, sigma^2=%g, Ssigma=%g, Ksigma^2=%g\n",pibar,sigma2pi,Ssigmapi,Ksigma2pi);
 
-	char ffnn[120];
-	string fn;
-	sprintf(ffnn,"moments.dat");
-	fn=string(ffnn);
-	if((bool)ifstream(fn)){
-		fptr=fopen(fn.c_str(),"a");
+	if((bool)ifstream(file)){
+		fptr=fopen(file.c_str(),"a");
 	}
 	else{
-		fptr=fopen(fn.c_str(),"w");
+		fptr=fopen(file.c_str(),"w");
 		fprintf(fptr,"# Omega - roots -     T    - rhoB  - rhoQ -rhoP - sigma^2(P) - Ssigma(P) - Ksigma^2(P) - rhoQ - sigma^2(Q) - Ssigma(Q) - Ksigma^2(Q) - rhoK - sigma^2(K) - Ssigma(K) - Ksigma^2(K) - rhoPi - sigma^2(Pi) - Ssigma(Pi) - Ksigma^2(Pi) - TotrhoP - TotrhoQ - TotrhoK - TotrhoPi\n");
 	}
 	fprintf(fptr,"%6.1f %6.1f %6.2f %6.4f %6.4f %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e\n",

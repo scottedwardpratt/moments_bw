@@ -19,11 +19,12 @@ int main(int argc,char *argv[]){
 	pf.CalcZ();
 	//pf.WriteZ();
 	//pf.ReadZ();
-	
+
 	nevents=parameter::getI(parmap,"NEVENTS",100);
 	Omega=parameter::getD(parmap,"OMEGA",100);
 	rhoB=parameter::getD(parmap,"RHOB",0.0);
-	
+	string file=parameter::getS(parmap,"MOMENTS_OUTPUT_FILE","moments.dat");
+
 	rhoQ=0.5*rhoB;
 	pf.SetOmega(Omega);
 	for(ievent=0;ievent<nevents;ievent++){
@@ -34,8 +35,8 @@ int main(int argc,char *argv[]){
 		if((ievent+1)%(nevents/10)==0)
 			printf("Finished %g percent\n",100.0*(ievent+1.0)/double(nevents));
 	}
-	moments.Summarize(Omega,rhoB,rhoQ,0.0,pf.T);
+	moments.Summarize(file,Omega,rhoB,rhoQ,0.0,pf.T);
 	moments.Clear();
-	
+
 	return 0;
 }

@@ -118,10 +118,9 @@ public:
 	long long int ncalls;
 	double meanpt_pions,meanpt_kaons,meanpt_protons;
 	Cmoments(Cacceptance *acceptanceset);
-	void Summarize(double Omega,double rhoB,double rhoQ,double roots,double T);
+	void Summarize(string file,double Omega,double rhoB,double rhoQ,double roots,double T);
 	void IncrementMoments(vector<CResInfo *> &resinfovec);
 	void IncrementMoments(vector<Cpart> &partvec);
 	void Clear();
 	Cacceptance *acceptance;
 };
-

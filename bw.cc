@@ -28,11 +28,12 @@ int main(int argc,char *argv[]){
 	pf.randy->reset(1234);
 	//pf.WriteZ();
 	//pf.ReadZ();
-	
+
 	nevents=parameter::getI(parmap,"NEVENTS",100);
 	Omega=parameter::getD(parmap,"OMEGA",100);
+	string file=parameter::getS(parmap,"MOMENTS_OUTPUT_FILE","moments.dat");
 	pf.SetOmega(Omega);
-	
+
 	for(iroots=0;iroots<NROOTS;iroots++){
 		printf("____ iroots=%d ____\n",iroots);
 		muBoverT=GetMuBOverT(roots[iroots]);
@@ -59,9 +60,9 @@ int main(int argc,char *argv[]){
 			if((ievent+1)%(nevents/10)==0)
 				printf("Finished %g percent\n",100.0*(ievent+1.0)/double(nevents));
 		}
-		moments.Summarize(Omega,rhoB[iroots],0.5*rhoB[iroots],roots[iroots],T[iroots]);
+		moments.Summarize(file,Omega,rhoB[iroots],0.5*rhoB[iroots],roots[iroots],T[iroots]);
 		moments.Clear();
-		
+
 	}
 
 	return 0;

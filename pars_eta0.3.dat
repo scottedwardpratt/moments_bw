@@ -2,7 +2,7 @@ string B3D_RESONANCES_INFO_FILE	resinfo/resonances_pdg_weak.dat
 string B3D_RESONANCES_DECAYS_FILE resinfo/decays_pdg_weak.dat
 string MOMENTS_OUTPUT_FILE moments_eta0.3.dat
 int NhadMAX 120
-double OMEGA 160
+double OMEGA 200
 double rhoB 0.0
 double T 155.0
 int NEVENTS 100000000
