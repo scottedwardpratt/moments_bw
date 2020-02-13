@@ -48,7 +48,7 @@ void Cmoments::IncrementMoments(vector<CResInfo *> &resinfovec){
 	Pbar+=NetP; P2bar+=NetP*NetP; P3bar+=pow(NetP,3); P4bar+=pow(NetP,4);
 	Kbar+=NetK; K2bar+=NetK*NetK; K3bar+=pow(NetK,3); K4bar+=pow(NetK,4);
 	Pibar+=NetPi; Pi2bar+=NetPi*NetPi; Pi3bar+=pow(NetPi,3); Pi4bar+=pow(NetPi,4);
-	
+
 	TotQbar+=TotQ; TotPbar+=TotP; TotKbar+=TotK; TotPibar+=TotPi;
 }
 
@@ -92,7 +92,7 @@ void Cmoments::IncrementMoments(vector<Cpart> &partvec){
 	Pbar+=NetP; P2bar+=NetP*NetP; P3bar+=pow(NetP,3); P4bar+=pow(NetP,4);
 	Kbar+=NetK; K2bar+=NetK*NetK; K3bar+=pow(NetK,3); K4bar+=pow(NetK,4);
 	Pibar+=NetPi; Pi2bar+=NetPi*NetPi; Pi3bar+=pow(NetPi,3); Pi4bar+=pow(NetPi,4);
-	
+
 	TotQbar+=TotQ; TotPbar+=TotP; TotKbar+=TotK; TotPibar+=TotPi;
 }
 
@@ -109,33 +109,33 @@ void Cmoments::Summarize(double Omega,double rhoB,double rhoQ,double roots,doubl
 	Qbar/double(ncalls),Q2bar/double(ncalls),Q3bar/double(ncalls),Q4bar/double(ncalls));
 	printf("Pbar=%g P2bar=%g P3bar=%g P4bar=%g\n",
 	Pbar/double(ncalls),P2bar/double(ncalls),P3bar/double(ncalls),P4bar/double(ncalls));
-	
+
 	pbar= Pbar/double(ncalls);
 	kappap2=P2bar/double(ncalls)-pbar*pbar;
 	kappap3=P3bar/double(ncalls)-3*kappap2*pbar-pbar*pbar*pbar;
 	kappap4=P4bar/double(ncalls)-4*kappap3*pbar-3*kappap2*kappap2-6*kappap2*pbar*pbar-pbar*pbar*pbar*pbar;
-	
+
 	qbar=Qbar/double(ncalls);
 	kappaq2=Q2bar/double(ncalls)-qbar*qbar;
 	kappaq3=Q3bar/double(ncalls)-3*kappaq2*qbar-qbar*qbar*qbar;
 	kappaq4=Q4bar/double(ncalls)-4*kappaq3*qbar-3*kappaq2*kappaq2-6*kappaq2*qbar*qbar-qbar*qbar*qbar*qbar;
-	
+
 	kbar=Kbar/double(ncalls);
 	kappak2=K2bar/double(ncalls)-kbar*kbar;
 	kappak3=K3bar/double(ncalls)-3*kappak2*kbar-kbar*kbar*kbar;
 	kappak4=K4bar/double(ncalls)-4*kappak3*kbar-3*kappak2*kappak2-6*kappak2*kbar*kbar-kbar*kbar*kbar*kbar;
-	
+
 	pibar=Pibar/double(ncalls);
 	kappapi2=Pi2bar/double(ncalls)-pibar*pibar;
 	kappapi3=Pi3bar/double(ncalls)-3*kappapi2*pibar-pibar*pibar*pibar;
 	kappapi4=Pi4bar/double(ncalls)-4*kappapi3*pibar-3*kappapi2*kappapi2-6*kappapi2*pibar*pibar-pibar*pibar*pibar*pibar;
-	
+
 	totq=TotQbar/double(ncalls);
 	totp=TotPbar/double(ncalls);
 	totk=TotKbar/double(ncalls);
 	totpi=TotPibar/double(ncalls);
-	
-	
+
+
 	sigma2q=kappaq2;
 	sigma2p=kappap2;
 	sigma2k=kappak2;
@@ -153,10 +153,10 @@ void Cmoments::Summarize(double Omega,double rhoB,double rhoQ,double roots,doubl
 	printf("P: <P>=%g, sigma^2=%g, Ssigma=%g, Ksigma^2=%g\n",pbar,sigma2p,Ssigmap,Ksigma2p);
 	printf("K: <K>=%g, sigma^2=%g, Ssigma=%g, Ksigma^2=%g\n",kbar,sigma2k,Ssigmak,Ksigma2k);
 	printf("Pi: <Pi>=%g, sigma^2=%g, Ssigma=%g, Ksigma^2=%g\n",pibar,sigma2pi,Ssigmapi,Ksigma2pi);
-	
+
 	char ffnn[120];
 	string fn;
-	sprintf(ffnn,"moments.dat");
+	filename=parameter::getS(*parmap,"MOMENTS_OUTPUT_FILE",string("moments.dat"));
 	fn=string(ffnn);
 	if((bool)ifstream(fn)){
 		fptr=fopen(fn.c_str(),"a");
