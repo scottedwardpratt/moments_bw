@@ -1,5 +1,6 @@
 #include "canonical.h"
 #include "MuBOverT.cc"
+#include <string>
 using namespace std;
 
 int main(int argc,char *argv[]){
@@ -9,6 +10,8 @@ int main(int argc,char *argv[]){
 	}
 	const int NROOTS=7;
 	int ievent,nevents,i,b0,q0,s0=0,iroots; // initial charge, baryon no. and strangeness
+	int nruns=10;
+	string file;
 	double Omega,muBoverT,ff,ffa=1.0;
 	double roots[NROOTS]={7.7,11.5,19.6,27.0,39.0,62.4,200.0};
 	// These correspond to rhoH=0.333333333
@@ -31,11 +34,13 @@ int main(int argc,char *argv[]){
 
 	nevents=parameter::getI(parmap,"NEVENTS",100);
 	Omega=parameter::getD(parmap,"OMEGA",100);
-	string file=parameter::getS(parmap,"MOMENTS_OUTPUT_FILE","moments.dat");
+	//string file=parameter::getS(parmap,"MOMENTS_OUTPUT_FILE","moments.dat");
 	pf.SetOmega(Omega);
 
 	for(iroots=0;iroots<NROOTS;iroots++){
 		printf("____ iroots=%d ____\n",iroots);
+		file="errbars/moments_roots"+to_string(iroots)+".dat";
+		//strcat(file,const char(iroots));
 		muBoverT=GetMuBOverT(roots[iroots]);
 		ff=log(1.0+ffa*(roots[iroots]-roots[0])/(roots[NROOTS-1]-roots[0]))/log(1.0+ffa); // interpolating weight from zero to 1
 		blastwave.Tf=120.0-20*ff;
@@ -44,25 +49,26 @@ int main(int argc,char *argv[]){
 		pf.T=T[iroots];
 		pf.CalcZ();
 		printf("----- Z calculated\n");
-		for(ievent=0;ievent<nevents;ievent++){
-			do{
-				b0=pf.randy->GetNPoissonian(rhoB[iroots]*Omega);
-				q0=pf.randy->GetNPoissonian(0.5*rhoB[iroots]*Omega);
-				if(!pf.CheckRelevance(pf.NhadMAX/2,b0,q0,s0)){
-					printf("picked b0=%d or q0=%d out of bounds\n",b0,q0);
-					printf("If this happens often, increase pf.NhadMAX\n");
-				}
-			}while(!pf.CheckRelevance(pf.NhadMAX/2,b0,q0,s0));
-			pf.GenEvent(b0,q0,s0,resinfovec);
-			blastwave.GenerateParts(resinfovec,partvec);
-			moments.IncrementMoments(partvec);
-			partvec.clear();
-			if((ievent+1)%(nevents/10)==0)
-				printf("Finished %g percent\n",100.0*(ievent+1.0)/double(nevents));
+		for(int irun=0;irun<nruns;irun++){
+			for(ievent=0;ievent<int(nevents/nruns);ievent++){
+				do{
+					b0=pf.randy->GetNPoissonian(rhoB[iroots]*Omega);
+					q0=pf.randy->GetNPoissonian(0.5*rhoB[iroots]*Omega);
+					if(!pf.CheckRelevance(pf.NhadMAX/2,b0,q0,s0)){
+						printf("picked b0=%d or q0=%d out of bounds\n",b0,q0);
+						printf("If this happens often, increase pf.NhadMAX\n");
+					}
+				}while(!pf.CheckRelevance(pf.NhadMAX/2,b0,q0,s0));
+				pf.GenEvent(b0,q0,s0,resinfovec);
+				blastwave.GenerateParts(resinfovec,partvec);
+				moments.IncrementMoments(partvec);
+				partvec.clear();
+				if((ievent+1)%(nevents/10)==0)
+					printf("Finished %g percent\n",100.0*(ievent+1.0)/double(nevents));
+			}
+			moments.Summarize(file,Omega,rhoB[iroots],0.5*rhoB[iroots],roots[iroots],T[iroots]);
+			moments.Clear();
 		}
-		moments.Summarize(file,Omega,rhoB[iroots],0.5*rhoB[iroots],roots[iroots],T[iroots]);
-		moments.Clear();
-
 	}
 
 	return 0;

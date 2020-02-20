@@ -21,7 +21,7 @@ fig = plt.figure(1)
 ax = fig.add_axes([0.14,0.125,0.82,0.85])
 
 
-mydata = np.loadtxt('moments_eta0.3.dat',skiprows=1,unpack=True)
+mydata = np.loadtxt('../moments_eta0.3.dat',skiprows=1,unpack=True)
 Omega=mydata[0]
 roots=mydata[1]
 Temp=mydata[2]
@@ -57,9 +57,9 @@ Skellamp=sigma2p/(pbar*Omega)
 Skellamq=sigma2q/(qbar*Omega)
 
 plt.plot(roots,Ssigmap*Skellamp,linestyle='-',linewidth=2,color='r',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=0.3: $C_3/C_1$')
-plt.plot(roots,Ksigma2p,linestyle='--',linewidth=2,color='b',markersize=10, marker='^', markerfacecolor=None, markeredgecolor=None,label='ETA=0.3: $C_4/C_2$')
+plt.plot(roots,Ksigma2p,linestyle='--',linewidth=2,color='r',markersize=10, marker='^', markerfacecolor=None, markeredgecolor=None,label='ETA=0.3: $C_4/C_2$')
 
-mydata = np.loadtxt('moments_eta0.4.dat',skiprows=1,unpack=True)
+mydata = np.loadtxt('../moments_eta0.4.dat',skiprows=1,unpack=True)
 Omega=mydata[0]
 roots=mydata[1]
 Temp=mydata[2]
@@ -94,10 +94,10 @@ toppi=mydata[23]
 Skellamp=sigma2p/(pbar*Omega)
 Skellamq=sigma2q/(qbar*Omega)
 
-plt.plot(roots,Ssigmap*Skellamp,linestyle='-',linewidth=2,color='r',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=0.4: $C_3/C_1$')
+plt.plot(roots,Ssigmap*Skellamp,linestyle='-',linewidth=2,color='b',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=0.4: $C_3/C_1$')
 plt.plot(roots,Ksigma2p,linestyle='--',linewidth=2,color='b',markersize=10, marker='^', markerfacecolor=None, markeredgecolor=None,label='ETA=0.4: $C_4/C_2$')
 
-mydata = np.loadtxt('moments_eta0.5.dat',skiprows=1,unpack=True)
+mydata = np.loadtxt('../moments_eta0.5.dat',skiprows=1,unpack=True)
 Omega=mydata[0]
 roots=mydata[1]
 Temp=mydata[2]
@@ -132,8 +132,46 @@ toppi=mydata[23]
 Skellamp=sigma2p/(pbar*Omega)
 Skellamq=sigma2q/(qbar*Omega)
 
-plt.plot(roots,Ssigmap*Skellamp,linestyle='-',linewidth=2,color='r',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=0.5: $C_3/C_1$')
-plt.plot(roots,Ksigma2p,linestyle='--',linewidth=2,color='b',markersize=10, marker='^', markerfacecolor=None, markeredgecolor=None,label='ETA=0.5: $C_4/C_2$')
+plt.plot(roots,Ssigmap*Skellamp,linestyle='-',linewidth=2,color='g',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=0.5: $C_3/C_1$')
+plt.plot(roots,Ksigma2p,linestyle='--',linewidth=2,color='g',markersize=10, marker='^', markerfacecolor=None, markeredgecolor=None,label='ETA=0.5: $C_4/C_2$')
+
+mydata = np.loadtxt('../moments_eta1.0.dat',skiprows=1,unpack=True)
+Omega=mydata[0]
+roots=mydata[1]
+Temp=mydata[2]
+rhoB=mydata[3]
+rhoQ=mydata[4]
+
+pbar=mydata[5]
+sigma2p=mydata[6]
+Ssigmap=mydata[7]
+Ksigma2p=mydata[8]
+
+qbar=mydata[9]
+sigma2q=mydata[10]
+Ssigmaq=mydata[11]
+Ksigma2q=mydata[12]
+
+kbar=mydata[13]
+sigma2k=mydata[14]
+Ssigmak=mydata[15]
+Ksigma2k=mydata[16]
+
+pibar=mydata[17]
+sigma2pi=mydata[18]
+Ssigmapi=mydata[19]
+Ksigma2pi=mydata[20]
+
+topp=mydata[21]
+totk=mydata[22]
+toppi=mydata[23]
+
+
+Skellamp=sigma2p/(pbar*Omega)
+Skellamq=sigma2q/(qbar*Omega)
+
+plt.plot(roots,Ssigmap*Skellamp,linestyle='-',linewidth=2,color='k',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=1.0: $C_3/C_1$')
+plt.plot(roots,Ksigma2p,linestyle='--',linewidth=2,color='k',markersize=10, marker='^', markerfacecolor=None, markeredgecolor=None,label='ETA=1.0: $C_4/C_2$')
 
 
 ax.tick_params(axis='both', which='major', labelsize=14)
@@ -151,12 +189,12 @@ plt.ylim(0.0,1.05)
 ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%1f'))
 ax.yaxis.set_major_formatter(sformatter)
 
-ax.legend(loc=(0.52,0.48));
+ax.legend(loc=(0.52,0.1));
 
 plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=18 , weight='normal')
 plt.ylabel('$S\sigma$,  $\kappa\sigma^2$', fontsize=24, weight='normal')
-plt.savefig('moments_bw_vsroots.pdf',format='pdf')
-os.system('xdg-open moments_bw_vsroots.pdf')
+plt.savefig('moments_bw_vsroots_with1.0.pdf',format='pdf')
+os.system('xdg-open moments_bw_vsroots_with1.0.pdf')
 
 
 
