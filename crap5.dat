@@ -1,0 +1,143 @@
+will read res info from resinfo/resonances_pdg_weak.dat
+will read decay info from resinfo/decays_pdg_weak.dat
+nres=319
+Initialized CpartitionFunction NhadMAX=120
+____ iroots=0 ____
+----- Z calculated
+Finished 10 percent
+picked b0=61 or q0=17 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 20 percent
+Finished 30 percent
+picked b0=62 or q0=18 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 40 percent
+Finished 50 percent
+Finished 60 percent
+Finished 70 percent
+Finished 80 percent
+Finished 90 percent
+picked b0=64 or q0=17 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 100 percent
+<pt> for p,K,pi=820.398,640.796,nan
+Qbar=8.02761 Q2bar=86.283 Q3bar=1047.64 Q4bar=14184.3
+Pbar=4.65039 P2bar=26.0589 P3bar=166.22 P4bar=1175.4
+Q: <Q>=8.02761, sigma^2=21.8405, Ssigma=0.198652, Ksigma^2=0.750416
+P: <P>=4.65039, sigma^2=4.43275, Ssigma=0.859029, Ksigma^2=0.621256
+K: <K>=1.0703, sigma^2=1.97535, Ssigma=0.377973, Ksigma^2=0.652972
+Pi: <Pi>=-1.05674, sigma^2=14.0569, Ssigma=-0.14543, Ksigma^2=0.859864
+____ iroots=1 ____
+----- Z calculated
+Finished 10 percent
+Finished 20 percent
+Finished 30 percent
+Finished 40 percent
+Finished 50 percent
+Finished 60 percent
+Finished 70 percent
+Finished 80 percent
+Finished 90 percent
+Finished 100 percent
+<pt> for p,K,pi=822.85,642.586,484.342
+Qbar=5.29685 Q2bar=43.0827 Q3bar=389.691 Q4bar=4050.77
+Pbar=3.00382 P2bar=11.9913 P3bar=56.2834 P4bar=299.666
+Q: <Q>=5.29685, sigma^2=15.0261, Ssigma=0.153501, Ksigma^2=0.524401
+P: <P>=3.00382, sigma^2=2.96838, Ssigma=0.818844, Ksigma^2=0.644523
+K: <K>=0.939229, sigma^2=2.08592, Ssigma=0.299786, Ksigma^2=0.625085
+Pi: <Pi>=-0.878714, sigma^2=9.42843, Ssigma=-0.134718, Ksigma^2=0.773691
+____ iroots=2 ____
+----- Z calculated
+Finished 10 percent
+Finished 20 percent
+Finished 30 percent
+Finished 40 percent
+Finished 50 percent
+Finished 60 percent
+Finished 70 percent
+Finished 80 percent
+Finished 90 percent
+Finished 100 percent
+<pt> for p,K,pi=827.848,646.259,485.492
+Qbar=2.98087 Q2bar=22.0023 Q3bar=144.743 Q4bar=1311.76
+Pbar=1.6657 P2bar=4.74312 P3bar=15.8198 P4bar=62.5797
+Q: <Q>=2.98087, sigma^2=13.1167, Ssigma=0.0731204, Ksigma^2=0.452473
+P: <P>=1.6657, sigma^2=1.96857, Ssigma=0.691411, Ksigma^2=0.719235
+K: <K>=0.609426, sigma^2=2.29071, Ssigma=0.168289, Ksigma^2=0.616686
+Pi: <Pi>=-0.566789, sigma^2=8.99627, Ssigma=-0.0700731, Ksigma^2=0.696053
+____ iroots=3 ____
+----- Z calculated
+Finished 10 percent
+Finished 20 percent
+Finished 30 percent
+Finished 40 percent
+Finished 50 percent
+Finished 60 percent
+Finished 70 percent
+Finished 80 percent
+Finished 90 percent
+Finished 100 percent
+<pt> for p,K,pi=832.132,649.517,486.465
+Qbar=2.1366 Q2bar=17.0332 Q3bar=90.2436 Q4bar=838.904
+Pbar=1.18408 P2bar=3.07028 P3bar=8.52897 P4bar=30.0135
+Q: <Q>=2.1366, sigma^2=12.4681, Ssigma=0.0458593, Ksigma^2=0.425947
+P: <P>=1.18408, sigma^2=1.66824, Ssigma=0.565175, Ksigma^2=0.718934
+K: <K>=0.453801, sigma^2=2.3498, Ssigma=0.119732, Ksigma^2=0.607596
+Pi: <Pi>=-0.423762, sigma^2=8.7716, Ssigma=-0.0351913, Ksigma^2=0.656921
+____ iroots=4 ____
+----- Z calculated
+Finished 10 percent
+Finished 20 percent
+Finished 30 percent
+Finished 40 percent
+Finished 50 percent
+Finished 60 percent
+Finished 70 percent
+Finished 80 percent
+Finished 90 percent
+Finished 100 percent
+<pt> for p,K,pi=838.698,654.529,487.945
+Qbar=1.477 Q2bar=14.1531 Q3bar=56.5887 Q4bar=598.223
+Pbar=0.808741 P2bar=2.12154 P3bar=4.70924 P4bar=15.6962
+Q: <Q>=1.477, sigma^2=11.9715, Ssigma=0.0267931, Ksigma^2=0.410825
+P: <P>=0.808741, sigma^2=1.46748, Ssigma=0.422389, Ksigma^2=0.711291
+K: <K>=0.320075, sigma^2=2.38895, Ssigma=0.0822239, Ksigma^2=0.602096
+Pi: <Pi>=-0.300042, sigma^2=8.56776, Ssigma=-0.00628271, Ksigma^2=0.615742
+____ iroots=5 ____
+----- Z calculated
+Finished 10 percent
+Finished 20 percent
+Finished 30 percent
+Finished 40 percent
+Finished 50 percent
+Finished 60 percent
+Finished 70 percent
+Finished 80 percent
+Finished 90 percent
+Finished 100 percent
+<pt> for p,K,pi=850.051,663.461,490.496
+Qbar=0.935022 Q2bar=12.4319 Q3bar=33.3756 Q4bar=467.452
+Pbar=0.499993 P2bar=1.57708 P3bar=2.48198 P4bar=8.9925
+Q: <Q>=0.935022, sigma^2=11.5576, Ssigma=0.0119549, Ksigma^2=0.415926
+P: <P>=0.499993, sigma^2=1.32709, Ssigma=0.276075, Ksigma^2=0.695632
+K: <K>=0.203871, sigma^2=2.41833, Ssigma=0.0511038, Ksigma^2=0.595592
+Pi: <Pi>=-0.191093, sigma^2=8.39177, Ssigma=0.0159102, Ksigma^2=0.579894
+____ iroots=6 ____
+----- Z calculated
+Finished 10 percent
+Finished 20 percent
+Finished 30 percent
+Finished 40 percent
+Finished 50 percent
+Finished 60 percent
+Finished 70 percent
+Finished 80 percent
+Finished 90 percent
+Finished 100 percent
+<pt> for p,K,pi=893.898,701.206,499.361
+Qbar=0.312186 Q2bar=11.1003 Q3bar=10.2898 Q4bar=374.498
+Pbar=0.148697 P2bar=1.18362 P3bar=0.637219 P4bar=5.15215
+Q: <Q>=0.312186, sigma^2=11.0029, Ssigma=-0.00413089, Ksigma^2=0.447436
+P: <P>=0.148697, sigma^2=1.16151, Ssigma=0.0996905, Ksigma^2=0.75882
+K: <K>=0.0661157, sigma^2=2.46756, Ssigma=0.0161011, Ksigma^2=0.594861
+Pi: <Pi>=-0.0616648, sigma^2=8.23725, Ssigma=0.0417811, Ksigma^2=0.577321
