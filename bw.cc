@@ -13,11 +13,15 @@ int main(int argc,char *argv[]){
 	int nruns=10;
 	string file;
 	double Omega,muBoverT,ff,ffa=1.0;
+	double T=parameter::getD(parmap,"T",140.0);
+	double rhoB=parameter::getD(parmap,"RHOB",0.05);
 	double roots[NROOTS]={7.7,11.5,19.6,27.0,39.0,62.4,200.0};
+
 	// These correspond to rhoH=0.333333333
-	double T[NROOTS]={143.45,149.53,153.4,154.45,155.08,155.44,155.66};
-	double rhoB[NROOTS]={0.143511,0.0942362,0.0525105,0.0373777,0.0255775,0.0159063,0.00497411};
+	//double T[NROOTS]={143.45,149.53,153.4,154.45,155.08,155.44,155.66};
+	//double rhoB[NROOTS]={0.143511,0.0942362,0.0525105,0.0373777,0.0255775,0.0159063,0.00497411};
 	//
+
 	parameterMap parmap;
 	parameter::ReadParsFromFile(parmap,string(argv[1]));
 	Cacceptance acceptance(parameter::getD(parmap,"ACCEPTANCE",0.25));
@@ -34,12 +38,13 @@ int main(int argc,char *argv[]){
 
 	nevents=parameter::getI(parmap,"NEVENTS",100);
 	Omega=parameter::getD(parmap,"OMEGA",100);
+	string tag=parameter::getS(parmap,"FILE_TAG","_");
 	//string file=parameter::getS(parmap,"MOMENTS_OUTPUT_FILE","moments.dat");
 	pf.SetOmega(Omega);
 
 	for(iroots=0;iroots<NROOTS;iroots++){
 		printf("____ iroots=%d ____\n",iroots);
-		file="errbars/moments_roots"+to_string(iroots)+".dat";
+		file="figs/paper/data/roots"+to_string(iroots)+"_"+tag+".dat";
 		//strcat(file,const char(iroots));
 		muBoverT=GetMuBOverT(roots[iroots]);
 		ff=log(1.0+ffa*(roots[iroots]-roots[0])/(roots[NROOTS-1]-roots[0]))/log(1.0+ffa); // interpolating weight from zero to 1
