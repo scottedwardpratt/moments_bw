@@ -13,6 +13,8 @@ int main(int argc,char *argv[]){
 	int nruns=10;
 	string file;
 	double Omega,muBoverT,ff,ffa=1.0;
+	parameterMap parmap;
+	parameter::ReadParsFromFile(parmap,string(argv[1]));
 	double T=parameter::getD(parmap,"T",140.0);
 	double rhoB=parameter::getD(parmap,"RHOB",0.05);
 	double roots[NROOTS]={7.7,11.5,19.6,27.0,39.0,62.4,200.0};
@@ -22,8 +24,6 @@ int main(int argc,char *argv[]){
 	//double rhoB[NROOTS]={0.143511,0.0942362,0.0525105,0.0373777,0.0255775,0.0159063,0.00497411};
 	//
 
-	parameterMap parmap;
-	parameter::ReadParsFromFile(parmap,string(argv[1]));
 	Cacceptance acceptance(parameter::getD(parmap,"ACCEPTANCE",0.25));
 	Cmoments moments(&acceptance);
 	vector<CResInfo *> resinfovec;
@@ -51,14 +51,14 @@ int main(int argc,char *argv[]){
 		blastwave.Tf=120.0-20*ff;
 		blastwave.uperpx=0.5+(0.74-0.5)*ff;
 		blastwave.uperpy=blastwave.uperpx;
-		pf.T=T[iroots];
+		pf.T=T;
 		pf.CalcZ();
 		printf("----- Z calculated\n");
 		for(int irun=0;irun<nruns;irun++){
 			for(ievent=0;ievent<int(nevents/nruns);ievent++){
 				do{
-					b0=pf.randy->GetNPoissonian(rhoB[iroots]*Omega);
-					q0=pf.randy->GetNPoissonian(0.5*rhoB[iroots]*Omega);
+					b0=pf.randy->GetNPoissonian(rhoB*Omega);
+					q0=pf.randy->GetNPoissonian(0.5*rhoB*Omega);
 					if(!pf.CheckRelevance(pf.NhadMAX/2,b0,q0,s0)){
 						printf("picked b0=%d or q0=%d out of bounds\n",b0,q0);
 						printf("If this happens often, increase pf.NhadMAX\n");
@@ -71,7 +71,7 @@ int main(int argc,char *argv[]){
 				if((ievent+1)%(nevents/10)==0)
 					printf("Finished %g percent\n",100.0*(ievent+1.0)/double(nevents));
 			}
-			moments.Summarize(file,Omega,rhoB[iroots],0.5*rhoB[iroots],roots[iroots],T[iroots]);
+			moments.Summarize(file,Omega,rhoB,0.5*rhoB,roots[iroots],T);
 			moments.Clear();
 		}
 	}
