@@ -23,3 +23,11 @@ cd ../../..
 ./bw figs/paper/pars/vsAcc/Acc0.8.dat > figs/paper/crap/crap17.dat &
 ./bw figs/paper/pars/vsAcc/Acc0.dat > figs/paper/crap/crap18.dat &
 ./bw figs/paper/pars/vsAcc/Acc1.dat > figs/paper/crap/crap19.dat &
+
+cd figs/paper/data
+
+for i in 0 1 2 3 4 5 6
+  cp roots${i}_T140.dat roots${i}_Omega100.dat
+  cp roots${i}_T140.dat roots${i}_rhoB0.05.dat
+  cp roots${i}_T140.dat roots${i}_eta0.6.dat
+  cp roots${i}_T140.dat roots${i}_Acc0.4.dat
