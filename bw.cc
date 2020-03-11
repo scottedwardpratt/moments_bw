@@ -36,7 +36,7 @@ int main(int argc,char *argv[]){
 	//pf.WriteZ();
 	//pf.ReadZ();
 
-	nevents=parameter::getI(parmap,"NEVENTS",100);
+	nevents=10000; //parameter::getI(parmap,"NEVENTS",100);
 	Omega=parameter::getD(parmap,"OMEGA",100);
 	string tag=parameter::getS(parmap,"FILE_TAG","_");
 	//string file=parameter::getS(parmap,"MOMENTS_OUTPUT_FILE","moments.dat");

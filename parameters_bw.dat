@@ -4,7 +4,7 @@ int NhadMAX 60
 double OMEGA 80
 double rhoB 0.0
 double T 155.0
-int NEVENTS 10000
+int NEVENTS 100000
 int B0 0
 int Q0 0
 int S0 0

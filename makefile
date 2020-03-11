@@ -14,6 +14,7 @@ all :
 	make -C software
 	make bw
 	make cleymans
+	make bw_alt
 #make canonical
 
 canonical : canonical.cc software/lib/libcanonical.a
@@ -21,6 +22,9 @@ canonical : canonical.cc software/lib/libcanonical.a
 
 bw : bw.cc software/lib/libcanonical.a
 	${MADAI_CPP} -o bw bw.cc ${MADAI_CFLAGS} ${LIBRARY} ${INCLUDE} -lcanonical -lgsl -lgslcblas
+
+bw_alt : bw_alt.cc software/lib/libcanonical.a
+	${MADAI_CPP} -o bw_alt bw_alt.cc ${MADAI_CFLAGS} ${LIBRARY} ${INCLUDE} -lcanonical -lgsl -lgslcblas
 
 cleymans : cleymans.cc software/lib/libcanonical.a
 	${MADAI_CPP} -o cleymans cleymans.cc ${MADAI_CFLAGS} ${LIBRARY} ${INCLUDE} -lcanonical -lgsl -lgslcblas

@@ -20,7 +20,7 @@ CpartitionFunction::CpartitionFunction(parameterMap &parmap){
 	CResInfoMap::iterator rpos;
 	multimap<double,CResInfo*>::iterator mpos;
 	CResInfo *resinfo;
-	
+
 	bmin.resize(NhadMAX/2+1);
 	bmax.resize(NhadMAX/2+1);
 	qmin.resize(NhadMAX/2+1);
@@ -53,7 +53,7 @@ CpartitionFunction::CpartitionFunction(parameterMap &parmap){
 			}
 		}
 	}
-	
+
 	z.resize(nres);
 	Z.resize(NhadMAX+1);
 	for(ihad=0;ihad<=NhadMAX;ihad++){
@@ -150,7 +150,7 @@ void CpartitionFunction::GetQminQmax(int ihad,int b,int &qqmin,int &qqmax){
 	{-1,1},{-1,0},{-1,-1},{-1,-2},
 	{0,1},{0,0},{0,-1}};
 	qmin1=qmax1=qqmin=qqmax=0;
-	if(ihad>0){	
+	if(ihad>0){
 		for(ihcharge=0;ihcharge<nhcharge;ihcharge++){
 			db=hcharge[ihcharge][0];
 			dq=hcharge[ihcharge][1];
@@ -183,7 +183,7 @@ void CpartitionFunction::GetSminSmax(int ihad,int b,int q,int &ssmin,int &ssmax)
 	smin1=smax1=0;
 	ssmin=0;
 	ssmax=0;
-	
+
 	if(ihad>0){
 		for(ihcharge=0;ihcharge<nhcharge;ihcharge++){
 			db=hcharge[ihcharge][0];
@@ -296,13 +296,13 @@ void CpartitionFunction::SetOmega(double OmegaSet){
 	Omega=OmegaSet;
 	int b,q,s,ihh,ihad,ib,iq,is,ibprime,iqprime,isprime,ihhZtot0=NhadMAX/2;
 	double dZ0;
-	
+
 	for(ib=0;ib<=(bmax[ihhZtot0]-bmin[ihhZtot0]);ib++){
 		b=bmin[ihhZtot0]+ib;
 		for(iq=0;iq<=(qmax[ihhZtot0][ib]-qmin[ihhZtot0][ib]);iq++){
 			q=qmin[ihhZtot0][ib]+iq;
 			for(is=0;is<=(smax[ihhZtot0][ib][iq]-smin[ihhZtot0][ib][iq]);is++)
-				Ztot0[ib][iq][is]=0.0;					
+				Ztot0[ib][iq][is]=0.0;
 		}
 	}
 	double factor=1.0;
@@ -355,7 +355,7 @@ CResInfo* CpartitionFunction::GenHad(int b,int q,int s){
 	CResInfo *resinfo;
 	iter=resinfobycharge[ib][iq][is].begin();
 	double zsum=0.0,rancheck=randy->ran();
-	
+
 	while(iter!=resinfobycharge[ib][iq][is].end() && !success){
 		resinfo=iter->second;
 		ires=resinfo->ires;
@@ -393,7 +393,7 @@ void CpartitionFunction::GetNextQ(int ihad0,int b0,int q0,int s0,int &b1,int &q1
 				if(CheckRelevance(ihadprime,bprime,qprime,sprime)){
 					Getibiqis(ihadprime,bprime,qprime,sprime,ibprime,iqprime,isprime);
 					zsum+=Z[ihadprime][ibprime][iqprime][isprime]*Z[1][ib1][iq1][is1];
-				
+
 					if(zsum>rancheck*Z[ihad0][ib0][iq0][is0]){
 						success=true;
 						goto GNQ_FOUNDIT;
@@ -439,7 +439,7 @@ void CpartitionFunction::GenEvent(int B0,int Q0,int S0,vector<CResInfo *> &resin
 			mult+=1;
 		}
 	}
-}	
+}
 
 void CpartitionFunction::PrintZ(int ihad){
 	int ib,iq,is,b,q,s;
@@ -475,4 +475,3 @@ bool CpartitionFunction::CheckRelevance(int ihad,int b, int q, int s){
 	}
 	return answer;
 }
-
