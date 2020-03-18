@@ -14,7 +14,7 @@ cd ../../..
 ./bw figs/paper/pars/vsOmega/Omega50.dat > figs/paper/crap/crap10.dat &
 ./bw figs/paper/pars/vsOmega/Omega250.dat > figs/paper/crap/crap12.dat &
 
-./bw figs/paper/pars/vsEta/eta0.2.dat > figs/paper/crap/crap13.dat &
+./bw figs/paper/pars/vsEta/eta0.2.dat > figs/paper/crap/crap11.dat &
 ./bw figs/paper/pars/vsEta/eta1.0.dat > figs/paper/crap/crap13.dat &
 
 ./bw figs/paper/pars/vsAcc/Acc0.2.dat > figs/paper/crap/crap14.dat &
