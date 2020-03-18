@@ -4,613 +4,3361 @@ nres=319
 Initialized CpartitionFunction NhadMAX=60
 ____ iroots=0 ____
 ----- Z calculated
-Finished 10 percent
-<pt> for p,K,pi=832.011,629.104,481.61
-Qbar=3.679 Q2bar=23.505 Q3bar=157.327 Q4bar=1249.04
-Pbar=2.17 P2bar=6.71 P3bar=24.946 P4bar=106.982
-Q: <Q>=3.679, sigma^2=9.96996, Ssigma=-0.251441, Ksigma^2=-0.5144
-P: <P>=2.17, sigma^2=2.0011, Ssigma=0.849796, Ksigma^2=0.747895
-K: <K>=0.42, sigma^2=0.7296, Ssigma=0.398322, Ksigma^2=0.407745
-Pi: <Pi>=-0.411, sigma^2=5.97408, Ssigma=-0.363827, Ksigma^2=0.449514
-Finished 10 percent
-<pt> for p,K,pi=816.103,649.205,477.004
-Qbar=3.809 Q2bar=24.711 Q3bar=173.921 Q4bar=1446.42
-Pbar=2.121 P2bar=6.397 P3bar=23.571 P4bar=102.913
-Q: <Q>=3.809, sigma^2=10.2025, Ssigma=0.203284, Ksigma^2=0.383713
-P: <P>=2.121, sigma^2=1.89836, Ssigma=1.02727, Ksigma^2=2.14863
-K: <K>=0.465, sigma^2=0.720775, Ssigma=0.500814, Ksigma^2=0.756391
-Pi: <Pi>=-0.392, sigma^2=5.92834, Ssigma=-0.0337431, Ksigma^2=1.39051
-Finished 10 percent
-<pt> for p,K,pi=804.06,635.896,481.144
-Qbar=3.59 Q2bar=23.1 Q3bar=160.466 Q4bar=1344.83
-Pbar=2.157 P2bar=6.607 P3bar=24.465 P4bar=105.679
-Q: <Q>=3.59, sigma^2=10.2119, Ssigma=0.412808, Ksigma^2=1.53437
-P: <P>=2.157, sigma^2=1.95435, Ssigma=0.912134, Ksigma^2=1.34848
-K: <K>=0.45, sigma^2=0.7655, Ssigma=0.38857, Ksigma^2=1.0131
-Pi: <Pi>=-0.578, sigma^2=6.13592, Ssigma=-0.213044, Ksigma^2=0.777753
 picked b0=31 or q0=9 out of bounds
 If this happens often, increase pf.NhadMAX
-Finished 10 percent
-<pt> for p,K,pi=814.85,651.916,484.026
-Qbar=3.747 Q2bar=24.365 Q3bar=172.155 Q4bar=1427.21
-Pbar=2.174 P2bar=6.734 P3bar=25.262 P4bar=109.454
-Q: <Q>=3.747, sigma^2=10.325, Ssigma=0.33742, Ksigma^2=-1.13502
-P: <P>=2.174, sigma^2=2.00772, Ssigma=0.942709, Ksigma^2=0.811955
-K: <K>=0.477, sigma^2=0.753471, Ssigma=0.356021, Ksigma^2=0.575512
-Pi: <Pi>=-0.496, sigma^2=6.19598, Ssigma=0.100008, Ksigma^2=1.19986
-Finished 10 percent
-<pt> for p,K,pi=829.247,641.229,483.599
-Qbar=3.642 Q2bar=22.108 Q3bar=145.998 Q4bar=1138.3
-Pbar=2.048 P2bar=6.02 P3bar=21.038 P4bar=83.888
-Q: <Q>=3.642, sigma^2=8.84384, Ssigma=0.120102, Ksigma^2=0.951116
-P: <P>=2.048, sigma^2=1.8257, Ssigma=0.674257, Ksigma^2=0.146196
-K: <K>=0.443, sigma^2=0.776751, Ssigma=0.442561, Ksigma^2=0.495266
-Pi: <Pi>=-0.429, sigma^2=5.82496, Ssigma=-0.12246, Ksigma^2=-0.112544
-Finished 10 percent
-<pt> for p,K,pi=816.256,647.757,480.821
-Qbar=3.771 Q2bar=23.017 Q3bar=157.869 Q4bar=1267.12
-Pbar=2.11 P2bar=6.244 P3bar=21.94 P4bar=87.928
-Q: <Q>=3.771, sigma^2=8.79656, Ssigma=0.537511, Ksigma^2=1.23812
-P: <P>=2.11, sigma^2=1.7919, Ssigma=0.671545, Ksigma^2=0.252009
-K: <K>=0.454, sigma^2=0.759884, Ssigma=0.312497, Ksigma^2=0.447792
-Pi: <Pi>=-0.401, sigma^2=5.8062, Ssigma=0.143698, Ksigma^2=-0.147131
-Finished 10 percent
-<pt> for p,K,pi=819.186,659.346,483.845
-Qbar=3.93 Q2bar=25.37 Q3bar=182.892 Q4bar=1557.45
-Pbar=2.223 P2bar=7.039 P3bar=26.817 P4bar=118.483
-Q: <Q>=3.93, sigma^2=9.9251, Ssigma=0.521568, Ksigma^2=2.24167
-P: <P>=2.223, sigma^2=2.09727, Ssigma=0.879637, Ksigma^2=1.08595
-K: <K>=0.452, sigma^2=0.827696, Ssigma=0.586325, Ksigma^2=0.950818
-Pi: <Pi>=-0.419, sigma^2=5.93544, Ssigma=-0.365027, Ksigma^2=0.341082
-Finished 10 percent
-<pt> for p,K,pi=819.614,665.555,487.32
-Qbar=3.934 Q2bar=25.748 Q3bar=183.298 Q4bar=1537.89
-Pbar=2.203 P2bar=6.955 P3bar=26.551 P4bar=117.043
-Q: <Q>=3.934, sigma^2=10.2716, Ssigma=0.115665, Ksigma^2=0.910581
-P: <P>=2.203, sigma^2=2.10179, Ssigma=0.936651, Ksigma^2=0.802416
-K: <K>=0.523, sigma^2=0.733471, Ssigma=0.454181, Ksigma^2=0.503885
-Pi: <Pi>=-0.397, sigma^2=5.96539, Ssigma=0.242792, Ksigma^2=1.78685
 picked b0=31 or q0=9 out of bounds
 If this happens often, increase pf.NhadMAX
-Finished 10 percent
-<pt> for p,K,pi=816.508,658.106,491.38
-Qbar=3.862 Q2bar=25.534 Q3bar=185.236 Q4bar=1566.9
-Pbar=2.106 P2bar=6.334 P3bar=23.028 P4bar=96.634
-Q: <Q>=3.862, sigma^2=10.619, Ssigma=0.433458, Ksigma^2=-1.4357
-P: <P>=2.106, sigma^2=1.89876, Ssigma=0.89058, Ksigma^2=0.723085
-K: <K>=0.455, sigma^2=0.709975, Ssigma=0.360136, Ksigma^2=0.516497
-Pi: <Pi>=-0.338, sigma^2=6.18176, Ssigma=0.108531, Ksigma^2=0.115555
-Finished 10 percent
-<pt> for p,K,pi=825.833,643.905,484.522
-Qbar=3.638 Q2bar=23.528 Q3bar=163.448 Q4bar=1363.82
-Pbar=2.153 P2bar=6.699 P3bar=25.277 P4bar=110.451
-Q: <Q>=3.638, sigma^2=10.293, Ssigma=0.28773, Ksigma^2=1.00607
-P: <P>=2.153, sigma^2=2.06359, Ssigma=0.953789, Ksigma^2=0.893991
-K: <K>=0.425, sigma^2=0.676375, Ssigma=0.490639, Ksigma^2=0.483087
-Pi: <Pi>=-0.536, sigma^2=6.3187, Ssigma=-0.292708, Ksigma^2=2.52203
-____ iroots=1 ____
------ Z calculated
-Finished 10 percent
-<pt> for p,K,pi=823.899,651.138,475.12
-Qbar=3.73 Q2bar=21.552 Q3bar=142.636 Q4bar=1074.88
-Pbar=2.136 P2bar=6.594 P3bar=24.408 P4bar=104.25
-Q: <Q>=3.73, sigma^2=7.6391, Ssigma=0.688478, Ksigma^2=-1.29886
-P: <P>=2.136, sigma^2=2.0315, Ssigma=0.809563, Ksigma^2=0.683486
-K: <K>=0.455, sigma^2=0.681975, Ssigma=0.545339, Ksigma^2=0.285764
-Pi: <Pi>=-0.442, sigma^2=4.01864, Ssigma=0.0341067, Ksigma^2=1.24303
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=36 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
 picked b0=32 or q0=8 out of bounds
 If this happens often, increase pf.NhadMAX
-Finished 10 percent
-<pt> for p,K,pi=820.047,631.096,487.728
-Qbar=3.834 Q2bar=22.47 Q3bar=145.728 Q4bar=1099
-Pbar=2.149 P2bar=6.625 P3bar=24.649 P4bar=105.721
-Q: <Q>=3.834, sigma^2=7.77044, Ssigma=-0.000739287, Ksigma^2=2.12874
-P: <P>=2.149, sigma^2=2.0068, Ssigma=0.8903, Ksigma^2=0.671028
-K: <K>=0.48, sigma^2=0.7156, Ssigma=0.602214, Ksigma^2=0.754622
-Pi: <Pi>=-0.504, sigma^2=4.08598, Ssigma=0.0264396, Ksigma^2=-0.0567696
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
 picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=38 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=824.316,645.426,482.51
+Qbar=1.87235 Q2bar=9.81991 Q3bar=43.5858 Q4bar=281.852
+Pbar=1.42879 P2bar=3.41609 P3bar=10.0587 P4bar=34.8481
+Q: <Q>=1.87235, sigma^2=6.31422, Ssigma=0.246213, Ksigma^2=0.870583
+P: <P>=1.42879, sigma^2=1.37465, Ssigma=0.909036, Ksigma^2=0.75096
+K: <K>=0.30013, sigma^2=0.531892, Ssigma=0.436864, Ksigma^2=0.761545
+Pi: <Pi>=-0.29511, sigma^2=4.26424, Ssigma=-0.0897438, Ksigma^2=0.895114
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
 If this happens often, increase pf.NhadMAX
 picked b0=31 or q0=9 out of bounds
 If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=14 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=824.734,638.301,482.969
-Qbar=3.685 Q2bar=21.199 Q3bar=135.439 Q4bar=998.443
-Pbar=2.084 P2bar=6.52 P3bar=24.74 P4bar=108.784
-Q: <Q>=3.685, sigma^2=7.61978, Ssigma=0.152622, Ksigma^2=0.249235
-P: <P>=2.084, sigma^2=2.17694, Ssigma=0.954925, Ksigma^2=0.757047
-K: <K>=0.528, sigma^2=0.755216, Ssigma=0.556847, Ksigma^2=0.950447
-Pi: <Pi>=-0.457, sigma^2=3.69615, Ssigma=0.00862168, Ksigma^2=0.422984
-picked b0=32 or q0=11 out of bounds
+<pt> for p,K,pi=823.815,642.302,482.757
+Qbar=1.87391 Q2bar=9.78315 Q3bar=43.1876 Q4bar=277.648
+Pbar=1.43464 P2bar=3.43832 P3bar=10.1449 P4bar=35.2096
+Q: <Q>=1.87391, sigma^2=6.27161, Ssigma=0.215258, Ksigma^2=0.806907
+P: <P>=1.43464, sigma^2=1.38013, Ssigma=0.907289, Ksigma^2=0.746405
+K: <K>=0.28819, sigma^2=0.526857, Ssigma=0.450579, Ksigma^2=0.794298
+Pi: <Pi>=-0.28734, sigma^2=4.23954, Ssigma=-0.0940743, Ksigma^2=0.918848
+picked b0=35 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
 If this happens often, increase pf.NhadMAX
 picked b0=34 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=822.851,643.96,482.287
+Qbar=1.87314 Q2bar=9.82778 Q3bar=43.3596 Q4bar=278.122
+Pbar=1.43366 P2bar=3.428 P3bar=10.0687 P4bar=34.7208
+Q: <Q>=1.87314, sigma^2=6.31913, Ssigma=0.202176, Ksigma^2=0.540491
+P: <P>=1.43366, sigma^2=1.37262, Ssigma=0.887614, Ksigma^2=0.677216
+K: <K>=0.2974, sigma^2=0.532473, Ssigma=0.445137, Ksigma^2=0.780767
+Pi: <Pi>=-0.29758, sigma^2=4.25531, Ssigma=-0.0764331, Ksigma^2=0.785268
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=14 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=824.488,644.817,481.967
+Qbar=1.87333 Q2bar=9.86027 Q3bar=43.7008 Q4bar=283.239
+Pbar=1.43363 P2bar=3.43347 P3bar=10.1393 P4bar=35.4204
+Q: <Q>=1.87333, sigma^2=6.3509, Ssigma=0.225881, Ksigma^2=0.857472
+P: <P>=1.43363, sigma^2=1.37818, Ssigma=0.91814, Ksigma^2=0.904481
+K: <K>=0.29689, sigma^2=0.534946, Ssigma=0.443933, Ksigma^2=0.795151
+Pi: <Pi>=-0.29328, sigma^2=4.25177, Ssigma=-0.0887583, Ksigma^2=0.821414
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=36 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=824.054,641.301,482.088
+Qbar=1.89694 Q2bar=9.9466 Q3bar=44.0921 Q4bar=284.569
+Pbar=1.43771 P2bar=3.45037 P3bar=10.2062 P4bar=35.5607
+Q: <Q>=1.89694, sigma^2=6.34822, Ssigma=0.179521, Ksigma^2=0.789748
+P: <P>=1.43771, sigma^2=1.38336, Ssigma=0.916506, Ksigma^2=0.794692
+K: <K>=0.29578, sigma^2=0.532794, Ssigma=0.445264, Ksigma^2=0.781971
+Pi: <Pi>=-0.28047, sigma^2=4.25379, Ssigma=-0.106336, Ksigma^2=0.980698
+picked b0=36 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
 If this happens often, increase pf.NhadMAX
 picked b0=31 or q0=11 out of bounds
 If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=840.785,627.215,486.393
-Qbar=3.807 Q2bar=22.655 Q3bar=150.723 Q4bar=1164.86
-Pbar=2.122 P2bar=6.364 P3bar=22.69 P4bar=92.164
-Q: <Q>=3.807, sigma^2=8.16175, Ssigma=0.285704, Ksigma^2=1.19033
-P: <P>=2.122, sigma^2=1.86112, Ssigma=0.691529, Ksigma^2=0.155956
-K: <K>=0.484, sigma^2=0.629744, Ssigma=0.498983, Ksigma^2=0.549288
-Pi: <Pi>=-0.441, sigma^2=4.13252, Ssigma=-0.0188532, Ksigma^2=1.10839
-Finished 10 percent
-<pt> for p,K,pi=845.461,651.331,484.024
-Qbar=3.929 Q2bar=23.395 Q3bar=156.821 Q4bar=1213.41
-Pbar=2.1 P2bar=6.342 P3bar=23.364 P4bar=101.07
-Q: <Q>=3.929, sigma^2=7.95796, Ssigma=0.297614, Ksigma^2=1.35909
-P: <P>=2.1, sigma^2=1.932, Ssigma=0.999689, Ksigma^2=1.59397
-K: <K>=0.466, sigma^2=0.672844, Ssigma=0.437203, Ksigma^2=0.380001
-Pi: <Pi>=-0.347, sigma^2=4.21459, Ssigma=0.0660019, Ksigma^2=1.34329
+<pt> for p,K,pi=822.705,641.789,481.599
+Qbar=1.89084 Q2bar=9.89164 Q3bar=43.9339 Q4bar=282.885
+Pbar=1.44567 P2bar=3.48965 P3bar=10.392 P4bar=36.4826
+Q: <Q>=1.89084, sigma^2=6.31636, Ssigma=0.212762, Ksigma^2=0.752422
+P: <P>=1.44567, sigma^2=1.39969, Ssigma=0.928859, Ksigma^2=0.834001
+K: <K>=0.29583, sigma^2=0.527175, Ssigma=0.434919, Ksigma^2=0.756878
+Pi: <Pi>=-0.29041, sigma^2=4.24975, Ssigma=-0.0959835, Ksigma^2=0.819828
+picked b0=33 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=14 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
 picked b0=31 or q0=7 out of bounds
 If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=831.808,637.762,480.437
-Qbar=3.855 Q2bar=22.815 Q3bar=154.827 Q4bar=1222.45
-Pbar=2.168 P2bar=6.72 P3bar=25.136 P4bar=108.576
-Q: <Q>=3.855, sigma^2=7.95398, Ssigma=0.697768, Ksigma^2=2.13743
-P: <P>=2.168, sigma^2=2.01978, Ssigma=0.895788, Ksigma^2=0.789611
-K: <K>=0.479, sigma^2=0.675559, Ssigma=0.343892, Ksigma^2=0.627757
-Pi: <Pi>=-0.37, sigma^2=3.8211, Ssigma=-0.149676, Ksigma^2=-0.0722984
+<pt> for p,K,pi=823.462,642.274,481.542
+Qbar=1.88374 Q2bar=9.91636 Q3bar=44.0321 Q4bar=284.478
+Pbar=1.44022 P2bar=3.46726 P3bar=10.2833 P4bar=35.9292
+Q: <Q>=1.88374, sigma^2=6.36788, Ssigma=0.213782, Ksigma^2=0.691113
+P: <P>=1.44022, sigma^2=1.39303, Ssigma=0.916791, Ksigma^2=0.797612
+K: <K>=0.29467, sigma^2=0.53008, Ssigma=0.447759, Ksigma^2=0.763315
+Pi: <Pi>=-0.29474, sigma^2=4.25237, Ssigma=-0.0854409, Ksigma^2=0.877134
+picked b0=33 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=829.063,630.415,482.618
-Qbar=3.749 Q2bar=21.889 Q3bar=145.547 Q4bar=1140.37
-Pbar=2.132 P2bar=6.458 P3bar=24.014 P4bar=105.95
-Q: <Q>=3.749, sigma^2=7.834, Ssigma=0.605797, Ksigma^2=3.43451
-P: <P>=2.132, sigma^2=1.91258, Ssigma=1.09293, Ksigma^2=2.26303
-K: <K>=0.493, sigma^2=0.713951, Ssigma=0.363111, Ksigma^2=0.454332
-Pi: <Pi>=-0.464, sigma^2=3.9067, Ssigma=-0.390603, Ksigma^2=0.80934
+<pt> for p,K,pi=825.651,641.38,482.705
+Qbar=1.87884 Q2bar=9.8319 Q3bar=43.6213 Q4bar=282.462
+Pbar=1.43402 P2bar=3.44296 P3bar=10.1791 P4bar=35.4039
+Q: <Q>=1.87884, sigma^2=6.30186, Ssigma=0.232998, Ksigma^2=1.00773
+P: <P>=1.43402, sigma^2=1.38655, Ssigma=0.912436, Ksigma^2=0.752022
+K: <K>=0.29845, sigma^2=0.529938, Ssigma=0.444971, Ksigma^2=0.754601
+Pi: <Pi>=-0.29922, sigma^2=4.27533, Ssigma=-0.0975691, Ksigma^2=1.03161
+picked b0=33 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=825.219,643.692,482.605
+Qbar=1.89871 Q2bar=9.97209 Q3bar=44.3573 Q4bar=286.245
+Pbar=1.44251 P2bar=3.46367 P3bar=10.2276 P4bar=35.5181
+Q: <Q>=1.89871, sigma^2=6.36699, Ssigma=0.195547, Ksigma^2=0.699613
+P: <P>=1.44251, sigma^2=1.38283, Ssigma=0.897942, Ksigma^2=0.739135
+K: <K>=0.30045, sigma^2=0.5344, Ssigma=0.459931, Ksigma^2=0.779085
+Pi: <Pi>=-0.29058, sigma^2=4.26616, Ssigma=-0.0957908, Ksigma^2=0.89804
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=16 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=37 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=824.969,643.312,483.468
+Qbar=1.90155 Q2bar=9.87379 Q3bar=43.6643 Q4bar=279.847
+Pbar=1.43939 P2bar=3.46545 P3bar=10.2765 P4bar=35.9169
+Q: <Q>=1.90155, sigma^2=6.2579, Ssigma=0.174074, Ksigma^2=0.836547
+P: <P>=1.43939, sigma^2=1.39361, Ssigma=0.915947, Ksigma^2=0.806985
+K: <K>=0.29729, sigma^2=0.532249, Ssigma=0.452755, Ksigma^2=0.753831
+Pi: <Pi>=-0.28461, sigma^2=4.19963, Ssigma=-0.11446, Ksigma^2=0.890855
+____ iroots=1 ____
+----- Z calculated
+picked b0=34 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
 picked b0=31 or q0=5 out of bounds
 If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=842.493,643.636,478.209
-Qbar=3.793 Q2bar=21.877 Q3bar=141.073 Q4bar=1033.24
-Pbar=2.152 P2bar=6.666 P3bar=25.252 P4bar=112.578
-Q: <Q>=3.793, sigma^2=7.49015, Ssigma=0.16999, Ksigma^2=-1.05837
-P: <P>=2.152, sigma^2=2.0349, Ssigma=1.05587, Ksigma^2=1.80385
-K: <K>=0.45, sigma^2=0.7195, Ssigma=0.724878, Ksigma^2=1.4329
-Pi: <Pi>=-0.485, sigma^2=4.09978, Ssigma=-0.132628, Ksigma^2=-0.651225
-Finished 10 percent
-<pt> for p,K,pi=826.685,635.065,485.587
-Qbar=3.744 Q2bar=21.238 Q3bar=135.216 Q4bar=992.422
-Pbar=2.109 P2bar=6.479 P3bar=24.051 P4bar=103.523
-Q: <Q>=3.744, sigma^2=7.22046, Ssigma=0.226314, Ksigma^2=1.07673
-P: <P>=2.109, sigma^2=2.03112, Ssigma=0.895826, Ksigma^2=0.890357
-K: <K>=0.438, sigma^2=0.704156, Ssigma=0.569066, Ksigma^2=1.11781
-Pi: <Pi>=-0.499, sigma^2=4.138, Ssigma=-0.146487, Ksigma^2=0.158481
-Finished 10 percent
-<pt> for p,K,pi=830.391,636.68,484.721
-Qbar=3.817 Q2bar=22.099 Q3bar=145.087 Q4bar=1118.24
-Pbar=2.152 P2bar=6.668 P3bar=24.628 P4bar=103.772
-Q: <Q>=3.817, sigma^2=7.52951, Ssigma=0.432276, Ksigma^2=3.71696
-P: <P>=2.152, sigma^2=2.0369, Ssigma=0.742141, Ksigma^2=0.131168
-K: <K>=0.443, sigma^2=0.668751, Ssigma=0.396697, Ksigma^2=0.309914
-Pi: <Pi>=-0.401, sigma^2=3.9622, Ssigma=0.0489644, Ksigma^2=2.44726
-____ iroots=2 ____
------ Z calculated
-Finished 10 percent
-<pt> for p,K,pi=834.768,659.636,485.188
-Qbar=3.856 Q2bar=22.384 Q3bar=148.648 Q4bar=1133.85
-Pbar=2.169 P2bar=6.781 P3bar=25.023 P4bar=103.897
-Q: <Q>=3.856, sigma^2=7.51526, Ssigma=0.582492, Ksigma^2=0.712744
-P: <P>=2.169, sigma^2=2.07644, Ssigma=0.629645, Ksigma^2=-0.542399
-K: <K>=0.513, sigma^2=0.731831, Ssigma=0.371269, Ksigma^2=0.66395
-Pi: <Pi>=-0.444, sigma^2=3.95086, Ssigma=-0.0308593, Ksigma^2=0.572908
-picked b0=32 or q0=10 out of bounds
+<pt> for p,K,pi=826.2,644.819,483.236
+Qbar=1.87981 Q2bar=8.39411 Q3bar=35.3235 Q4bar=199.959
+Pbar=1.40757 P2bar=3.32111 P3bar=9.64083 P4bar=32.9725
+Q: <Q>=1.87981, sigma^2=4.86042, Ssigma=0.261452, Ksigma^2=0.821918
+P: <P>=1.40757, sigma^2=1.33986, Ssigma=0.891327, Ksigma^2=0.75378
+K: <K>=0.31412, sigma^2=0.481629, Ssigma=0.537837, Ksigma^2=0.744499
+Pi: <Pi>=-0.28557, sigma^2=2.82176, Ssigma=-0.095193, Ksigma^2=0.835987
+picked b0=32 or q0=7 out of bounds
 If this happens often, increase pf.NhadMAX
-Finished 10 percent
-<pt> for p,K,pi=825.049,649.301,488.07
-Qbar=4.059 Q2bar=24.481 Q3bar=166.881 Q4bar=1309.4
-Pbar=2.126 P2bar=6.554 P3bar=24.416 P4bar=105.182
-Q: <Q>=4.059, sigma^2=8.00552, Ssigma=0.31526, Ksigma^2=1.66799
-P: <P>=2.126, sigma^2=2.03412, Ssigma=0.901175, Ksigma^2=0.780248
-K: <K>=0.509, sigma^2=0.735919, Ssigma=0.648685, Ksigma^2=0.841433
-Pi: <Pi>=-0.287, sigma^2=3.49863, Ssigma=-0.294698, Ksigma^2=0.312195
-Finished 10 percent
-<pt> for p,K,pi=834.42,647.803,489.059
-Qbar=3.74 Q2bar=22.204 Q3bar=146.444 Q4bar=1119.05
-Pbar=2.116 P2bar=6.32 P3bar=22.738 P4bar=94.028
-Q: <Q>=3.74, sigma^2=8.2164, Ssigma=0.236401, Ksigma^2=0.273506
-P: <P>=2.116, sigma^2=1.84254, Ssigma=0.850581, Ksigma^2=0.559529
-K: <K>=0.451, sigma^2=0.713599, Ssigma=0.504158, Ksigma^2=0.840889
-Pi: <Pi>=-0.391, sigma^2=4.44812, Ssigma=-0.315095, Ksigma^2=2.10518
-Finished 10 percent
-<pt> for p,K,pi=825.866,637.759,480.137
-Qbar=3.881 Q2bar=22.475 Q3bar=145.697 Q4bar=1075.07
-Pbar=2.098 P2bar=6.392 P3bar=23.788 P4bar=104.3
-Q: <Q>=3.881, sigma^2=7.41284, Ssigma=0.125872, Ksigma^2=-0.142651
-P: <P>=2.098, sigma^2=1.9904, Ssigma=1.01783, Ksigma^2=1.7454
-K: <K>=0.475, sigma^2=0.695375, Ssigma=0.605312, Ksigma^2=1.04454
-Pi: <Pi>=-0.349, sigma^2=3.9972, Ssigma=-0.0984249, Ksigma^2=0.955911
-Finished 10 percent
-<pt> for p,K,pi=829.411,636.226,489.901
-Qbar=3.798 Q2bar=21.79 Q3bar=139.116 Q4bar=1012.45
-Pbar=2.087 P2bar=6.433 P3bar=24.281 P4bar=107.005
-Q: <Q>=3.798, sigma^2=7.3652, Ssigma=0.0558778, Ksigma^2=-0.280324
-P: <P>=2.087, sigma^2=2.07743, Ssigma=1.05136, Ksigma^2=1.23391
-K: <K>=0.486, sigma^2=0.701804, Ssigma=0.481585, Ksigma^2=0.50871
-Pi: <Pi>=-0.499, sigma^2=3.898, Ssigma=-0.304629, Ksigma^2=0.938953
-Finished 10 percent
-<pt> for p,K,pi=828.131,635.101,477.156
-Qbar=3.796 Q2bar=21.968 Q3bar=140.392 Q4bar=1017.06
-Pbar=2.158 P2bar=6.548 P3bar=23.29 P4bar=93.068
-Q: <Q>=3.796, sigma^2=7.55838, Ssigma=-0.0505107, Ksigma^2=-1.277
-P: <P>=2.158, sigma^2=1.89104, Ssigma=0.527597, Ksigma^2=-0.42224
-K: <K>=0.427, sigma^2=0.608671, Ssigma=0.406522, Ksigma^2=0.371006
-Pi: <Pi>=-0.405, sigma^2=3.94098, Ssigma=-0.434483, Ksigma^2=0.888062
-Finished 10 percent
-<pt> for p,K,pi=828.66,630.87,486.581
-Qbar=3.809 Q2bar=21.645 Q3bar=138.881 Q4bar=1030.99
-Pbar=2.111 P2bar=6.425 P3bar=23.465 P4bar=98.453
-Q: <Q>=3.809, sigma^2=7.13652, Ssigma=0.289944, Ksigma^2=2.093
-P: <P>=2.111, sigma^2=1.96868, Ssigma=0.80768, Ksigma^2=0.458294
-K: <K>=0.459, sigma^2=0.662319, Ssigma=0.447344, Ksigma^2=0.530573
-Pi: <Pi>=-0.421, sigma^2=3.99176, Ssigma=0.0353754, Ksigma^2=-0.101223
-Finished 10 percent
-<pt> for p,K,pi=831.264,655.482,482.71
-Qbar=3.84 Q2bar=22.092 Q3bar=140.382 Q4bar=1023.67
-Pbar=2.112 P2bar=6.266 P3bar=21.948 P4bar=86.618
-Q: <Q>=3.84, sigma^2=7.3464, Ssigma=-0.118648, Ksigma^2=1.0558
-P: <P>=2.112, sigma^2=1.80546, Ssigma=0.602597, Ksigma^2=-0.314859
-K: <K>=0.459, sigma^2=0.732319, Ssigma=0.502369, Ksigma^2=0.432287
-Pi: <Pi>=-0.413, sigma^2=3.87043, Ssigma=-0.365616, Ksigma^2=0.112756
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=14 out of bounds
+If this happens often, increase pf.NhadMAX
 picked b0=31 or q0=6 out of bounds
 If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=15 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=828.832,645.465,484.491
-Qbar=3.874 Q2bar=23.064 Q3bar=152.914 Q4bar=1162.97
-Pbar=2.145 P2bar=6.499 P3bar=23.379 P4bar=96.055
-Q: <Q>=3.874, sigma^2=8.05612, Ssigma=0.142155, Ksigma^2=-0.0186019
-P: <P>=2.145, sigma^2=1.89797, Ssigma=0.683008, Ksigma^2=0.295224
-K: <K>=0.473, sigma^2=0.705271, Ssigma=0.488318, Ksigma^2=0.352188
-Pi: <Pi>=-0.383, sigma^2=3.91431, Ssigma=-0.180689, Ksigma^2=0.569533
+<pt> for p,K,pi=826.553,643.2,483.624
+Qbar=1.88573 Q2bar=8.37919 Q3bar=35.3416 Q4bar=199.17
+Pbar=1.40295 P2bar=3.30231 P3bar=9.52977 P4bar=32.2325
+Q: <Q>=1.88573, sigma^2=4.82321, Ssigma=0.279931, Ksigma^2=0.755427
+P: <P>=1.40295, sigma^2=1.33404, Ssigma=0.864747, Ksigma^2=0.593013
+K: <K>=0.31298, sigma^2=0.481184, Ssigma=0.539584, Ksigma^2=0.783639
+Pi: <Pi>=-0.27137, sigma^2=2.80693, Ssigma=-0.120643, Ksigma^2=0.822017
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=816.834,646.358,485.517
-Qbar=3.798 Q2bar=21.86 Q3bar=140.418 Q4bar=1035.93
-Pbar=2.054 P2bar=6.13 P3bar=22.16 P4bar=92.158
-Q: <Q>=3.798, sigma^2=7.4352, Ssigma=0.123194, Ksigma^2=0.617026
-P: <P>=2.054, sigma^2=1.91108, Ssigma=0.899095, Ksigma^2=0.475483
-K: <K>=0.51, sigma^2=0.6739, Ssigma=0.534622, Ksigma^2=0.619173
-Pi: <Pi>=-0.365, sigma^2=4.42577, Ssigma=-0.197965, Ksigma^2=0.198356
-____ iroots=3 ____
------ Z calculated
+<pt> for p,K,pi=825.183,645.307,482.083
+Qbar=1.88263 Q2bar=8.41549 Q3bar=35.4021 Q4bar=200.076
+Pbar=1.40139 P2bar=3.29417 P3bar=9.51207 P4bar=32.3174
+Q: <Q>=1.88263, sigma^2=4.87119, Ssigma=0.249948, Ksigma^2=0.732939
+P: <P>=1.40139, sigma^2=1.33028, Ssigma=0.877398, Ksigma^2=0.701924
+K: <K>=0.31423, sigma^2=0.47697, Ssigma=0.533637, Ksigma^2=0.749737
+Pi: <Pi>=-0.28201, sigma^2=2.81774, Ssigma=-0.109467, Ksigma^2=0.887668
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=825.513,643.408,481.943
+Qbar=1.88371 Q2bar=8.37405 Q3bar=35.0938 Q4bar=197.285
+Pbar=1.40814 P2bar=3.31736 P3bar=9.59832 P4bar=32.6224
+Q: <Q>=1.88371, sigma^2=4.82569, Ssigma=0.236062, Ksigma^2=0.727152
+P: <P>=1.40814, sigma^2=1.3345, Ssigma=0.875744, Ksigma^2=0.665859
+K: <K>=0.31577, sigma^2=0.476399, Ssigma=0.538973, Ksigma^2=0.754009
+Pi: <Pi>=-0.28617, sigma^2=2.80688, Ssigma=-0.108648, Ksigma^2=0.837045
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=16 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=825.423,642.982,483.213
+Qbar=1.88453 Q2bar=8.38143 Q3bar=35.0879 Q4bar=196.072
+Pbar=1.41118 P2bar=3.33152 P3bar=9.66472 P4bar=32.976
+Q: <Q>=1.88453, sigma^2=4.82998, Ssigma=0.225343, Ksigma^2=0.486235
+P: <P>=1.41118, sigma^2=1.34009, Ssigma=0.881378, Ksigma^2=0.703933
+K: <K>=0.31373, sigma^2=0.476543, Ssigma=0.513936, Ksigma^2=0.715629
+Pi: <Pi>=-0.283, sigma^2=2.79465, Ssigma=-0.115133, Ksigma^2=0.898914
+picked b0=34 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=826.564,642.53,483.015
+Qbar=1.88648 Q2bar=8.35584 Q3bar=35.1294 Q4bar=197.657
+Pbar=1.40587 P2bar=3.30783 P3bar=9.56071 P4bar=32.4453
+Q: <Q>=1.88648, sigma^2=4.79703, Ssigma=0.26418, Ksigma^2=0.826425
+P: <P>=1.40587, sigma^2=1.33136, Ssigma=0.876468, Ksigma^2=0.654156
+K: <K>=0.31494, sigma^2=0.476053, Ssigma=0.525567, Ksigma^2=0.716021
+Pi: <Pi>=-0.27953, sigma^2=2.79967, Ssigma=-0.0898428, Ksigma^2=0.862218
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=1 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
 picked b0=31 or q0=7 out of bounds
 If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=837.925,634.581,487.447
-Qbar=3.778 Q2bar=22.646 Q3bar=152.164 Q4bar=1186.75
-Pbar=2.049 P2bar=6.155 P3bar=22.647 P4bar=97.823
-Q: <Q>=3.778, sigma^2=8.37272, Ssigma=0.399293, Ksigma^2=0.616448
-P: <P>=2.049, sigma^2=1.9566, Ssigma=1.031, Ksigma^2=1.47735
-K: <K>=0.489, sigma^2=0.667879, Ssigma=0.446625, Ksigma^2=0.320347
-Pi: <Pi>=-0.459, sigma^2=4.26632, Ssigma=0.0446342, Ksigma^2=0.775564
+<pt> for p,K,pi=825.093,645.653,482.855
+Qbar=1.88949 Q2bar=8.45035 Q3bar=35.7459 Q4bar=202.804
+Pbar=1.40742 P2bar=3.32668 P3bar=9.66192 P4bar=32.9927
+Q: <Q>=1.88949, sigma^2=4.88018, Ssigma=0.273962, Ksigma^2=0.81271
+P: <P>=1.40742, sigma^2=1.34585, Ssigma=0.885341, Ksigma^2=0.692311
+K: <K>=0.31374, sigma^2=0.476787, Ssigma=0.531046, Ksigma^2=0.757598
+Pi: <Pi>=-0.27512, sigma^2=2.81215, Ssigma=-0.0989637, Ksigma^2=0.887753
+picked b0=33 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=14 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=830.647,645.019,487.263
-Qbar=3.706 Q2bar=21.392 Q3bar=139.06 Q4bar=1045.34
-Pbar=2.082 P2bar=6.342 P3bar=23.268 P4bar=98.682
-Q: <Q>=3.706, sigma^2=7.65756, Ssigma=0.394823, Ksigma^2=0.644831
-P: <P>=2.082, sigma^2=2.00728, Ssigma=0.849738, Ksigma^2=0.694497
-K: <K>=0.462, sigma^2=0.636556, Ssigma=0.466765, Ksigma^2=0.604086
-Pi: <Pi>=-0.478, sigma^2=4.18952, Ssigma=-0.107654, Ksigma^2=1.27267
+<pt> for p,K,pi=826.523,645.183,483.086
+Qbar=1.87934 Q2bar=8.41166 Q3bar=35.4433 Q4bar=200.779
+Pbar=1.40898 P2bar=3.32154 P3bar=9.63048 P4bar=32.8513
+Q: <Q>=1.87934, sigma^2=4.87974, Ssigma=0.265081, Ksigma^2=0.765597
+P: <P>=1.40898, sigma^2=1.33632, Ssigma=0.886627, Ksigma^2=0.716969
+K: <K>=0.31031, sigma^2=0.478198, Ssigma=0.536307, Ksigma^2=0.757403
+Pi: <Pi>=-0.28437, sigma^2=2.83496, Ssigma=-0.0993304, Ksigma^2=0.809944
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=836.669,685.626,501.168
-Qbar=3.661 Q2bar=20.969 Q3bar=130.705 Q4bar=924.473
-Pbar=2.072 P2bar=6.124 P3bar=21.59 P4bar=86.992
-Q: <Q>=3.661, sigma^2=7.56608, Ssigma=-0.193144, Ksigma^2=-1.84342
-P: <P>=2.072, sigma^2=1.83082, Ssigma=0.717806, Ksigma^2=0.247368
-K: <K>=0.451, sigma^2=0.677599, Ssigma=0.478859, Ksigma^2=0.85878
-Pi: <Pi>=-0.53, sigma^2=3.8511, Ssigma=-0.0981211, Ksigma^2=-0.684364
+<pt> for p,K,pi=825.699,647.482,483.572
+Qbar=1.88472 Q2bar=8.3823 Q3bar=35.2105 Q4bar=198.286
+Pbar=1.40301 P2bar=3.29359 P3bar=9.48147 P4bar=32.01
+Q: <Q>=1.88472, sigma^2=4.83013, Ssigma=0.249535, Ksigma^2=0.754845
+P: <P>=1.40301, sigma^2=1.32515, Ssigma=0.861881, Ksigma^2=0.608673
+K: <K>=0.31535, sigma^2=0.479084, Ssigma=0.538928, Ksigma^2=0.76357
+Pi: <Pi>=-0.27786, sigma^2=2.81553, Ssigma=-0.0920446, Ksigma^2=0.765579
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=14 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=37 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=852.765,648.652,487.424
-Qbar=3.757 Q2bar=22.561 Q3bar=152.413 Q4bar=1198.54
-Pbar=2.142 P2bar=6.504 P3bar=23.628 P4bar=99.372
-Q: <Q>=3.757, sigma^2=8.44595, Ssigma=0.495912, Ksigma^2=0.836622
-P: <P>=2.142, sigma^2=1.91584, Ssigma=0.777201, Ksigma^2=0.945164
-K: <K>=0.464, sigma^2=0.728704, Ssigma=0.548572, Ksigma^2=0.638623
-Pi: <Pi>=-0.401, sigma^2=4.2482, Ssigma=-0.0498883, Ksigma^2=0.346247
+<pt> for p,K,pi=826.416,644.894,482.124
+Qbar=1.88288 Q2bar=8.3485 Q3bar=35.0777 Q4bar=195.883
+Pbar=1.40129 P2bar=3.28855 P3bar=9.48635 P4bar=32.1501
+Q: <Q>=1.88288, sigma^2=4.80326, Ssigma=0.264516, Ksigma^2=0.491152
+P: <P>=1.40129, sigma^2=1.32494, Ssigma=0.87921, Ksigma^2=0.670633
+K: <K>=0.31795, sigma^2=0.481598, Ssigma=0.554562, Ksigma^2=0.807146
+Pi: <Pi>=-0.27756, sigma^2=2.78628, Ssigma=-0.0871832, Ksigma^2=0.817366
+____ iroots=2 ____
+----- Z calculated
+picked b0=31 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=855.114,650.617,480.626
-Qbar=3.675 Q2bar=21.611 Q3bar=145.287 Q4bar=1131.88
-Pbar=2.085 P2bar=6.217 P3bar=21.969 P4bar=87.721
-Q: <Q>=3.675, sigma^2=8.10538, Ssigma=0.776283, Ksigma^2=0.379926
-P: <P>=2.085, sigma^2=1.86977, Ssigma=0.646919, Ksigma^2=-0.280004
-K: <K>=0.488, sigma^2=0.671856, Ssigma=0.518249, Ksigma^2=0.350464
-Pi: <Pi>=-0.434, sigma^2=4.07564, Ssigma=-0.358168, Ksigma^2=0.299269
-Finished 10 percent
-<pt> for p,K,pi=833.061,657.895,486.651
-Qbar=3.78 Q2bar=22.032 Q3bar=145.158 Q4bar=1104.88
-Pbar=2.136 P2bar=6.476 P3bar=23.442 P4bar=97.112
-Q: <Q>=3.78, sigma^2=7.7436, Ssigma=0.430733, Ksigma^2=0.843802
-P: <P>=2.136, sigma^2=1.9135, Ssigma=0.749815, Ksigma^2=0.350297
-K: <K>=0.467, sigma^2=0.666911, Ssigma=0.594997, Ksigma^2=0.739543
-Pi: <Pi>=-0.45, sigma^2=3.7615, Ssigma=-0.0103283, Ksigma^2=-0.184981
-Finished 10 percent
-<pt> for p,K,pi=832.974,659.11,488.939
-Qbar=3.881 Q2bar=23.097 Q3bar=152.063 Q4bar=1152.4
-Pbar=2.115 P2bar=6.429 P3bar=23.919 P4bar=104.013
-Q: <Q>=3.881, sigma^2=8.03484, Ssigma=0.00710937, Ksigma^2=0.60255
-P: <P>=2.115, sigma^2=1.95577, Ssigma=1.04753, Ksigma^2=1.3826
-K: <K>=0.461, sigma^2=0.724479, Ssigma=0.434896, Ksigma^2=0.442288
-Pi: <Pi>=-0.371, sigma^2=4.21936, Ssigma=-0.397641, Ksigma^2=1.42171
+<pt> for p,K,pi=831.609,648.778,484.767
+Qbar=1.88716 Q2bar=8.40444 Q3bar=35.4635 Q4bar=200.058
+Pbar=1.40137 P2bar=3.29485 P3bar=9.51613 P4bar=32.3396
+Q: <Q>=1.88716, sigma^2=4.84307, Ssigma=0.273321, Ksigma^2=0.728533
+P: <P>=1.40137, sigma^2=1.33101, Ssigma=0.877787, Ksigma^2=0.703017
+K: <K>=0.30958, sigma^2=0.4714, Ssigma=0.542388, Ksigma^2=0.768415
+Pi: <Pi>=-0.28939, sigma^2=2.81866, Ssigma=-0.122624, Ksigma^2=0.78488
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=17 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
 picked b0=31 or q0=8 out of bounds
 If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=843.21,643.099,485.748
-Qbar=3.859 Q2bar=22.161 Q3bar=143.227 Q4bar=1057.86
-Pbar=2.104 P2bar=6.396 P3bar=23.656 P4bar=101.748
-Q: <Q>=3.859, sigma^2=7.26912, Ssigma=0.220748, Ksigma^2=0.453183
-P: <P>=2.104, sigma^2=1.96918, Ssigma=0.971209, Ksigma^2=1.0763
-K: <K>=0.505, sigma^2=0.615975, Ssigma=0.430229, Ksigma^2=0.197787
-Pi: <Pi>=-0.495, sigma^2=4.04197, Ssigma=-0.556505, Ksigma^2=1.32564
-Finished 10 percent
-<pt> for p,K,pi=825.235,630.588,492.038
-Qbar=3.97 Q2bar=23.242 Q3bar=154.39 Q4bar=1175.58
-Pbar=2.098 P2bar=6.424 P3bar=23.86 P4bar=102.868
-Q: <Q>=3.97, sigma^2=7.4811, Ssigma=0.363493, Ksigma^2=1.15429
-P: <P>=2.098, sigma^2=2.0224, Ssigma=0.937736, Ksigma^2=0.93834
-K: <K>=0.487, sigma^2=0.723831, Ssigma=0.477987, Ksigma^2=0.603681
-Pi: <Pi>=-0.304, sigma^2=3.86558, Ssigma=-0.12637, Ksigma^2=1.00057
-Finished 10 percent
-<pt> for p,K,pi=817.46,643.64,482.831
-Qbar=3.884 Q2bar=22.936 Q3bar=155.48 Q4bar=1222.94
-Pbar=2.089 P2bar=6.231 P3bar=22.423 P4bar=93.147
-Q: <Q>=3.884, sigma^2=7.85054, Ssigma=0.689576, Ksigma^2=2.01168
-P: <P>=2.089, sigma^2=1.86708, Ssigma=0.860052, Ksigma^2=0.718015
-K: <K>=0.496, sigma^2=0.741984, Ssigma=0.576702, Ksigma^2=0.527848
-Pi: <Pi>=-0.404, sigma^2=4.00478, Ssigma=-0.0425148, Ksigma^2=-0.135472
-____ iroots=4 ____
------ Z calculated
-Finished 10 percent
-<pt> for p,K,pi=831.853,659.778,487.702
-Qbar=3.821 Q2bar=23.033 Q3bar=158.999 Q4bar=1286.16
-Pbar=2.098 P2bar=6.444 P3bar=23.884 P4bar=102.408
-Q: <Q>=3.821, sigma^2=8.43296, Ssigma=0.776149, Ksigma^2=2.47751
-P: <P>=2.098, sigma^2=2.0424, Ssigma=0.878671, Ksigma^2=0.744514
-K: <K>=0.483, sigma^2=0.703711, Ssigma=0.415858, Ksigma^2=0.367412
-Pi: <Pi>=-0.469, sigma^2=4.14904, Ssigma=0.115656, Ksigma^2=1.05603
-Finished 10 percent
-<pt> for p,K,pi=841.085,649.755,485.874
-Qbar=3.787 Q2bar=22.383 Q3bar=147.523 Q4bar=1128.97
-Pbar=2.12 P2bar=6.656 P3bar=25.856 P4bar=117.824
-Q: <Q>=3.787, sigma^2=8.04163, Ssigma=0.23021, Ksigma^2=1.1547
-P: <P>=2.12, sigma^2=2.1616, Ssigma=1.1936, Ksigma^2=1.59004
-K: <K>=0.464, sigma^2=0.686704, Ssigma=0.405139, Ksigma^2=0.514827
-Pi: <Pi>=-0.515, sigma^2=3.85377, Ssigma=-0.127233, Ksigma^2=-0.466262
-Finished 10 percent
-<pt> for p,K,pi=826.912,655.344,485.329
-Qbar=3.771 Q2bar=21.613 Q3bar=141.375 Q4bar=1068.83
-Pbar=2.093 P2bar=6.399 P3bar=23.489 P4bar=98.679
-Q: <Q>=3.771, sigma^2=7.39256, Ssigma=0.557006, Ksigma^2=1.32488
-P: <P>=2.093, sigma^2=2.01835, Ssigma=0.81605, Ksigma^2=0.212178
-K: <K>=0.471, sigma^2=0.751159, Ssigma=0.464782, Ksigma^2=0.763471
-Pi: <Pi>=-0.428, sigma^2=4.32282, Ssigma=0.0386087, Ksigma^2=0.449414
-Finished 10 percent
-<pt> for p,K,pi=853.786,656.772,483.889
-Qbar=3.775 Q2bar=22.157 Q3bar=146.629 Q4bar=1111.7
-Pbar=2.112 P2bar=6.382 P3bar=23.082 P4bar=95.266
-Q: <Q>=3.775, sigma^2=7.90638, Ssigma=0.416524, Ksigma^2=-0.590352
-P: <P>=2.112, sigma^2=1.92146, Ssigma=0.773885, Ksigma^2=0.159815
-K: <K>=0.477, sigma^2=0.733471, Ssigma=0.527453, Ksigma^2=0.659637
-Pi: <Pi>=-0.566, sigma^2=4.02364, Ssigma=0.231996, Ksigma^2=1.18291
-picked b0=34 or q0=8 out of bounds
+<pt> for p,K,pi=831.768,647.611,483.791
+Qbar=1.89624 Q2bar=8.44348 Q3bar=35.7425 Q4bar=201.16
+Pbar=1.4056 P2bar=3.31104 P3bar=9.56818 P4bar=32.422
+Q: <Q>=1.89624, sigma^2=4.84775, Ssigma=0.277792, Ksigma^2=0.603789
+P: <P>=1.4056, sigma^2=1.33533, Ssigma=0.868929, Ksigma^2=0.611211
+K: <K>=0.31555, sigma^2=0.477758, Ssigma=0.52692, Ksigma^2=0.745906
+Pi: <Pi>=-0.28634, sigma^2=2.79539, Ssigma=-0.0990443, Ksigma^2=0.665197
+picked b0=32 or q0=6 out of bounds
 If this happens often, increase pf.NhadMAX
-Finished 10 percent
-<pt> for p,K,pi=845.676,665.024,476.982
-Qbar=3.894 Q2bar=22.868 Q3bar=154.44 Q4bar=1205.05
-Pbar=2.136 P2bar=6.614 P3bar=24.132 P4bar=99.11
-Q: <Q>=3.894, sigma^2=7.70476, Ssigma=0.699218, Ksigma^2=1.57649
-P: <P>=2.136, sigma^2=2.0515, Ssigma=0.604664, Ksigma^2=-0.531723
-K: <K>=0.452, sigma^2=0.693696, Ssigma=0.45121, Ksigma^2=0.588672
-Pi: <Pi>=-0.419, sigma^2=4.01544, Ssigma=0.133975, Ksigma^2=1.36394
-Finished 10 percent
-<pt> for p,K,pi=836.353,640.657,484.807
-Qbar=3.876 Q2bar=22.434 Q3bar=147.156 Q4bar=1099.58
-Pbar=2.114 P2bar=6.42 P3bar=23.594 P4bar=99.636
-Q: <Q>=3.876, sigma^2=7.41062, Ssigma=0.371718, Ksigma^2=-0.213159
-P: <P>=2.114, sigma^2=1.951, Ssigma=0.908904, Ksigma^2=0.479669
-K: <K>=0.52, sigma^2=0.7816, Ssigma=0.529806, Ksigma^2=0.927329
-Pi: <Pi>=-0.432, sigma^2=4.16938, Ssigma=-0.36549, Ksigma^2=0.977654
-picked b0=31 or q0=13 out of bounds
+picked b0=31 or q0=7 out of bounds
 If this happens often, increase pf.NhadMAX
-Finished 10 percent
-<pt> for p,K,pi=834.47,677.165,486.305
-Qbar=3.782 Q2bar=22.498 Q3bar=152.186 Q4bar=1182.92
-Pbar=2.147 P2bar=6.481 P3bar=23.255 P4bar=95.185
-Q: <Q>=3.782, sigma^2=8.19448, Ssigma=0.624268, Ksigma^2=-0.459385
-P: <P>=2.147, sigma^2=1.87139, Ssigma=0.697096, Ksigma^2=0.250358
-K: <K>=0.499, sigma^2=0.659999, Ssigma=0.407167, Ksigma^2=0.469357
-Pi: <Pi>=-0.441, sigma^2=4.18652, Ssigma=0.269324, Ksigma^2=-0.542186
-Finished 10 percent
-<pt> for p,K,pi=836.35,656.202,491.56
-Qbar=3.791 Q2bar=21.839 Q3bar=143.039 Q4bar=1074.6
-Pbar=2.02 P2bar=5.982 P3bar=21.586 P4bar=90.402
-Q: <Q>=3.791, sigma^2=7.46732, Ssigma=0.486137, Ksigma^2=0.243226
-P: <P>=2.02, sigma^2=1.9016, Ssigma=0.957034, Ksigma^2=0.864323
-K: <K>=0.515, sigma^2=0.717775, Ssigma=0.445051, Ksigma^2=0.338214
-Pi: <Pi>=-0.429, sigma^2=3.82296, Ssigma=0.0246149, Ksigma^2=0.530498
-picked b0=31 or q0=13 out of bounds
+picked b0=31 or q0=4 out of bounds
 If this happens often, increase pf.NhadMAX
-Finished 10 percent
-<pt> for p,K,pi=850.623,636.588,481.189
-Qbar=3.871 Q2bar=23.273 Q3bar=156.991 Q4bar=1228.19
-Pbar=2.163 P2bar=6.689 P3bar=24.519 P4bar=101.825
-Q: <Q>=3.871, sigma^2=8.28836, Ssigma=0.329708, Ksigma^2=1.21382
-P: <P>=2.163, sigma^2=2.01043, Ssigma=0.673273, Ksigma^2=-0.167239
-K: <K>=0.464, sigma^2=0.678704, Ssigma=0.284876, Ksigma^2=0.274266
-Pi: <Pi>=-0.503, sigma^2=4.25199, Ssigma=-0.286803, Ksigma^2=0.778542
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=1 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=14 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
 picked b0=31 or q0=8 out of bounds
 If this happens often, increase pf.NhadMAX
+picked b0=36 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=849.364,669.738,502.659
-Qbar=4.001 Q2bar=23.863 Q3bar=162.215 Q4bar=1273.17
-Pbar=2.107 P2bar=6.305 P3bar=22.759 P4bar=94.337
-Q: <Q>=4.001, sigma^2=7.855, Ssigma=0.49439, Ksigma^2=1.93563
-P: <P>=2.107, sigma^2=1.86555, Ssigma=0.864588, Ksigma^2=0.483257
-K: <K>=0.497, sigma^2=0.693991, Ssigma=0.448847, Ksigma^2=0.339097
-Pi: <Pi>=-0.326, sigma^2=4.44372, Ssigma=-0.0826766, Ksigma^2=0.471229
-____ iroots=5 ____
------ Z calculated
+<pt> for p,K,pi=832.143,648.121,483.886
+Qbar=1.90144 Q2bar=8.4829 Q3bar=35.8391 Q4bar=202.402
+Pbar=1.40238 P2bar=3.308 P3bar=9.59904 P4bar=32.7578
+Q: <Q>=1.90144, sigma^2=4.86743, Ssigma=0.246364, Ksigma^2=0.728607
+P: <P>=1.40238, sigma^2=1.34133, Ssigma=0.893037, Ksigma^2=0.70481
+K: <K>=0.31711, sigma^2=0.477911, Ssigma=0.52694, Ksigma^2=0.749385
+Pi: <Pi>=-0.28139, sigma^2=2.81919, Ssigma=-0.12082, Ksigma^2=0.838114
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=16 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=859.322,651.704,489.257
-Qbar=3.856 Q2bar=22.67 Q3bar=152.38 Q4bar=1171.93
-Pbar=2.042 P2bar=6.234 P3bar=23.33 P4bar=101.73
-Q: <Q>=3.856, sigma^2=7.80126, Ssigma=0.61543, Ksigma^2=-0.223905
-P: <P>=2.042, sigma^2=2.06424, Ssigma=1.05116, Ksigma^2=1.06209
-K: <K>=0.49, sigma^2=0.6739, Ssigma=0.391331, Ksigma^2=0.406916
-Pi: <Pi>=-0.457, sigma^2=4.05215, Ssigma=0.162369, Ksigma^2=-0.149404
+<pt> for p,K,pi=831.404,647.433,483.466
+Qbar=1.90148 Q2bar=8.4633 Q3bar=35.7473 Q4bar=201.106
+Pbar=1.40367 P2bar=3.29991 P3bar=9.53055 P4bar=32.3608
+Q: <Q>=1.90148, sigma^2=4.84767, Ssigma=0.25146, Ksigma^2=0.638964
+P: <P>=1.40367, sigma^2=1.32962, Ssigma=0.876843, Ksigma^2=0.684913
+K: <K>=0.31433, sigma^2=0.476267, Ssigma=0.546875, Ksigma^2=0.770825
+Pi: <Pi>=-0.27672, sigma^2=2.80559, Ssigma=-0.119863, Ksigma^2=0.788484
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=14 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=830.093,644.257,483.56
+Qbar=1.90197 Q2bar=8.45677 Q3bar=35.766 Q4bar=201.597
+Pbar=1.41394 P2bar=3.3325 P3bar=9.64762 P4bar=32.7887
+Q: <Q>=1.90197, sigma^2=4.83928, Ssigma=0.263092, Ksigma^2=0.729875
+P: <P>=1.41394, sigma^2=1.33327, Ssigma=0.874034, Ksigma^2=0.656274
+K: <K>=0.31718, sigma^2=0.480797, Ssigma=0.527943, Ksigma^2=0.704915
+Pi: <Pi>=-0.28504, sigma^2=2.83279, Ssigma=-0.0932098, Ksigma^2=0.811603
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=1 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=831.039,650.759,484.354
+Qbar=1.90097 Q2bar=8.46453 Q3bar=35.7802 Q4bar=201.119
+Pbar=1.40883 P2bar=3.31909 P3bar=9.59613 P4bar=32.5169
+Q: <Q>=1.90097, sigma^2=4.85084, Ssigma=0.257023, Ksigma^2=0.579603
+P: <P>=1.40883, sigma^2=1.33429, Ssigma=0.869772, Ksigma^2=0.604633
+K: <K>=0.31639, sigma^2=0.479287, Ssigma=0.52368, Ksigma^2=0.726549
+Pi: <Pi>=-0.28485, sigma^2=2.81045, Ssigma=-0.0998797, Ksigma^2=0.764832
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=831.398,648.832,484.652
+Qbar=1.89845 Q2bar=8.42455 Q3bar=35.5703 Q4bar=199.186
+Pbar=1.39766 P2bar=3.28218 P3bar=9.48416 P4bar=32.264
+Q: <Q>=1.89845, sigma^2=4.82044, Ssigma=0.264296, Ksigma^2=0.533477
+P: <P>=1.39766, sigma^2=1.32873, Ssigma=0.890004, Ksigma^2=0.727379
+K: <K>=0.31235, sigma^2=0.476327, Ssigma=0.528153, Ksigma^2=0.774428
+Pi: <Pi>=-0.27715, sigma^2=2.78516, Ssigma=-0.108145, Ksigma^2=0.737222
+picked b0=33 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=37 or q0=15 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=829.888,646.188,484.169
+Qbar=1.8831 Q2bar=8.39712 Q3bar=35.4122 Q4bar=199.446
+Pbar=1.40188 P2bar=3.30156 P3bar=9.5512 P4bar=32.4944
+Q: <Q>=1.8831, sigma^2=4.85105, Ssigma=0.274081, Ksigma^2=0.627794
+P: <P>=1.40188, sigma^2=1.33629, Ssigma=0.880171, Ksigma^2=0.690511
+K: <K>=0.31485, sigma^2=0.479379, Ssigma=0.542537, Ksigma^2=0.781086
+Pi: <Pi>=-0.29407, sigma^2=2.80653, Ssigma=-0.108742, Ksigma^2=0.768813
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
 picked b0=32 or q0=7 out of bounds
 If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=842.914,667.004,486.686
-Qbar=3.826 Q2bar=21.998 Q3bar=143.974 Q4bar=1107.66
-Pbar=2.167 P2bar=6.725 P3bar=25.201 P4bar=109.121
-Q: <Q>=3.826, sigma^2=7.35972, Ssigma=0.474616, Ksigma^2=4.21574
-P: <P>=2.167, sigma^2=2.02911, Ssigma=0.903725, Ksigma^2=0.81408
-K: <K>=0.45, sigma^2=0.7035, Ssigma=0.456503, Ksigma^2=0.459751
-Pi: <Pi>=-0.524, sigma^2=3.84342, Ssigma=0.180501, Ksigma^2=1.37198
+<pt> for p,K,pi=833.185,647.114,484.742
+Qbar=1.89217 Q2bar=8.45891 Q3bar=35.6272 Q4bar=200.885
+Pbar=1.40347 P2bar=3.30073 P3bar=9.52807 P4bar=32.304
+Q: <Q>=1.89217, sigma^2=4.8786, Ssigma=0.237618, Ksigma^2=0.633136
+P: <P>=1.40347, sigma^2=1.331, Ssigma=0.871187, Ksigma^2=0.653362
+K: <K>=0.31281, sigma^2=0.48104, Ssigma=0.54091, Ksigma^2=0.796705
+Pi: <Pi>=-0.28594, sigma^2=2.81464, Ssigma=-0.112706, Ksigma^2=0.868978
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=14 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=855.629,667.888,483.474
-Qbar=3.914 Q2bar=23.438 Q3bar=157.34 Q4bar=1203.17
-Pbar=2.132 P2bar=6.528 P3bar=24.17 P4bar=103.476
-Q: <Q>=3.914, sigma^2=8.1186, Ssigma=0.252659, Ksigma^2=-0.935616
-P: <P>=2.132, sigma^2=1.98258, Ssigma=0.907204, Ksigma^2=0.81457
-K: <K>=0.458, sigma^2=0.676236, Ssigma=0.465488, Ksigma^2=0.742843
-Pi: <Pi>=-0.412, sigma^2=4.44426, Ssigma=-0.172124, Ksigma^2=-0.707435
+<pt> for p,K,pi=832.41,649.433,484.063
+Qbar=1.89571 Q2bar=8.47593 Q3bar=35.9953 Q4bar=204.315
+Pbar=1.40232 P2bar=3.29968 P3bar=9.54624 P4bar=32.4664
+Q: <Q>=1.89571, sigma^2=4.88221, Ssigma=0.290217, Ksigma^2=0.79388
+P: <P>=1.40232, sigma^2=1.33318, Ssigma=0.885063, Ksigma^2=0.688835
+K: <K>=0.31514, sigma^2=0.480027, Ssigma=0.532336, Ksigma^2=0.748216
+Pi: <Pi>=-0.28205, sigma^2=2.79914, Ssigma=-0.117358, Ksigma^2=0.816924
+____ iroots=3 ____
+----- Z calculated
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=0 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=857.258,664.189,495.447
-Qbar=3.899 Q2bar=22.723 Q3bar=145.103 Q4bar=1053.91
-Pbar=2.139 P2bar=6.541 P3bar=23.835 P4bar=99.229
-Q: <Q>=3.899, sigma^2=7.5208, Ssigma=-0.284699, Ksigma^2=0.067851
-P: <P>=2.139, sigma^2=1.96568, Ssigma=0.729837, Ksigma^2=0.23779
-K: <K>=0.431, sigma^2=0.609239, Ssigma=0.366344, Ksigma^2=0.195585
-Pi: <Pi>=-0.405, sigma^2=3.90098, Ssigma=-0.199152, Ksigma^2=0.0685929
+<pt> for p,K,pi=835.355,650.719,485.368
+Qbar=1.90934 Q2bar=8.51174 Q3bar=36.0721 Q4bar=203.571
+Pbar=1.39739 P2bar=3.27383 P3bar=9.42791 P4bar=31.9461
+Q: <Q>=1.90934, sigma^2=4.86616, Ssigma=0.254403, Ksigma^2=0.687908
+P: <P>=1.39739, sigma^2=1.32113, Ssigma=0.878657, Ksigma^2=0.703824
+K: <K>=0.31229, sigma^2=0.477485, Ssigma=0.520671, Ksigma^2=0.76611
+Pi: <Pi>=-0.27902, sigma^2=2.81207, Ssigma=-0.103251, Ksigma^2=0.779738
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=851.425,660.003,493.289
-Qbar=4.008 Q2bar=24.516 Q3bar=170.826 Q4bar=1378.54
-Pbar=2.062 P2bar=6.156 P3bar=21.778 P4bar=87.492
-Q: <Q>=4.008, sigma^2=8.45194, Ssigma=0.56971, Ksigma^2=1.69724
-P: <P>=2.062, sigma^2=1.90416, Ssigma=0.64679, Ksigma^2=-0.104401
-K: <K>=0.475, sigma^2=0.727375, Ssigma=0.66447, Ksigma^2=1.29215
-Pi: <Pi>=-0.373, sigma^2=3.91987, Ssigma=0.104909, Ksigma^2=0.841055
+<pt> for p,K,pi=836.027,653.592,485.42
+Qbar=1.90581 Q2bar=8.53045 Q3bar=36.233 Q4bar=205.286
+Pbar=1.40206 P2bar=3.31054 P3bar=9.63094 P4bar=33.0384
+Q: <Q>=1.90581, sigma^2=4.89834, Ssigma=0.266402, Ksigma^2=0.69756
+P: <P>=1.40206, sigma^2=1.34477, Ssigma=0.906085, Ksigma^2=0.784061
+K: <K>=0.31958, sigma^2=0.484309, Ssigma=0.515941, Ksigma^2=0.72901
+Pi: <Pi>=-0.29253, sigma^2=2.83816, Ssigma=-0.108387, Ksigma^2=0.921596
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=847.898,671.162,492.907
-Qbar=3.935 Q2bar=24.117 Q3bar=167.981 Q4bar=1345.23
-Pbar=2.116 P2bar=6.604 P3bar=24.748 P4bar=106.612
-Q: <Q>=3.935, sigma^2=8.63278, Ssigma=0.595482, Ksigma^2=-0.121363
-P: <P>=2.116, sigma^2=2.12654, Ssigma=0.834406, Ksigma^2=0.399822
-K: <K>=0.507, sigma^2=0.745951, Ssigma=0.689167, Ksigma^2=1.03299
-Pi: <Pi>=-0.503, sigma^2=3.79999, Ssigma=-0.13725, Ksigma^2=0.240854
+<pt> for p,K,pi=837.262,652.249,484.241
+Qbar=1.89715 Q2bar=8.47073 Q3bar=35.8728 Q4bar=203.418
+Pbar=1.40346 P2bar=3.31008 P3bar=9.59346 P4bar=32.6911
+Q: <Q>=1.89715, sigma^2=4.87155, Ssigma=0.270627, Ksigma^2=0.833852
+P: <P>=1.40346, sigma^2=1.34038, Ssigma=0.884492, Ksigma^2=0.690213
+K: <K>=0.31499, sigma^2=0.486651, Ssigma=0.531441, Ksigma^2=0.785057
+Pi: <Pi>=-0.28965, sigma^2=2.81499, Ssigma=-0.0894216, Ksigma^2=0.821641
+picked b0=33 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=1 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=853.693,659.242,492.424
-Qbar=4.029 Q2bar=23.969 Q3bar=163.023 Q4bar=1279.81
-Pbar=2.044 P2bar=6.202 P3bar=22.858 P4bar=96.934
-Q: <Q>=4.029, sigma^2=7.73616, Ssigma=0.531779, Ksigma^2=2.19441
-P: <P>=2.044, sigma^2=2.02406, Ssigma=0.942035, Ksigma^2=0.425082
-K: <K>=0.459, sigma^2=0.708319, Ssigma=0.625343, Ksigma^2=1.13628
-Pi: <Pi>=-0.357, sigma^2=4.06555, Ssigma=0.0749479, Ksigma^2=0.720408
+<pt> for p,K,pi=836.405,651.216,485.339
+Qbar=1.90502 Q2bar=8.47338 Q3bar=35.808 Q4bar=201.603
+Pbar=1.40364 P2bar=3.30738 P3bar=9.57468 P4bar=32.5423
+Q: <Q>=1.90502, sigma^2=4.84428, Ssigma=0.249595, Ksigma^2=0.688537
+P: <P>=1.40364, sigma^2=1.33717, Ssigma=0.881325, Ksigma^2=0.652655
+K: <K>=0.31659, sigma^2=0.481061, Ssigma=0.530788, Ksigma^2=0.761928
+Pi: <Pi>=-0.28952, sigma^2=2.79132, Ssigma=-0.108266, Ksigma^2=0.869283
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=857.491,661.557,484.624
-Qbar=3.786 Q2bar=21.65 Q3bar=139.818 Q4bar=1031.67
-Pbar=1.994 P2bar=5.978 P3bar=22.094 P4bar=96.314
-Q: <Q>=3.786, sigma^2=7.3162, Ssigma=0.335256, Ksigma^2=-0.0999614
-P: <P>=1.994, sigma^2=2.00196, Ssigma=1.09394, Ksigma^2=1.62568
-K: <K>=0.489, sigma^2=0.645879, Ssigma=0.456069, Ksigma^2=0.565915
-Pi: <Pi>=-0.475, sigma^2=3.74938, Ssigma=-0.0525338, Ksigma^2=0.334108
+<pt> for p,K,pi=835.46,651.566,484.781
+Qbar=1.91018 Q2bar=8.54786 Q3bar=36.3508 Q4bar=206.28
+Pbar=1.4087 P2bar=3.332 P3bar=9.67394 P4bar=32.9686
+Q: <Q>=1.91018, sigma^2=4.89907, Ssigma=0.266718, Ksigma^2=0.760565
+P: <P>=1.4087, sigma^2=1.34756, Ssigma=0.878269, Ksigma^2=0.64488
+K: <K>=0.31646, sigma^2=0.483793, Ssigma=0.544828, Ksigma^2=0.758559
+Pi: <Pi>=-0.28845, sigma^2=2.81453, Ssigma=-0.125286, Ksigma^2=0.781334
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=15 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=14 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=845.64,653.677,488.758
-Qbar=4.036 Q2bar=24.494 Q3bar=167.62 Q4bar=1295.44
-Pbar=2.031 P2bar=6.011 P3bar=21.291 P4bar=85.715
-Q: <Q>=4.036, sigma^2=8.2047, Ssigma=0.308828, Ksigma^2=-1.78607
-P: <P>=2.031, sigma^2=1.88604, Ssigma=0.753732, Ksigma^2=-0.105819
-K: <K>=0.556, sigma^2=0.782864, Ssigma=0.47812, Ksigma^2=0.604559
-Pi: <Pi>=-0.425, sigma^2=4.08638, Ssigma=0.103244, Ksigma^2=0.0145858
+<pt> for p,K,pi=835.537,651.704,485.422
+Qbar=1.91522 Q2bar=8.55022 Q3bar=36.4472 Q4bar=206.15
+Pbar=1.40339 P2bar=3.30573 P3bar=9.54803 P4bar=32.3136
+Q: <Q>=1.91522, sigma^2=4.88215, Ssigma=0.280789, Ksigma^2=0.663329
+P: <P>=1.40339, sigma^2=1.33623, Ssigma=0.86685, Ksigma^2=0.587981
+K: <K>=0.31984, sigma^2=0.482502, Ssigma=0.543687, Ksigma^2=0.761077
+Pi: <Pi>=-0.28435, sigma^2=2.80488, Ssigma=-0.137732, Ksigma^2=0.925735
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=855.495,668.519,486.895
-Qbar=3.989 Q2bar=24.269 Q3bar=167.075 Q4bar=1320.93
-Pbar=2.073 P2bar=6.315 P3bar=23.157 P4bar=97.611
-Q: <Q>=3.989, sigma^2=8.35688, Ssigma=0.430158, Ksigma^2=0.360042
-P: <P>=2.073, sigma^2=2.01767, Ssigma=0.842923, Ksigma^2=0.398902
-K: <K>=0.483, sigma^2=0.765711, Ssigma=0.562622, Ksigma^2=0.602743
-Pi: <Pi>=-0.401, sigma^2=4.0422, Ssigma=-0.300765, Ksigma^2=0.322849
+<pt> for p,K,pi=836.528,652.392,485.288
+Qbar=1.91405 Q2bar=8.53511 Q3bar=36.3289 Q4bar=205.939
+Pbar=1.40926 P2bar=3.32924 P3bar=9.67 P4bar=33.0092
+Q: <Q>=1.91405, sigma^2=4.87152, Ssigma=0.275808, Ksigma^2=0.811061
+P: <P>=1.40926, sigma^2=1.34323, Ssigma=0.887658, Ksigma^2=0.68864
+K: <K>=0.31689, sigma^2=0.478311, Ssigma=0.535578, Ksigma^2=0.715181
+Pi: <Pi>=-0.28288, sigma^2=2.82072, Ssigma=-0.10621, Ksigma^2=0.821804
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=837.2,650.489,485.944
+Qbar=1.89985 Q2bar=8.50017 Q3bar=36.057 Q4bar=204.564
+Pbar=1.40583 P2bar=3.31483 P3bar=9.62295 P4bar=32.9363
+Q: <Q>=1.89985, sigma^2=4.89074, Ssigma=0.27083, Ksigma^2=0.776142
+P: <P>=1.40583, sigma^2=1.33847, Ssigma=0.896197, Ksigma^2=0.776014
+K: <K>=0.3147, sigma^2=0.481884, Ssigma=0.543381, Ksigma^2=0.790895
+Pi: <Pi>=-0.29755, sigma^2=2.80985, Ssigma=-0.106265, Ksigma^2=0.842169
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=14 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=14 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=836.181,650.673,484.971
+Qbar=1.9042 Q2bar=8.48864 Q3bar=36.0694 Q4bar=203.558
+Pbar=1.41013 P2bar=3.33001 P3bar=9.64885 P4bar=32.7941
+Q: <Q>=1.9042, sigma^2=4.86266, Ssigma=0.285105, Ksigma^2=0.64228
+P: <P>=1.41013, sigma^2=1.34154, Ssigma=0.871833, Ksigma^2=0.624673
+K: <K>=0.31152, sigma^2=0.479835, Ssigma=0.549467, Ksigma^2=0.801963
+Pi: <Pi>=-0.2863, sigma^2=2.79903, Ssigma=-0.0972421, Ksigma^2=0.860129
+picked b0=34 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=37 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=836.03,653.901,485.717
+Qbar=1.89808 Q2bar=8.47664 Q3bar=35.8653 Q4bar=202.44
+Pbar=1.40252 P2bar=3.30086 P3bar=9.5471 P4bar=32.4435
+Q: <Q>=1.89808, sigma^2=4.87393, Ssigma=0.261344, Ksigma^2=0.649997
+P: <P>=1.40252, sigma^2=1.3338, Ssigma=0.881859, Ksigma^2=0.672065
+K: <K>=0.31325, sigma^2=0.481724, Ssigma=0.543613, Ksigma^2=0.808977
+Pi: <Pi>=-0.28325, sigma^2=2.8306, Ssigma=-0.124929, Ksigma^2=0.758855
+____ iroots=4 ____
+----- Z calculated
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=842.166,656.001,486.66
+Qbar=1.93048 Q2bar=8.62042 Q3bar=36.8684 Q4bar=208.673
+Pbar=1.39581 P2bar=3.28353 P3bar=9.50193 P4bar=32.3358
+Q: <Q>=1.93048, sigma^2=4.89367, Ssigma=0.272303, Ksigma^2=0.659203
+P: <P>=1.39581, sigma^2=1.33524, Ssigma=0.892159, Ksigma^2=0.697742
+K: <K>=0.31863, sigma^2=0.480185, Ssigma=0.511713, Ksigma^2=0.700217
+Pi: <Pi>=-0.27888, sigma^2=2.82529, Ssigma=-0.0902291, Ksigma^2=0.90712
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=15 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=842.403,654.452,485.87
+Qbar=1.94157 Q2bar=8.67459 Q3bar=37.3921 Q4bar=213.003
+Pbar=1.40568 P2bar=3.31394 P3bar=9.61812 P4bar=32.8671
+Q: <Q>=1.94157, sigma^2=4.9049, Ssigma=0.306504, Ksigma^2=0.816217
+P: <P>=1.40568, sigma^2=1.338, Ssigma=0.895491, Ksigma^2=0.741504
+K: <K>=0.31739, sigma^2=0.488854, Ssigma=0.531336, Ksigma^2=0.745732
+Pi: <Pi>=-0.28051, sigma^2=2.82114, Ssigma=-0.10539, Ksigma^2=0.814778
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=842.633,655.78,486.182
+Qbar=1.93715 Q2bar=8.62311 Q3bar=36.9994 Q4bar=209.264
+Pbar=1.4016 P2bar=3.29148 P3bar=9.49212 P4bar=32.1575
+Q: <Q>=1.93715, sigma^2=4.87056, Ssigma=0.292603, Ksigma^2=0.679651
+P: <P>=1.4016, sigma^2=1.327, Ssigma=0.873357, Ksigma^2=0.660775
+K: <K>=0.31946, sigma^2=0.482465, Ssigma=0.539547, Ksigma^2=0.709609
+Pi: <Pi>=-0.27966, sigma^2=2.80817, Ssigma=-0.0960373, Ksigma^2=0.814922
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=841.515,658.981,487.367
+Qbar=1.92556 Q2bar=8.57764 Q3bar=36.7713 Q4bar=208.36
+Pbar=1.39369 P2bar=3.26415 P3bar=9.40051 P4bar=31.8336
+Q: <Q>=1.92556, sigma^2=4.86986, Ssigma=0.308052, Ksigma^2=0.733626
+P: <P>=1.39369, sigma^2=1.32178, Ssigma=0.882901, Ksigma^2=0.688075
+K: <K>=0.3184, sigma^2=0.477681, Ssigma=0.524659, Ksigma^2=0.746385
+Pi: <Pi>=-0.27938, sigma^2=2.81083, Ssigma=-0.0748061, Ksigma^2=0.785393
+picked b0=32 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=841.46,656.89,486.078
+Qbar=1.9211 Q2bar=8.59572 Q3bar=36.5662 Q4bar=207.369
+Pbar=1.40329 P2bar=3.31201 P3bar=9.60535 P4bar=32.7239
+Q: <Q>=1.9211, sigma^2=4.90509, Ssigma=0.245987, Ksigma^2=0.750005
+P: <P>=1.40329, sigma^2=1.34279, Ssigma=0.885472, Ksigma^2=0.668229
+K: <K>=0.31529, sigma^2=0.483862, Ssigma=0.54457, Ksigma^2=0.801034
+Pi: <Pi>=-0.29194, sigma^2=2.82893, Ssigma=-0.14711, Ksigma^2=0.970827
+picked b0=35 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=36 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=39 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=841.743,657.334,485.52
+Qbar=1.92129 Q2bar=8.51911 Q3bar=36.0606 Q4bar=202.175
+Pbar=1.394 P2bar=3.27796 P3bar=9.47342 P4bar=32.1822
+Q: <Q>=1.92129, sigma^2=4.82775, Ssigma=0.236531, Ksigma^2=0.605915
+P: <P>=1.394, sigma^2=1.33472, Ssigma=0.886126, Ksigma^2=0.677733
+K: <K>=0.31888, sigma^2=0.483956, Ssigma=0.530883, Ksigma^2=0.75909
+Pi: <Pi>=-0.28385, sigma^2=2.8035, Ssigma=-0.111504, Ksigma^2=0.832655
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=14 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=842.176,656.389,486.941
+Qbar=1.93634 Q2bar=8.655 Q3bar=37.1047 Q4bar=210.325
+Pbar=1.40769 P2bar=3.31763 P3bar=9.60225 P4bar=32.6276
+Q: <Q>=1.93634, sigma^2=4.90559, Ssigma=0.274778, Ksigma^2=0.667325
+P: <P>=1.40769, sigma^2=1.33604, Ssigma=0.876171, Ksigma^2=0.650933
+K: <K>=0.32047, sigma^2=0.481249, Ssigma=0.544749, Ksigma^2=0.783617
+Pi: <Pi>=-0.2874, sigma^2=2.84434, Ssigma=-0.0966797, Ksigma^2=0.830872
+picked b0=36 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=841.678,656.329,487.038
+Qbar=1.92172 Q2bar=8.56434 Q3bar=36.6192 Q4bar=206.704
+Pbar=1.39775 P2bar=3.28519 P3bar=9.49031 P4bar=32.2354
+Q: <Q>=1.92172, sigma^2=4.87133, Ssigma=0.295246, Ksigma^2=0.591499
+P: <P>=1.39775, sigma^2=1.33148, Ssigma=0.883427, Ksigma^2=0.687514
+K: <K>=0.31687, sigma^2=0.481723, Ssigma=0.548371, Ksigma^2=0.756047
+Pi: <Pi>=-0.2883, sigma^2=2.8194, Ssigma=-0.107532, Ksigma^2=0.798753
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=37 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=843.249,656.691,485.741
+Qbar=1.93441 Q2bar=8.63567 Q3bar=37.1777 Q4bar=212.616
+Pbar=1.40083 P2bar=3.30537 P3bar=9.60181 P4bar=32.8668
+Q: <Q>=1.93441, sigma^2=4.89373, Ssigma=0.31465, Ksigma^2=1.01781
+P: <P>=1.40083, sigma^2=1.34305, Ssigma=0.900038, Ksigma^2=0.758384
+K: <K>=0.31704, sigma^2=0.486186, Ssigma=0.530645, Ksigma^2=0.77345
+Pi: <Pi>=-0.27997, sigma^2=2.83315, Ssigma=-0.0952498, Ksigma^2=0.862726
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=841.945,657.109,486.602
+Qbar=1.92691 Q2bar=8.61163 Q3bar=36.621 Q4bar=207.207
+Pbar=1.39717 P2bar=3.29127 P3bar=9.50911 P4bar=32.2445
+Q: <Q>=1.92691, sigma^2=4.89865, Ssigma=0.234474, Ksigma^2=0.703406
+P: <P>=1.39717, sigma^2=1.33919, Ssigma=0.872549, Ksigma^2=0.625751
+K: <K>=0.31498, sigma^2=0.480988, Ssigma=0.520275, Ksigma^2=0.721226
+Pi: <Pi>=-0.28581, sigma^2=2.83324, Ssigma=-0.109611, Ksigma^2=0.855608
+____ iroots=5 ____
+----- Z calculated
+picked b0=34 or q0=16 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=855.155,664.69,488.611
+Qbar=1.96496 Q2bar=8.79726 Q3bar=38.0159 Q4bar=216.613
+Pbar=1.38894 P2bar=3.27046 P3bar=9.4662 P4bar=32.1455
+Q: <Q>=1.96496, sigma^2=4.93619, Ssigma=0.2696, Ksigma^2=0.768438
+P: <P>=1.38894, sigma^2=1.34131, Ssigma=0.892967, Ksigma^2=0.63121
+K: <K>=0.32113, sigma^2=0.486566, Ssigma=0.534895, Ksigma^2=0.725587
+Pi: <Pi>=-0.28522, sigma^2=2.82197, Ssigma=-0.153124, Ksigma^2=0.863131
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=14 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=853.983,665.724,490.317
+Qbar=1.96132 Q2bar=8.7769 Q3bar=38.0196 Q4bar=216.615
+Pbar=1.39003 P2bar=3.26675 P3bar=9.43219 P4bar=31.9779
+Q: <Q>=1.96132, sigma^2=4.93012, Ssigma=0.297402, Ksigma^2=0.731262
+P: <P>=1.39003, sigma^2=1.33457, Ssigma=0.885032, Ksigma^2=0.646203
+K: <K>=0.31784, sigma^2=0.484698, Ssigma=0.539763, Ksigma^2=0.764913
+Pi: <Pi>=-0.28471, sigma^2=2.82823, Ssigma=-0.0927135, Ksigma^2=0.737714
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=853.699,665.099,488.016
+Qbar=1.96474 Q2bar=8.73652 Q3bar=37.6885 Q4bar=212.26
+Pbar=1.39104 P2bar=3.2708 P3bar=9.45456 P4bar=32.1039
+Q: <Q>=1.96474, sigma^2=4.87632, Ssigma=0.279334, Ksigma^2=0.487512
+P: <P>=1.39104, sigma^2=1.33581, Ssigma=0.889666, Ksigma^2=0.662775
+K: <K>=0.31996, sigma^2=0.485326, Ssigma=0.528573, Ksigma^2=0.731983
+Pi: <Pi>=-0.28171, sigma^2=2.80413, Ssigma=-0.0979339, Ksigma^2=0.90263
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=853.508,664.713,488.514
+Qbar=1.96488 Q2bar=8.82244 Q3bar=38.2789 Q4bar=219.521
+Pbar=1.38797 P2bar=3.25823 P3bar=9.42635 P4bar=32.1685
+Q: <Q>=1.96488, sigma^2=4.96169, Ssigma=0.291362, Ksigma^2=0.899638
+P: <P>=1.38797, sigma^2=1.33177, Ssigma=0.906398, Ksigma^2=0.781725
+K: <K>=0.32581, sigma^2=0.491798, Ssigma=0.5539, Ksigma^2=0.799765
+Pi: <Pi>=-0.28817, sigma^2=2.84231, Ssigma=-0.141088, Ksigma^2=0.910838
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=37 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=853.735,664.631,489.109
+Qbar=1.96155 Q2bar=8.78601 Q3bar=37.9984 Q4bar=216.36
+Pbar=1.39229 P2bar=3.27913 P3bar=9.50261 P4bar=32.4019
+Q: <Q>=1.96155, sigma^2=4.93833, Ssigma=0.281598, Ksigma^2=0.703898
+P: <P>=1.39229, sigma^2=1.34066, Ssigma=0.898021, Ksigma^2=0.711787
+K: <K>=0.31736, sigma^2=0.481923, Ssigma=0.54475, Ksigma^2=0.800413
+Pi: <Pi>=-0.28508, sigma^2=2.82211, Ssigma=-0.121161, Ksigma^2=0.838321
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=36 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=854.538,665.468,489.564
+Qbar=1.96382 Q2bar=8.81246 Q3bar=38.3415 Q4bar=219.812
+Pbar=1.38887 P2bar=3.25843 P3bar=9.42137 P4bar=32.1147
+Q: <Q>=1.96382, sigma^2=4.95587, Ssigma=0.316896, Ksigma^2=0.856173
+P: <P>=1.38887, sigma^2=1.32947, Ssigma=0.904806, Ksigma^2=0.76845
+K: <K>=0.31997, sigma^2=0.485409, Ssigma=0.527312, Ksigma^2=0.705676
+Pi: <Pi>=-0.28161, sigma^2=2.85153, Ssigma=-0.0838999, Ksigma^2=0.746191
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=14 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=854.336,666.128,489.298
+Qbar=1.968 Q2bar=8.79998 Q3bar=38.1254 Q4bar=217.373
+Pbar=1.39165 P2bar=3.26237 P3bar=9.41905 P4bar=32.0852
+Q: <Q>=1.968, sigma^2=4.92696, Ssigma=0.287098, Ksigma^2=0.795453
+P: <P>=1.39165, sigma^2=1.32568, Ssigma=0.897054, Ksigma^2=0.782761
+K: <K>=0.31686, sigma^2=0.4872, Ssigma=0.517744, Ksigma^2=0.71099
+Pi: <Pi>=-0.27876, sigma^2=2.83247, Ssigma=-0.107524, Ksigma^2=0.787983
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=36 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=854.549,664.812,489.419
+Qbar=1.95609 Q2bar=8.74221 Q3bar=37.6844 Q4bar=214.736
+Pbar=1.38854 P2bar=3.25994 P3bar=9.41528 P4bar=32.0104
+Q: <Q>=1.95609, sigma^2=4.91592, Ssigma=0.275002, Ksigma^2=0.846327
+P: <P>=1.38854, sigma^2=1.3319, Ssigma=0.893417, Ksigma^2=0.716529
+K: <K>=0.31776, sigma^2=0.481549, Ssigma=0.529094, Ksigma^2=0.724746
+Pi: <Pi>=-0.28575, sigma^2=2.8198, Ssigma=-0.0946191, Ksigma^2=0.833559
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=36 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=855.878,666.478,489.346
+Qbar=1.9676 Q2bar=8.7656 Q3bar=37.8208 Q4bar=213.796
+Pbar=1.39285 P2bar=3.26583 P3bar=9.39313 P4bar=31.66
+Q: <Q>=1.9676, sigma^2=4.89415, Ssigma=0.268522, Ksigma^2=0.596944
+P: <P>=1.39285, sigma^2=1.3258, Ssigma=0.868187, Ksigma^2=0.586504
+K: <K>=0.31726, sigma^2=0.483446, Ssigma=0.533983, Ksigma^2=0.749863
+Pi: <Pi>=-0.28328, sigma^2=2.80559, Ssigma=-0.113004, Ksigma^2=0.804384
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+Finished 10 percent
+<pt> for p,K,pi=853.869,665.88,489.787
+Qbar=1.96389 Q2bar=8.76695 Q3bar=37.9068 Q4bar=215.706
+Pbar=1.39117 P2bar=3.27211 P3bar=9.47737 P4bar=32.3272
+Q: <Q>=1.96389, sigma^2=4.91009, Ssigma=0.285882, Ksigma^2=0.784339
+P: <P>=1.39117, sigma^2=1.33676, Ssigma=0.902183, Ksigma^2=0.738587
+K: <K>=0.31977, sigma^2=0.485057, Ssigma=0.552579, Ksigma^2=0.809033
+Pi: <Pi>=-0.28591, sigma^2=2.81223, Ssigma=-0.127745, Ksigma^2=0.865683
 ____ iroots=6 ____
 ----- Z calculated
+picked b0=33 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=19 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=894.414,683.555,493.275
-Qbar=4.222 Q2bar=26.014 Q3bar=179.464 Q4bar=1400.41
-Pbar=1.911 P2bar=5.665 P3bar=20.307 P4bar=83.353
-Q: <Q>=4.222, sigma^2=8.18872, Ssigma=0.0595178, Ksigma^2=-0.308212
-P: <P>=1.911, sigma^2=2.01308, Ssigma=0.887793, Ksigma^2=0.0437363
-K: <K>=0.483, sigma^2=0.711711, Ssigma=0.504492, Ksigma^2=0.518586
-Pi: <Pi>=-0.312, sigma^2=3.94666, Ssigma=-0.156983, Ksigma^2=0.33343
+<pt> for p,K,pi=898.034,704.868,498.661
+Qbar=2.09383 Q2bar=9.43459 Q3bar=42.3343 Q4bar=243.383
+Pbar=1.32059 P2bar=3.06185 P3bar=8.75711 P4bar=29.5216
+Q: <Q>=2.09383, sigma^2=5.05047, Ssigma=0.283195, Ksigma^2=0.556443
+P: <P>=1.32059, sigma^2=1.31789, Ssigma=0.935487, Ksigma^2=0.733855
+K: <K>=0.33029, sigma^2=0.493839, Ssigma=0.525209, Ksigma^2=0.698631
+Pi: <Pi>=-0.28958, sigma^2=2.86612, Ssigma=-0.139359, Ksigma^2=0.802757
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=17 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=904.824,716.735,496.745
-Qbar=4.096 Q2bar=24.254 Q3bar=163.636 Q4bar=1239.73
-Pbar=1.96 P2bar=5.944 P3bar=21.994 P4bar=93.436
-Q: <Q>=4.096, sigma^2=7.47678, Ssigma=0.406833, Ksigma^2=-1.5946
-P: <P>=1.96, sigma^2=2.1024, Ssigma=0.999977, Ksigma^2=0.226376
-K: <K>=0.48, sigma^2=0.7016, Ssigma=0.369304, Ksigma^2=0.614049
-Pi: <Pi>=-0.4, sigma^2=3.78, Ssigma=-0.184127, Ksigma^2=0.529841
+<pt> for p,K,pi=896.826,703.297,497.286
+Qbar=2.08116 Q2bar=9.4147 Q3bar=42.2277 Q4bar=244.496
+Pbar=1.31686 P2bar=3.05004 P3bar=8.72674 P4bar=29.4728
+Q: <Q>=2.08116, sigma^2=5.08347, Ssigma=0.290188, Ksigma^2=0.752517
+P: <P>=1.31686, sigma^2=1.31592, Ssigma=0.945727, Ksigma^2=0.777877
+K: <K>=0.32945, sigma^2=0.495773, Ssigma=0.5381, Ksigma^2=0.743289
+Pi: <Pi>=-0.29126, sigma^2=2.87789, Ssigma=-0.138745, Ksigma^2=1.03989
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=905.078,715.96,498.705
-Qbar=4.273 Q2bar=25.757 Q3bar=177.289 Q4bar=1391.77
-Pbar=1.943 P2bar=5.645 P3bar=19.979 P4bar=83.165
-Q: <Q>=4.273, sigma^2=7.49847, Ssigma=0.41974, Ksigma^2=1.92681
-P: <P>=1.943, sigma^2=1.86975, Ssigma=0.933233, Ksigma^2=1.34268
-K: <K>=0.496, sigma^2=0.755984, Ssigma=0.474973, Ksigma^2=0.416196
-Pi: <Pi>=-0.374, sigma^2=4.19012, Ssigma=-0.196263, Ksigma^2=2.00857
+<pt> for p,K,pi=898.118,704.076,498.046
+Qbar=2.08624 Q2bar=9.41252 Q3bar=42.2208 Q4bar=244.218
+Pbar=1.3196 P2bar=3.07756 P3bar=8.88848 P4bar=30.3519
+Q: <Q>=2.08624, sigma^2=5.06012, Ssigma=0.290666, Ksigma^2=0.799342
+P: <P>=1.3196, sigma^2=1.33622, Ssigma=0.973489, Ksigma^2=0.850325
+K: <K>=0.32586, sigma^2=0.496375, Ssigma=0.546828, Ksigma^2=0.809628
+Pi: <Pi>=-0.29155, sigma^2=2.86121, Ssigma=-0.121142, Ksigma^2=1.00547
+picked b0=33 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=14 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=14 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=897.99,716.767,500.389
-Qbar=4.286 Q2bar=26.442 Q3bar=184.754 Q4bar=1468.46
-Pbar=1.98 P2bar=5.962 P3bar=21.534 P4bar=89.158
-Q: <Q>=4.286, sigma^2=8.0722, Ssigma=0.27609, Ksigma^2=0.942822
-P: <P>=1.98, sigma^2=2.0416, Ssigma=0.805498, Ksigma^2=0.115727
-K: <K>=0.53, sigma^2=0.7091, Ssigma=0.546685, Ksigma^2=0.662365
-Pi: <Pi>=-0.41, sigma^2=4.1959, Ssigma=-0.0653309, Ksigma^2=0.677201
+<pt> for p,K,pi=898.625,702.06,499.153
+Qbar=2.086 Q2bar=9.41234 Q3bar=42.311 Q4bar=244.715
+Pbar=1.3173 P2bar=3.04834 P3bar=8.72724 P4bar=29.5788
+Q: <Q>=2.086, sigma^2=5.06094, Ssigma=0.308761, Ksigma^2=0.744829
+P: <P>=1.3173, sigma^2=1.31306, Ssigma=0.953705, Ksigma^2=0.857208
+K: <K>=0.32711, sigma^2=0.496929, Ssigma=0.518218, Ksigma^2=0.71875
+Pi: <Pi>=-0.29457, sigma^2=2.88482, Ssigma=-0.131456, Ksigma^2=0.831876
+picked b0=35 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=895.226,713.895,508.952
-Qbar=4.183 Q2bar=25.513 Q3bar=176.407 Q4bar=1386.46
-Pbar=1.956 P2bar=5.718 P3bar=20.196 P4bar=82.926
-Q: <Q>=4.183, sigma^2=8.01551, Ssigma=0.327909, Ksigma^2=0.257511
-P: <P>=1.956, sigma^2=1.89206, Ssigma=0.850837, Ksigma^2=0.80316
-K: <K>=0.479, sigma^2=0.701559, Ssigma=0.466044, Ksigma^2=0.692105
-Pi: <Pi>=-0.411, sigma^2=3.85808, Ssigma=-0.241198, Ksigma^2=-0.193869
+<pt> for p,K,pi=896.864,702.583,497.981
+Qbar=2.09825 Q2bar=9.48235 Q3bar=42.7562 Q4bar=248.003
+Pbar=1.32435 P2bar=3.06927 P3bar=8.77227 P4bar=29.5573
+Q: <Q>=2.09825, sigma^2=5.0797, Ssigma=0.303735, Ksigma^2=0.802295
+P: <P>=1.32435, sigma^2=1.31537, Ssigma=0.930135, Ksigma^2=0.735337
+K: <K>=0.32725, sigma^2=0.492577, Ssigma=0.53002, Ksigma^2=0.724367
+Pi: <Pi>=-0.28361, sigma^2=2.88764, Ssigma=-0.10411, Ksigma^2=0.824551
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=1 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=14 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=892.549,709.11,498.094
-Qbar=4.181 Q2bar=25.537 Q3bar=176.249 Q4bar=1373.69
-Pbar=2.048 P2bar=6.262 P3bar=23.114 P4bar=99.322
-Q: <Q>=4.181, sigma^2=8.05624, Ssigma=0.262223, Ksigma^2=-0.856738
-P: <P>=2.048, sigma^2=2.0677, Ssigma=0.880275, Ksigma^2=0.946872
-K: <K>=0.445, sigma^2=0.658975, Ssigma=0.317383, Ksigma^2=0.351756
-Pi: <Pi>=-0.44, sigma^2=4.3324, Ssigma=-0.25068, Ksigma^2=0.814211
+<pt> for p,K,pi=897.417,703.313,498.565
+Qbar=2.09228 Q2bar=9.4689 Q3bar=42.7362 Q4bar=247.805
+Pbar=1.31936 P2bar=3.06716 P3bar=8.7995 P4bar=29.7524
+Q: <Q>=2.09228, sigma^2=5.09126, Ssigma=0.318178, Ksigma^2=0.706141
+P: <P>=1.31936, sigma^2=1.32645, Ssigma=0.944389, Ksigma^2=0.738191
+K: <K>=0.32408, sigma^2=0.494932, Ssigma=0.53779, Ksigma^2=0.738373
+Pi: <Pi>=-0.28514, sigma^2=2.87406, Ssigma=-0.09788, Ksigma^2=0.82481
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=887.418,690.996,502.047
-Qbar=4.241 Q2bar=26.435 Q3bar=184.487 Q4bar=1451.54
-Pbar=1.944 P2bar=5.72 P3bar=20.154 P4bar=81.716
-Q: <Q>=4.241, sigma^2=8.44892, Ssigma=0.0843225, Ksigma^2=-1.18029
-P: <P>=1.944, sigma^2=1.94086, Ssigma=0.766793, Ksigma^2=0.284398
-K: <K>=0.487, sigma^2=0.781831, Ssigma=0.526001, Ksigma^2=0.87399
-Pi: <Pi>=-0.435, sigma^2=4.33177, Ssigma=-0.144911, Ksigma^2=1.19075
+<pt> for p,K,pi=898.389,702.607,498.882
+Qbar=2.09488 Q2bar=9.46954 Q3bar=42.4571 Q4bar=245.017
+Pbar=1.3139 P2bar=3.04092 P3bar=8.70044 P4bar=29.4204
+Q: <Q>=2.09488, sigma^2=5.08102, Ssigma=0.262019, Ksigma^2=0.661853
+P: <P>=1.3139, sigma^2=1.31459, Ssigma=0.951253, Ksigma^2=0.811753
+K: <K>=0.32948, sigma^2=0.498423, Ssigma=0.539324, Ksigma^2=0.739539
+Pi: <Pi>=-0.28257, sigma^2=2.89438, Ssigma=-0.115613, Ksigma^2=0.880748
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=894.656,701.708,492.052
-Qbar=3.946 Q2bar=22.966 Q3bar=149.044 Q4bar=1099.71
-Pbar=1.952 P2bar=5.816 P3bar=20.798 P4bar=84.812
-Q: <Q>=3.946, sigma^2=7.39508, Ssigma=0.00786483, Ksigma^2=0.188148
-P: <P>=1.952, sigma^2=2.0057, Ssigma=0.805172, Ksigma^2=-0.118719
-K: <K>=0.462, sigma^2=0.724556, Ssigma=0.50673, Ksigma^2=0.650169
-Pi: <Pi>=-0.56, sigma^2=3.8844, Ssigma=-0.0593636, Ksigma^2=-0.397345
+<pt> for p,K,pi=898.267,702.58,498.066
+Qbar=2.09075 Q2bar=9.41813 Q3bar=42.2676 Q4bar=243.258
+Pbar=1.32041 P2bar=3.07105 P3bar=8.81489 P4bar=29.8258
+Q: <Q>=2.09075, sigma^2=5.04689, Ssigma=0.291872, Ksigma^2=0.604501
+P: <P>=1.32041, sigma^2=1.32757, Ssigma=0.944568, Ksigma^2=0.744314
+K: <K>=0.33078, sigma^2=0.497605, Ssigma=0.539695, Ksigma^2=0.726628
+Pi: <Pi>=-0.28936, sigma^2=2.86855, Ssigma=-0.106584, Ksigma^2=0.860934
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=3 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=7 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=12 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=33 or q0=2 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=13 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=898.859,676.617,497.405
-Qbar=4.122 Q2bar=25.08 Q3bar=167.418 Q4bar=1269.91
-Pbar=2.025 P2bar=5.993 P3bar=20.961 P4bar=82.169
-Q: <Q>=4.122, sigma^2=8.08912, Ssigma=-0.327407, Ksigma^2=0.487127
-P: <P>=2.025, sigma^2=1.89238, Ssigma=0.613544, Ksigma^2=-0.715213
-K: <K>=0.485, sigma^2=0.719775, Ssigma=0.477431, Ksigma^2=0.454196
-Pi: <Pi>=-0.416, sigma^2=4.36494, Ssigma=-0.447327, Ksigma^2=0.830367
+<pt> for p,K,pi=899.908,702.889,498.763
+Qbar=2.09339 Q2bar=9.49639 Q3bar=42.8201 Q4bar=247.992
+Pbar=1.31431 P2bar=3.04773 P3bar=8.73355 P4bar=29.5687
+Q: <Q>=2.09339, sigma^2=5.11411, Ssigma=0.298945, Ksigma^2=0.597349
+P: <P>=1.31431, sigma^2=1.32032, Ssigma=0.952247, Ksigma^2=0.803472
+K: <K>=0.32804, sigma^2=0.49401, Ssigma=0.550586, Ksigma^2=0.759984
+Pi: <Pi>=-0.28399, sigma^2=2.87304, Ssigma=-0.10435, Ksigma^2=0.812144
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=34 or q0=10 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=8 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=32 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=6 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=4 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=9 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=31 or q0=11 out of bounds
+If this happens often, increase pf.NhadMAX
+picked b0=35 or q0=5 out of bounds
+If this happens often, increase pf.NhadMAX
 Finished 10 percent
-<pt> for p,K,pi=902.628,697.985,508.653
-Qbar=4.287 Q2bar=26.625 Q3bar=186.519 Q4bar=1481.34
-Pbar=1.951 P2bar=5.739 P3bar=20.647 P4bar=86.571
-Q: <Q>=4.287, sigma^2=8.24663, Ssigma=0.20263, Ksigma^2=0.186685
-P: <P>=1.951, sigma^2=1.9326, Ssigma=0.987897, Ksigma^2=0.952366
-K: <K>=0.49, sigma^2=0.7339, Ssigma=0.36179, Ksigma^2=0.429013
-Pi: <Pi>=-0.375, sigma^2=4.31438, Ssigma=-0.055302, Ksigma^2=1.50186
+<pt> for p,K,pi=898.694,704.853,498.316
+Qbar=2.07351 Q2bar=9.39317 Q3bar=42.2283 Q4bar=244.924
+Pbar=1.31812 P2bar=3.06806 P3bar=8.8267 P4bar=29.9652
+Q: <Q>=2.07351, sigma^2=5.09373, Ssigma=0.319553, Ksigma^2=0.726179
+P: <P>=1.31812, sigma^2=1.33062, Ssigma=0.958047, Ksigma^2=0.783323
+K: <K>=0.32654, sigma^2=0.501272, Ssigma=0.537285, Ksigma^2=0.762759
+Pi: <Pi>=-0.30077, sigma^2=2.88747, Ssigma=-0.0910178, Ksigma^2=0.786126

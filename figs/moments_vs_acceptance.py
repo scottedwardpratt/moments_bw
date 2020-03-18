@@ -20,7 +20,7 @@ plt.figure(figsize=(6,5))
 fig = plt.figure(1)
 ax = fig.add_axes([0.17,0.12,0.8,0.8])
 
-mydata = np.loadtxt('../momentsdata/Omega50_rhoB8_rhoQ4_rhoS0.dat',skiprows=0,unpack=True)
+mydata = np.loadtxt('../momentsdata_fixedBQ/Omega50_rhoB0.08_rhoQ0.04.dat',skiprows=0,unpack=True)
 acceptance=100*mydata[0]
 bbar_b0=mydata[1]
 sigma2b_b0=mydata[2]
@@ -32,7 +32,7 @@ Ssigmaq_b0=mydata[7]
 Ksigma2q_b0=mydata[8]
 plt.plot(acceptance,Ksigma2q_b0,linestyle='-',linewidth=2,color='r',markersize=3, marker='o', markerfacecolor=None, markeredgecolor=None)
 plt.plot(acceptance,Ssigmaq_b0,linestyle='-',linewidth=2,color='b',markersize=3, marker='o', markerfacecolor=None, markeredgecolor=None)
-mydata = np.loadtxt('../momentsdata/Omega100_rhoB8_rhoQ4_rhoS0.dat',skiprows=0,unpack=True)
+mydata = np.loadtxt('../momentsdata_fixedBQ/Omega100_rhoB0.08_rhoQ0.04.dat',skiprows=0,unpack=True)
 acceptance=100*mydata[0]
 bbar_b0=mydata[1]
 sigma2b_b0=mydata[2]
@@ -44,7 +44,7 @@ Ssigmaq_b0=mydata[7]
 Ksigma2q_b0=mydata[8]
 plt.plot(acceptance,Ksigma2q_b0,linestyle='-',linewidth=2,color='r',markersize=3, marker='s', markerfacecolor=None, markeredgecolor=None)
 plt.plot(acceptance,Ssigmaq_b0,linestyle='-',linewidth=2,color='b',markersize=3, marker='s', markerfacecolor=None, markeredgecolor=None)
-mydata = np.loadtxt('../momentsdata/Omega200_rhoB8_rhoQ4_rhoS0.dat',skiprows=0,unpack=True)
+mydata = np.loadtxt('../momentsdata_fixedBQ/Omega200_rhoB0.08_rhoQ0.04.dat',skiprows=0,unpack=True)
 acceptance=100*mydata[0]
 bbar_b0=mydata[1]
 sigma2b_b0=mydata[2]
@@ -56,7 +56,7 @@ Ssigmaq_b0=mydata[7]
 Ksigma2q_b0=mydata[8]
 plt.plot(acceptance,Ksigma2q_b0,linestyle='-',linewidth=2,color='r',markersize=3, marker='^', markerfacecolor=None, markeredgecolor=None)
 plt.plot(acceptance,Ssigmaq_b0,linestyle='-',linewidth=2,color='b',markersize=3, marker='', markerfacecolor=None, markeredgecolor=None)
-mydata = np.loadtxt('../momentsdata/Omega400_rhoB8_rhoQ4_rhoS0.dat',skiprows=0,unpack=True)
+mydata = np.loadtxt('../momentsdata_fixedBQ/Omega400_rhoB0.08_rhoQ0.04.dat',skiprows=0,unpack=True)
 acceptance=100*mydata[0]
 bbar_b0=mydata[1]
 sigma2b_b0=mydata[2]
@@ -89,6 +89,6 @@ plt.xlabel('acceptance  (percent)',fontsize=18 , weight='normal')
 plt.ylabel('$K\sigma^2$ (MeV)', fontsize=18, weight='normal')
 
 plt.savefig('moments_vs_acceptance.pdf',format='pdf')
-os.system('open -a Preview moments_vs_Omega.pdf')
+os.system('xdg-open moments_vs_acceptance.pdf')
 #plt.show()
 quit()
