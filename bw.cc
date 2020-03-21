@@ -56,6 +56,7 @@ int main(int argc,char *argv[]){
 		printf("----- Z calculated\n");
 		for(int irun=0;irun<nruns;irun++){
 			for(ievent=0;ievent<int(nevents/nruns);ievent++){
+				/*
 				do{
 					b0=pf.randy->GetNPoissonian(rhoB*Omega);
 					q0=pf.randy->GetNPoissonian(0.5*rhoB*Omega);
@@ -64,6 +65,7 @@ int main(int argc,char *argv[]){
 						printf("If this happens often, increase pf.NhadMAX\n");
 					}
 				}while(!pf.CheckRelevance(pf.NhadMAX/2,b0,q0,s0));
+				*/
 				pf.GenEvent(b0,q0,s0,resinfovec);
 				blastwave.GenerateParts(resinfovec,partvec);
 				moments.IncrementMoments(partvec);

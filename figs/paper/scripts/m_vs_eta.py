@@ -22,8 +22,8 @@ ax = fig.add_axes([0.14,0.125,0.82,0.85])
 
 nruns=10
 nroots=7
-tags=["eta0.2","eta0.6","eta1.0"];
-figname='../figs/mq_vs_eta.pdf'
+tags=["eta0.2acc1","eta0.6acc1","eta1.0acc1"];
+figname='../figs/mq_vs_etaacc1.pdf'
 acceptance=[0.01,.2,.4,.5,.6,.8,1.0]
 rhoB=[0.05,0.1,0.15,0.2]
 eta=[0.2,0.6,1.0]
@@ -119,7 +119,7 @@ for n in range(nroots):
         i+=1
 
         #print("Ksigma2 error =",stderrK,", Ssigma error =",stderrS)
-    #plt.errorbar(rhoB,Ssigmaq_avg,stderrSq[n],linestyle='-',linewidth=2,color=colors[n],markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label=str(roots[n])+': $C_3/C_1$')
+    #plt.errorbar(eta,Ssigmaq_avg,stderrSq[n],linestyle='-',linewidth=2,color=colors[n],markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label=str(roots[n])+': $C_3/C_1$')
     plt.errorbar(eta,Ksigma2q_avg,stderrKq[n],linestyle='--',linewidth=2,color=colors[n],markersize=10, marker='^', markerfacecolor=None, markeredgecolor=None,label=str(roots[n])+': $C_4/C_2$')
 
 ax.tick_params(axis='both', which='major', labelsize=14)

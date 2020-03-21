@@ -15,11 +15,20 @@ cd ../../..
 ./bw figs/paper/pars/vsOmega/Omega250.dat > figs/paper/crap/crap12.dat &
 
 ./bw figs/paper/pars/vsEta/eta0.2.dat > figs/paper/crap/crap11.dat &
-./bw figs/paper/pars/vsEta/eta1.0.dat > figs/paper/crap/crap13.dat &
+./bw figs/paper/pars/vsEta/eta1.0.dat > figs/paper/crap/crap12.dat &
 
+./bw figs/paper/pars/vsAcc/Acc0.01.dat > figs/paper/crap/crap13.dat &
 ./bw figs/paper/pars/vsAcc/Acc0.2.dat > figs/paper/crap/crap14.dat &
 ./bw figs/paper/pars/vsAcc/Acc0.5.dat > figs/paper/crap/crap15.dat &
 ./bw figs/paper/pars/vsAcc/Acc0.6.dat > figs/paper/crap/crap16.dat &
 ./bw figs/paper/pars/vsAcc/Acc0.8.dat > figs/paper/crap/crap17.dat &
 ./bw figs/paper/pars/vsAcc/Acc0.dat > figs/paper/crap/crap18.dat &
 ./bw figs/paper/pars/vsAcc/Acc1.dat > figs/paper/crap/crap19.dat &
+
+./bw figs/paper/pars/vsAcc_eta0/Acc0.01.dat > figs/paper/crap/crap20.dat &
+./bw figs/paper/pars/vsAcc_eta0/Acc0.2.dat > figs/paper/crap/crap21.dat &
+./bw figs/paper/pars/vsAcc_eta0/Acc0.5.dat > figs/paper/crap/crap22.dat &
+./bw figs/paper/pars/vsAcc_eta0/Acc0.6.dat > figs/paper/crap/crap23.dat &
+./bw figs/paper/pars/vsAcc_eta0/Acc0.8.dat > figs/paper/crap/crap24.dat &
+./bw figs/paper/pars/vsAcc_eta0/Acc0.dat > figs/paper/crap/crap25.dat &
+./bw figs/paper/pars/vsAcc_eta0/Acc1.dat > figs/paper/crap/crap26.dat &

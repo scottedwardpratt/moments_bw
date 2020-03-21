@@ -22,15 +22,20 @@ ax = fig.add_axes([0.14,0.125,0.82,0.85])
 
 nruns=10
 nroots=7
-tags=["Acc0.01","Acc0.2","Acc0.4","Acc0.5","Acc0.6","Acc0.8","Acc1"];
-figname='../figs/mq_vs_acc.pdf'
+tags=["T110","T125","T140","T155"];
+figname='../figs/mq_vs_T.pdf'
 acceptance=[0.01,.2,.4,.5,.6,.8,1.0]
+rhoB=[0.05,0.1,0.15,0.2]
+eta=[0.2,0.6,1.0]
+vol=[50.0,100.0,250.0]
+T=[110.0,125.0,140.0,155.0]
+
 
 """
 ["Acc0.2","Acc0.4","Acc0.5","Acc0.6","Acc0.8","Acc0","Acc1"]
 ["eta0.2","eta0.6","eta1.0"]
 ["Omega50","Omega100","Omega250"]
-["rhoB0.1","rhoB0.2","rhoB0.05","rhoB0.15","rhoB0"]
+["rhoB0.05","rhoB0.1","rhoB0.15","rhoB0.2"]
 ["T110","T125","T140","T155"]
 """
 
@@ -117,17 +122,16 @@ for n in range(nroots):
         i+=1
 
         #print("Ksigma2 error =",stderrK,", Ssigma error =",stderrS)
-    #print(shape(acceptance),shape(Ssigmaq_avg),shape(stderrSq[n]))
-    plt.errorbar(acceptance,Ssigmaq_avg,stderrSq[n],linestyle='-',linewidth=2,color=colors[n],markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label=str(roots[n])+': $C_3/C_1$')
-    plt.errorbar(acceptance,Ksigma2q_avg,stderrKq[n],linestyle='--',linewidth=2,color=colors[n],markersize=10, marker='^', markerfacecolor=None, markeredgecolor=None,label=str(roots[n])+': $C_4/C_2$')
+    #plt.errorbar(eta,Ssigmaq_avg,stderrSq[n],linestyle='-',linewidth=2,color=colors[n],markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label=str(roots[n])+': $C_3/C_1$')
+    plt.errorbar(T,Ksigma2q_avg,stderrKq[n],linestyle='--',linewidth=2,color=colors[n],markersize=10, marker='^', markerfacecolor=None, markeredgecolor=None,label=str(roots[n])+': $C_4/C_2$')
 
 ax.tick_params(axis='both', which='major', labelsize=14)
-ax.set_xticks(np.arange(0,1.1,.1), minor=False)
-ax.set_xticklabels(np.arange(0,1.1,.1), minor=False, family='serif')
-ax.set_xticks(np.arange(0,1.1,.1), minor=True)
+ax.set_xticks(np.arange(100,170,20), minor=False)
+ax.set_xticklabels(np.arange(100,170,20), minor=False, family='serif')
+ax.set_xticks(np.arange(100,170,20), minor=True)
 ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%d'))
 ax.xaxis.set_major_formatter(sformatter)
-plt.xlim(0,1.1)
+plt.xlim(100,170)
 
 ax.set_yticks(np.arange(-1,1.5,0.5), minor=False)
 ax.set_yticklabels(np.arange(-1,1.5,0.5), minor=False, family='serif')
@@ -136,9 +140,9 @@ plt.ylim(0.0,1.05)
 ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%1f'))
 ax.yaxis.set_major_formatter(sformatter)
 
-#ax.legend(loc=(0.52,0.1));
+ax.legend(loc=(0.1,0.1));
 
-plt.xlabel('acceptance',fontsize=18 , weight='normal')
+plt.xlabel('T',fontsize=18 , weight='normal')
 plt.ylabel('$S\sigma$,  $\kappa\sigma^2$', fontsize=24, weight='normal')
 plt.savefig(figname,format='pdf')
 os.system('xdg-open '+figname)

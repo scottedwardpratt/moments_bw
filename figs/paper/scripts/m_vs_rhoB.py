@@ -23,7 +23,7 @@ ax = fig.add_axes([0.14,0.125,0.82,0.85])
 nruns=10
 nroots=7
 tags=["rhoB0.05","rhoB0.1","rhoB0.15","rhoB0.2"];
-figname='../figs/m_vs_rhoB.pdf'
+figname='../figs/mq_vs_rhoB.pdf'
 acceptance=[0.01,.2,.4,.5,.6,.8,1.0]
 rhoB=[0.05,0.1,0.15,0.2]
 
@@ -119,7 +119,7 @@ for n in range(nroots):
 
         #print("Ksigma2 error =",stderrK,", Ssigma error =",stderrS)
     #plt.errorbar(rhoB,Ssigmaq_avg,stderrSq[n],linestyle='-',linewidth=2,color=colors[n],markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label=str(roots[n])+': $C_3/C_1$')
-    plt.errorbar(rhoB,Ksigma2_avg,stderrK[n],linestyle='--',linewidth=2,color=colors[n],markersize=10, marker='^', markerfacecolor=None, markeredgecolor=None,label=str(roots[n])+': $C_4/C_2$')
+    plt.errorbar(rhoB,Ksigma2q_avg,stderrKq[n],linestyle='--',linewidth=2,color=colors[n],markersize=10, marker='^', markerfacecolor=None, markeredgecolor=None,label=str(roots[n])+': $C_4/C_2$')
 
 ax.tick_params(axis='both', which='major', labelsize=14)
 ax.set_xticks(np.arange(0,.21,.02), minor=False)
