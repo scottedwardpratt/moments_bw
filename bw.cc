@@ -9,7 +9,7 @@ int main(int argc,char *argv[]){
 		exit(1);
 	}
 	const int NROOTS=7;
-	int ievent,nevents,i,b0,q0,s0=0,iroots; // initial charge, baryon no. and strangeness
+	int ievent,nevents,i,b0=0,q0=0,s0=0,iroots; // initial charge, baryon no. and strangeness
 	int nruns=10;
 	string file;
 	double Omega,muBoverT,ff,ffa=1.0;
