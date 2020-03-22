@@ -66,6 +66,8 @@ int main(int argc,char *argv[]){
 					}
 				}while(!pf.CheckRelevance(pf.NhadMAX/2,b0,q0,s0));
 				*/
+				b0=rhoB*Omega;
+				q0=0.5*rhoB*Omega;
 				pf.GenEvent(b0,q0,s0,resinfovec);
 				blastwave.GenerateParts(resinfovec,partvec);
 				moments.IncrementMoments(partvec);
