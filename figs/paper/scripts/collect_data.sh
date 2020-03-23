@@ -12,7 +12,7 @@ cd ../../..
 ./bw figs/paper/pars/vsrhoB/rhoB0.dat > figs/paper/crap/crap9.dat &
 
 ./bw figs/paper/pars/vsOmega/Omega50.dat > figs/paper/crap/crap10.dat &
-./bw figs/paper/pars/vsOmega/Omega250.dat > figs/paper/crap/crap12.dat &
+./bw figs/paper/pars/vsOmega/Omega250.dat > figs/paper/crap/crap7.dat &
 
 ./bw figs/paper/pars/vsEta/eta0.2.dat > figs/paper/crap/crap11.dat &
 ./bw figs/paper/pars/vsEta/eta1.0.dat > figs/paper/crap/crap12.dat &
@@ -24,6 +24,7 @@ cd ../../..
 ./bw figs/paper/pars/vsAcc/Acc0.8.dat > figs/paper/crap/crap17.dat &
 ./bw figs/paper/pars/vsAcc/Acc0.dat > figs/paper/crap/crap18.dat &
 ./bw figs/paper/pars/vsAcc/Acc1.dat > figs/paper/crap/crap19.dat &
+./bw figs/paper/pars/vsAcc/Acc0.99.dat > figs/paper/crap/crap27.dat &
 
 ./bw figs/paper/pars/vsAcc_eta0/Acc0.01.dat > figs/paper/crap/crap20.dat &
 ./bw figs/paper/pars/vsAcc_eta0/Acc0.2.dat > figs/paper/crap/crap21.dat &

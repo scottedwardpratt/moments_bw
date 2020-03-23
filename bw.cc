@@ -12,6 +12,7 @@ int main(int argc,char *argv[]){
 	int ievent,nevents,i,b0=0,q0=0,s0=0,iroots; // initial charge, baryon no. and strangeness
 	int nruns=10;
 	string file;
+	string altfile;
 	double Omega,muBoverT,ff,ffa=1.0;
 	parameterMap parmap;
 	parameter::ReadParsFromFile(parmap,string(argv[1]));
@@ -45,6 +46,7 @@ int main(int argc,char *argv[]){
 	for(iroots=0;iroots<NROOTS;iroots++){
 		printf("____ iroots=%d ____\n",iroots);
 		file="figs/paper/data/roots"+to_string(iroots)+"_"+tag+".dat";
+		altfile="figs/paper/altdata/roots"+to_string(iroots)+"_"+tag+".dat";
 		//strcat(file,const char(iroots));
 		muBoverT=GetMuBOverT(roots[iroots]);
 		ff=log(1.0+ffa*(roots[iroots]-roots[0])/(roots[NROOTS-1]-roots[0]))/log(1.0+ffa); // interpolating weight from zero to 1
@@ -75,7 +77,7 @@ int main(int argc,char *argv[]){
 				if((ievent+1)%(nevents/10)==0)
 					printf("Finished %g percent\n",100.0*(ievent+1.0)/double(nevents));
 			}
-			moments.Summarize(file,Omega,rhoB,0.5*rhoB,roots[iroots],T);
+			moments.Summarize(file,altfile,Omega,rhoB,0.5*rhoB,roots[iroots],T);
 			moments.Clear();
 		}
 	}

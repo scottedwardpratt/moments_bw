@@ -22,9 +22,9 @@ ax = fig.add_axes([0.14,0.125,0.82,0.85])
 
 nruns=10
 nroots=7
-tags=["Acc0.01","Acc0.2","Acc0.4","Acc0.5","Acc0.6","Acc0.8","Acc1"];
-figname='../figs/mq_vs_acc.pdf'
-acceptance=[0.01,.2,.4,.5,.6,.8,1.0]
+tags=["Acc0.01","Acc0.2","Acc0.4","Acc0.5","Acc0.6","Acc0.8"];
+figname='../figs/altmq_vs_acc.pdf'
+acceptance=[0.01,.2,.4,.5,.6,.8]
 
 """
 ["Acc0.2","Acc0.4","Acc0.5","Acc0.6","Acc0.8","Acc0","Acc1"]
@@ -71,7 +71,7 @@ for n in range(nroots):
         Ksigma2_avg.append(0)
         Ssigmaq_avg.append(0)
         Ksigma2q_avg.append(0)
-        file="../data/roots"+str(n)+'_'+tag+".dat";
+        file="../altdata/roots"+str(n)+'_'+tag+".dat";
         mydata = np.loadtxt(file,skiprows=1,unpack=True)
         for run in range(nruns):
             Omega.append(mydata[0][run])

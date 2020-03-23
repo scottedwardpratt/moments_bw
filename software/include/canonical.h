@@ -115,10 +115,16 @@ public:
 	Cmoments(){};
 	long long int Qbar,Q2bar,Q3bar,Q4bar,Pbar,P2bar,P3bar,P4bar,Kbar,K2bar,K3bar,K4bar,Pibar,Pi2bar,Pi3bar,Pi4bar;
 	long long int TotQbar,TotPbar,TotKbar,TotPibar;
+
+	long long int altQbar,altQ2bar,altQ3bar,altQ4bar,altPbar,altP2bar,altP3bar,altP4bar,altKbar,altK2bar,altK3bar,altK4bar,altPibar,altPi2bar,altPi3bar,altPi4bar;
+	long long int altTotQbar,altTotPbar,altTotKbar,altTotPibar;
+
 	long long int ncalls;
 	double meanpt_pions,meanpt_kaons,meanpt_protons;
+	double altmeanpt_pions,altmeanpt_kaons,altmeanpt_protons;
+
 	Cmoments(Cacceptance *acceptanceset);
-	void Summarize(string file,double Omega,double rhoB,double rhoQ,double roots,double T);
+	void Summarize(string file,string altfile,double Omega,double rhoB,double rhoQ,double roots,double T);
 	void IncrementMoments(vector<CResInfo *> &resinfovec);
 	void IncrementMoments(vector<Cpart> &partvec);
 	void Clear();
