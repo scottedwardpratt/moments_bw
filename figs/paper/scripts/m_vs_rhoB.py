@@ -35,7 +35,7 @@ rhoB=[0.05,0.1,0.15,0.2]
 ["T110","T125","T140","T155"]
 """
 
-colors=['r','g','b','k','c','m','lime']
+colors=['r','orange','y','g','b','purple','k']
 roots=[7.7,11.5,19.6,27.0,39.0,62.4,200.0]
 stderrK=[]
 stderrS=[]
@@ -91,10 +91,10 @@ for n in range(nroots):
                 Skellamp.append(sigma2p[run]/(pbar[run]*Omega[run]))
                 Skellamq.append(sigma2q[run]/(qbar[run]*Omega[run]))
 
-                Ssigma_avg[i]+=Ssigmap[run]*Skellamp[run]
+                Ssigma_avg[i]+=Ssigmap[run]
                 Ksigma2_avg[i]+=Ksigma2p[run]
 
-                Ssigmaq_avg[i]+=Ssigmaq[run]*Skellamq[run]
+                Ssigmaq_avg[i]+=Ssigmaq[run]
                 Ksigma2q_avg[i]+=Ksigma2q[run]
             else:
                 print(tag,i,run,pbar[run])
@@ -106,9 +106,9 @@ for n in range(nroots):
         Ksigma2q_avg[i]*=1/nruns
 
         for run in range(nruns):
-            sumS+=(Ssigmap[run]*Skellamp[run]-Ssigma_avg[i])**2
+            sumS+=(Ssigmap[run]-Ssigma_avg[i])**2
             sumK+=(Ksigma2p[run]-Ksigma2_avg[i])**2
-            sumSq+=(Ssigmaq[run]*Skellamq[run]-Ssigmaq_avg[i])**2
+            sumSq+=(Ssigmaq[run]-Ssigmaq_avg[i])**2
             sumKq+=(Ksigma2q[run]-Ksigma2q_avg[i])**2
 
         stderrS[n].append((1/nroots)*np.sqrt(sumS))
@@ -118,7 +118,7 @@ for n in range(nroots):
         i+=1
 
         #print("Ksigma2 error =",stderrK,", Ssigma error =",stderrS)
-    #plt.errorbar(rhoB,Ssigmaq_avg,stderrSq[n],linestyle='-',linewidth=2,color=colors[n],markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label=str(roots[n])+': $C_3/C_1$')
+    plt.errorbar(rhoB,Ssigmaq_avg,stderrSq[n],linestyle='-',linewidth=2,color=colors[n],markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label=str(roots[n])+': $C_3/C_1$')
     plt.errorbar(rhoB,Ksigma2q_avg,stderrKq[n],linestyle='--',linewidth=2,color=colors[n],markersize=10, marker='^', markerfacecolor=None, markeredgecolor=None,label=str(roots[n])+': $C_4/C_2$')
 
 ax.tick_params(axis='both', which='major', labelsize=14)
@@ -136,11 +136,11 @@ plt.ylim(0.0,1.05)
 ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%1f'))
 ax.yaxis.set_major_formatter(sformatter)
 
-ax.legend(loc=(0.52,0.1));
+#ax.legend(loc=(0.52,0.1));
 
-plt.xlabel('rhoB',fontsize=18 , weight='normal')
+plt.xlabel('$\\rho_B$ $(fm^{-3})$',fontsize=18 , weight='normal')
 plt.ylabel('$S\sigma$,  $\kappa\sigma^2$', fontsize=24, weight='normal')
-plt.savefig(figname,format='pdf')
+plt.savefig(figname,format='pdf',bbox_inches = "tight")
 os.system('xdg-open '+figname)
 
 

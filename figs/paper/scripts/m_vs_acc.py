@@ -22,9 +22,9 @@ ax = fig.add_axes([0.14,0.125,0.82,0.85])
 
 nruns=10
 nroots=7
-tags=["Acc0.01","Acc0.2","Acc0.4","Acc0.5","Acc0.6","Acc0.8"];
-figname='../figs/altmq_vs_acc.pdf'
-acceptance=[0.01,.2,.4,.5,.6,.8]
+tags=["Acc0.01","Acc0.2","Acc0.4","Acc0.5","Acc0.6","Acc0.8","Acc0.99"]
+figname='../figs/mq_vs_acc.pdf'
+acceptance=[0.01,.2,.4,.5,.6,.8,.99]
 
 """
 ["Acc0.2","Acc0.4","Acc0.5","Acc0.6","Acc0.8","Acc0","Acc1"]
@@ -34,7 +34,7 @@ acceptance=[0.01,.2,.4,.5,.6,.8]
 ["T110","T125","T140","T155"]
 """
 
-colors=['r','g','b','k','c','m','lime']
+colors=['r','orange','y','g','b','purple','k']
 roots=[7.7,11.5,19.6,27.0,39.0,62.4,200.0]
 stderrK=[]
 stderrS=[]
@@ -71,7 +71,7 @@ for n in range(nroots):
         Ksigma2_avg.append(0)
         Ssigmaq_avg.append(0)
         Ksigma2q_avg.append(0)
-        file="../altdata/roots"+str(n)+'_'+tag+".dat";
+        file="../data/roots"+str(n)+'_'+tag+".dat";
         mydata = np.loadtxt(file,skiprows=1,unpack=True)
         for run in range(nruns):
             Omega.append(mydata[0][run])
@@ -90,10 +90,10 @@ for n in range(nroots):
                 Skellamp.append(sigma2p[run]/(pbar[run]*Omega[run]))
                 Skellamq.append(sigma2q[run]/(qbar[run]*Omega[run]))
 
-                Ssigma_avg[i]+=Ssigmap[run]*Skellamp[run]
+                Ssigma_avg[i]+=Ssigmap[run] #*Skellamp[run]
                 Ksigma2_avg[i]+=Ksigma2p[run]
 
-                Ssigmaq_avg[i]+=Ssigmaq[run]*Skellamq[run]
+                Ssigmaq_avg[i]+=Ssigmaq[run] #*Skellamq[run]
                 Ksigma2q_avg[i]+=Ksigma2q[run]
             else:
                 print(tag,i,run,pbar[run])
@@ -105,9 +105,9 @@ for n in range(nroots):
         Ksigma2q_avg[i]*=1/nruns
 
         for run in range(nruns):
-            sumS+=(Ssigmap[run]*Skellamp[run]-Ssigma_avg[i])**2
+            sumS+=(Ssigmap[run]-Ssigma_avg[i])**2 #(Ssigmap[run]*Skellamp[run]-Ssigma_avg[i])**2
             sumK+=(Ksigma2p[run]-Ksigma2_avg[i])**2
-            sumSq+=(Ssigmaq[run]*Skellamq[run]-Ssigmaq_avg[i])**2
+            sumSq+=(Ssigmaq[run]-Ssigmaq_avg[i])**2 #(Ssigmaq[run]*Skellamq[run]-Ssigmaq_avg[i])**2
             sumKq+=(Ksigma2q[run]-Ksigma2q_avg[i])**2
 
         stderrS[n].append((1/nroots)*np.sqrt(sumS))
@@ -132,15 +132,16 @@ plt.xlim(0,1.1)
 ax.set_yticks(np.arange(-1,1.5,0.5), minor=False)
 ax.set_yticklabels(np.arange(-1,1.5,0.5), minor=False, family='serif')
 ax.set_yticks(np.arange(-1,1.5,0.05), minor=True)
-plt.ylim(0.0,1.05)
+plt.ylim(-1,1.05)
 ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%1f'))
 ax.yaxis.set_major_formatter(sformatter)
 
+#plt.tight_layout()
 #ax.legend(loc=(0.52,0.1));
 
 plt.xlabel('acceptance',fontsize=18 , weight='normal')
 plt.ylabel('$S\sigma$,  $\kappa\sigma^2$', fontsize=24, weight='normal')
-plt.savefig(figname,format='pdf')
+plt.savefig(figname,format='pdf',bbox_inches = "tight")
 os.system('xdg-open '+figname)
 
 
