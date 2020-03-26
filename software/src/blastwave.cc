@@ -19,7 +19,7 @@ void CblastWave::GenerateParts(vector<CResInfo *> &resinfovec,vector<Cpart> &par
 	daughtervec.clear();
 	array<CResInfo *,5> daughterresinfo;
 	Cpart *part;
-	int imother,ibody,nbodies,alpha,ipart0,nparts0=resinfovec.size();
+	int imother,ibody,nbodies,ipart0,nparts0=resinfovec.size();
 	double mtot;
 	CResInfo *resinfo;
 		
@@ -71,7 +71,7 @@ void CblastWave::GenerateParts(vector<CResInfo *> &resinfovec,vector<Cpart> &par
 
 void CblastWave::BoostParts(vector<Cpart> &partvec){
 	int ipart,nparts=partvec.size();
-	FourVector p,u,ubar;
+	FourVector u,ubar;
 	double y,yboost,eta,ymax=1.0;
 	Cpart *part;
 	randy->gauss2(&ubar[1],&ubar[2]);
@@ -107,12 +107,10 @@ void CblastWave::BoostParts(vector<Cpart> &partvec){
 }
 
 void CblastWave::GetDecayMomenta(Cpart *mother,int &nbodies,vector<Cpart *> &daughtervec){
-	const double HBARC=197.326;
 	int ibody,jbody,alpha;
-	double mass[6],mtot,mprime,wmaxmass,wmass,mguess,kmass,kmaxmass,kguess;
+	double mass[6],mtot,mprime,wmaxmass,wmass,mguess,kmaxmass,kguess;
 	Cpart *dptr;
-
-	FourVector *p[6],kprime,qprime,ptot,pprime,u12,pp,u;
+	FourVector *p[6],kprime,qprime,pprime,u12,pp,u;
 	double q,weight,wmax,sthet,cthet,phi;
 	double p3mag,kprimemax,p3max,ppmax,kprimemax2,kprimemag2,qprimemax,qprimemax2,qprimemag2,ppmag;
 	double e1prime,e2prime,e3prime,e4prime,e1max,e2max,e3max,e4max,e12;

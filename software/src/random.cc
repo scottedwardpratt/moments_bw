@@ -117,7 +117,7 @@ void CRandom::generate_boltzmann(double mass,double T,double *p){
 void CRandom::generate_boltzmann_alt(double mass,double T,FourVector &p){
 	const double PI=4.0*atan(1.0);
 	double r1,r2,r3,r0,I1,I2,I3,Itot;
-	double pmag,E,ctheta,stheta,phi,pgauss,K;
+	double pmag,E,ctheta,stheta,phi,K;
 	GB_TRYAGAIN:
 	r0=ran();
 	I1=mass*mass;
@@ -155,7 +155,7 @@ void CRandom::generate_boltzmann_alt(double mass,double T,FourVector &p){
 void CRandom::generate_boltzmann(double mass,double T,FourVector &p){
 	const double PI=4.0*atan(1.0);
 	double r1,r2,r3,a,b,c;
-	double pmag,ctheta,stheta,phi,pgauss;
+	double pmag,ctheta,stheta,phi;
 	if(T/mass>0.6){
 		GB_TRYAGAIN:
 		r1=ran();

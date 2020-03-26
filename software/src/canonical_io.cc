@@ -5,7 +5,7 @@ using namespace std;
 void CpartitionFunction::WriteZ(){
 	FILE *fptr;
 	char filename[100];
-	int ihad,ihh,ib,iq,is,Amax,Bmin,Bmax,Qmin,Qmax,Smin,Smax;
+	int ihad,ihh,ib,iq,is;
 	for(ihad=0;ihad<=NhadMAX;ihad++){
 		ihh=ihad;
 		if(ihh>NhadMAX/2)
@@ -31,7 +31,7 @@ void CpartitionFunction::WriteZ(){
 void CpartitionFunction::ReadZ(){
 	FILE *fptr;
 	char filename[100];
-	int ihad,ihh,ib,iq,is,Amax,Bmin,Bmax,Qmin,Qmax,Smin,Smax;
+	int ihad,ihh,ib,iq,is;
 	int iib,iiq,iis;
 	int bminfile,bmaxfile,qminfile,qmaxfile,sminfile,smaxfile;
 	int bfile,qfile,sfile,ihhfile;

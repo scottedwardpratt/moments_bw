@@ -4,7 +4,7 @@ MADAI_CPP = /usr/bin/clang++
 #MADAI_CPP = /usr/bin/g++
 #compiler
 
-MADAI_CFLAGS = -Oz -std=c++14
+MADAI_CFLAGS = -Oz -std=c++14 -Wall
 
 INCLUDE = -I include -I /usr/local/include
 

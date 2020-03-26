@@ -4,11 +4,10 @@ void CpartitionFunction::GetProducts(CResInfo *resinfo0,int &ndaughters,array<CR
 	bool decay;
 	//resinfo0->decay=false; //this turns off decays
 	decay=resinfo0->decay;
-	int i,idaughtertemp;
-	int nmothers,idaughter,imother,ndaughterstemp;
+	int idaughtertemp;
+	int nmothers,imother,ndaughterstemp;
 	array <CResInfo *,5> mother;
 	array <CResInfo *,5> daughtertemp;
-	CResInfo *mptr,*dptr[5];
 	/** Decay the i-particles */
 	if(resinfo0->decay){
 		mother[0]=resinfo0;

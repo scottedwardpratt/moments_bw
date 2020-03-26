@@ -29,7 +29,7 @@ public:
 	vector<vector<vector<vector<double>>>> Z; // Canonical partition function(nhad,b,q,s), multiplied by nhad!
 	vector<vector<vector<double>>> Ztot0;
 	void ZeroZ(); // Sets Z elements to zero
-	void CalcZ(); // actually stores Z*n!
+	void ZeroZtot0(); // Sets Ztot0(Z summed over nhad) to zero
 	vector<double> z; //
 	bool DECAY; // when generating particles, decay resonances (should be false for blastwave)
 	void Calcz();
@@ -41,7 +41,8 @@ public:
 	void GetNextQ(int ihad0,int b0,int q0,int s0,int &b1,int &q1,int &s1);
 	void GetProducts(CResInfo *resinfo0,int &ndaughters,array<CResInfo *,10> &daughter);
 	CRandom *randy;
-	void SetOmega(double OmegaSet);
+	void CalcZofOmega0(double Tset); //Calculates Z(A,Q) with volume Omega0 (actually stores Z*A!)
+	void ScaleZ(double OmegaSet); // Scales Z(A,Q) to get Ztot(Q) with right volume, Set T before setting Omega
 	CResInfo* GenHad(int b,int q,int s);
 	void GenEvent(int B0,int Q0,int S0,vector<CResInfo *> &resinfo);
 	vector<int> bmin;
@@ -55,8 +56,9 @@ public:
 	void GetQminQmax(int ihad,int b,int &qqmin,int &qqmax);
 	void GetSminSmax(int ihad,int b,int q,int &ssmin,int &ssmax);
 	bool CheckRelevance(int ihad,int b, int q, int s);
-	void PrintQminQmax(int ihad,int b,int q);
+	void CheckQminQmax(int ihad,int b,int q,int s);
 	void PrintZ(int ihad);
+	void PrintZtot0();
 	void WriteZ();
 	void ReadZ();
 	multimap<double,CResInfo*> massresmap;

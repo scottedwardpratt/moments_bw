@@ -21,7 +21,7 @@ int parameter::getI(parameterMap m,string key,int def)
 //Returns an bool from the map.
 bool parameter::getB(parameterMap m,string key,bool def)
 {
-  bool param;
+  bool param=def;
   string pstring,ppstring;
   stringstream ss;
   map<string,string>::iterator itr;

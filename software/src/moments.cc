@@ -25,9 +25,6 @@ void Cmoments::Clear(){
 void Cmoments::IncrementMoments(vector<CResInfo *> &resinfovec){
 	ncalls+=1;
 	int NetQ=0,NetP=0,NetK=0,NetPi=0;
-	int NetQ2=0,NetP2=0,NetK2=0,NetPi2=0;
-	int NetQ3=0,NetP3=0,NetK3=0,NetPi3=0;
-	int NetQ4=0,NetP4=0,NetK4=0,NetPi4=0;
 	int TotP=0,TotQ=0,TotK=0,TotPi=0;
 	int i,mult=resinfovec.size();
 	for(i=0;i<mult;i++){
@@ -64,17 +61,10 @@ void Cmoments::IncrementMoments(vector<Cpart> &partvec){
 	CResInfo *resinfo;
 	ncalls+=1;
 	int NetQ=0,NetP=0,NetK=0,NetPi=0;
-	int NetQ2=0,NetP2=0,NetK2=0,NetPi2=0;
-	int NetQ3=0,NetP3=0,NetK3=0,NetPi3=0;
-	int NetQ4=0,NetP4=0,NetK4=0,NetPi4=0;
 	int TotQ=0,TotP=0,TotK=0,TotPi=0;
 
 	int altNetQ=0,altNetP=0,altNetK=0,altNetPi=0;
-	int altNetQ2=0,altNetP2=0,altNetK2=0,altNetPi2=0;
-	int altNetQ3=0,altNetP3=0,altNetK3=0,altNetPi3=0;
-	int altNetQ4=0,altNetP4=0,altNetK4=0,altNetPi4=0;
 	int altTotQ=0,altTotP=0,altTotK=0,altTotPi=0;
-	int i;
 	for(int ipart=0;ipart<partvec.size();ipart++){
 		resinfo=partvec[ipart].resinfo;
 		pt=sqrt(partvec[ipart].p[1]*partvec[ipart].p[1]+partvec[ipart].p[2]*partvec[ipart].p[2]);

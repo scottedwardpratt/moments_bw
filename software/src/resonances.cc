@@ -142,7 +142,7 @@ bool CResInfo::CheckForNeutral(){
 
 double CResInfo::GenerateMass(){
 	double m,m1,m2;
-	int i;
+	int i=0;
 	double alpha=reslist->RESWIDTH_ALPHA;
 	if(decay){
 		printf("check GM a\n");
@@ -321,13 +321,13 @@ double minmass,double &epsilon,double &P,double &dens,double &sigma2,double &ded
 
 void CResList::ReadResInfo(){
 	CMerge *merge;
-	int mothercode,code,decay,strange,charge,baryon,NResonances;
-	double mass,mothermass,spin,width,bsum,netm,qR2,bmax;
-	int ires,jres,ires1,ires2,iresflip,ichannel,nchannels,ibody,nbodies,length, LDecay, i_inel;
-	int netq,netb,nets, netg, G_Parity;
+	int mothercode,code,decay,NResonances;
+	double mothermass,bsum,netm,qR2,bmax;
+	int ires,jres,ires1,ires2,iresflip,ichannel,nchannels,ibody,nbodies,LDecay;
+	int netq,netb,nets;
 	string name, filename;
-	CResInfo *resinfoptr=NULL,*oldresinfoptr=NULL, *resinfoptr_1 = NULL;
-	CBranchInfo *bptr=NULL,*oldbptr=NULL,*firstbptr=NULL;
+	CResInfo *resinfoptr=NULL;
+	CBranchInfo *bptr=NULL,*firstbptr=NULL;
 	FILE *resinfofile;
 	FILE * decayinfofile;
 	char dummy[200],cname[200];
@@ -470,7 +470,7 @@ void CResList::CalcEoS(double T0,double Tf,double delT){
 	printf("#_____________________\n#  T       s         P        epsilon\n");
 	double T,P=0.0,epsilon=0.0,dedT=0.0,dens=0.0,s,m,m1,m2,degen;
 	int n;
-	double pi,epsiloni,densi,sigma2i,dedti,si,cs2i;
+	double pi,epsiloni,densi,sigma2i,dedti;
 	double minmass,width,maxweighti;
 	printf("   T         s         P         epsilon     nh      cs^2\n");
 	for(T=T0;T<Tf+0.00000001;T+=delT){
@@ -509,12 +509,10 @@ void CResList::CalcEoS(double T0,double Tf,double delT){
 
 void CResList::CalcEoS(double T,double &epsilon,double &P,double &nhadrons,vector<double> &density,vector<double> &boseweight,vector<double> &maxweight){
 	CResInfo *resinfoptr;
-	CBranchInfo *bptr;
 	CResInfoMap::iterator rpos;
-	double s,m,m1,m2,degen,width,minmass,code;
-	double pi,epsiloni,densi,sigma2i,dedti,maxweighti,bosenorm=0.0;
+	double m,m1,m2,degen,width,minmass;
+	double pi,epsiloni,densi,sigma2i,dedti,maxweighti;
 	int ires=0,nres,ibose,nbose,n;
-	char dummy[100];
 	if(boseweight.size()==0){
 		boseweight.resize(2);
 	}
@@ -578,7 +576,6 @@ void CResList::CalcEoS(double T,double &epsilon,double &P,double &nhadrons,doubl
 	double pi,epsiloni,densi,sigma2i,dedti;
 	double width,minmass,maxweighti;
 	int ires=0,nres,n;
-	char dummy[100];
 	P=epsilon=nhadrons=dedt=0.0;
 	density.clear();
 	nres=resmap.size();
@@ -621,9 +618,8 @@ void CResList::CalcEoSandChi(double T){
 	CResInfoMap::iterator rpos;
 	double P,epsilon,s,m,m1,m2,degen;
 	double width,minmass,maxweighti;
-	double Qu,Qd,Qs,Q,S,B,chi[3][3],chiBQS[3][3],q[3],BQS[3];
-	double pi,epsiloni,densi,sigma2i,dedti,si;
-	char dummy[100];
+	double Q,S,B,chi[3][3],chiBQS[3][3],q[3],BQS[3];
+	double pi,epsiloni,densi,sigma2i,dedti;
 	int a,b,n;
 	for(a=0;a<3;a++){
 		for(b=0;b<3;b++)
@@ -707,9 +703,8 @@ void CResList::CalcEoSandChi(double T,double &P,double &epsilon,double &s,vector
 	bool usepolemass=true;
 	double m,m1,m2,degen;
 	double width,minmass,maxweighti;
-	double Qu,Qd,Qs,Q,S,B,q[3],BQS[3];
-	double pi,epsiloni,densi,sigma2i,dedti,si;
-	char dummy[100];
+	double Q,S,B,q[3],BQS[3];
+	double pi,epsiloni,densi,sigma2i,dedti;
 	int a,b,n;
 	for(a=0;a<3;a++){
 		for(b=0;b<3;b++)
@@ -800,7 +795,6 @@ void CResList::CalcEosandKubo(double T,double &epsilon,double &P,double &nhadron
 	double pi,epsiloni,densi,sigma2i,dedti;
 	double e,p,delp=5.0;
 	int ires=0,nres,n;
-	char dummy[100];
 	vector<double> density;
 	P=epsilon=nhadrons=dedt=kubo=0.0;
 	density.clear();
