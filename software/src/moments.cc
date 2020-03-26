@@ -126,7 +126,7 @@ void Cmoments::IncrementMoments(vector<Cpart> &partvec){
 	altPbar+=altNetP; altP2bar+=altNetP*altNetP; altP3bar+=pow(altNetP,3); altP4bar+=pow(altNetP,4);
 	altKbar+=altNetK; altK2bar+=altNetK*altNetK; altK3bar+=pow(altNetK,3); altK4bar+=pow(altNetK,4);
 	altPibar+=altNetPi; altPi2bar+=altNetPi*altNetPi; altPi3bar+=pow(altNetPi,3); altPi4bar+=pow(altNetPi,4);
-	printf("%lld\n",altQbar);
+	//printf("%lld\n",altQbar);
 
 	altTotQbar+=altTotQ; altTotPbar+=altTotP; altTotKbar+=altTotK; altTotPibar+=altTotPi;
 }
