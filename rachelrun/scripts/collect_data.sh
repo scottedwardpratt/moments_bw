@@ -13,10 +13,8 @@ make bw
 ./bw pars/vsrhoB/rhoB0.dat > crap/crap9.dat &
 
 ./bw pars/vsOmega/Omega50.dat > crap/crap10.dat &
+./bw pars/vsOmega/Omega150.dat > crap/crap11.dat &
 ./bw pars/vsOmega/Omega250.dat > crap/crap7.dat &
-
-./bw pars/vsEta/eta0.2.dat > crap/crap11.dat &
-./bw pars/vsEta/eta1.0.dat > crap/crap12.dat &
 
 ./bw pars/vsAcc/Acc0.01.dat > crap/crap13.dat &
 ./bw pars/vsAcc/Acc0.2.dat > crap/crap14.dat &
