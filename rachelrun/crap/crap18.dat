@@ -1,0 +1,647 @@
+will read res info from resinfo/resonances_pdg_weak.dat
+will read decay info from resinfo/decays_pdg_weak.dat
+Initialized CpartitionFunction NhadMAX=60
+____ iroots=0 ____ pf.T=140 ____ pf.Omega=100 ____
+----------- Z Calculated -----------
+run: 0
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 1
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 2
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 3
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 4
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 5
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 6
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 7
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 8
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 9
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+____ iroots=1 ____ pf.T=140 ____ pf.Omega=100 ____
+----------- Z Calculated -----------
+run: 0
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 1
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 2
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 3
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 4
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 5
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 6
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 7
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 8
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 9
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+____ iroots=2 ____ pf.T=140 ____ pf.Omega=100 ____
+----------- Z Calculated -----------
+run: 0
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 1
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 2
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 3
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 4
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 5
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 6
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 7
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 8
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 9
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+____ iroots=3 ____ pf.T=140 ____ pf.Omega=100 ____
+----------- Z Calculated -----------
+run: 0
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 1
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 2
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 3
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 4
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 5
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 6
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 7
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 8
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 9
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+____ iroots=4 ____ pf.T=140 ____ pf.Omega=100 ____
+----------- Z Calculated -----------
+run: 0
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 1
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 2
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 3
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 4
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 5
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 6
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 7
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 8
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 9
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+____ iroots=5 ____ pf.T=140 ____ pf.Omega=100 ____
+----------- Z Calculated -----------
+run: 0
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 1
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 2
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 3
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 4
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 5
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 6
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 7
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 8
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 9
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+____ iroots=6 ____ pf.T=140 ____ pf.Omega=100 ____
+----------- Z Calculated -----------
+run: 0
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 1
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 2
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 3
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 4
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 5
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 6
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 7
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 8
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+run: 9
+Finished 10 percent
+<pt> for p,K,pi=-nan,-nan,-nan
+Qbar=0 Q2bar=0 Q3bar=0 Q4bar=0
+Pbar=0 P2bar=0 P3bar=0 P4bar=0
+Q: <Q>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+P: <P>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+K: <K>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan
+Pi: <Pi>=0, sigma^2=0, Ssigma=-nan, Ksigma^2=-nan

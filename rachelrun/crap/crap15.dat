@@ -1,0 +1,647 @@
+will read res info from resinfo/resonances_pdg_weak.dat
+will read decay info from resinfo/decays_pdg_weak.dat
+Initialized CpartitionFunction NhadMAX=60
+____ iroots=0 ____ pf.T=140 ____ pf.Omega=100 ____
+----------- Z Calculated -----------
+run: 0
+Finished 10 percent
+<pt> for p,K,pi=899.352,611.45,405.169
+Qbar=0.9 Q2bar=5.88 Q3bar=9.72 Q4bar=98.64
+Pbar=1.17 P2bar=2.51 P3bar=6.45 P4bar=19.31
+Q: <Q>=0.9, sigma^2=5.07, Ssigma=-0.926627, Ksigma^2=2.59207
+P: <P>=1.17, sigma^2=1.1411, Ssigma=0.738871, Ksigma^2=0.185474
+K: <K>=0.16, sigma^2=0.8144, Ssigma=0.153477, Ksigma^2=-0.190919
+Pi: <Pi>=-0.43, sigma^2=5.2251, Ssigma=-0.545466, Ksigma^2=0.346765
+run: 1
+Finished 10 percent
+<pt> for p,K,pi=760.962,658.537,393.674
+Qbar=1.03 Q2bar=7.33 Q3bar=22.15 Q4bar=154.93
+Pbar=1.2 P2bar=2.34 P3bar=5.28 P4bar=13.38
+Q: <Q>=1.03, sigma^2=6.2691, Ssigma=0.268899, Ksigma^2=-1.74682
+P: <P>=1.2, sigma^2=0.9, Ssigma=0.346667, Ksigma^2=-0.441333
+K: <K>=0.16, sigma^2=0.7344, Ssigma=-0.0226144, Ksigma^2=-0.16457
+Pi: <Pi>=-0.33, sigma^2=5.5411, Ssigma=-0.329966, Ksigma^2=-1.60027
+run: 2
+Finished 10 percent
+<pt> for p,K,pi=995.619,539.415,395.855
+Qbar=1.04 Q2bar=5.74 Q3bar=16.7 Q4bar=93.94
+Pbar=1.37 P2bar=2.87 P3bar=7.19 P4bar=20.51
+Q: <Q>=1.04, sigma^2=4.6584, Ssigma=0.223452, Ksigma^2=-1.47977
+P: <P>=1.37, sigma^2=0.9931, Ssigma=0.540737, Ksigma^2=-0.0986665
+K: <K>=0.36, sigma^2=0.8504, Ssigma=-0.00598307, Ksigma^2=0.0702246
+Pi: <Pi>=-0.69, sigma^2=4.1739, Ssigma=-0.100989, Ksigma^2=-0.768477
+run: 3
+Finished 10 percent
+<pt> for p,K,pi=907.147,640.226,401.923
+Qbar=0.88 Q2bar=5.32 Q3bar=10.42 Q4bar=67.84
+Pbar=1.38 P2bar=3.02 P3bar=7.74 P4bar=22.7
+Q: <Q>=0.88, sigma^2=4.5456, Ssigma=-0.497592, Ksigma^2=-1.73928
+P: <P>=1.38, sigma^2=1.1156, Ssigma=0.442223, Ksigma^2=-0.117408
+K: <K>=0.19, sigma^2=0.6339, Ssigma=-0.186436, Ksigma^2=0.403415
+Pi: <Pi>=-0.69, sigma^2=3.4939, Ssigma=0.0431844, Ksigma^2=-1.63798
+run: 4
+Finished 10 percent
+<pt> for p,K,pi=804.943,583.532,398.401
+Qbar=0.91 Q2bar=6.15 Q3bar=15.31 Q4bar=108.63
+Pbar=1.14 P2bar=2.24 P3bar=5.16 P4bar=13.4
+Q: <Q>=0.91, sigma^2=5.3219, Ssigma=0.00519401, Ksigma^2=-0.670178
+P: <P>=1.14, sigma^2=0.9404, Ssigma=0.491587, Ksigma^2=-0.407181
+K: <K>=0.44, sigma^2=0.8464, Ssigma=0.233422, Ksigma^2=-0.375186
+Pi: <Pi>=-0.67, sigma^2=3.9811, Ssigma=-0.132432, Ksigma^2=-0.184533
+run: 5
+Finished 10 percent
+<pt> for p,K,pi=991.817,638.079,409.834
+Qbar=1.07 Q2bar=5.67 Q3bar=15.41 Q4bar=100.83
+Pbar=1.09 P2bar=1.95 P3bar=4.21 P4bar=10.59
+Q: <Q>=1.07, sigma^2=4.5251, Ssigma=-0.0752721, Ksigma^2=1.87017
+P: <P>=1.09, sigma^2=0.7619, Ssigma=0.555923, Ksigma^2=0.208624
+K: <K>=0.39, sigma^2=0.7779, Ssigma=-0.20499, Ksigma^2=-0.063852
+Pi: <Pi>=-0.41, sigma^2=4.2219, Ssigma=-0.0871982, Ksigma^2=1.05793
+run: 6
+Finished 10 percent
+<pt> for p,K,pi=838.329,599.833,385.06
+Qbar=1.32 Q2bar=7.26 Q3bar=23.94 Q4bar=143.7
+Pbar=1.26 P2bar=2.6 P3bar=6.3 P4bar=17.24
+Q: <Q>=1.32, sigma^2=5.5176, Ssigma=-0.0379991, Ksigma^2=-1.31286
+P: <P>=1.26, sigma^2=1.0124, Ssigma=0.466962, Ksigma^2=-0.377047
+K: <K>=0.31, sigma^2=0.9939, Ssigma=0.257452, Ksigma^2=-0.254677
+Pi: <Pi>=-0.25, sigma^2=5.3875, Ssigma=-0.229002, Ksigma^2=-0.965835
+run: 7
+Finished 10 percent
+<pt> for p,K,pi=867.949,620.681,422.914
+Qbar=0.92 Q2bar=6.66 Q3bar=20.6 Q4bar=150.9
+Pbar=1.32 P2bar=2.66 P3bar=6.3 P4bar=16.94
+Q: <Q>=0.92, sigma^2=5.8136, Ssigma=0.649473, Ksigma^2=0.923891
+P: <P>=1.32, sigma^2=0.9176, Ssigma=0.399233, Ksigma^2=-0.162531
+K: <K>=0.29, sigma^2=0.9659, Ssigma=0.274643, Ksigma^2=0.589008
+Pi: <Pi>=-0.69, sigma^2=4.6539, Ssigma=-0.882683, Ksigma^2=4.67023
+run: 8
+Finished 10 percent
+<pt> for p,K,pi=895.117,632.235,421.835
+Qbar=0.8 Q2bar=6.5 Q3bar=19.28 Q4bar=145.22
+Pbar=1.02 P2bar=1.9 P3bar=4.08 P4bar=9.94
+Q: <Q>=0.8, sigma^2=5.86, Ssigma=0.80273, Ksigma^2=0.722935
+P: <P>=1.02, sigma^2=0.8596, Ssigma=0.451857, Ksigma^2=-0.360485
+K: <K>=0.2, sigma^2=0.9, Ssigma=0.546667, Ksigma^2=1.132
+Pi: <Pi>=-0.42, sigma^2=5.0636, Ssigma=0.0660052, Ksigma^2=-0.392817
+run: 9
+Finished 10 percent
+<pt> for p,K,pi=864.529,543.791,405.407
+Qbar=0.84 Q2bar=6.28 Q3bar=16.98 Q4bar=122.8
+Pbar=1.33 P2bar=2.59 P3bar=5.83 P4bar=14.47
+Q: <Q>=0.84, sigma^2=5.5744, Ssigma=0.419742, Ksigma^2=-0.427169
+P: <P>=1.33, sigma^2=0.8211, Ssigma=0.245005, Ksigma^2=-0.568178
+K: <K>=0.22, sigma^2=0.6716, Ssigma=-0.0802621, Ksigma^2=0.0847538
+Pi: <Pi>=-0.71, sigma^2=4.8659, Ssigma=0.738256, Ksigma^2=0.347233
+____ iroots=1 ____ pf.T=140 ____ pf.Omega=100 ____
+----------- Z Calculated -----------
+run: 0
+Finished 10 percent
+<pt> for p,K,pi=841.171,536.118,409.538
+Qbar=1.18 Q2bar=6.96 Q3bar=23.74 Q4bar=148.32
+Pbar=1.46 P2bar=3 P3bar=7.04 P4bar=18.48
+Q: <Q>=1.18, sigma^2=5.5676, Ssigma=0.42885, Ksigma^2=-0.789751
+P: <P>=1.46, sigma^2=0.8684, Ssigma=0.143105, Ksigma^2=-0.182302
+K: <K>=0.22, sigma^2=0.7516, Ssigma=-0.221799, Ksigma^2=0.627175
+Pi: <Pi>=-0.5, sigma^2=4.91, Ssigma=0.360489, Ksigma^2=-1.24884
+run: 1
+Finished 10 percent
+<pt> for p,K,pi=832.713,551.709,395.751
+Qbar=1.01 Q2bar=5.55 Q3bar=16.85 Q4bar=91.95
+Pbar=1.18 P2bar=2.28 P3bar=5.02 P4bar=12.36
+Q: <Q>=1.01, sigma^2=4.5299, Ssigma=0.462284, Ksigma^2=-1.50919
+P: <P>=1.18, sigma^2=0.8876, Ssigma=0.264606, Ksigma^2=-0.525239
+K: <K>=0.18, sigma^2=0.6276, Ssigma=-0.166883, Ksigma^2=0.0489315
+Pi: <Pi>=-0.35, sigma^2=3.9475, Ssigma=-0.471754, Ksigma^2=-0.385519
+run: 2
+Finished 10 percent
+<pt> for p,K,pi=860.653,631.289,382.375
+Qbar=1.16 Q2bar=5.7 Q3bar=15.98 Q4bar=102.06
+Pbar=1.23 P2bar=2.39 P3bar=5.37 P4bar=13.55
+Q: <Q>=1.16, sigma^2=4.3544, Ssigma=-0.168613, Ksigma^2=2.66811
+P: <P>=1.23, sigma^2=0.8771, Ssigma=0.310836, Ksigma^2=-0.398958
+K: <K>=0.3, sigma^2=1.03, Ssigma=0.238835, Ksigma^2=-0.157476
+Pi: <Pi>=-0.37, sigma^2=3.7331, Ssigma=1.55485, Ksigma^2=9.98829
+run: 3
+Finished 10 percent
+<pt> for p,K,pi=912.068,680.927,435.563
+Qbar=0.37 Q2bar=5.27 Q3bar=1.45 Q4bar=72.95
+Pbar=1.26 P2bar=2.68 P3bar=6.96 P4bar=20.8
+Q: <Q>=0.37, sigma^2=5.1331, Ssigma=-0.837388, Ksigma^2=-0.773333
+P: <P>=1.26, sigma^2=1.0924, Ssigma=0.760117, Ksigma^2=0.0995729
+K: <K>=0.08, sigma^2=0.9936, Ssigma=0.262705, Ksigma^2=0.439366
+Pi: <Pi>=-0.97, sigma^2=5.3291, Ssigma=-1.46922, Ksigma^2=1.37413
+run: 4
+Finished 10 percent
+<pt> for p,K,pi=780.976,612.827,412.38
+Qbar=0.96 Q2bar=5.84 Q3bar=16.5 Q4bar=95.72
+Pbar=1.37 P2bar=3.03 P3bar=7.67 P4bar=22.35
+Q: <Q>=0.96, sigma^2=4.9184, Ssigma=0.294867, Ksigma^2=-2.12816
+P: <P>=1.37, sigma^2=1.1531, Ssigma=0.311687, Ksigma^2=-0.101238
+K: <K>=0.3, sigma^2=0.93, Ssigma=-0.0258065, Ksigma^2=-0.0174194
+Pi: <Pi>=-0.71, sigma^2=4.5459, Ssigma=0.19153, Ksigma^2=-3.26372
+run: 5
+Finished 10 percent
+<pt> for p,K,pi=903.6,627.804,424.417
+Qbar=0.98 Q2bar=6.16 Q3bar=17.54 Q4bar=109.6
+Pbar=1.3 P2bar=2.62 P3bar=6.52 P4bar=18.82
+Q: <Q>=0.98, sigma^2=5.1996, Ssigma=0.252324, Ksigma^2=-1.44916
+P: <P>=1.3, sigma^2=0.93, Ssigma=0.748387, Ksigma^2=0.343871
+K: <K>=0.36, sigma^2=0.8704, Ssigma=0.72761, Ksigma^2=0.691203
+Pi: <Pi>=-0.68, sigma^2=4.8776, Ssigma=0.169086, Ksigma^2=2.21095
+run: 6
+Finished 10 percent
+<pt> for p,K,pi=881.434,554.938,388.314
+Qbar=1.48 Q2bar=6.86 Q3bar=23.14 Q4bar=120.02
+Pbar=1.24 P2bar=2.4 P3bar=5.5 P4bar=14.28
+Q: <Q>=1.48, sigma^2=4.6696, Ssigma=-0.178777, Ksigma^2=-1.41789
+P: <P>=1.24, sigma^2=0.8624, Ssigma=0.446716, Ksigma^2=-0.211506
+K: <K>=0.33, sigma^2=0.7411, Ssigma=-0.188404, Ksigma^2=0.284071
+Pi: <Pi>=-0.09, sigma^2=4.1419, Ssigma=-0.0702475, Ksigma^2=-1.99476
+run: 7
+Finished 10 percent
+<pt> for p,K,pi=951.02,683.484,425.093
+Qbar=1.06 Q2bar=5.2 Q3bar=13.66 Q4bar=77.44
+Pbar=1.28 P2bar=2.74 P3bar=6.74 P4bar=18.7
+Q: <Q>=1.06, sigma^2=4.0764, Ssigma=-0.121178, Ksigma^2=0.230443
+P: <P>=1.28, sigma^2=1.1016, Ssigma=0.374641, Ksigma^2=-0.514829
+K: <K>=0.26, sigma^2=0.8724, Ssigma=0.598294, Ksigma^2=1.55377
+Pi: <Pi>=-0.48, sigma^2=3.9296, Ssigma=0.277182, Ksigma^2=-0.661476
+run: 8
+Finished 10 percent
+<pt> for p,K,pi=795.491,582.677,420.473
+Qbar=0.89 Q2bar=5.09 Q3bar=13.25 Q4bar=84.53
+Pbar=1.32 P2bar=2.68 P3bar=6.3 P4bar=16.48
+Q: <Q>=0.89, sigma^2=4.2979, Ssigma=0.248875, Ksigma^2=0.989468
+P: <P>=1.32, sigma^2=0.9376, Ssigma=0.306246, Ksigma^2=-0.545395
+K: <K>=0.4, sigma^2=0.94, Ssigma=0.306383, Ksigma^2=-0.0634043
+Pi: <Pi>=-0.83, sigma^2=3.3611, Ssigma=0.449533, Ksigma^2=-2.52062
+run: 9
+Finished 10 percent
+<pt> for p,K,pi=878.393,669.824,395.257
+Qbar=0.86 Q2bar=6.06 Q3bar=13.1 Q4bar=102.78
+Pbar=1.19 P2bar=2.15 P3bar=4.49 P4bar=10.91
+Q: <Q>=0.86, sigma^2=5.3204, Ssigma=-0.23733, Ksigma^2=-0.367103
+P: <P>=1.19, sigma^2=0.7339, Ssigma=0.25183, Ksigma^2=0.236333
+K: <K>=0.28, sigma^2=0.7016, Ssigma=-0.0446066, Ksigma^2=-0.224993
+Pi: <Pi>=-0.61, sigma^2=4.8779, Ssigma=-0.388787, Ksigma^2=-0.825755
+____ iroots=2 ____ pf.T=140 ____ pf.Omega=100 ____
+----------- Z Calculated -----------
+run: 0
+Finished 10 percent
+<pt> for p,K,pi=937.463,623.224,428.337
+Qbar=0.9 Q2bar=6.38 Q3bar=14.94 Q4bar=110.06
+Pbar=1.2 P2bar=2.18 P3bar=4.74 P4bar=11.9
+Q: <Q>=0.9, sigma^2=5.57, Ssigma=-0.148654, Ksigma^2=-1.39321
+P: <P>=1.2, sigma^2=0.74, Ssigma=0.47027, Ksigma^2=0.161622
+K: <K>=0.35, sigma^2=0.6475, Ssigma=0.165637, Ksigma^2=0.109903
+Pi: <Pi>=-0.65, sigma^2=4.7275, Ssigma=-0.109307, Ksigma^2=1.71676
+run: 1
+Finished 10 percent
+<pt> for p,K,pi=864.509,580.899,407.983
+Qbar=1.1 Q2bar=5.42 Q3bar=14.78 Q4bar=94.94
+Pbar=1.2 P2bar=2.4 P3bar=5.94 P4bar=17.16
+Q: <Q>=1.1, sigma^2=4.21, Ssigma=-0.105463, Ksigma^2=2.77734
+P: <P>=1.2, sigma^2=0.96, Ssigma=0.7875, Ksigma^2=0.415
+K: <K>=0.42, sigma^2=0.7236, Ssigma=-0.367363, Ksigma^2=0.412961
+Pi: <Pi>=-0.52, sigma^2=4.1296, Ssigma=-0.391616, Ksigma^2=-1.1666
+run: 2
+Finished 10 percent
+<pt> for p,K,pi=896.326,586.211,408.044
+Qbar=1.27 Q2bar=6.49 Q3bar=17.17 Q4bar=121.81
+Pbar=1.26 P2bar=2.42 P3bar=5.4 P4bar=13.58
+Q: <Q>=1.27, sigma^2=4.8771, Ssigma=-0.709465, Ksigma^2=3.73789
+P: <P>=1.26, sigma^2=0.8324, Ssigma=0.304123, Ksigma^2=-0.269268
+K: <K>=0.3, sigma^2=0.73, Ssigma=-0.115068, Ksigma^2=-0.329041
+Pi: <Pi>=-0.29, sigma^2=4.2859, Ssigma=-0.297925, Ksigma^2=-0.454451
+run: 3
+Finished 10 percent
+<pt> for p,K,pi=963.502,756.217,435.274
+Qbar=0.91 Q2bar=6.59 Q3bar=10.33 Q4bar=149.03
+Pbar=1.27 P2bar=2.49 P3bar=5.89 P4bar=17.01
+Q: <Q>=0.91, sigma^2=5.7619, Ssigma=-1.06797, Ksigma^2=7.37884
+P: <P>=1.27, sigma^2=0.8771, Ssigma=0.569908, Ksigma^2=1.22366
+K: <K>=0.28, sigma^2=1.0616, Ssigma=0.250852, Ksigma^2=0.862126
+Pi: <Pi>=-0.64, sigma^2=5.2704, Ssigma=-1.32792, Ksigma^2=8.9541
+run: 4
+Finished 10 percent
+<pt> for p,K,pi=856.664,643.988,401.434
+Qbar=0.89 Q2bar=4.97 Q3bar=13.19 Q4bar=71.57
+Pbar=1.21 P2bar=2.41 P3bar=5.53 P4bar=14.65
+Q: <Q>=0.89, sigma^2=4.1779, Ssigma=0.318351, Ksigma^2=-1.43919
+P: <P>=1.21, sigma^2=0.9459, Ssigma=0.3434, Ksigma^2=-0.0626502
+K: <K>=0.18, sigma^2=0.7676, Ssigma=-0.234935, Ksigma^2=1.05777
+Pi: <Pi>=-0.5, sigma^2=3.55, Ssigma=0.177465, Ksigma^2=-1.88592
+run: 5
+Finished 10 percent
+<pt> for p,K,pi=939.501,642.941,415.657
+Qbar=0.87 Q2bar=5.81 Q3bar=17.13 Q4bar=108.65
+Pbar=1.27 P2bar=2.45 P3bar=5.35 P4bar=13.01
+Q: <Q>=0.87, sigma^2=5.0531, Ssigma=0.649682, Ksigma^2=-0.573315
+P: <P>=1.27, sigma^2=0.8371, Ssigma=0.134113, Ksigma^2=-0.435932
+K: <K>=0.41, sigma^2=0.8219, Ssigma=0.864025, Ksigma^2=1.68096
+Pi: <Pi>=-0.81, sigma^2=4.9339, Ssigma=-0.155897, Ksigma^2=-2.34004
+run: 6
+Finished 10 percent
+<pt> for p,K,pi=945.149,589.987,411.315
+Qbar=1.11 Q2bar=6.61 Q3bar=22.53 Q4bar=135.61
+Pbar=1.27 P2bar=2.39 P3bar=5.29 P4bar=13.07
+Q: <Q>=1.11, sigma^2=5.3779, Ssigma=0.605062, Ksigma^2=-1.27889
+P: <P>=1.27, sigma^2=0.7771, Ssigma=0.361428, Ksigma^2=-0.373448
+K: <K>=0.5, sigma^2=1.25, Ssigma=0.48, Ksigma^2=1.18
+Pi: <Pi>=-0.66, sigma^2=4.2644, Ssigma=0.71077, Ksigma^2=0.133983
+run: 7
+Finished 10 percent
+<pt> for p,K,pi=866.468,592.948,375.191
+Qbar=1.49 Q2bar=6.89 Q3bar=19.61 Q4bar=115.61
+Pbar=1.36 P2bar=2.8 P3bar=6.7 P4bar=17.8
+Q: <Q>=1.49, sigma^2=4.6699, Ssigma=-0.979122, Ksigma^2=2.20624
+P: <P>=1.36, sigma^2=0.9504, Ssigma=0.322929, Ksigma^2=-0.576137
+K: <K>=0.49, sigma^2=0.6699, Ssigma=0.250184, Ksigma^2=0.0186654
+Pi: <Pi>=-0.36, sigma^2=4.3304, Ssigma=-0.336346, Ksigma^2=0.711577
+run: 8
+Finished 10 percent
+<pt> for p,K,pi=795.888,553.051,395.53
+Qbar=1.29 Q2bar=6.19 Q3bar=16.89 Q4bar=97.39
+Pbar=1.39 P2bar=2.97 P3bar=7.45 P4bar=21.33
+Q: <Q>=1.29, sigma^2=4.5259, Ssigma=-0.612458, Ksigma^2=0.504491
+P: <P>=1.39, sigma^2=1.0379, Ssigma=0.420405, Ksigma^2=-0.0893327
+K: <K>=0.42, sigma^2=1.0636, Ssigma=0.0806469, Ksigma^2=-0.0890088
+Pi: <Pi>=-0.52, sigma^2=2.9296, Ssigma=-0.126029, Ksigma^2=-0.102996
+run: 9
+Finished 10 percent
+<pt> for p,K,pi=864.989,626.43,413.972
+Qbar=1.04 Q2bar=6.8 Q3bar=24.86 Q4bar=170.12
+Pbar=1.36 P2bar=2.74 P3bar=6.52 P4bar=17.62
+Q: <Q>=1.04, sigma^2=5.7184, Ssigma=1.03066, Ksigma^2=1.61266
+P: <P>=1.36, sigma^2=0.8904, Ssigma=0.417466, Ksigma^2=-0.0930739
+K: <K>=0.12, sigma^2=0.5456, Ssigma=-0.0332551, Ksigma^2=0.418482
+Pi: <Pi>=-0.44, sigma^2=4.5864, Ssigma=0.640858, Ksigma^2=0.951249
+____ iroots=3 ____ pf.T=140 ____ pf.Omega=100 ____
+----------- Z Calculated -----------
+run: 0
+Finished 10 percent
+<pt> for p,K,pi=1024.68,585.031,441.424
+Qbar=0.51 Q2bar=4.33 Q3bar=5.19 Q4bar=51.37
+Pbar=1.16 P2bar=2.22 P3bar=4.82 P4bar=11.94
+Q: <Q>=0.51, sigma^2=4.0699, Ssigma=-0.287378, Ksigma^2=-0.578741
+P: <P>=1.16, sigma^2=0.8744, Ssigma=0.247246, Ksigma^2=-0.259666
+K: <K>=0.23, sigma^2=0.6571, Ssigma=0.189368, Ksigma^2=-0.290949
+Pi: <Pi>=-0.88, sigma^2=3.7256, Ssigma=0.299833, Ksigma^2=0.322479
+run: 1
+Finished 10 percent
+<pt> for p,K,pi=944.774,578.178,400.618
+Qbar=0.8 Q2bar=5.14 Q3bar=11 Q4bar=73.3
+Pbar=1.23 P2bar=2.35 P3bar=5.19 P4bar=12.91
+Q: <Q>=0.8, sigma^2=4.5, Ssigma=-0.0693333, Ksigma^2=-0.920267
+P: <P>=1.23, sigma^2=0.8371, Ssigma=0.286984, Ksigma^2=-0.312649
+K: <K>=0.3, sigma^2=0.77, Ssigma=0.155844, Ksigma^2=0.407013
+Pi: <Pi>=-0.73, sigma^2=3.2371, Ssigma=0.601855, Ksigma^2=2.08464
+run: 2
+Finished 10 percent
+<pt> for p,K,pi=961.312,630.941,428.396
+Qbar=1.16 Q2bar=7.32 Q3bar=18.26 Q4bar=154.32
+Pbar=1.5 P2bar=3.1 P3bar=7.32 P4bar=19.06
+Q: <Q>=1.16, sigma^2=5.9744, Ssigma=-0.68489, Ksigma^2=2.70823
+P: <P>=1.5, sigma^2=0.85, Ssigma=0.141176, Ksigma^2=-0.429412
+K: <K>=0.35, sigma^2=0.9675, Ssigma=0.569767, Ksigma^2=0.272829
+Pi: <Pi>=-0.69, sigma^2=4.8939, Ssigma=-0.860483, Ksigma^2=3.62287
+run: 3
+Finished 10 percent
+<pt> for p,K,pi=891.906,689.632,403.502
+Qbar=0.88 Q2bar=6.02 Q3bar=13.12 Q4bar=84.02
+Pbar=1.24 P2bar=2.36 P3bar=5.38 P4bar=14
+Q: <Q>=0.88, sigma^2=5.2456, Ssigma=-0.268769, Ksigma^2=-3.53422
+P: <P>=1.24, sigma^2=0.8224, Ssigma=0.503463, Ksigma^2=-0.0414039
+K: <K>=0.32, sigma^2=0.9176, Ssigma=0.268457, Ksigma^2=0.00486207
+Pi: <Pi>=-0.68, sigma^2=4.2976, Ssigma=0.335428, Ksigma^2=-0.294163
+run: 4
+Finished 10 percent
+<pt> for p,K,pi=899.869,627.264,425.985
+Qbar=0.79 Q2bar=6.41 Q3bar=19.21 Q4bar=136.61
+Pbar=1.19 P2bar=2.33 P3bar=5.09 P4bar=12.29
+Q: <Q>=0.79, sigma^2=5.7859, Ssigma=0.864926, Ksigma^2=-0.29194
+P: <P>=1.19, sigma^2=0.9139, Ssigma=0.155617, Ksigma^2=-0.72544
+K: <K>=0.37, sigma^2=0.6931, Ssigma=-0.0432751, Ksigma^2=0.584583
+Pi: <Pi>=-0.77, sigma^2=5.5571, Ssigma=0.903967, Ksigma^2=-0.399896
+run: 5
+Finished 10 percent
+<pt> for p,K,pi=981.523,607.555,407.398
+Qbar=0.92 Q2bar=5.6 Q3bar=12.68 Q4bar=103.76
+Pbar=1.03 P2bar=1.75 P3bar=3.37 P4bar=7.39
+Q: <Q>=0.92, sigma^2=4.7536, Ssigma=-0.256358, Ksigma^2=3.28116
+P: <P>=1.03, sigma^2=0.6891, Ssigma=0.214706, Ksigma^2=-0.226459
+K: <K>=0.23, sigma^2=0.9171, Ssigma=0.00548904, Ksigma^2=0.466978
+Pi: <Pi>=-0.34, sigma^2=4.4644, Ssigma=-0.0553284, Ksigma^2=1.3488
+run: 6
+Finished 10 percent
+<pt> for p,K,pi=893.92,659.981,426.457
+Qbar=1.29 Q2bar=5.87 Q3bar=19.41 Q4bar=115.55
+Pbar=1.23 P2bar=2.29 P3bar=5.19 P4bar=13.57
+Q: <Q>=1.29, sigma^2=4.2059, Ssigma=0.234546, Ksigma^2=3.00234
+P: <P>=1.23, sigma^2=0.7771, Ssigma=0.594047, Ksigma^2=0.185553
+K: <K>=0.27, sigma^2=0.8971, Ssigma=-0.0627957, Ksigma^2=-0.246606
+Pi: <Pi>=-0.21, sigma^2=3.5059, Ssigma=-0.0262478, Ksigma^2=-1.54337
+run: 7
+Finished 10 percent
+<pt> for p,K,pi=907.542,603.359,411.52
+Qbar=1.25 Q2bar=6.57 Q3bar=17.15 Q4bar=106.53
+Pbar=1.28 P2bar=2.54 P3bar=5.48 P4bar=13.58
+Q: <Q>=1.25, sigma^2=5.0075, Ssigma=-0.715177, Ksigma^2=-0.0350749
+P: <P>=1.28, sigma^2=0.9016, Ssigma=-0.0879503, Ksigma^2=-0.000105768
+K: <K>=0.12, sigma^2=0.8456, Ssigma=0.276556, Ksigma^2=-0.178141
+Pi: <Pi>=-0.15, sigma^2=4.0875, Ssigma=-0.54, Ksigma^2=-1.23539
+run: 8
+Finished 10 percent
+<pt> for p,K,pi=868.52,575.021,391.757
+Qbar=0.63 Q2bar=4.45 Q3bar=8.55 Q4bar=52.45
+Pbar=1.16 P2bar=2.3 P3bar=5.54 P4bar=16.34
+Q: <Q>=0.63, sigma^2=4.0531, Ssigma=0.157804, Ksigma^2=-2.03652
+P: <P>=1.16, sigma^2=0.9544, Ssigma=0.68922, Ksigma^2=1.08877
+K: <K>=0.45, sigma^2=0.6075, Ssigma=0.820988, Ksigma^2=1.88636
+Pi: <Pi>=-0.98, sigma^2=3.9796, Ssigma=0.231485, Ksigma^2=-2.18487
+run: 9
+Finished 10 percent
+<pt> for p,K,pi=905.54,656.375,390.855
+Qbar=1.26 Q2bar=5.54 Q3bar=18.24 Q4bar=87.02
+Pbar=1.29 P2bar=2.67 P3bar=6.27 P4bar=16.47
+Q: <Q>=1.26, sigma^2=3.9524, Ssigma=0.328801, Ksigma^2=-1.66066
+P: <P>=1.29, sigma^2=1.0059, Ssigma=0.229126, Ksigma^2=-0.56418
+K: <K>=0.44, sigma^2=1.0864, Ssigma=0.442533, Ksigma^2=-0.300432
+Pi: <Pi>=-0.47, sigma^2=4.2891, Ssigma=-0.0602798, Ksigma^2=-0.0883106
+____ iroots=4 ____ pf.T=140 ____ pf.Omega=100 ____
+----------- Z Calculated -----------
+run: 0
+Finished 10 percent
+<pt> for p,K,pi=923.759,629.287,397.846
+Qbar=1.14 Q2bar=7.94 Q3bar=17.04 Q4bar=153.26
+Pbar=1.37 P2bar=3.07 P3bar=8.27 P4bar=25.75
+Q: <Q>=1.14, sigma^2=6.6404, Ssigma=-1.077, Ksigma^2=0.0179096
+P: <P>=1.37, sigma^2=1.1931, Ssigma=0.666336, Ksigma^2=0.137603
+K: <K>=0.25, sigma^2=1.1275, Ssigma=0.149667, Ksigma^2=1.7213
+Pi: <Pi>=-0.48, sigma^2=5.0096, Ssigma=-0.681808, Ksigma^2=1.44831
+run: 1
+Finished 10 percent
+<pt> for p,K,pi=925.178,575.783,405.922
+Qbar=1.02 Q2bar=6.78 Q3bar=21.78 Q4bar=167.82
+Pbar=1.13 P2bar=2.29 P3bar=5.27 P4bar=13.69
+Q: <Q>=1.02, sigma^2=5.7396, Ssigma=0.549797, Ksigma^2=3.34601
+P: <P>=1.13, sigma^2=1.0131, Ssigma=0.387616, Ksigma^2=-0.549136
+K: <K>=0.31, sigma^2=0.9739, Ssigma=0.52827, Ksigma^2=-0.230195
+Pi: <Pi>=-0.42, sigma^2=3.9836, Ssigma=0.841807, Ksigma^2=2.27412
+run: 2
+Finished 10 percent
+<pt> for p,K,pi=883.406,659.552,427.606
+Qbar=1.46 Q2bar=7.82 Q3bar=28.76 Q4bar=184.34
+Pbar=1.23 P2bar=2.45 P3bar=5.79 P4bar=16.13
+Q: <Q>=1.46, sigma^2=5.6884, Ssigma=0.128801, Ksigma^2=1.00053
+P: <P>=1.23, sigma^2=0.9371, Ssigma=0.502864, Ksigma^2=0.407386
+K: <K>=0.36, sigma^2=0.9904, Ssigma=0.266268, Ksigma^2=0.737729
+Pi: <Pi>=-0.13, sigma^2=4.9731, Ssigma=-0.263074, Ksigma^2=1.33719
+run: 3
+Finished 10 percent
+<pt> for p,K,pi=908.563,543.849,402.669
+Qbar=1.37 Q2bar=7.05 Q3bar=24.53 Q4bar=131.37
+Pbar=1.44 P2bar=3.04 P3bar=7.38 P4bar=19.96
+Q: <Q>=1.37, sigma^2=5.1731, Ssigma=0.134775, Ksigma^2=-2.80541
+P: <P>=1.44, sigma^2=0.9664, Ssigma=0.226788, Ksigma^2=-0.44244
+K: <K>=0.45, sigma^2=1.1275, Ssigma=-0.0738359, Ksigma^2=-0.128459
+Pi: <Pi>=-0.52, sigma^2=4.4296, Ssigma=-0.0156258, Ksigma^2=0.35043
+run: 4
+Finished 10 percent
+<pt> for p,K,pi=947.976,535.784,407.494
+Qbar=1.02 Q2bar=6.18 Q3bar=15.42 Q4bar=96.42
+Pbar=1.29 P2bar=2.71 P3bar=6.93 P4bar=20.95
+Q: <Q>=1.02, sigma^2=5.1396, Ssigma=-0.266243, Ksigma^2=-2.02532
+P: <P>=1.29, sigma^2=1.0459, Ssigma=0.703392, Ksigma^2=0.631092
+K: <K>=0.26, sigma^2=0.6724, Ssigma=-0.151767, Ksigma^2=0.0780331
+Pi: <Pi>=-0.53, sigma^2=5.4091, Ssigma=-0.288524, Ksigma^2=-3.93209
+run: 5
+Finished 10 percent
+<pt> for p,K,pi=1026.65,529.758,391.042
+Qbar=1 Q2bar=5.42 Q3bar=7.9 Q4bar=68.9
+Pbar=1.24 P2bar=2.48 P3bar=5.86 P4bar=15.56
+Q: <Q>=1, sigma^2=4.42, Ssigma=-1.43891, Ksigma^2=1.85765
+P: <P>=1.24, sigma^2=0.9424, Ssigma=0.475008, Ksigma^2=-0.406522
+K: <K>=0.34, sigma^2=0.8044, Ssigma=0.54725, Ksigma^2=0.557986
+Pi: <Pi>=-0.58, sigma^2=3.7636, Ssigma=-0.275328, Ksigma^2=0.502787
+run: 6
+Finished 10 percent
+<pt> for p,K,pi=860.913,533.804,412.021
+Qbar=1.1 Q2bar=5.32 Q3bar=16.22 Q4bar=95.56
+Pbar=1.33 P2bar=2.73 P3bar=6.37 P4bar=16.89
+Q: <Q>=1.1, sigma^2=4.11, Ssigma=0.322628, Ksigma^2=1.88482
+P: <P>=1.33, sigma^2=0.9611, Ssigma=0.189964, Ksigma^2=-0.189345
+K: <K>=0.17, sigma^2=0.7411, Ssigma=0.0366023, Ksigma^2=-0.0883488
+Pi: <Pi>=-0.4, sigma^2=3.44, Ssigma=0.404651, Ksigma^2=-0.0353488
+run: 7
+Finished 10 percent
+<pt> for p,K,pi=996.252,641.379,417.938
+Qbar=1.41 Q2bar=8.57 Q3bar=27.87 Q4bar=181.73
+Pbar=1.39 P2bar=3.17 P3bar=8.65 P4bar=26.57
+Q: <Q>=1.41, sigma^2=6.5819, Ssigma=-0.421559, Ksigma^2=-2.28666
+P: <P>=1.39, sigma^2=1.2379, Ssigma=0.648144, Ksigma^2=-0.461813
+K: <K>=0.25, sigma^2=0.9475, Ssigma=0.44723, Ksigma^2=2.33642
+Pi: <Pi>=-0.23, sigma^2=5.7971, Ssigma=0.859424, Ksigma^2=1.64422
+run: 8
+Finished 10 percent
+<pt> for p,K,pi=973.079,647.921,415.613
+Qbar=1.18 Q2bar=7.28 Q3bar=23.08 Q4bar=140.6
+Pbar=1.22 P2bar=2.38 P3bar=5.18 P4bar=12.46
+Q: <Q>=1.18, sigma^2=5.8876, Ssigma=0.101037, Ksigma^2=-2.94269
+P: <P>=1.22, sigma^2=0.8916, Ssigma=0.113163, Ksigma^2=-0.667231
+K: <K>=0.4, sigma^2=0.78, Ssigma=0.230769, Ksigma^2=0.118462
+Pi: <Pi>=-0.44, sigma^2=3.8064, Ssigma=-0.0815385, Ksigma^2=-0.996029
+run: 9
+Finished 10 percent
+<pt> for p,K,pi=906.284,563.995,416.355
+Qbar=1.23 Q2bar=6.77 Q3bar=26.25 Q4bar=175.85
+Pbar=1.13 P2bar=2.07 P3bar=4.49 P4bar=11.67
+Q: <Q>=1.23, sigma^2=5.2571, Ssigma=0.949275, Ksigma^2=3.49548
+P: <P>=1.13, sigma^2=0.7931, Ssigma=0.452016, Ksigma^2=0.574775
+K: <K>=0.28, sigma^2=0.7416, Ssigma=0.317023, Ksigma^2=0.312536
+Pi: <Pi>=-0.18, sigma^2=4.7276, Ssigma=0.642765, Ksigma^2=0.519754
+____ iroots=5 ____ pf.T=140 ____ pf.Omega=100 ____
+----------- Z Calculated -----------
+run: 0
+Finished 10 percent
+<pt> for p,K,pi=941.792,737.87,406.047
+Qbar=1.17 Q2bar=5.51 Q3bar=15.93 Q4bar=83.03
+Pbar=1.08 P2bar=2.1 P3bar=5.04 P4bar=15.06
+Q: <Q>=1.17, sigma^2=4.1411, Ssigma=-0.0499563, Ksigma^2=-0.805186
+P: <P>=1.08, sigma^2=0.9336, Ssigma=0.809152, Ksigma^2=1.37912
+K: <K>=0.4, sigma^2=0.84, Ssigma=0.0571429, Ksigma^2=-0.125714
+Pi: <Pi>=-0.31, sigma^2=4.3139, Ssigma=-0.567533, Ksigma^2=-1.21275
+run: 1
+Finished 10 percent
+<pt> for p,K,pi=893.327,717.887,423.801
+Qbar=0.69 Q2bar=4.91 Q3bar=8.67 Q4bar=70.55
+Pbar=1.34 P2bar=2.86 P3bar=7.04 P4bar=19.06
+Q: <Q>=0.69, sigma^2=4.4339, Ssigma=-0.188701, Ksigma^2=0.222893
+P: <P>=1.34, sigma^2=1.0644, Ssigma=0.333529, Ksigma^2=-0.876817
+K: <K>=0.15, sigma^2=0.6875, Ssigma=-0.236727, Ksigma^2=0.372891
+Pi: <Pi>=-0.8, sigma^2=3.42, Ssigma=-0.385965, Ksigma^2=-0.794035
+run: 2
+Finished 10 percent
+<pt> for p,K,pi=1060.5,612.01,414.875
+Qbar=0.96 Q2bar=6.46 Q3bar=21 Q4bar=143.98
+Pbar=1.22 P2bar=2.4 P3bar=5.84 P4bar=16.68
+Q: <Q>=0.96, sigma^2=5.5384, Ssigma=0.751963, Ksigma^2=0.810984
+P: <P>=1.22, sigma^2=0.9116, Ssigma=0.754384, Ksigma^2=0.520747
+K: <K>=0.22, sigma^2=0.6516, Ssigma=0.490018, Ksigma^2=0.42005
+Pi: <Pi>=-0.48, sigma^2=5.0096, Ssigma=0.491939, Ksigma^2=-0.84936
+run: 3
+Finished 10 percent
+<pt> for p,K,pi=907.401,663.44,406.491
+Qbar=1.14 Q2bar=6.96 Q3bar=20.82 Q4bar=137.28
+Pbar=1.1 P2bar=2.2 P3bar=5.48 P4bar=16
+Q: <Q>=1.14, sigma^2=5.6604, Ssigma=-0.00355311, Ksigma^2=-0.808277
+P: <P>=1.1, sigma^2=0.99, Ssigma=0.890909, Ksigma^2=0.532727
+K: <K>=0.28, sigma^2=0.7216, Ssigma=0.265942, Ksigma^2=0.661531
+Pi: <Pi>=-0.24, sigma^2=4.4024, Ssigma=0.314272, Ksigma^2=-1.06305
+run: 4
+Finished 10 percent
+<pt> for p,K,pi=798.718,658.757,426.08
+Qbar=0.78 Q2bar=5.6 Q3bar=18.42 Q4bar=129.92
+Pbar=1.03 P2bar=1.91 P3bar=4.21 P4bar=10.91
+Q: <Q>=0.78, sigma^2=4.9916, Ssigma=1.25513, Ksigma^2=3.41237
+P: <P>=1.03, sigma^2=0.8491, Ssigma=0.581267, Ksigma^2=0.215846
+K: <K>=0.36, sigma^2=0.6704, Ssigma=0.461384, Ksigma^2=0.221037
+Pi: <Pi>=-0.61, sigma^2=4.7979, Ssigma=0.462106, Ksigma^2=1.38186
+run: 5
+Finished 10 percent
+<pt> for p,K,pi=982.04,744.241,428.532
+Qbar=0.85 Q2bar=6.05 Q3bar=11.89 Q4bar=92.69
+Pbar=1.11 P2bar=2.09 P3bar=5.01 P4bar=14.93
+Q: <Q>=0.85, sigma^2=5.3275, Ssigma=-0.433458, Ksigma^2=-1.54332
+P: <P>=1.11, sigma^2=0.8579, Ssigma=0.91568, Ksigma^2=1.60152
+K: <K>=0.3, sigma^2=0.99, Ssigma=0.345455, Ksigma^2=1.03697
+Pi: <Pi>=-0.56, sigma^2=4.6464, Ssigma=0.422169, Ksigma^2=-1.5096
+run: 6
+Finished 10 percent
+<pt> for p,K,pi=914.956,632.649,425.693
+Qbar=1.14 Q2bar=5.98 Q3bar=18 Q4bar=100.18
+Pbar=1.28 P2bar=2.54 P3bar=5.96 P4bar=15.74
+Q: <Q>=1.14, sigma^2=4.6804, Ssigma=0.109283, Ksigma^2=-1.29383
+P: <P>=1.28, sigma^2=0.9016, Ssigma=0.444437, Ksigma^2=-0.330186
+K: <K>=0.27, sigma^2=0.7571, Ssigma=0.392374, Ksigma^2=0.968297
+Pi: <Pi>=-0.41, sigma^2=3.9019, Ssigma=-0.31824, Ksigma^2=0.316604
+run: 7
+Finished 10 percent
+<pt> for p,K,pi=951.994,641.728,419.027
+Qbar=0.82 Q2bar=6.08 Q3bar=15.46 Q4bar=113.12
+Pbar=1.19 P2bar=2.23 P3bar=5.03 P4bar=13.51
+Q: <Q>=0.82, sigma^2=5.4076, Ssigma=0.296978, Ksigma^2=-0.396188
+P: <P>=1.19, sigma^2=0.8139, Ssigma=0.539646, Ksigma^2=0.628211
+K: <K>=0.29, sigma^2=1.0259, Ssigma=0.266184, Ksigma^2=-0.12567
+Pi: <Pi>=-0.66, sigma^2=4.3644, Ssigma=0.327424, Ksigma^2=0.291466
+run: 8
+Finished 10 percent
+<pt> for p,K,pi=989.665,787.382,425.038
+Qbar=1.03 Q2bar=6.09 Q3bar=15.55 Q4bar=113.61
+Pbar=1.29 P2bar=2.47 P3bar=5.49 P4bar=13.51
+Q: <Q>=1.03, sigma^2=5.0291, Ssigma=-0.215276, Ksigma^2=1.80096
+P: <P>=1.29, sigma^2=0.8059, Ssigma=0.278543, Ksigma^2=-0.511911
+K: <K>=0.41, sigma^2=0.7819, Ssigma=0.0503159, Ksigma^2=-0.262829
+Pi: <Pi>=-0.67, sigma^2=4.7211, Ssigma=-0.864169, Ksigma^2=3.43403
+run: 9
+Finished 10 percent
+<pt> for p,K,pi=1034.92,696.119,428.84
+Qbar=1.28 Q2bar=7.68 Q3bar=20.48 Q4bar=185.52
+Pbar=1.34 P2bar=2.82 P3bar=6.92 P4bar=19.02
+Q: <Q>=1.28, sigma^2=6.0416, Ssigma=-0.797288, Ksigma^2=6.3897
+P: <P>=1.34, sigma^2=1.0244, Ssigma=0.38638, Ksigma^2=-0.498216
+K: <K>=0.34, sigma^2=0.9044, Ssigma=0.971039, Ksigma^2=1.56033
+Pi: <Pi>=-0.4, sigma^2=4.44, Ssigma=-0.321622, Ksigma^2=4.69514
+____ iroots=6 ____ pf.T=140 ____ pf.Omega=100 ____
+----------- Z Calculated -----------
+run: 0
+Finished 10 percent
+<pt> for p,K,pi=1123.93,692.633,445.16
+Qbar=0.85 Q2bar=6.09 Q3bar=15.91 Q4bar=117.09
+Pbar=1.17 P2bar=2.37 P3bar=5.43 P4bar=14.49
+Q: <Q>=0.85, sigma^2=5.3675, Ssigma=0.299721, Ksigma^2=0.260822
+P: <P>=1.17, sigma^2=1.0011, Ssigma=0.31418, Ksigma^2=-0.084814
+K: <K>=0.16, sigma^2=0.6344, Ssigma=0.333216, Ksigma^2=0.660813
+Pi: <Pi>=-0.48, sigma^2=4.6696, Ssigma=-0.630714, Ksigma^2=0.0345672
+run: 1
+Finished 10 percent
+<pt> for p,K,pi=1039.57,643.977,401.898
+Qbar=1.1 Q2bar=5.88 Q3bar=15.86 Q4bar=88.68
+Pbar=1.2 P2bar=2.42 P3bar=5.58 P4bar=14.06
+Q: <Q>=1.1, sigma^2=4.67, Ssigma=-0.188865, Ksigma^2=-1.76321
+P: <P>=1.2, sigma^2=0.98, Ssigma=0.330612, Ksigma^2=-0.935918
+K: <K>=0.31, sigma^2=1.1339, Ssigma=-0.206648, Ksigma^2=0.423604
+Pi: <Pi>=-0.41, sigma^2=3.6219, Ssigma=0.357232, Ksigma^2=-1.46991
+run: 2
+Finished 10 percent
+<pt> for p,K,pi=1106.09,708.297,407.994
+Qbar=1.03 Q2bar=7.41 Q3bar=19.21 Q4bar=149.37
+Pbar=1.33 P2bar=3.03 P3bar=8.77 P4bar=30.39
+Q: <Q>=1.03, sigma^2=6.3491, Ssigma=-0.236482, Ksigma^2=-1.0895
+P: <P>=1.33, sigma^2=1.2611, Ssigma=1.0987, Ksigma^2=1.37504
+K: <K>=0.33, sigma^2=1.0011, Ssigma=-0.336656, Ksigma^2=-0.19749
+Pi: <Pi>=-0.63, sigma^2=4.8931, Ssigma=-0.22317, Ksigma^2=-1.27099
+run: 3
+Finished 10 percent
+<pt> for p,K,pi=1112.12,724.875,448.925
+Qbar=1.1 Q2bar=5.86 Q3bar=12.44 Q4bar=95.26
+Pbar=1.17 P2bar=2.39 P3bar=5.85 P4bar=16.31
+Q: <Q>=1.1, sigma^2=4.65, Ssigma=-0.910968, Ksigma^2=2.96942
+P: <P>=1.17, sigma^2=1.0211, Ssigma=0.650598, Ksigma^2=-0.183695
+K: <K>=0.31, sigma^2=0.7139, Ssigma=-0.285359, Ksigma^2=0.270039
+Pi: <Pi>=-0.38, sigma^2=4.0156, Ssigma=-0.0615958, Ksigma^2=0.186508
+run: 4
+Finished 10 percent
+<pt> for p,K,pi=1160.87,805.284,442.111
+Qbar=1.34 Q2bar=6.66 Q3bar=19.64 Q4bar=106.14
+Pbar=1.3 P2bar=2.7 P3bar=6.58 P4bar=18.06
+Q: <Q>=1.34, sigma^2=4.8644, Ssigma=-0.477138, Ksigma^2=-1.6524
+P: <P>=1.3, sigma^2=1.01, Ssigma=0.439604, Ksigma^2=-0.402574
+K: <K>=0.14, sigma^2=0.8204, Ssigma=0.186114, Ksigma^2=-0.1969
+Pi: <Pi>=-0.1, sigma^2=4.27, Ssigma=-0.00421546, Ksigma^2=-0.796768
+run: 5
+Finished 10 percent
+<pt> for p,K,pi=1215.46,714.793,450.666
+Qbar=1.17 Q2bar=5.61 Q3bar=16.05 Q4bar=83.13
+Pbar=1.32 P2bar=2.62 P3bar=5.94 P4bar=14.74
+Q: <Q>=1.17, sigma^2=4.2411, Ssigma=-0.103245, Ksigma^2=-1.2943
+P: <P>=1.32, sigma^2=0.8776, Ssigma=0.187712, Ksigma^2=-0.741899
+K: <K>=0.32, sigma^2=0.7576, Ssigma=0.290306, Ksigma^2=0.238455
+Pi: <Pi>=-0.47, sigma^2=4.3691, Ssigma=-0.0882896, Ksigma^2=-1.61175
+run: 6
+Finished 10 percent
+<pt> for p,K,pi=1087.33,657.971,419.539
+Qbar=1.3 Q2bar=8.6 Q3bar=30.22 Q4bar=221
+Pbar=1.32 P2bar=2.6 P3bar=5.94 P4bar=15.2
+Q: <Q>=1.3, sigma^2=6.91, Ssigma=0.155427, Ksigma^2=-0.108915
+P: <P>=1.32, sigma^2=0.8576, Ssigma=0.28444, Ksigma^2=-0.345227
+K: <K>=0.23, sigma^2=0.7971, Ssigma=-0.0403538, Ksigma^2=-0.253808
+Pi: <Pi>=-0.25, sigma^2=5.8875, Ssigma=0.0783439, Ksigma^2=-1.21417
+run: 7
+Finished 10 percent
+<pt> for p,K,pi=1110.33,750.116,422.64
+Qbar=0.84 Q2bar=5.36 Q3bar=9.96 Q4bar=72.32
+Pbar=1.27 P2bar=2.37 P3bar=5.17 P4bar=12.81
+Q: <Q>=0.84, sigma^2=4.6544, Ssigma=-0.507432, Ksigma^2=-1.06081
+P: <P>=1.27, sigma^2=0.7571, Ssigma=0.313124, Ksigma^2=-0.0556102
+K: <K>=0.38, sigma^2=0.8756, Ssigma=0.327711, Ksigma^2=0.438954
+Pi: <Pi>=-0.81, sigma^2=4.1539, Ssigma=-0.655909, Ksigma^2=-1.89822
+run: 8
+Finished 10 percent
+<pt> for p,K,pi=998.414,694.161,427.106
+Qbar=1.21 Q2bar=7.13 Q3bar=22.21 Q4bar=157.13
+Pbar=1.23 P2bar=2.41 P3bar=5.67 P4bar=15.37
+Q: <Q>=1.21, sigma^2=5.6659, Ssigma=-0.0227286, Ksigma^2=1.68195
+P: <P>=1.23, sigma^2=0.8971, Ssigma=0.556052, Ksigma^2=0.0771035
+K: <K>=0.28, sigma^2=0.9016, Ssigma=0.111695, Ksigma^2=0.175582
+Pi: <Pi>=-0.3, sigma^2=4.69, Ssigma=0.0102345, Ksigma^2=-0.556802
+run: 9
+Finished 10 percent
+<pt> for p,K,pi=1145.67,729.311,421.307
+Qbar=1.28 Q2bar=5.08 Q3bar=11.36 Q4bar=62.92
+Pbar=1.41 P2bar=3.09 P3bar=7.53 P4bar=20.37
+Q: <Q>=1.28, sigma^2=3.4416, Ssigma=-1.14856, Ksigma^2=3.22767
+P: <P>=1.41, sigma^2=1.1019, Ssigma=0.0596624, Ksigma^2=-0.671569
+K: <K>=0.27, sigma^2=0.6571, Ssigma=0.301424, Ksigma^2=-0.170419
+Pi: <Pi>=-0.4, sigma^2=3.42, Ssigma=-0.266667, Ksigma^2=0.550526
