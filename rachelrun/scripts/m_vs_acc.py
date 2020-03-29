@@ -22,9 +22,9 @@ ax = fig.add_axes([0.14,0.125,0.82,0.85])
 
 nruns=10
 nroots=7
-tags=["Acc0.2","Acc0.4","Acc0.5","Acc0.6","Acc0.8","Acc0.99"]
+tags=["Acc0.01","Acc0.2","Acc0.4","Acc0.5","Acc0.6","Acc0.8","Acc0.99"]
 figname='../figs/mq_vs_acc.pdf'
-acceptance=[.2,.4,.5,.6,.8,.99]
+acceptance=[.01,.2,.4,.5,.6,.8,.99]
 
 """
 ["Acc0.2","Acc0.4","Acc0.5","Acc0.6","Acc0.8","Acc0","Acc1"]
@@ -73,27 +73,28 @@ for n in range(nroots):
         Ksigma2q_avg.append(0)
         file="../data/roots"+str(n)+'_'+tag+".dat";
         mydata = np.loadtxt(file,skiprows=1,unpack=True)
+        l=len(mydata[0])
         for run in range(nruns):
-            Omega.append(mydata[0][run])
+            Omega.append(mydata[0][l-nruns+run])
 
-            pbar.append(mydata[5][run])
-            sigma2p.append(mydata[6][run])
-            Ssigmap.append(mydata[7][run])
-            Ksigma2p.append(mydata[8][run])
+            pbar.append(mydata[5][l-nruns+run])
+            sigma2p.append(mydata[6][l-nruns+run])
+            Ssigmap.append(mydata[7][l-nruns+run])
+            Ksigma2p.append(mydata[8][l-nruns+run])
 
-            qbar.append(mydata[9][run])
-            sigma2q.append(mydata[10][run])
-            Ssigmaq.append(mydata[11][run])
-            Ksigma2q.append(mydata[12][run])
+            qbar.append(mydata[9][l-nruns+run])
+            sigma2q.append(mydata[10][l-nruns+run])
+            Ssigmaq.append(mydata[11][l-nruns+run])
+            Ksigma2q.append(mydata[12][l-nruns+run])
 
             if pbar[run]!=0 and qbar[run]!=0:
                 Skellamp.append(sigma2p[run]/(pbar[run]*Omega[run]))
                 Skellamq.append(sigma2q[run]/(qbar[run]*Omega[run]))
 
-                Ssigma_avg[i]+=Ssigmap[run] #*Skellamp[run]
+                Ssigma_avg[i]+=Ssigmap[run] #*Skellamp[run+10]
                 Ksigma2_avg[i]+=Ksigma2p[run]
 
-                Ssigmaq_avg[i]+=Ssigmaq[run] #*Skellamq[run]
+                Ssigmaq_avg[i]+=Ssigmaq[run] #*Skellamq[run+10]
                 Ksigma2q_avg[i]+=Ksigma2q[run]
             else:
                 print(tag,i,run,pbar[run])

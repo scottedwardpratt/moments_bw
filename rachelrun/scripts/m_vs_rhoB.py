@@ -74,18 +74,19 @@ for n in range(nroots):
         Ksigma2q_avg.append(0)
         file="../data/roots"+str(n)+'_'+tag+".dat";
         mydata = np.loadtxt(file,skiprows=1,unpack=True)
+        l=len(mydata[0])
         for run in range(nruns):
-            Omega.append(mydata[0][run])
+            Omega.append(mydata[0][l-nruns+run])
 
-            pbar.append(mydata[5][run])
-            sigma2p.append(mydata[6][run])
-            Ssigmap.append(mydata[7][run])
-            Ksigma2p.append(mydata[8][run])
+            pbar.append(mydata[5][l-nruns+run])
+            sigma2p.append(mydata[6][l-nruns+run])
+            Ssigmap.append(mydata[7][l-nruns+run])
+            Ksigma2p.append(mydata[8][l-nruns+run])
 
-            qbar.append(mydata[9][run])
-            sigma2q.append(mydata[10][run])
-            Ssigmaq.append(mydata[11][run])
-            Ksigma2q.append(mydata[12][run])
+            qbar.append(mydata[9][l-nruns+run])
+            sigma2q.append(mydata[10][l-nruns+run])
+            Ssigmaq.append(mydata[11][l-nruns+run])
+            Ksigma2q.append(mydata[12][l-nruns+run])
 
             if pbar[run]!=0 and qbar[run]!=0:
                 Skellamp.append(sigma2p[run]/(pbar[run]*Omega[run]))
