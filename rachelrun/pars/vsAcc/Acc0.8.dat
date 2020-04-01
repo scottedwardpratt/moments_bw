@@ -1,9 +1,9 @@
 string B3D_RESONANCES_INFO_FILE	resinfo/resonances_pdg_weak.dat
 string B3D_RESONANCES_DECAYS_FILE resinfo/decays_pdg_weak.dat
-int NhadMAX 60
+int NhadMAX 120
 double OMEGA 100
 double RHOB 0.05
-double T 140.0
+double T 150.0
 double ACCEPTANCE 0.8
 int NEVENTS 100000000
 int B0 0

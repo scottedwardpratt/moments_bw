@@ -7,13 +7,22 @@ make bw
 ./bw pars/vsT/T140.dat > crap/crap3.dat &
 ./bw pars/vsT/T155.dat > crap/crap4.dat &
 
-./bw pars/vsrhoB/rhoB0.1.dat > crap/crap5.dat &
-./bw pars/vsrhoB/rhoB0.2.dat > crap/crap6.dat &
-./bw pars/vsrhoB/rhoB0.15.dat > crap/crap8.dat &
-./bw pars/vsrhoB/rhoB0.dat > crap/crap9.dat &
+./bw pars/vsrhoB/rhoB0.02.dat > crap/crap5.dat &
+./bw pars/vsrhoB/rhoB0.04.dat > crap/crap6.dat &
+./bw pars/vsrhoB/rhoB0.06.dat > crap/crap8.dat &
+./bw pars/vsrhoB/rhoB.08.dat > crap/crap9.dat &
+./bw pars/vsrhoB/rhoB.1.dat > crap/crap9.dat &
+./bw pars/vsrhoB/rhoB.12.dat > crap/crap9.dat &
+./bw pars/vsrhoB/rhoB.14.dat > crap/crap9.dat &
+./bw pars/vsrhoB/rhoB.16.dat > crap/crap9.dat &
+./bw pars/vsrhoB/rhoB.18.dat > crap/crap9.dat &
+./bw pars/vsrhoB/rhoB.2.dat > crap/crap9.dat &
 
+./bw pars/vsOmega/Omega25.dat > crap/crap10.dat &
 ./bw pars/vsOmega/Omega50.dat > crap/crap10.dat &
+./bw pars/vsOmega/Omega100.dat > crap/crap10.dat &
 ./bw pars/vsOmega/Omega150.dat > crap/crap11.dat &
+./bw pars/vsOmega/Omega200.dat > crap/crap10.dat &
 ./bw pars/vsOmega/Omega250.dat > crap/crap7.dat &
 
 ./bw pars/vsAcc/Acc0.01.dat > crap/crap13.dat &
