@@ -49,8 +49,8 @@ int main(int argc,char *argv[]){
 	pf.ScaleZ(Omega);
 	printf("----------- Z Calculated -----------\n");
 
-	file="data/bqvar"+tag+".dat";
-	altfile="altdata/bqvar"+tag+".dat";
+	file="data/bqfixed"+tag+".dat";
+	altfile="altdata/bqfixed"+tag+".dat";
 	//strcat(file,const char(roots));
 	//muBoverT=GetMuBOverT(roots[roots]);
 	/*
@@ -63,7 +63,7 @@ int main(int argc,char *argv[]){
 		printf("run: %d\n",irun);
 		moments.Clear();
 		for(ievent=0;ievent<int(nevents/nruns);ievent++){
-
+			/*
 			do{
 				b0=pf.randy->GetNPoissonian(rhoB*Omega);
 				q0=pf.randy->GetNPoissonian(0.5*rhoB*Omega);
@@ -72,9 +72,9 @@ int main(int argc,char *argv[]){
 					printf("If this happens often, increase pf.NhadMAX\n");
 				}
 			}while(!pf.CheckRelevance(pf.NhadMAX/2,b0,q0,s0));
-
-			//b0=0; //rhoB*Omega;
-			//q0=0; //0.5*rhoB*Omega;
+			*/
+			b0=rhoB*Omega;
+			q0=0.5*rhoB*Omega;
 			pf.GenEvent(b0,q0,s0,resinfovec);
 			blastwave.GenerateParts(resinfovec,partvec);
 			moments.IncrementMoments(partvec);

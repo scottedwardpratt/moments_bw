@@ -21,11 +21,11 @@ fig = plt.figure(1)
 ax = fig.add_axes([0.14,0.125,0.82,0.85])
 
 nruns=10
-nroots=7
-tags=["rhoB0.05","rhoB0.1","rhoB0.15","rhoB0.2"];
-figname='../figs/mq_vs_rhoB.pdf'
+nroots=1
+tags=["rhoB0.02","rhoB0.04","rhoB0.06","rhoB0.08","rhoB0.1","rhoB0.12","rhoB0.14","rhoB0.16","rhoB0.18","rhoB0.2"];
+figname='../figs/mq_vs_rhoB_bqvar.pdf'
 acceptance=[0.01,.2,.4,.5,.6,.8,1.0]
-rhoB=[0.05,0.1,0.15,0.2]
+rhoB=[0.02,0.04,.06,.08,.1,.12,.14,.16,.18,.2]
 
 """
 ["Acc0.2","Acc0.4","Acc0.5","Acc0.6","Acc0.8","Acc0","Acc1"]
@@ -36,7 +36,7 @@ rhoB=[0.05,0.1,0.15,0.2]
 """
 
 colors=['r','orange','y','g','b','purple','k']
-roots=[7.7,11.5,19.6,27.0,39.0,62.4,200.0]
+roots=[27.0] #[7.7,11.5,19.6,27.0,39.0,62.4,200.0]
 stderrK=[]
 stderrS=[]
 stderrKq=[]
@@ -72,7 +72,7 @@ for n in range(nroots):
         Ksigma2_avg.append(0)
         Ssigmaq_avg.append(0)
         Ksigma2q_avg.append(0)
-        file="../data/roots"+str(n)+'_'+tag+".dat";
+        file="../data/bqvar"+tag+".dat";
         mydata = np.loadtxt(file,skiprows=1,unpack=True)
         l=len(mydata[0])
         for run in range(nruns):
@@ -88,17 +88,17 @@ for n in range(nroots):
             Ssigmaq.append(mydata[11][l-nruns+run])
             Ksigma2q.append(mydata[12][l-nruns+run])
 
-            if pbar[run]!=0 and qbar[run]!=0:
-                Skellamp.append(sigma2p[run]/(pbar[run]*Omega[run]))
+            if qbar[run]!=0:
+                #Skellamp.append(sigma2p[run]/(pbar[run]*Omega[run]))
                 Skellamq.append(sigma2q[run]/(qbar[run]*Omega[run]))
 
-                Ssigma_avg[i]+=Ssigmap[run]
-                Ksigma2_avg[i]+=Ksigma2p[run]
+                #Ssigma_avg[i]+=Ssigmap[run]
+                #Ksigma2_avg[i]+=Ksigma2p[run]
 
                 Ssigmaq_avg[i]+=Ssigmaq[run]
                 Ksigma2q_avg[i]+=Ksigma2q[run]
             else:
-                print(tag,i,run,pbar[run])
+                print(tag,i,run,qbar[run])
                 exit(1)
 
         Ssigma_avg[i]*=1/nruns

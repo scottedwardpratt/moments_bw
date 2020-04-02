@@ -21,7 +21,7 @@ fig = plt.figure(1)
 ax = fig.add_axes([0.14,0.125,0.82,0.85])
 
 nruns=10
-nroots=7
+nroots=1
 tags=["Omega25","Omega50","Omega100","Omega150","Omega200","Omega250"];
 figname='../figs/mq_vs_Omega.pdf'
 acceptance=[0.01,.2,.4,.5,.6,.8,1.0]
@@ -38,7 +38,7 @@ vol=[25.0,50.0,100.0,150.0,200.0,250.0]
 """
 
 colors=['r','orange','y','g','b','purple','k']
-roots=[7.7,11.5,19.6,27.0,39.0,62.4,200.0]
+roots=[27.0] #[7.7,11.5,19.6,27.0,39.0,62.4,200.0]
 stderrK=[]
 stderrS=[]
 stderrKq=[]
