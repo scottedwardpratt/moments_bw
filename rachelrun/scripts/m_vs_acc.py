@@ -71,7 +71,7 @@ for n in range(nroots):
         Ksigma2_avg.append(0)
         Ssigmaq_avg.append(0)
         Ksigma2q_avg.append(0)
-        file="../data/roots"+str(n)+'_'+tag+".dat";
+        file="../data/"+tag+".dat";
         mydata = np.loadtxt(file,skiprows=1,unpack=True)
         l=len(mydata[0])
         for run in range(nruns):
@@ -87,17 +87,17 @@ for n in range(nroots):
             Ssigmaq.append(mydata[11][l-nruns+run])
             Ksigma2q.append(mydata[12][l-nruns+run])
 
-            if pbar[run]!=0 and qbar[run]!=0:
-                Skellamp.append(sigma2p[run]/(pbar[run]*Omega[run]))
+            if qbar[run]!=0:
+                #Skellamp.append(sigma2p[run]/(pbar[run]*Omega[run]))
                 Skellamq.append(sigma2q[run]/(qbar[run]*Omega[run]))
 
-                Ssigma_avg[i]+=Ssigmap[run] #*Skellamp[run+10]
-                Ksigma2_avg[i]+=Ksigma2p[run]
+                #Ssigma_avg[i]+=Ssigmap[run] #*Skellamp[run+10]
+                #Ksigma2_avg[i]+=Ksigma2p[run]
 
                 Ssigmaq_avg[i]+=Ssigmaq[run] #*Skellamq[run+10]
                 Ksigma2q_avg[i]+=Ksigma2q[run]
             else:
-                print(tag,i,run,pbar[run])
+                print(tag,i,run,qbar[run])
                 exit(1)
 
         Ssigma_avg[i]*=1/nruns

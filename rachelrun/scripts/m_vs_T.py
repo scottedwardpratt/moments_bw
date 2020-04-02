@@ -22,13 +22,13 @@ ax = fig.add_axes([0.14,0.125,0.82,0.85])
 
 nruns=10
 nroots=7
-tags=["T110","T125","T140","T155"];
+tags=["T110","T125","T135","T150"];
 figname='../figs/mq_vs_T.pdf'
 acceptance=[0.01,.2,.4,.5,.6,.8,1.0]
 rhoB=[0.05,0.1,0.15,0.2]
 eta=[0.2,0.6,1.0]
 vol=[50.0,100.0,250.0]
-T=[110.0,125.0,140.0,155.0]
+T=[110.0,125.0,135.0,150.0]
 
 
 """
@@ -76,7 +76,7 @@ for n in range(nroots):
         Ksigma2_avg.append(0)
         Ssigmaq_avg.append(0)
         Ksigma2q_avg.append(0)
-        file="../data/roots"+str(n)+'_'+tag+".dat";
+        file="../data/"+tag+".dat";
         mydata = np.loadtxt(file,skiprows=1,unpack=True)
         l=len(mydata[0])
         for run in range(nruns):
@@ -92,17 +92,17 @@ for n in range(nroots):
             Ssigmaq.append(mydata[11][l-nruns+run])
             Ksigma2q.append(mydata[12][l-nruns+run])
 
-            if pbar[run]!=0 and qbar[run]!=0:
-                Skellamp.append(sigma2p[run]/(pbar[run]*Omega[run]))
+            if qbar[run]!=0:
+                #Skellamp.append(sigma2p[run]/(pbar[run]*Omega[run]))
                 Skellamq.append(sigma2q[run]/(qbar[run]*Omega[run]))
 
-                Ssigma_avg[i]+=Ssigmap[run]
-                Ksigma2_avg[i]+=Ksigma2p[run]
+                #Ssigma_avg[i]+=Ssigmap[run]
+                #Ksigma2_avg[i]+=Ksigma2p[run]
 
                 Ssigmaq_avg[i]+=Ssigmaq[run]
                 Ksigma2q_avg[i]+=Ksigma2q[run]
             else:
-                print(tag,i,run,pbar[run])
+                print(tag,i,run,qbar[run])
                 exit(1)
 
         Ssigma_avg[i]*=1/nruns
