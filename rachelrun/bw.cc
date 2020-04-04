@@ -16,7 +16,7 @@ int main(int argc,char *argv[]){
 	double Omega,muBoverT,ff,ffa=1.0;
 	parameterMap parmap;
 	parameter::ReadParsFromFile(parmap,string(argv[1]));
-	double T=parameter::getD(parmap,"T",140.0);
+	double T=parameter::getD(parmap,"T",150.0);
 	double rhoB=parameter::getD(parmap,"RHOB",0.05);
 	//double roots[NROOTS]={7.7,11.5,19.6,27.0,39.0,62.4,200.0};
 	roots=27.0;
@@ -49,8 +49,8 @@ int main(int argc,char *argv[]){
 	pf.ScaleZ(Omega);
 	printf("----------- Z Calculated -----------\n");
 
-	file="data/bqfixed"+tag+".dat";
-	altfile="altdata/bqfixed"+tag+".dat";
+	file="data/B0Q0"+tag+".dat";
+	altfile="altdata/B0Q0"+tag+".dat";
 	//strcat(file,const char(roots));
 	//muBoverT=GetMuBOverT(roots[roots]);
 	/*
@@ -73,8 +73,8 @@ int main(int argc,char *argv[]){
 				}
 			}while(!pf.CheckRelevance(pf.NhadMAX/2,b0,q0,s0));
 			*/
-			b0=rhoB*Omega;
-			q0=0.5*rhoB*Omega;
+			b0=0; //rhoB*Omega;
+			q0=0; //0.5*rhoB*Omega;
 			pf.GenEvent(b0,q0,s0,resinfovec);
 			blastwave.GenerateParts(resinfovec,partvec);
 			moments.IncrementMoments(partvec);

@@ -24,8 +24,8 @@ void Cmoments::Clear(){
 
 void Cmoments::IncrementMoments(vector<CResInfo *> &resinfovec){
 	ncalls+=1;
-	int NetQ=0,NetP=0,NetK=0,NetPi=0;
-	int TotP=0,TotQ=0,TotK=0,TotPi=0;
+	int NetQ=0,NetP=0,NetK=0,NetPi=0,NetB=0;
+	int TotP=0,TotQ=0,TotK=0,TotPi=0,TotB=0;
 	int i,mult=resinfovec.size();
 	for(i=0;i<mult;i++){
 		if(acceptance->Acceptance(resinfovec[i])){
@@ -45,30 +45,35 @@ void Cmoments::IncrementMoments(vector<CResInfo *> &resinfovec){
 				NetPi+=resinfovec[i]->charge;
 				TotPi+=1;
 			}
+			if(abs(resinfovec[i]->baryon)==1){
+				NetB+=resinfovec[i]->baryon;
+				TotB+=1;
+			}
 		}
 	}
 	Qbar+=NetQ; Q2bar+=NetQ*NetQ; Q3bar+=pow(NetQ,3); Q4bar+=pow(NetQ,4);
+	Bbar+=NetB; B2bar+=NetB*NetB; B3bar+=pow(NetB,3); B4bar+=pow(NetB,4);
 	Pbar+=NetP; P2bar+=NetP*NetP; P3bar+=pow(NetP,3); P4bar+=pow(NetP,4);
 	Kbar+=NetK; K2bar+=NetK*NetK; K3bar+=pow(NetK,3); K4bar+=pow(NetK,4);
 	Pibar+=NetPi; Pi2bar+=NetPi*NetPi; Pi3bar+=pow(NetPi,3); Pi4bar+=pow(NetPi,4);
 
-	TotQbar+=TotQ; TotPbar+=TotP; TotKbar+=TotK; TotPibar+=TotPi;
+	TotBbar+=TotB; TotQbar+=TotQ; TotPbar+=TotP; TotKbar+=TotK; TotPibar+=TotPi;
 }
 
 void Cmoments::IncrementMoments(vector<Cpart> &partvec){
-	bool acceptQ,acceptP,acceptK,acceptPi;
+	bool acceptQ,acceptP,acceptK,acceptPi,acceptB;
 	double pt;
 	CResInfo *resinfo;
 	ncalls+=1;
-	int NetQ=0,NetP=0,NetK=0,NetPi=0;
-	int TotQ=0,TotP=0,TotK=0,TotPi=0;
+	int NetQ=0,NetP=0,NetK=0,NetPi=0,NetB=0;
+	int TotQ=0,TotP=0,TotK=0,TotPi=0,TotB=0;
 
 	int altNetQ=0,altNetP=0,altNetK=0,altNetPi=0;
 	int altTotQ=0,altTotP=0,altTotK=0,altTotPi=0;
 	for(int ipart=0;ipart<partvec.size();ipart++){
 		resinfo=partvec[ipart].resinfo;
 		pt=sqrt(partvec[ipart].p[1]*partvec[ipart].p[1]+partvec[ipart].p[2]*partvec[ipart].p[2]);
-		acceptance->Acceptance(&partvec[ipart],acceptQ,acceptP,acceptK,acceptPi);
+		acceptance->Acceptance(&partvec[ipart],acceptQ,acceptP,acceptK,acceptPi,acceptB);
 		//acceptQ=acceptP=acceptK=acceptPi=true;
 		if(abs(resinfo->charge)==1 && acceptQ){
 			NetQ+=resinfo->charge;
@@ -104,13 +109,18 @@ void Cmoments::IncrementMoments(vector<Cpart> &partvec){
 			altTotPi+=1;
 			altmeanpt_pions+=pt;
 		}
+		if(abs(resinfo->baryon)==1 && acceptB){
+			NetB+=resinfo->baryon;
+			TotB+=1;
+		}
 	}
+	Bbar+=NetB; B2bar+=NetB*NetB; B3bar+=pow(NetB,3); B4bar+=pow(NetB,4);
 	Qbar+=NetQ; Q2bar+=NetQ*NetQ; Q3bar+=pow(NetQ,3); Q4bar+=pow(NetQ,4);
 	Pbar+=NetP; P2bar+=NetP*NetP; P3bar+=pow(NetP,3); P4bar+=pow(NetP,4);
 	Kbar+=NetK; K2bar+=NetK*NetK; K3bar+=pow(NetK,3); K4bar+=pow(NetK,4);
 	Pibar+=NetPi; Pi2bar+=NetPi*NetPi; Pi3bar+=pow(NetPi,3); Pi4bar+=pow(NetPi,4);
 
-	TotQbar+=TotQ; TotPbar+=TotP; TotKbar+=TotK; TotPibar+=TotPi;
+	TotBbar+=TotB; TotQbar+=TotQ; TotPbar+=TotP; TotKbar+=TotK; TotPibar+=TotPi;
 
 	altQbar+=altNetQ; altQ2bar+=altNetQ*altNetQ; altQ3bar+=pow(altNetQ,3); altQ4bar+=pow(altNetQ,4);
 	altPbar+=altNetP; altP2bar+=altNetP*altNetP; altP3bar+=pow(altNetP,3); altP4bar+=pow(altNetP,4);
@@ -123,11 +133,12 @@ void Cmoments::IncrementMoments(vector<Cpart> &partvec){
 
 void Cmoments::Summarize(string file,string altfile,double Omega,double rhoB,double rhoQ,double roots,double T){
 	double qbar,kappaq2,kappaq3,kappaq4;
+	double bbar,kappab2,kappab3,kappab4;
 	double pbar,kappap2,kappap3,kappap4;
 	double kbar,kappak2,kappak3,kappak4;
 	double pibar,kappapi2,kappapi3,kappapi4;
-	double totq,totp,totk,totpi;
-	double sigma2q,sigma2p,sigma2k,sigma2pi,Ssigmaq,Ssigmap,Ssigmak,Ssigmapi,Ksigma2q,Ksigma2p,Ksigma2k,Ksigma2pi;
+	double totb,totq,totp,totk,totpi;
+	double sigma2b,sigma2q,sigma2p,sigma2k,sigma2pi,Ssigmab,Ssigmaq,Ssigmap,Ssigmak,Ssigmapi,Ksigma2b,Ksigma2q,Ksigma2p,Ksigma2k,Ksigma2pi;
 
 	double altqbar,altkappaq2,altkappaq3,altkappaq4;
 	double altpbar,altkappap2,altkappap3,altkappap4;
@@ -153,6 +164,11 @@ void Cmoments::Summarize(string file,string altfile,double Omega,double rhoB,dou
 	kappaq3=Q3bar/double(ncalls)-3*kappaq2*qbar-qbar*qbar*qbar;
 	kappaq4=Q4bar/double(ncalls)-4*kappaq3*qbar-3*kappaq2*kappaq2-6*kappaq2*qbar*qbar-qbar*qbar*qbar*qbar;
 
+	bbar=Bbar/double(ncalls);
+	kappab2=B2bar/double(ncalls)-bbar*bbar;
+	kappab3=B3bar/double(ncalls)-3*kappab2*bbar-bbar*bbar*bbar;
+	kappab4=B4bar/double(ncalls)-4*kappab3*bbar-3*kappab2*kappab2-6*kappab2*bbar*bbar-bbar*bbar*bbar*bbar;
+
 	kbar=Kbar/double(ncalls);
 	kappak2=K2bar/double(ncalls)-kbar*kbar;
 	kappak3=K3bar/double(ncalls)-3*kappak2*kbar-kbar*kbar*kbar;
@@ -163,20 +179,23 @@ void Cmoments::Summarize(string file,string altfile,double Omega,double rhoB,dou
 	kappapi3=Pi3bar/double(ncalls)-3*kappapi2*pibar-pibar*pibar*pibar;
 	kappapi4=Pi4bar/double(ncalls)-4*kappapi3*pibar-3*kappapi2*kappapi2-6*kappapi2*pibar*pibar-pibar*pibar*pibar*pibar;
 
+	totb=TotBbar/double(ncalls);
 	totq=TotQbar/double(ncalls);
 	totp=TotPbar/double(ncalls);
 	totk=TotKbar/double(ncalls);
 	totpi=TotPibar/double(ncalls);
 
-
+	sigma2b=kappab2;
 	sigma2q=kappaq2;
 	sigma2p=kappap2;
 	sigma2k=kappak2;
 	sigma2pi=kappapi2;
+	Ssigmab=kappab3/kappab2;
 	Ssigmaq=kappaq3/kappaq2;
 	Ssigmap=kappap3/kappap2;
 	Ssigmak=kappak3/kappak2;
 	Ssigmapi=kappapi3/kappapi2;
+	Ksigma2b=kappab4/kappab2;
 	Ksigma2q=kappaq4/kappaq2;
 	Ksigma2p=kappap4/kappap2;
 	Ksigma2k=kappak4/kappak2;
@@ -231,10 +250,10 @@ void Cmoments::Summarize(string file,string altfile,double Omega,double rhoB,dou
 	}
 	else{
 		fptr=fopen(file.c_str(),"w");
-		fprintf(fptr,"# Omega - roots -     T    - rhoB  - rhoQ -rhoP - sigma^2(P) - Ssigma(P) - Ksigma^2(P) - rhoQ - sigma^2(Q) - Ssigma(Q) - Ksigma^2(Q) - rhoK - sigma^2(K) - Ssigma(K) - Ksigma^2(K) - rhoPi - sigma^2(Pi) - Ssigma(Pi) - Ksigma^2(Pi) - TotrhoP - TotrhoQ - TotrhoK - TotrhoPi\n");
+		fprintf(fptr,"# Omega - roots -     T    - rhoB  - rhoQ -rhoP - sigma^2(P) - Ssigma(P) - Ksigma^2(P) - rhoQ - sigma^2(Q) - Ssigma(Q) - Ksigma^2(Q) - rhoB - sigma^2(B) - Ssigma(B) - Ksigma^2(B) - rhoK - sigma^2(K) - Ssigma(K) - Ksigma^2(K) - rhoPi - sigma^2(Pi) - Ssigma(Pi) - Ksigma^2(Pi) - TotrhoP - TotrhoQ - TotrhoK - TotrhoPi\n");
 	}
-	fprintf(fptr,"%6.1f %6.1f %6.2f %6.4f %6.4f %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e\n",
-	Omega,roots,T,rhoB,rhoQ,pbar/Omega,sigma2p,Ssigmap,Ksigma2p,qbar/Omega,sigma2q,Ssigmaq,Ksigma2q,
+	fprintf(fptr,"%6.1f %6.1f %6.2f %6.4f %6.4f %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e %10.4e\n",
+	Omega,roots,T,rhoB,rhoQ,pbar/Omega,sigma2p,Ssigmap,Ksigma2p,qbar/Omega,sigma2q,Ssigmaq,Ksigma2q,bbar/Omega,sigma2b,Ssigmab,Ksigma2b,
 	kbar/Omega,sigma2k,Ssigmak,Ksigma2k,pibar/Omega,sigma2pi,Ssigmapi,Ksigma2pi,totp/Omega,totq/Omega,totk/Omega,totpi/Omega);
 	fclose(fptr);
 

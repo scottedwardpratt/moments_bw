@@ -78,7 +78,7 @@ public:
 		else
 			return false;
 	}
-	void Acceptance(Cpart *part,bool &acceptQ,bool &acceptP,bool &acceptK,bool &acceptPi);
+	void Acceptance(Cpart *part,bool &acceptQ,bool &acceptP,bool &acceptK,bool &acceptPi,bool &acceptB);
 };
 
 class Cmult{
@@ -115,8 +115,8 @@ public:
 class Cmoments{
 public:
 	Cmoments(){};
-	long long int Qbar,Q2bar,Q3bar,Q4bar,Pbar,P2bar,P3bar,P4bar,Kbar,K2bar,K3bar,K4bar,Pibar,Pi2bar,Pi3bar,Pi4bar;
-	long long int TotQbar,TotPbar,TotKbar,TotPibar;
+	long long int Qbar,Q2bar,Q3bar,Q4bar,Pbar,P2bar,P3bar,P4bar,Kbar,K2bar,K3bar,K4bar,Pibar,Pi2bar,Pi3bar,Pi4bar,Bbar,B2bar,B3bar,B4bar;
+	long long int TotQbar,TotPbar,TotKbar,TotPibar,TotBbar;
 
 	long long int altQbar,altQ2bar,altQ3bar,altQ4bar,altPbar,altP2bar,altP3bar,altP4bar,altKbar,altK2bar,altK3bar,altK4bar,altPibar,altPi2bar,altPi3bar,altPi4bar;
 	long long int altTotQbar,altTotPbar,altTotKbar,altTotPibar;

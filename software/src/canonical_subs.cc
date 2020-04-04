@@ -245,7 +245,7 @@ void CpartitionFunction::Calcz(){
 			}
 		}
 	}
-	
+
 	for(rpos=reslist->resmap.begin();rpos!=reslist->resmap.end();rpos++){
 		resinfo=rpos->second;
 		ires=resinfo->ires;
