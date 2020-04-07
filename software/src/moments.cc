@@ -9,8 +9,8 @@ Cmoments::Cmoments(Cacceptance *acceptanceset){
 
 void Cmoments::Clear(){
 	ncalls=0.0;
-	Qbar=Q2bar=Q3bar=Q4bar=Pbar=P2bar=P3bar=P4bar=Kbar=K2bar=K3bar=K4bar=Pibar=Pi2bar=Pi3bar=Pi4bar=0.0;
-	TotQbar=TotPbar=TotKbar=TotPibar=0.0;
+	Bbar=B2bar=B3bar=B4bar=Qbar=Q2bar=Q3bar=Q4bar=Pbar=P2bar=P3bar=P4bar=Kbar=K2bar=K3bar=K4bar=Pibar=Pi2bar=Pi3bar=Pi4bar=0.0;
+	TotBbar=TotQbar=TotPbar=TotKbar=TotPibar=0.0;
 	meanpt_pions=0.0;
 	meanpt_kaons=0.0;
 	meanpt_protons=0.0;
