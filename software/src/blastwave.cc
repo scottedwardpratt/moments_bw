@@ -22,12 +22,12 @@ void CblastWave::GenerateParts(vector<CResInfo *> &resinfovec,vector<Cpart> &par
 	int imother,ibody,nbodies,ipart0,nparts0=resinfovec.size();
 	double mtot;
 	CResInfo *resinfo;
-		
+
 	for(ipart0=0;ipart0<nparts0;ipart0++){
 		resinfo=resinfovec[ipart0];
 		part=new Cpart(resinfo);
 		randy->generate_boltzmann(resinfo->mass,Tf,part->p);
-		if(resinfo->decay){
+		if(false){ //if(resinfo->decay){
 			mothervec.push_back(part);
 		}
 		else{
@@ -117,7 +117,7 @@ void CblastWave::GetDecayMomenta(Cpart *mother,int &nbodies,vector<Cpart *> &dau
 
 	mass[0]=mother->resinfo->mass;
 	p[0]=&mother->p;
-	
+
 	/* Create daughter objects */
 	mtot=0.0;
 	for(ibody=0;ibody<nbodies;ibody++){
@@ -224,14 +224,14 @@ void CblastWave::GetDecayMomenta(Cpart *mother,int &nbodies,vector<Cpart *> &dau
 		kprimemax=sqrt(kprimemax2);
 		qprimemax2=Misc::triangle(mass[0]-mass[1]-mass[2],mass[3],mass[4]);
 		qprimemax=sqrt(qprimemax2);
-		
+
 		ppmax=sqrt(Misc::triangle(mass[0],mass[1]+mass[2],mass[3]+mass[4]));
 		e1max=sqrt(pow(mass[1],2)+ppmax*ppmax);
 		e2max=sqrt(pow(mass[2],2)+ppmax*ppmax);
 		e3max=sqrt(pow(mass[3],2)+ppmax*ppmax);
 		e4max=sqrt(pow(mass[4],2)+ppmax*ppmax);
 		wmax=ppmax*pow(e1max+e2max,2)*pow(e3max+e4max,2)/((mass[1]+mass[2])*(mass[3]+mass[4]));
-		
+
 		do{
 			TRY_AGAIN_4:
 			do{
@@ -250,7 +250,7 @@ void CblastWave::GetDecayMomenta(Cpart *mother,int &nbodies,vector<Cpart *> &dau
 			} while(qprimemag2>qprimemax2);
 			e3prime=sqrt(qprimemag2+mass[3]*mass[3]);
 			e4prime=sqrt(qprimemag2+mass[4]*mass[4]);
-			
+
 			if(e1prime+e2prime+e3prime+e4prime>mass[0]) goto TRY_AGAIN_4;
 
 			ppmag=Misc::triangle(mass[0],e1prime+e2prime,e3prime+e4prime);
@@ -289,7 +289,7 @@ void CblastWave::GetDecayMomenta(Cpart *mother,int &nbodies,vector<Cpart *> &dau
 			}
 			else weight=0.0;
 		} while(randy->ran()>weight/wmax);
-		
+
 	}
 
 	/* Boost the new particles */
@@ -301,6 +301,5 @@ void CblastWave::GetDecayMomenta(Cpart *mother,int &nbodies,vector<Cpart *> &dau
 		for(alpha=0;alpha<4;alpha++)
 			dptr->p[alpha]=pprime[alpha];
 	}
-	
-}
 
+}

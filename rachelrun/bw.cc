@@ -37,7 +37,7 @@ int main(int argc,char *argv[]){
 	//pf.WriteZ();
 	//pf.ReadZ();
 
-	nevents=10000000; //parameter::getI(parmap,"NEVENTS",100);
+	nevents=1000000; //parameter::getI(parmap,"NEVENTS",100);
 	Omega=parameter::getD(parmap,"OMEGA",100);
 	string tag=parameter::getS(parmap,"FILE_TAG","_");
 	//string file=parameter::getS(parmap,"MOMENTS_OUTPUT_FILE","moments.dat");
@@ -49,8 +49,8 @@ int main(int argc,char *argv[]){
 	pf.ScaleZ(Omega);
 	printf("----------- Z Calculated -----------\n");
 
-	file="data/B0Q0"+tag+".dat";
-	altfile="altdata/B0Q0"+tag+".dat";
+	file="data/nodecay"+tag+".dat";
+	altfile="altdata/nodecay"+tag+".dat";
 	//strcat(file,const char(roots));
 	//muBoverT=GetMuBOverT(roots[roots]);
 	/*
