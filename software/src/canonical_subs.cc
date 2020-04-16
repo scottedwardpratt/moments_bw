@@ -310,6 +310,18 @@ void CpartitionFunction::ScaleZ(double OmegaSet){
 	//printf("Z[NhadMAX]/Ztot0=%g,  should be small, otherwise increase NhadMAX\n",dZ0/Ztot0[ibprime][iqprime][isprime]);
 }
 
+void CpartitionFunction::PrintPofA(){
+	double factor;
+	int b=0,q=0,s=0,ihad,ib,iq,is,ibprime,iqprime,isprime,ihhZtot0=NhadMAX/2;
+	factor=1.0;
+	Getibiqis(ihhZtot0,b,q,s,ibprime,iqprime,isprime);
+	for(ihad=0;ihad<=NhadMAX;ihad++){
+		Getibiqis(ihad,b,q,s,ib,iq,is);
+		printf("%3d %g\n",ihad,Z[ihad][ib][iq][is]*factor/Ztot0[ibprime][iqprime][isprime]);
+		factor*=(Omega/Omega0)/(ihad+1.0);
+	}
+}
+
 void CpartitionFunction::CalcZofOmega0(double TSet){
 	T=TSet;
 	int ihad,ib,iq,is,b,q,s,ihh;

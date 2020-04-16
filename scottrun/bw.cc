@@ -46,7 +46,7 @@ int main(int argc,char *argv[]){
 		pf.CalcZofOmega0(T[iroots]);
 		pf.ScaleZ(Omega);
 		printf("----------- Z Calculated -----------\n");
-		
+
 		file="results/roots"+to_string(iroots)+"_"+tag+".dat";
 		altfile="results/alt_roots"+to_string(iroots)+"_"+tag+".dat";
 		//strcat(file,const char(iroots));

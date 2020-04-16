@@ -23,6 +23,9 @@ canonical : canonical.cc ../software/lib/libcanonical.a
 bw : bw.cc ../software/lib/libcanonical.a
 	${MADAI_CPP} -o bw bw.cc ${MADAI_CFLAGS} ${LIBRARY} ${INCLUDE} -lcanonical -lgsl -lgslcblas
 
+ideal : ideal.cc ../software/lib/libcanonical.a
+	${MADAI_CPP} -o ideal ideal.cc ${MADAI_CFLAGS} ${LIBRARY} ${INCLUDE} -lcanonical -lgsl -lgslcblas
+
 bw_alt : bw_alt.cc ../software/lib/libcanonical.a
 	${MADAI_CPP} -o bw_alt bw_alt.cc ${MADAI_CFLAGS} ${LIBRARY} ${INCLUDE} -lcanonical -lgsl -lgslcblas
 
