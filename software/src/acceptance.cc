@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void Cacceptance::Acceptance(Cpart *part,bool &acceptQ,bool &acceptP,bool &acceptK,bool &acceptPi){
+void Cacceptance::Acceptance(Cpart *part,bool &acceptQ,bool &acceptP,bool &acceptK,bool &acceptPi,bool &acceptB){
 	/*
 	double y,eta,pt,pmag;
 	CResInfo *resinfo=part->resinfo;
@@ -13,8 +13,8 @@ void Cacceptance::Acceptance(Cpart *part,bool &acceptQ,bool &acceptP,bool &accep
 	*/
 	double r=randy->ran();
 
-	if(r>ACCEPTANCE) acceptQ=acceptP=acceptK=acceptPi=false;
-	else acceptQ=acceptP=acceptK=acceptPi=true;
+	if(r>ACCEPTANCE) acceptQ=acceptP=acceptK=acceptPi=acceptB=false;
+	else acceptQ=acceptP=acceptK=acceptPi=acceptB=true;
 	/*
 	if(resinfo->charge==0 || fabs(eta)>1.0 || pt<150.0 || r>0.8){
 		acceptQ=acceptP=acceptK=acceptPi=false;
