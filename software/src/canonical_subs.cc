@@ -371,7 +371,7 @@ int CpartitionFunction::PickNhad(int B0,int Q0,int S0){
 	int nhad=-1,ib,iq,is;
 	double rancheck,ransum,nfact=1.0;
 	Getibiqis(NhadMAX/2,B0,Q0,S0,ib,iq,is);
-	rancheck=Ztot0[ib][iq][is]*.5; //randy->ran();
+	rancheck=Ztot0[ib][iq][is]*randy->ran();
 	ransum=0.0;
 	do{
 		nhad+=1;
