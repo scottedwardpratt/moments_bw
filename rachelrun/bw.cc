@@ -37,7 +37,21 @@ int main(int argc,char *argv[]){
 	//pf.WriteZ();
 	//pf.ReadZ();
 
-	nevents=1000000; //parameter::getI(parmap,"NEVENTS",100);
+	nevents=10000000; //parameter::getI(parmap,"NEVENTS",100);
+	/*
+	double pbound=4000;
+	int ndp=50,nparts;
+  double dp=pbound/double(ndp);
+	double dN_dp_p2[ndp];
+	for (int i=0;i<ndp;i++) {
+		dN_dp_p2[i]=0;
+	}
+	double pi=3.1415926536;
+	double hbarc=197.3269718;
+	double pmag;
+	int ibin,code;
+	Cpart *ipart;
+	*/
 	Omega=parameter::getD(parmap,"OMEGA",100);
 	string tag=parameter::getS(parmap,"FILE_TAG","_");
 	//string file=parameter::getS(parmap,"MOMENTS_OUTPUT_FILE","moments.dat");
@@ -49,8 +63,9 @@ int main(int argc,char *argv[]){
 	pf.ScaleZ(Omega);
 	printf("----------- Z Calculated -----------\n");
 
-	file="data/nodecay"+tag+".dat";
-	altfile="altdata/nodecay"+tag+".dat";
+	file="data/"+tag+".dat";
+	altfile="altdata/"+tag+".dat";
+	//FILE *fptr=fopen(file.c_str(),"w");
 	//strcat(file,const char(roots));
 	//muBoverT=GetMuBOverT(roots[roots]);
 	/*
@@ -78,13 +93,29 @@ int main(int argc,char *argv[]){
 			pf.GenEvent(b0,q0,s0,resinfovec);
 			blastwave.GenerateParts(resinfovec,partvec);
 			moments.IncrementMoments(partvec);
+			/*
+			nparts=partvec.size();
+			for (int i=0;i<nparts;i++) {
+				ipart=&partvec[i];
+				code=ipart->resinfo->code;
+				if (code==211 || code==-211 || code==111) {
+					pmag=sqrt(ipart->p[1]*ipart->p[1]+ipart->p[2]*ipart->p[2]+ipart->p[3]*ipart->p[3]);
+	      	ibin=floorl(pmag/dp);
+	      	if (ibin<ndp) dN_dp_p2[ibin]+=(2*pi*pi*hbarc*hbarc*hbarc)/(3*(ibin*dp+dp/2)*(ibin*dp+dp/2)*dp);
+				}
+			}
+			*/
 			partvec.clear();
-			if((ievent+1)%(nevents/10)==0)
-				printf("Finished %g percent\n",100.0*(ievent+1.0)/double(nevents));
 		}
 		moments.Summarize(file,altfile,Omega,rhoB,0.5*rhoB,roots,T);
 		moments.Clear();
 	}
+	/*
+	for (ibin=0;ibin<ndp;ibin++) {
+		fprintf(fptr,"%lf %lf\n",ibin*dp+dp/2,dN_dp_p2[ibin]/Omega);
+	}
+	fclose(fptr);
+	*/
 	//}
 
 	return 0;

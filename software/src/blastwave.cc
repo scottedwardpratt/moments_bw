@@ -20,14 +20,19 @@ void CblastWave::GenerateParts(vector<CResInfo *> &resinfovec,vector<Cpart> &par
 	array<CResInfo *,5> daughterresinfo;
 	Cpart *part;
 	int imother,ibody,nbodies,ipart0,nparts0=resinfovec.size();
-	double mtot;
+	double mtot,Ti;
 	CResInfo *resinfo;
 
 	for(ipart0=0;ipart0<nparts0;ipart0++){
 		resinfo=resinfovec[ipart0];
+		if (resinfo->bose_pion==true) {
+			Ti=Tf/(resinfo->code%100); //i is hidden in the imaginary code for bose corrections
+			resinfo=reslist->GetResInfoPtr(int(resinfo->code/1000)); //recover the correct code
+		}
+		else Ti=Tf;
 		part=new Cpart(resinfo);
-		randy->generate_boltzmann(resinfo->mass,Tf,part->p);
-		if(false){ //if(resinfo->decay){
+		randy->generate_boltzmann(resinfo->mass,Ti,part->p);
+		if(resinfo->decay){
 			mothervec.push_back(part);
 		}
 		else{
@@ -102,6 +107,7 @@ void CblastWave::BoostParts(vector<Cpart> &partvec){
 	u[1]=u[2]=0.0;
 	u[3]=sqrt(1.0+u[3]*u[3]);
 	for(ipart=0;ipart<nparts;ipart++){
+		part=&partvec[ipart];
 		Misc::Boost(u,part->p,part->p);
 	}
 }

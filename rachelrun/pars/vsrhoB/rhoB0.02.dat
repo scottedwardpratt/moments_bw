@@ -15,3 +15,5 @@ double BW_UPERPY 0.9
 double BW_SIGMA_ETA 0.6
 double BW_SIGMA_UPERP 0.25
 string FILE_TAG rhoB0.02
+int N_BOSE_TERMS 5
+bool USE_BOSE_TERMS true

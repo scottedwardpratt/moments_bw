@@ -21,7 +21,7 @@ typedef vector<CBranchInfo *> CBranchList; //gives branchlist name
 class CBranchInfo{
 public:
 	vector<CResInfo *> resinfoptr; //pointers for resinfo
-	double branching; 
+	double branching;
 	CBranchInfo();
 };
 
@@ -39,16 +39,17 @@ public:
 	int ires;
 	double mass;
 	double spin;
-	double width; 
+	double width;
 	double minmass;
 	string name;
 	int code;
 	int charge;
 	int strange;
-	int baryon;	
+	int baryon;
 	int G_Parity;
 	bool decay; //false if stable, true if can decay. check if true
-	CBranchList branchlist; 
+	bool bose_pion; //true if this is an imaginary resonance used for bose corrections
+	CBranchList branchlist;
 	CBranchInfo	*bptr_minmass;
 	void Print();
 	void DecayGetResInfoPtr(int &nbodies,array<CResInfo *,5> &daughterresinfo);
@@ -83,6 +84,8 @@ public:
 	double **SigmaMaxArray;
 	double RESWIDTH_ALPHA;
 	bool RESONANCE_DECAYS;
+	bool use_bose_terms;
+	int n_bose_terms;
 	//void freegascalc_onespecies_offshell(CResInfo *resinfo,double T,double &epsilon,double &P,double &dens,double &sigma2,double &dedt);
 };
 

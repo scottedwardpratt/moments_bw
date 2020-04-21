@@ -163,7 +163,7 @@ double CResInfo::GenerateMass(){
 			double lor = (width/(2*PI))/(pow(width/2,2.0) + pow(mass-m,2.0));
 			double weight = rho/(lor*8.0);
 			r = ranptr->ran();
-			if (r < weight) i = 1; 
+			if (r < weight) i = 1;
 		}
 	}
 	else m=mass;
@@ -321,17 +321,19 @@ double minmass,double &epsilon,double &P,double &dens,double &sigma2,double &ded
 
 void CResList::ReadResInfo(){
 	CMerge *merge;
-	int mothercode,code,decay,NResonances;
+	int mothercode,code,decay,NResonances,j,sgn=1;
 	double mothermass,bsum,netm,qR2,bmax;
 	int ires,jres,ires1,ires2,iresflip,ichannel,nchannels,ibody,nbodies,LDecay;
 	int netq,netb,nets;
 	string name, filename;
-	CResInfo *resinfoptr=NULL;
+	CResInfo *resinfoptr=NULL, *bresinfoptr=NULL;
 	CBranchInfo *bptr=NULL,*firstbptr=NULL;
 	FILE *resinfofile;
 	FILE * decayinfofile;
 	char dummy[200],cname[200];
 	filename=parameter::getS(*parmap,"B3D_RESONANCES_INFO_FILE",string("resinfo/resonances_pdg_weak.dat"));
+	use_bose_terms=parameter::getB(*parmap,"USE_BOSE_TERMS",false);
+	n_bose_terms=parameter::getI(*parmap,"N_BOSE_TERMS",1);
 	printf("will read res info from %s\n",filename.c_str());
 	resinfofile=fopen(filename.c_str(),"r");
 	fgets(dummy,200,resinfofile);
@@ -358,14 +360,39 @@ void CResList::ReadResInfo(){
 		resinfoptr->decay=bool(decay);
 		//if(RESONANCE_DECAYS) resinfoptr->decay=false;
 		resinfoptr->ires=ires;
+		resinfoptr->bose_pion=false;
 		resinfoptr->branchlist.clear();
 		if(!resinfoptr->decay && decay==1){
 			resinfoptr->Print();
 		}
 		resmap.insert(CResInfoPair(resinfoptr->code,resinfoptr));
-	} 
+		if ((resinfoptr->code==211||resinfoptr->code==-211||resinfoptr->code==111) && use_bose_terms){
+			if (resinfoptr->code==211) j=0;
+			if (resinfoptr->code==-211) j=1;
+			if (resinfoptr->code==111) j=2;
+			for (int i=0;i<n_bose_terms;i++){ //make extra imaginary resonances for bose corrections
+				bresinfoptr=new CResInfo();
+				if (resinfoptr->code<0) sgn=-1;
+				bresinfoptr->code=resinfoptr->code*1000+(i+2)*sgn; //no real resonance has this code
+				bresinfoptr->mass=resinfoptr->mass;
+				bresinfoptr->charge=resinfoptr->charge;
+				bresinfoptr->baryon=resinfoptr->baryon;
+				bresinfoptr->strange=resinfoptr->strange;
+				bresinfoptr->spin=resinfoptr->spin;
+				bresinfoptr->G_Parity=resinfoptr->G_Parity;
+				bresinfoptr->decay=resinfoptr->decay;
+				bresinfoptr->width=resinfoptr->width;
+				bresinfoptr->name=resinfoptr->name;
+
+				bresinfoptr->ires=NResonances+j*(n_bose_terms-1)+i; //stick the extra resonances at the end of the list
+				bresinfoptr->bose_pion=true;
+				resinfoptr->branchlist.clear();
+				resmap.insert(CResInfoPair(bresinfoptr->code,bresinfoptr));
+			}
+		}
+	}
 	fclose(resinfofile);
-	
+
 	filename=parameter::getS(*parmap,"B3D_RESONANCES_DECAYS_FILE",string("resinfo/decays_pdg_weak.dat"));
 	printf("will read decay info from %s\n",filename.c_str());
 	decayinfofile=fopen(filename.c_str(),"r");
@@ -392,7 +419,7 @@ void CResList::ReadResInfo(){
 				netb+=bptr->resinfoptr[ibody]->baryon;
 				nets+=bptr->resinfoptr[ibody]->strange;
 				netm+=bptr->resinfoptr[ibody]->mass;
-			} 
+			}
 			//total charge and baryon number should be conserved, and shouldn't be larger than single strangeness
 			if(netq!=0 || netb!=0 || abs(nets)>1){
 				printf("Charge conservation failure while reading decay info,\nnetq=%d, netb=%d, nets=%d\n",netq,netb,nets);
@@ -438,7 +465,7 @@ void CResList::ReadResInfo(){
 				resinfoptr->minmass=netm;
 				resinfoptr->bptr_minmass=bptr;
 			}
-			// switch places to make sure first branch has largest 
+			// switch places to make sure first branch has largest
 			if(bptr->branching>bmax){
 				bmax=bptr->branching>bmax;
 				if(ichannel>0){
@@ -464,7 +491,7 @@ CResInfo* CResList::GetResInfoPtr(int code){
 	}
 }
 
-void CResList::CalcEoS(double T0,double Tf,double delT){ 
+void CResList::CalcEoS(double T0,double Tf,double delT){
 	CResInfo *resinfoptr;
 	CResInfoMap::iterator rpos;
 	printf("#_____________________\n#  T       s         P        epsilon\n");
@@ -489,12 +516,12 @@ void CResList::CalcEoS(double T0,double Tf,double delT){
 				}
 				degen=2.0*resinfoptr->spin+1.0;
 				m=resinfoptr->mass;
-				
+
 				if((minmass>0.0)&&(width>0.0)) freegascalc_onespecies_finitewidth(m,m1,m2,T,width,minmass,epsiloni,pi,densi,sigma2i,dedti,maxweighti);
 				else freegascalc_onespecies(m,T,epsiloni,pi,densi,sigma2i,dedti);
-				
+
 				//freegascalc_onespecies(m,T,epsiloni,pi,densi,sigma2i,dedti);
-				
+
 				P+=pi*degen;
 				dedT+=dedti*degen;
 				epsilon+=epsiloni*degen;

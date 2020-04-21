@@ -234,6 +234,7 @@ void CpartitionFunction::Getibiqis(int ihad,int b,int q,int s,int &ib,int &iq,in
 void CpartitionFunction::Calcz(){
 	int b,q,s,ib,iq,is,ires=0,ihh=1;
 	double m,p,e,dens,sigma2,dedt;
+	double Ti;
 	CResInfo *resinfo;
 	CResInfoMap::iterator rpos;
 	double rhoH=0.0;
@@ -259,7 +260,9 @@ void CpartitionFunction::Calcz(){
 			s=resinfo->strange;
 			CheckQminQmax(1,b,q,s);
 			m=resinfo->mass;
-			reslist->freegascalc_onespecies(m,T,e,p,dens,sigma2,dedt);
+			if (resinfo->bose_pion==true) Ti=T/(abs(resinfo->code)%100);
+			else Ti=T;
+			reslist->freegascalc_onespecies(m,Ti,e,p,dens,sigma2,dedt);
 			z[ires]=Omega0*dens*(2*resinfo->spin+1.0);
 			rhoH+=z[ires]/Omega0;
 			Getibiqis(1,b,q,s,ib,iq,is);
@@ -310,6 +313,18 @@ void CpartitionFunction::ScaleZ(double OmegaSet){
 	//printf("Z[NhadMAX]/Ztot0=%g,  should be small, otherwise increase NhadMAX\n",dZ0/Ztot0[ibprime][iqprime][isprime]);
 }
 
+void CpartitionFunction::PrintPofA(){
+	double factor;
+	int b=0,q=0,s=0,ihad,ib,iq,is,ibprime,iqprime,isprime,ihhZtot0=NhadMAX/2;
+	factor=1.0;
+	Getibiqis(ihhZtot0,b,q,s,ibprime,iqprime,isprime);
+	for(ihad=0;ihad<=NhadMAX;ihad++){
+		Getibiqis(ihad,b,q,s,ib,iq,is);
+		printf("%3d %g\n",ihad,Z[ihad][ib][iq][is]*factor/Ztot0[ibprime][iqprime][isprime]);
+		factor*=(Omega/Omega0)/(ihad+1.0);
+	}
+}
+
 void CpartitionFunction::CalcZofOmega0(double TSet){
 	T=TSet;
 	int ihad,ib,iq,is,b,q,s,ihh;
@@ -356,7 +371,7 @@ int CpartitionFunction::PickNhad(int B0,int Q0,int S0){
 	int nhad=-1,ib,iq,is;
 	double rancheck,ransum,nfact=1.0;
 	Getibiqis(NhadMAX/2,B0,Q0,S0,ib,iq,is);
-	rancheck=Ztot0[ib][iq][is]*randy->ran();
+	rancheck=Ztot0[ib][iq][is]*.5; //randy->ran();
 	ransum=0.0;
 	do{
 		nhad+=1;

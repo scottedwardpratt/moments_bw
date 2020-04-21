@@ -22,12 +22,12 @@ ax = fig.add_axes([0.14,0.125,0.82,0.85])
 
 nruns=10
 nroots=1
-tags=["Omega25","Omega50","Omega100","Omega150","Omega200","Omega250"];
-figname='../figs/mq_vs_Omega.pdf'
+tags=["Omega25","Omega50","Omega100","Omega150","Omega200"];
+figname='../figs/mbq_vs_Omega_B0Q0.pdf'
 acceptance=[0.01,.2,.4,.5,.6,.8,1.0]
 rhoB=[0.05,0.1,0.15,0.2]
 eta=[0.2,0.6,1.0]
-vol=[25.0,50.0,100.0,150.0,200.0,250.0]
+vol=[25.0,50.0,100.0,150.0,200.0]
 
 """
 ["Acc0.2","Acc0.4","Acc0.5","Acc0.6","Acc0.8","Acc0","Acc1"]
@@ -43,6 +43,8 @@ stderrK=[]
 stderrS=[]
 stderrKq=[]
 stderrSq=[]
+stderrKb=[]
+stderrSb=[]
 
 for n in range(nroots):
     stderrK.append([])
@@ -53,12 +55,18 @@ for n in range(nroots):
     stderrSq.append([])
     Ssigmaq_avg=[]
     Ksigma2q_avg=[]
+    stderrKb.append([])
+    stderrSb.append([])
+    Ssigmab_avg=[]
+    Ksigma2b_avg=[]
     i=0
     for tag in tags:
         sumS=0
         sumK=0
         sumSq=0
         sumKq=0
+        sumSb=0
+        sumKb=0
         Omega=[]
         pbar=[]
         sigma2p=[]
@@ -70,11 +78,18 @@ for n in range(nroots):
         Ssigmaq=[]
         Ksigma2q=[]
         Skellamq=[]
+        bbar=[]
+        sigma2b=[]
+        Ssigmab=[]
+        Ksigma2b=[]
+        Skellamb=[]
         Ssigma_avg.append(0)
         Ksigma2_avg.append(0)
         Ssigmaq_avg.append(0)
         Ksigma2q_avg.append(0)
-        file="../data/"+tag+".dat";
+        Ssigmab_avg.append(0)
+        Ksigma2b_avg.append(0)
+        file="../data/B0Q0"+tag+".dat";
         mydata = np.loadtxt(file,skiprows=1,unpack=True)
         l=len(mydata[0])
         for run in range(nruns):
@@ -90,6 +105,11 @@ for n in range(nroots):
             Ssigmaq.append(mydata[11][l-nruns+run])
             Ksigma2q.append(mydata[12][l-nruns+run])
 
+            bbar.append(mydata[13][l-nruns+run])
+            sigma2b.append(mydata[14][l-nruns+run])
+            Ssigmab.append(mydata[15][l-nruns+run])
+            Ksigma2b.append(mydata[16][l-nruns+run])
+
             if qbar[run]!=0:
                 #Skellamp.append(sigma2p[run]/(pbar[run]*Omega[run]))
                 Skellamq.append(sigma2q[run]/(qbar[run]*Omega[run]))
@@ -99,6 +119,9 @@ for n in range(nroots):
 
                 Ssigmaq_avg[i]+=Ssigmaq[run]
                 Ksigma2q_avg[i]+=Ksigma2q[run]
+
+                Ssigmab_avg[i]+=Ssigmab[run]
+                Ksigma2b_avg[i]+=Ksigma2b[run]
             else:
                 print(tag,i,run,qbar[run])
                 exit(1)
@@ -107,22 +130,31 @@ for n in range(nroots):
         Ksigma2_avg[i]*=1/nruns
         Ssigmaq_avg[i]*=1/nruns
         Ksigma2q_avg[i]*=1/nruns
+        Ssigmab_avg[i]*=1/nruns
+        Ksigma2b_avg[i]*=1/nruns
 
         for run in range(nruns):
             sumS+=(Ssigmap[run]-Ssigma_avg[i])**2
             sumK+=(Ksigma2p[run]-Ksigma2_avg[i])**2
             sumSq+=(Ssigmaq[run]-Ssigmaq_avg[i])**2
             sumKq+=(Ksigma2q[run]-Ksigma2q_avg[i])**2
+            sumSb+=(Ssigmab[run]-Ssigmab_avg[i])**2
+            sumKb+=(Ksigma2b[run]-Ksigma2b_avg[i])**2
 
-        stderrS[n].append((1/nroots)*np.sqrt(sumS))
-        stderrK[n].append((1/nroots)*np.sqrt(sumK))
-        stderrSq[n].append((1/nroots)*np.sqrt(sumSq))
-        stderrKq[n].append((1/nroots)*np.sqrt(sumKq))
+        stderrS[n].append((1/nruns)*np.sqrt(sumS))
+        stderrK[n].append((1/nruns)*np.sqrt(sumK))
+        stderrSq[n].append((1/nruns)*np.sqrt(sumSq))
+        stderrKq[n].append((1/nruns)*np.sqrt(sumKq))
+        stderrSb[n].append((1/nruns)*np.sqrt(sumSb))
+        stderrKb[n].append((1/nruns)*np.sqrt(sumKb))
         i+=1
 
         #print("Ksigma2 error =",stderrK,", Ssigma error =",stderrS)
-    plt.errorbar(vol,Ssigmaq_avg,stderrSq[n],linestyle='-',linewidth=2,color=colors[n],markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label=str(roots[n])+': $C_3/C_1$')
-    plt.errorbar(vol,Ksigma2q_avg,stderrKq[n],linestyle='--',linewidth=2,color=colors[n],markersize=10, marker='^', markerfacecolor=None, markeredgecolor=None,label=str(roots[n])+': $C_4/C_2$')
+    plt.errorbar(vol,Ssigmaq_avg,stderrSq[n],linestyle='-',linewidth=2,color='r',markersize=8, marker='^', markerfacecolor=None, markeredgecolor=None,label='$S\sigma$ (Q)')
+    plt.errorbar(vol,Ksigma2q_avg,stderrKq[n],linestyle='--',linewidth=2,color='r',markersize=10, marker='s', markerfacecolor=None, markeredgecolor=None,label='$\kappa\sigma^2$ (Q)')
+
+    plt.errorbar(vol,Ssigmab_avg,stderrSb[n],linestyle='-',linewidth=2,color='b',markersize=8, marker='^', markerfacecolor=None, markeredgecolor=None,label='$S\sigma$ (B)')
+    plt.errorbar(vol,Ksigma2b_avg,stderrKb[n],linestyle='--',linewidth=2,color='b',markersize=10, marker='s', markerfacecolor=None, markeredgecolor=None,label='$\kappa\sigma^2$ (B)')
 
 ax.tick_params(axis='both', which='major', labelsize=14)
 ax.set_xticks(np.arange(0,300,50), minor=False)
@@ -130,16 +162,16 @@ ax.set_xticklabels(np.arange(0,300,50), minor=False, family='serif')
 ax.set_xticks(np.arange(0,300,50), minor=True)
 ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%d'))
 ax.xaxis.set_major_formatter(sformatter)
-plt.xlim(0,300)
+plt.xlim(0,225)
 
 ax.set_yticks(np.arange(-1,1.5,0.5), minor=False)
 ax.set_yticklabels(np.arange(-1,1.5,0.5), minor=False, family='serif')
-ax.set_yticks(np.arange(-1,1.5,0.05), minor=True)
+ax.set_yticks(np.arange(-1,1.5,0.1), minor=True)
 plt.ylim(0.0,1.05)
 ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%1f'))
 ax.yaxis.set_major_formatter(sformatter)
 
-#ax.legend(loc=(0.1,0.1));
+ax.legend(loc=(0.1,0.1));
 
 plt.xlabel('$\Omega$ $(fm^3)$',fontsize=18 , weight='normal')
 plt.ylabel('$S\sigma$,  $\kappa\sigma^2$', fontsize=24, weight='normal')

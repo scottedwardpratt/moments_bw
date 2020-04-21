@@ -43,6 +43,7 @@ public:
 	CRandom *randy;
 	void CalcZofOmega0(double Tset); //Calculates Z(A,Q) with volume Omega0 (actually stores Z*A!)
 	void ScaleZ(double OmegaSet); // Scales Z(A,Q) to get Ztot(Q) with right volume, Set T before setting Omega
+	void PrintPofA();
 	CResInfo* GenHad(int b,int q,int s);
 	void GenEvent(int B0,int Q0,int S0,vector<CResInfo *> &resinfo);
 	vector<int> bmin;
