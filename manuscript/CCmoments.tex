@@ -41,7 +41,7 @@ In addition to the finite system size (event multiplicities might number in the 
 
 The goal of this paper is to gauge the degree to which charge-balance correlations affect higher-order correlations. Such correlations need to be understood as potential sources of background before making firm arguments to have observed phenomena related to phase transitions. It is well known that charge-balance correlations are readily measurable at the two particle level, $N=2$ in Eq. (\ref{eq:kappadef}), and that they explain the bulk of the $N=2$ fluctuation measurement. However, their impact on $N=3,4$ fluctuations has not be investigated in great detail. For instance, the four-particle measure of correlation,
 \begin{eqnarray}
-C_4&=&\mathcal{M}_4-3\mathcal{M}_2^3,
+C_4&=&\mathcal{M}_4-3\mathcal{M}_2^2,
 \end{eqnarray}
 which is based on cumulants, subtracts much of the contribution to the $\mathcal{M}_4$ coming from purely two-particle correlations. However, charge conservation can involve multiple particles, and it is not clear the degree to which a cumulant-based measure, like the kurtosis, is affected by charge conservation. A simple model, where charge conservation is invoked through sampling a canonical ensemble, is presented in the next section. Although the method is different, this is similar to ideas that have been pursued recently \cite{Oliinychenko:2020cmr}. But with the method used here, events can be generated in a more efficient algorithm, which then enables the more systematic set of studies presented here.
 
@@ -165,23 +165,44 @@ z_{h,n}&=(2s+1)\sum_p e^{-nE_p/T}.
 \end{align*}
 For the conditions of a hadron gas in high-energy heavy-ion collisions only pions are significantly affected by quantum degeneracy. 
 
-Complicated experimental acceptances are difficult to incorporate into expressions for the moments. It is then easiest to generate entire events via Monte Carlo, and filter the events through the acceptance. The Monte Carlo procedure involves choosing a hadron proportional the number of ways the system might have such hadron, i.e. a product of the partition function of the individual hadron multiplied by the partition function of the remainder. The procedure becomes:
-\begin{enumerate}
-\item For Charge $Q,B,S$, choose the number of hadrons $A$ proportional to $Z_A(Q,B,S)/Z_A(Q,B,S)$.
-\item Choose a hadron $h$ proportional to the probability $z_hZ_{A-1}(Q-q_h,B-b_h,S-s_h)/Z_A(Q,B,S)$.
-\item Choose the momentum proportional to the thermal weight $e^{-E_p/T}$.
-\item Repeat (2) but with $A,Q,B,S$ being replaced by $A-1,Q-q_h,B-b-h,S-s_h$. The procedure is finished when $A=0$.
-\end{enumerate}
-Bose effects for pions can be included by altering the second and third steps above. In addition to choosing a hadron, one might also consider adding a $2-$pion, $3-$pion or $n-$pion state. Simply treat the $n-$pion state as if it were a resonance with charges $nq_h,nq_b,nq_s$, but with a partition function $z_{h,n}$ described above. If one chooses to make such a ``particle'', the $n$ identical particles are are given the same momentum and spin projection, using a Boltzmann distribution with a temperature $T/n$. To be more realistic the momenta should be smeared by some momenta $\approx\hbar/R$, where $R$ is a characteristic size of the system. If Fermi effects were to be included, one could calculate the partition function by adding a factor $(-1)^{n-1}$ to each term in the sum described in Eq. (\ref{eq:bose}). However, because some of the weights are negative, Monte Carlo procedures can become problematic. Fortunately, for the systems considered here are extremely hot, and degeneracy of fermions is negligible.
 
-Storing the partition function can require substantial memory for larger $A_{\rm max}$ because the indices $Q,B$ and $S$ must also vary over a range of order $\pm A_{\rm max}$, so memory usage roughly scales with $A_{\rm max}^4$. Because one is usually interested in calculations with total charge near zero, one can ignore partition functions for charges that cannot couple back to zero charge. Once $A$ exceeds $A_{\rm max}/2$, the calculations here cutoff values of $Q,B$ and $S$ that could not ultimately affect the $Q=B=S=0$ partition function for $A=A_{\rm max}$. Even with this savings, partition functions with $A_{\rm max}=250$ could require approximately 13 GB of memory, which would then require on the order of 10 minutes to calculate on a single processor.  For $A_{\rm max}=125$ less than a GB of memory was needed and partition functions could be calculated in less than a minute. For hadron gases at temperatures of 150 MeV, $A_{\rm max}=250$ was readily sufficient for patch volumes $\lesssim 700$ fm$^3$. If multiple patch volumes are to be explored for the same temperature, computational time can also be saved by realizing that the partition functions scale as $\Omega^A$. Thus, if one performs a calculation for some initial volume $\Omega_0$, scaling can provide results for new volumes.
 
 
 \section{Generation of Uncorrelated Sample Events}\label{sec:theoryMC}
 
+Complicated experimental acceptances are difficult to incorporate into expressions for the moments. It is then easiest to generate entire events via Monte Carlo, and filter the events through the acceptance. The Monte Carlo procedure involves choosing a hadron proportional the number of ways the system might have such hadron, i.e. a product of the partition function of the individual hadron multiplied by the partition function of the remainder. The procedure becomes:
+\begin{enumerate}
+\item Calculate and store the partition function, $Z_A(Q,B,S)$, up to some size $A\le A_{\rm max}$ for all $Q,B,S$ that might ultimately couple back to a given $A=A_{\rm max}$ for the given total values $Q,B,S$. 
+\item For total charge $Q,B,S$, choose the number of hadrons $A$ proportional to $Z_A(Q,B,S)/Z_A(Q,B,S)$.
+\item Choose a hadron $h$ proportional to the probability $z_hZ_{A-1}(Q-q_h,B-b_h,S-s_h)/Z_A(Q,B,S)$. If Bose degeneracy is to be taken into account this procedure is slight modified as described in Sec. \ref{sec:bose}.
+\item Choose the momentum proportional to the thermal weight $e^{-E_p/T}$.
+\item Repeat (3,4) but with $A,Q,B,S$ being replaced by $A-1,Q-q_h,B-b-h,S-s_h$. The procedure is finished when $A=0$.
+\end{enumerate}
+Bose effects for pions can be included by altering the second and third steps above. In addition to choosing a hadron, one might also consider adding a $2-$pion, $3-$pion or $n-$pion state. Simply treat the $n-$pion state as if it were a resonance with charges $nq_h,nq_b,nq_s$, but with a partition function $z_{h,n}$ described above. If one chooses to make such a ``particle'', the $n$ identical particles are are given the same momentum and spin projection, using a Boltzmann distribution with a temperature $T/n$. To be more realistic the momenta should be smeared by some momenta $\approx\hbar/R$, where $R$ is a characteristic size of the system. If Fermi effects were to be included, one could calculate the partition function by adding a factor $(-1)^{n-1}$ to each term in the sum described in Eq. (\ref{eq:bose}). However, because some of the weights are negative, Monte Carlo procedures can become problematic. Fortunately, for the systems considered here are extremely hot, and degeneracy of fermions is negligible.
+
+Storing the partition function can require substantial memory for larger $A_{\rm max}$ because the indices $Q,B$ and $S$ must also vary over a range of order $\pm A_{\rm max}$, so memory usage roughly scales with $A_{\rm max}^4$. Because one is usually interested in calculations with total charge near zero, one can ignore partition functions for charges that cannot couple back to the fixed overall charge at $A_{\rm max}$. Once $A$ exceeds $A_{\rm max}/2$, the calculations here cutoff values of $Q,B$ and $S$ that could not ultimately affect the $Q=B=S=0$ partition function for $A=A_{\rm max}$. Even with this savings, partition functions with $A_{\rm max}=250$ could require approximately 13 GB of memory, and need on the order of 10 minutes to calculate on a single processor. For $A_{\rm max}=125$, less than a GB of memory was needed and partition functions could be calculated in less than a minute. For hadron gases at temperatures of 150 MeV, $A_{\rm max}=250$ was readily sufficient for patch volumes $\lesssim 700$ fm$^3$. If multiple patch volumes are to be explored for the same temperature, computational time can also be saved by realizing that the partition functions scale as $\Omega^A$. Thus, if one performs a calculation for some initial volume $\Omega_0$, scaling can provide results for new volumes with minimal computation.
+
+Once the partition function is calculated, event generation is remarkably fast. The time to generate an even scales linearly with the volume, or equivalently, linear with the average number of particles generated. Running sufficient events to generate a million individual particles can be accomplished within a few seconds on a single CPU. Unlike Metropolis methods where events are modified by considering small changes to existing events, such as in \cite{}, each event in this is independent as long as the random numbers are without correlation.
+
+\section{Bose and Fermi Statistics}\label{sec:theorybosefermi}
+
+Including Bose and Fermi statistics in calculating the partition functions is straight-forward, and was shown in \cite{}. The method is related to that used for calculating the effects of multi-boson interference for pion interferometry. In a fixed volume the partition function can be first treated as the usual procedure of accounting for $n$ identical particles being in different single-particle states. This includes the $1/n!$ term to account for the fact that particles are indistinguishable, i.e. the Gibbs paradox. If $m_\ell$ indestinguishable particles are in the same single-particle state $\ell$, one must correct the weight by a factor of $m_\ell!$ for each level, which can also be thought of as the analog of the symmetrized relative wave function with all the momenta being equal. For fermions, the weight becomes $(-1)^{\ell-1}m_\ell$. As demonstrated in \cite{}, the recurrence relation to the partition function then becomes
+\begin{align*}\eqnumber\label{eq:Zbf}
+Z_{A}(Q,B,S)&=\frac{1}{A}\sum_h \sum_n Z_{A-n}(Q-nq_h,B-nb_h,Q-nq_h)z_{h,n}(\pm 1)^{n-1},
+\end{align*}
+where $z_{h,n}$ is the partition function for $n$ particles in any level, 
+\begin{align*}\eqnumber
+z_{h,n}&=\sum_\ell e^{-n\beta(\epsilon_\ell-\mu_iq_i)}.
+\end{align*}
+The $\pm 1$ refers to bosons or fermions. For hadron gases in the high temperature environments of relativistic heavy ion collisions, only pions have a non-negligible correction from quantum degeneracy. The correction for order $n$ for any level $\ell$ is of the order $e^{-\beta(\epsilon_\ell-\mu_iq_i)}$ lower than the previous term. This factor is largest for zero momentum, and for pions becomes $e^{-\beta(m-\mu)}$. The chemical potential is $\mu_Q q_i$ if the pions are chemically equilibrated, but if the system is not chemically equilibrated $\mu$ is adjusted to fit the average pion density. For the zero-momentum level at a temperature of 150 MeV, the factor is $e^{-m/T}\approx 0.4$, and as the system cools probably falls slightly \cite{gong}. For a more characteristic thermal momentum the factor is $\approx 0.1$. For heavier particles the factor is always small. For example, for a zero-temperature $\rho$ meson the factor is a fraction of a percent.
+
+Given that symmetrization is only being applied to pions, which are bosons, one can incorporate these corrections into the Monte Carlo procedure outlined in Sec. \ref{sec:theoryMC}. For fermions this might be problematic because of the negative weights coming from the $(-1)^(n-1)$ factors in Eq (\ref{eq:Zbf}). Here, the algorithm is adjusted by treating each value of $n$ as being a different species, with charges $nq_h$ and with the partition function calculated with a reduced temperature $T\rightarrow T/n$. If one picks such a species in step 3 of the algorithm, $n$ pions are generated, all with the same momentum. For a finite system, the pions would have a small relative momentum or order the inverse system size.
+
+It is well known that bosonic effects can broaden multiplicity distributions \cite{negativebinomial}, making them super-Poissonian. One of the goals of this study is to discern how bosonic statistics alter the kurtosis or skewness. 
+
 \section{Single-Charge Model with Uniform Measurement Efficiency}
 
-For context, we first review an extremely simplified model of a system with only one conserved charge, and where the species all have charge of either $-1,0$ or $+1$. Further, Bose and Fermi degeneracy is ignored. The expressions shown here were worked out analytically in \cite{}. In addition to the results from the canonical ensemble, a system of uncorrelated neutral particles that decays to charged particles is also presented to illustrate the difference in charge conservation manifests itself in fluctuation observables depending on whether the charges arise directly from an equilibrated system, or whether they arise from the decays of uncorrelated neutral particles.
+For context, we first review an extremely simplified model of a system with only one conserved charge, and where the species all have charge of either $-1,0$ or $+1$. Further, Bose and Fermi degeneracy is ignored and a grossly simplified version of the acceptance is assumed. The chance that any particle is observed is a fixed probability $\alpha$, with the acceptance probabilities of multiple particles being uncorrelated. Many of the expressions shown here were already derived in \cite{Savchuk:2019xfg}. In addition to the results from the canonical ensemble, a system of uncorrelated neutral particles that decays to charged particles is also presented to illustrate the difference in charge conservation manifests itself in fluctuation observables depending on whether the charges arise directly from an equilibrated system, or whether they arise from the decays of uncorrelated neutral particles.
 
 As before, the partition functions are labeled both the charge $Q$ and by the net number of hadrons, in this case charged hadrons. Because particles have charges only of $\pm 1$, the partition function for $z=Z_{A=1,Q=1}=Z_{A=1,Q=-1}$ forms the basis of all other partition functions. From the methods of the previous section
 \begin{align*}\eqnumber
@@ -239,6 +260,15 @@ This work was supported by the Department of Energy Office of Science through gr
 \end{acknowledgments}
 
 \begin{thebibliography}{99}
+
+%\cite{Savchuk:2019xfg}
+\bibitem{Savchuk:2019xfg}
+O.~Savchuk, R.~V.~Poberezhnyuk, V.~Vovchenko and M.~I.~Gorenstein,
+%``Binomial acceptance corrections for particle number distributions in high-energy reactions,''
+Phys. Rev. C \textbf{101} (2020) no.2, 024917
+doi:10.1103/PhysRevC.101.024917
+[arXiv:1911.03426 [hep-ph]].
+%2 citations counted in INSPIRE as of 05 May 2020
 
 %\cite{Oliinychenko:2020cmr}
 \bibitem{Oliinychenko:2020cmr} 
