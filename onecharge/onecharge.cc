@@ -123,7 +123,7 @@ int main(int argc,char *argv[]){
 	A2bar=A2bar/normmult;
 	A2bar=A2bar-Abar*Abar;
 	
-	printf("testing, normZ=%g, normPR=%g\n",normZ,normPR);
+	printf("testing, normZ=%g, normPR=%g, omega_M=%g\n",normZ,normPR,A2bar/Abar);
 
 	// Now do moments of charge distributions for Qtot != 0
 	Ztot=0.0;

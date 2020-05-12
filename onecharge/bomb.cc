@@ -42,6 +42,7 @@ int main(int argc,char *argv[]){
 	int A,q,Apairs,Qtot,Qbar,nmax;
 	double sigma2mult,Abar,A2bar,normcheck,Kmult,omega,omegaA,omegaa,abar,a2bar,qbar,q2bar,q3bar,q4bar;
 	double z,Ztot;
+	FILE *fptr=fopen("bomb.dat","w");
 	//printf("Enter z and Qtot: ");
 	//scanf("%lf %lf",&z,&Qtot);
 	z=10.0;
@@ -53,74 +54,32 @@ int main(int argc,char *argv[]){
 	int nbomb=10,a;
 	Z.resize(AMAX+1);
 
-	printf("Enter nbomb(even integer) and efficiency: ");
-	scanf("%d %lf",&nbomb,&alpha);
-	x=alpha*(1.0-alpha);
-	
+	printf("Enter nbomb(even integer): ");
+	scanf("%d",&nbomb);
 	lnfact.resize(AMAX+Qtot+1);
 	lnfact[0]=0.0;
+	for(A=1;A<=AMAX;A++)
+		lnfact[A]=lnfact[A-1]+log(double(A));
 	
-	Z[0]=1.0;
-	Ztot=Z[0];
-	Abar=A2bar=0.0;
-	if(equilibrated_pairs){
-		for(A=1;A<=AMAX;A++){
-			lnfact[A]=lnfact[A-1]+log(double(A));
-			if(A%2==0){
-				Z[A]=Z[A-2]/exp(2.0*lnfact[A/2]);
-			}
-			else
-				Z[A]=0.0;
+	for(z=0.005;z<50;z++){
+
+		Z[0]=1.0;
+		Ztot=Z[0];
+		Abar=A2bar=0.0;
+
+		for(A=nbomb;A<=AMAX;A+=nbomb){
+			Z[A]=Z[A-nbomb]*z/double(A);
 			Abar+=Z[A]*A;
 			A2bar+=Z[A]*A*A;
 			Ztot+=Z[A];
 		}
+		Abar=Abar/Ztot;
+		A2bar=(A2bar/Ztot)-Abar*Abar;
+		omega=A2bar/Abar;
+		printf("Abar=%g, A2bar=%g, omega=%g\n",Abar,A2bar,omega);
+		fprintf(fptr."%8.5f %10.5f %10.5f\n",z,Abar,omega);
 	}
-	else if(bombs){
-		for(A=1;A<=AMAX;A++){
-			lnfact[A]=lnfact[A-1]+log(double(A));
-			Z[A]=z*Z[A-1]/double(A);
-			Abar+=Z[A]*A;
-			A2bar+=Z[A]*A*A;
-			Ztot+=Z[A];
-		}
-	}
-	Abar=Abar/Ztot;
-	A2bar=(A2bar/Ztot)-Abar*Abar;
-	omega=nbomb*A2bar/Abar;
-	printf("Abar=%g, A2bar=%g, omega=%g\n",Abar,A2bar,omega);
-	
-	normcheck=0.0;
-	abar=a2bar=0.0;
-	qbar=q2bar=q3bar=q4bar=0.0;
-	for(A=0;A<=AMAX;A++){
-		dPA=Z[A]/Ztot;
-		for(a=0;a<=A;a++){
-			abar+=dPA*a*pow(alpha,a)*pow(1.0-alpha,A-a)*exp(lnfact[A]-lnfact[A-a]-lnfact[a]);
-			a2bar+=a*a*dPA*pow(alpha,a)*pow(1.0-alpha,A-a)*exp(lnfact[A]-lnfact[A-a]-lnfact[a]);
-		}
-		nmax=nbomb*A/2;
-		for(nplus=0;nplus<=nmax;nplus++){
-			for(nminus=0;nminus<=nmax;nminus++){
-				q=nplus-nminus;
-				dPQ=dPA*pow(alpha,nplus)*pow(1.0-alpha,nmax-nplus)*exp(lnfact[nmax]-lnfact[nmax-nplus]-lnfact[nplus]);
-				dPQ=dPQ*pow(alpha,nminus)*pow(1.0-alpha,nmax-nminus)*exp(lnfact[nmax]-lnfact[nmax-nminus]-lnfact[nminus]);
-				qbar+=dPQ*q;
-				q2bar+=dPQ*q*q;
-				q3bar+=dPQ*q*q*q;
-				q4bar+=dPQ*q*q*q*q;
-				normcheck+=dPQ;
-			}
-		}
-	}
-	printf("normcheck=%g\n",normcheck);
-	a2bar=a2bar-abar*abar;
-	q2bar=q2bar-qbar*qbar;
-	q4bar=q4bar-3.0*q2bar*q2bar;
-	printf("abar=%g, a2bar=%g\n",abar,a2bar);
-	printf("qbar=%g, q2bar=%g\n",qbar,q2bar);
-	guess=1.0+3.0*alpha*(1.0-alpha)*(omega-2.0);
-	printf("K*sigma^2=%g =? %g\n",q4bar/q2bar,guess);
+	fclose(fptr);
 	
 	
 

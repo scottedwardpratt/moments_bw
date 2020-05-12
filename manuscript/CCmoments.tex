@@ -1,10 +1,9 @@
-\documentclass[aps,prc,twocolumn,nofootinbib,showpacs,superscriptaddress,groupedaddress]{revtex4-1}
+\documentclass[aps,prc,nofootinbib,showpacs,superscriptaddress,groupedaddress]{revtex4-1}
 \usepackage{amsmath,amssymb,amsbsy,bm}
 \usepackage{graphicx}
 \usepackage{comment}
 \usepackage{float}
 \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
-\newcommand\eqnumber{\addtocounter{equation}{1}\tag{\theequation}}
 
 \begin{document}
 
@@ -63,17 +62,17 @@ C_4&=\langle(Q-\bar{Q})^4\rangle-C_2^2,
 where $Q$ is the net charge. Here, $Q$ might refer to baryon number, to strangeness, or to the electric charge measured in units of $e$.
 
 Rather than showing the cumulants $C_n$, ratios are presented to help minimize trivial dependences on system size. The skewness, $S$, is a measure of the third moment,
-\begin{align*}\eqnumber
+\begin{eqnarray}
 S&=\frac{C_4}{C_2^{3/2}}.
-\end{align*}
+\end{eqnarray}
 This definition has the advantage in being dimensionless, but it does not become independent of volume in the limit of large volumes. Thus, it is more common to consider the ratio
-\begin{align*}\eqnumber
+\begin{eqnarray}
 S\sigma&=S\sqrt{C_2}=\frac{C_3}{C_2},
-\end{align*}
+\end{eqnarray}
 which becomes an intensive measure in the limit of larger volumes. The kurtosis is a measure of four-particle correlations,
-\begin{align*}\eqnumber
+\begin{eqnarray}
 K&=\frac{C_4}{C_2^2},
-\end{align*}
+\end{eqnarray}
 but instead of $K$, one typically chooses
 \begin{eqnarray}
 K\sigma^2&=\frac{C_4}{C_2},
@@ -81,24 +80,24 @@ K\sigma^2&=\frac{C_4}{C_2},
 to find an intensive measure of the fluctuation, at least for large volumes. 
 
 The measures $S\sigma$ and $K\sigma^2$ approach simple values in the limit that the distributions would be Poissonian. For Poissonian emission the observation of a charge in one region of momentum space is uncorrelated with the emission into any other space. Thus, particles are correlated only with themselves. If charges appear only in integral positive units, one can apply the usual expression for the Poissonian moments where the mean is $\eta$, 
-\begin{align*}\eqnumber
+\begin{eqnarray}
 C_1&=\bar{n}=\eta\\
 C_2&=\langle(n-\bar{n})^2\rangle=\eta,\\
 C_3&=\langle(n-\bar{n})^3\rangle=\eta=C_1,\\
 C_4&=\langle(n-\bar{n})^4\rangle-3C_2^2=\eta.
-\end{align*}
+\end{eqnarray}
 If there exist both positive and negative charges, the distribution of the net charge can be derived by convoluting the two distributions. Convoluting two Poissonians results in a Skellam distribution. If the mean number of positives is $\eta_+$ and the mean number of negatives is $\eta_-$, the distribution of net charge for a Skellam distribution, $Q=n_+-n_-$, yields the following cumulants
-\begin{align*}\eqnumber
+\begin{eqnarray}
 C_1&=\eta_+-\eta_-,\\
 C_2&=\eta_++\eta_-,\\
 C_3&=\eta_+-\eta_-=C_1,\\
 C_4&=\eta_++\eta_-=C_2.
-\end{align*}
+\end{eqnarray}
 Thus, if charges are produced in an uncorrelated fashion in increments of either $\pm 1$, the skewness and kurtosis become
-\begin{align*}\eqnumber
+\begin{eqnarray}
 S\sigma&=\frac{C_3}{\sigma^2}=\frac{C_1}{\sigma^2},\\
 K\sigma^2&=\frac{C_4}{\sigma^2}=1,
-\end{align*}
+\end{eqnarray}
 where $\sigma^2\equiv\langle(Q-\bar{Q})^2\rangle=\eta_++\eta_-$. It might have made more sense to consider $C_3/C_1$ rather than $S\sigma$, as that ratio would be unity in the limit that emission is uncorrelated. However, because experimental analyses have often concentrated on the two ratios above, higher order correlations in this paper will also be presented in terms of these ratios.
 
 Moments depend on the efficiency $\alpha$ with which particles are measured. In the limit of vanishing efficiency all distributions of positives or of negatives tend to become Poissonian, and the distribution of the net charge will thus become a Skellam.  This can be understood by having the probability of observing a positive charge being $\alpha\rightarrow 0$ and the probability of observing two charges being proportional to $\alpha^2$ being negligible. This assumption would fall through if all positive charges were measured in pairs, i.e. multiple charges on each measured particle, but for final-state hadrons the charges are only $\pm 1$. As $\alpha\rightarrow 0$, the moments are dominated by the probability of observing either zero charges or a single charge, and the moments for counting particles of a given charge are
@@ -134,39 +133,76 @@ is the canonical partition function of the vacuum. The contribution for a given 
 Z_A(Q,B,S)&=&=\frac{1}{A}\sum_h z_hZ_{A-1}(Q-q_h,B-b_h,S-s_h),
 \end{eqnarray}
 where $z_h$ is the single-particle partition function for hadron species $h$, which has charges $q_h,b_h$ and $s_h$. This was proved in \cite{Pratt:1999ht}, and can be understood by realizing that one can count all the ways to arrange $A$ hadrons with a given charge by considering all the ways to arrange one hadron multiplied by all the ways to arrange the remaining hadrons. To avoid double counting, a factor of $1/A$ is applied. For a fixed charge the probability to have $A$ hadrons is,
-\begin{align*}\eqnumber
+\begin{eqnarray}
 P(A)&=&\frac{Z_A(Q,B,S)}{\sum_A Z_A(Q,B,S)}=\frac{Z_A(Q,B,S)}{Z(Q,B,S)}.
-\end{align*}
+\end{eqnarray}
 In practice, the sum over $A$ is cut off at some $A_{\rm max}$, but in our studies here that cutoff is made large enough that contributions to $Z$ for $A>A_{\rm max}$ are negligible. Thus, once builds the partition function from $A=0$ to $A_{\rm max}$ one has the partition function for all $Q,B,S$. 
 
 Once the partition function is calculated one can also calculate the multiplicities and moments of observing specific species. For example, the multiplicity of species $h$ in a system with charge $Q,B,S$ is
-\begin{align*}\eqnumber
+\begin{eqnarray}
 \langle N_h\rangle &= z_h\frac{Z(Q-q_h,B-b_h,S-s_h)}{Z(Q,B,S)}.
-\end{align*}
+\end{eqnarray}
 This also provides expressions for the various charges, e.g.,
-\begin{align*}\eqnumber
+\begin{eqnarray}
 \langle Q\rangle &= \sum_h q_hz_h\frac{Z(Q-q_h,B-b_h,S-S_h)}{Z(Q,B,S)}.
-\end{align*}
+\end{eqnarray}
 Spectra can also be calculated
-\begin{align*}\eqnumber
+\begin{eqnarray}
 \frac{dN_h}{d^3p}&=\frac{(2s_h+1)\Omega}{(2\pi\hbar)^3}e^{-E_h(p)}\frac{Z(Q-q_h,B-b_h,S-S_h)}{Z(Q,B,S)}.
-\end{align*}
+\end{eqnarray}
 Higher moments can also be extracted,
-\begin{align*}\eqnumber
+\begin{eqnarray}
 \langle N_hN_{h'}\rangle &= \delta_{hh'}z_h\frac{Z(Q-q_h,B-b_h,S-s_h)}{Z(Q,B,S)}\\
 &\hspace*{-30pt}+z_hz_{h'}\frac{Z(Q-q_h-q_{h'},B-b_h-b_{h'},S-s_h-s_{h'})}{Z(Q,B,S)}.
-\end{align*}
+\end{eqnarray}
 It is straightforward to extend this expression to the fluctuation of charges.
 
 These expressions can also be extended to consider non-additive conservation laws. Net isospin conservation of a hadron gas was invoked in \cite{Cheng:2002jb}, i.e. restricting the states to being in an iso-singlet.  For quark-gluon states were restricted to being in both an iso-singlet and a color singlet in \cite{Pratt:2003jd}. For Bose corrections,
-\begin{align*}\eqnumber\label{eq:bose}
-Z_A(B,Q,S)&=\frac{1}{A}\sum_{h,n}z_{h,n}Z_{A-1}(Q-nq_h,B-nb_h,S-ns_h),\\
-z_{h,n}&=(2s+1)\sum_p e^{-nE_p/T}.
-\end{align*}
+\begin{eqnarray}\label{eq:bose}
+Z_A(B,Q,S)&=&\frac{1}{A}\sum_{h,n}z_{h,n}Z_{A-1}(Q-nq_h,B-nb_h,S-ns_h),\\
+z_{h,n}&=&(2s+1)\sum_p e^{-nE_p/T}.
+\end{eqnarray}
 For the conditions of a hadron gas in high-energy heavy-ion collisions only pions are significantly affected by quantum degeneracy. 
 
+For the case of a single kind of charge, one can see how the the recursive method above yields the same result as what one would expect by writing down the partition function for a system with $(A-Q)/2$ negative charges and $(A+Q)/2$ positive charges,
+\begin{eqnarray}
+\label{eq:singlecharge}
+Z_{A,Q}=\left\{\begin{array}{rl}
+\frac{z^A}{[(A-Q)/2]![(A+Q)/2]!},&A-Q~{\rm is~even},\\
+0,&A-Q~{\rm is~odd}.\end{array}\right. ,
+\end{eqnarray}
+where $z$ is the partition function of a single charge. One can readily see that this is consistent with the recurrence relations,
+\begin{eqnarray}
+Z_{A,Q}&=&\frac{z}{A}\left\{Z_{A-1,Q-1}+Z_{A-1,Q+1}\right\}\\
+\nonumber
+&=&\frac{z}{A}\left\{\frac{z^{A-1}}{[(A-Q-2)/2]![(A+Q)/2]!}+\frac{z^{A-2}}{[(A-Q)/2]![(A+Q-2)/2]!}\right\}\\
+\nonumber
+&=&\frac{z}{A}\left\{\frac{z^{A-1}(A-Q)/2}{[(A-Q)/2]![(A+Q)/2]!}+\frac{z^{A-2}(A+Q)/2}{[(A-Q)/2]![(A+Q)/2]!}\right\}\\
+&=&\frac{z^A}{[(A-Q)/2]![(A+Q)/2]!}.
+\end{eqnarray}
+This result is also equivalent to expectations based on setting reaction rates equal. If one assumes that pairs are created with some rate $\beta$, and that they are destroyed with some rate $\alpha N_+N_-$, where $N_+$ and $N_-$ are the number of positive and negative charges, $N_++N_-=A$. Setting the rates equal,
+\begin{equation}\label{eq:ratesequal}
+\alpha \frac{(A-Q)(A+Q)}{4}Z_{A,Q}=\beta Z_{A-2,Q}.
+\end{equation}
+One can not see that if one chooses $\beta/\alpha=z$ that Eq.s (\ref{eq:ratesequal}) and (\ref{eq:singlecharge}) are consistent.
 
 
+
+Indeed, this result satisfies the recurrence relations above. If the net charge is zero, the result is even simpler,
+\begin{eqnarray}
+\label{eq:PAgivenQcanonical}
+P(A|Q)&=&\frac{Z_{A,Q}}{\sum_A Z_{A,Q}},\\
+\nonumber
+P(A|Q=0)&=& \frac{z^A}{[(A/2)!]^2}\left\{\sum_{A={\rm even}} \frac{z^A}{[(A/2)!]^2}\right\}^{-1}.
+\end{eqnarray}
+
+Aside from the assumptions that $Q$ is fixed and there exists only one kind of charge, Eq.(\ref{eq:rateresult}) also requires that Bose and Fermi quantum statistical corrections are negligible, and that the charges come in unit charges. Despite these shortcomings, this picture is useful in that it allows one to see how multiplicities fluctuations are affected by charge conservation in a simple picture. 
+
+One can also find $\omega_M$ by considering an equilibrated system. Here, we first consider an extremely simplified model of a system with only one conserved charge, and where the species all have charge of either $-1$ or $+1$. Again, the partition functions are labeled by the charge $Q$ and by the net number of hadrons $A$. Because particles have charges only of $\pm 1$, the partition function for $z=Z_{A=1,Q=1}=Z_{A=1,Q=-1}$ forms the basis of all other partition functions. From the methods of the previous section
+\begin{eqnarray}
+Z_{A,Q}&=\frac{z}{A}\left[Z_{A-1,Q-1}+Z_{A-1,Q+1}\right].
+\end{eqnarray}
+This relation rapidly reproduces the partition function for all $A$ and $Q$ for $A$ of the order of a few hundred.
 
 \section{Generation of Uncorrelated Sample Events}\label{sec:theoryMC}
 
@@ -187,48 +223,93 @@ Once the partition function is calculated, event generation is remarkably fast. 
 \section{Bose and Fermi Statistics}\label{sec:theorybosefermi}
 
 Including Bose and Fermi statistics in calculating the partition functions is straight-forward, and was shown in \cite{}. The method is related to that used for calculating the effects of multi-boson interference for pion interferometry. In a fixed volume the partition function can be first treated as the usual procedure of accounting for $n$ identical particles being in different single-particle states. This includes the $1/n!$ term to account for the fact that particles are indistinguishable, i.e. the Gibbs paradox. If $m_\ell$ indestinguishable particles are in the same single-particle state $\ell$, one must correct the weight by a factor of $m_\ell!$ for each level, which can also be thought of as the analog of the symmetrized relative wave function with all the momenta being equal. For fermions, the weight becomes $(-1)^{\ell-1}m_\ell$. As demonstrated in \cite{}, the recurrence relation to the partition function then becomes
-\begin{align*}\eqnumber\label{eq:Zbf}
+\begin{eqnarray}\label{eq:Zbf}
 Z_{A}(Q,B,S)&=\frac{1}{A}\sum_h \sum_n Z_{A-n}(Q-nq_h,B-nb_h,Q-nq_h)z_{h,n}(\pm 1)^{n-1},
-\end{align*}
+\end{eqnarray}
 where $z_{h,n}$ is the partition function for $n$ particles in any level, 
-\begin{align*}\eqnumber
+\begin{eqnarray}
 z_{h,n}&=\sum_\ell e^{-n\beta(\epsilon_\ell-\mu_iq_i)}.
-\end{align*}
+\end{eqnarray}
 The $\pm 1$ refers to bosons or fermions. For hadron gases in the high temperature environments of relativistic heavy ion collisions, only pions have a non-negligible correction from quantum degeneracy. The correction for order $n$ for any level $\ell$ is of the order $e^{-\beta(\epsilon_\ell-\mu_iq_i)}$ lower than the previous term. This factor is largest for zero momentum, and for pions becomes $e^{-\beta(m-\mu)}$. The chemical potential is $\mu_Q q_i$ if the pions are chemically equilibrated, but if the system is not chemically equilibrated $\mu$ is adjusted to fit the average pion density. For the zero-momentum level at a temperature of 150 MeV, the factor is $e^{-m/T}\approx 0.4$, and as the system cools probably falls slightly \cite{gong}. For a more characteristic thermal momentum the factor is $\approx 0.1$. For heavier particles the factor is always small. For example, for a zero-temperature $\rho$ meson the factor is a fraction of a percent.
 
 Given that symmetrization is only being applied to pions, which are bosons, one can incorporate these corrections into the Monte Carlo procedure outlined in Sec. \ref{sec:theoryMC}. For fermions this might be problematic because of the negative weights coming from the $(-1)^(n-1)$ factors in Eq (\ref{eq:Zbf}). Here, the algorithm is adjusted by treating each value of $n$ as being a different species, with charges $nq_h$ and with the partition function calculated with a reduced temperature $T\rightarrow T/n$. If one picks such a species in step 3 of the algorithm, $n$ pions are generated, all with the same momentum. For a finite system, the pions would have a small relative momentum or order the inverse system size.
 
 It is well known that bosonic effects can broaden multiplicity distributions \cite{negativebinomial}, making them super-Poissonian. One of the goals of this study is to discern how bosonic statistics alter the kurtosis or skewness. 
 
-\section{Single-Charge Model with Uniform Measurement Efficiency}
+\section{Simple Model with Uniform Efficiency and Fixed Charge}
 
-For context, we first review an extremely simplified model of a system with only one conserved charge, and where the species all have charge of either $-1,0$ or $+1$. Further, Bose and Fermi degeneracy is ignored and a grossly simplified version of the acceptance is assumed. The chance that any particle is observed is a fixed probability $\alpha$, with the acceptance probabilities of multiple particles being uncorrelated. Many of the expressions shown here were already derived in \cite{Savchuk:2019xfg}. In addition to the results from the canonical ensemble, a system of uncorrelated neutral particles that decays to charged particles is also presented to illustrate the difference in charge conservation manifests itself in fluctuation observables depending on whether the charges arise directly from an equilibrated system, or whether they arise from the decays of uncorrelated neutral particles.
+Even for a volume of fixed charge, finite efficiency and acceptance leads to non-zero fluctuations. The degree to which these fluctuations affect the skewness and kurtosis was worked out in \cite{Savchuk:2019xfg} for emission of a fixed charge where the probability of any charge being observed was a constant $\alpha$. If $\alpha$ were zero or unity, there would be no fluctuations, and because the charge on those particles that are not observed must fluctuate exactly opposite to the charge that is observed, the even moments must be symmetric about $\alpha=1/2$, and the odd moments must be anti-symmetric. One of the most important results of \cite{Savchuk:2019xfg} is that for fixed $Q$ and $\alpha$ the ratios cumulants depends only on $\alpha$ and the variance and mean of the underlying multiplicity distribution. Even though $Q$ is fixed, the net number of charged particles $M$ can fluctuate. 
 
-As before, the partition functions are labeled both the charge $Q$ and by the net number of hadrons, in this case charged hadrons. Because particles have charges only of $\pm 1$, the partition function for $z=Z_{A=1,Q=1}=Z_{A=1,Q=-1}$ forms the basis of all other partition functions. From the methods of the previous section
-\begin{align*}\eqnumber
-Z_{A,Q}&=\frac{z}{A}\left[Z_{A-1,Q-1}+Z_{A-1,Q+1}\right].
-\end{align*}
-This relation rapidly reproduces the partition function for all $A$ and $Q$ for $A$ of the order of a few hundred.
-
-As an aside we point out that the partition functions from this method agree perfectly with those generated by considering equilibrated reaction rates. For a given charge $Q$, if $Q$ is even only even values of $A$ are allowed, and if $Q$ is odd, only odd values of $A$ are possible. If there are reactions that annihilate hadrons, proportional to the density of positives multiplied by the density of negatives, and thermal rate at which pairs are created, which is depends only on temperature, then at equilibrium,
-\begin{equation}
-\alpha \frac{(A-Q)(A+Q)}{4}Z_{A,Q}=\beta Z_{A-2,Q}.
-\end{equation}
-Here, annihilation is described by the constant $\alpha$ which depends on the product of the number of positives, $(A+Q)/2$, and the number of negatives $(A-Q)/2$. Beginning with
-\begin{equation}
-Z_{A,Q=\pm A}=\frac{z^A}{A!},
-\end{equation}
-which gives the $Z_{A,Q}$ for the lowest possible $A$ given a specific $Q$, one can generate the partition function for all higher values of $A$ using Eq. (\ref{eq:reacrate}). If the ratio $\beta/\alpha$ is chosen to be $z$,
-\begin{equation}
-Z_{A,Q}=\left\{\begin{array}{rl}
-\frac{z^A}{[(A-Q)/2]![(A+Q)/2]!},&A-Q~{\rm is~even},\\
-0,&A-Q~{\rm is~odd}.\end{array}\right. 
-\end{equation}
-This expression satisfies the recurrence relation from the previous section, Eq. (\ref{eq:recurrence}).  The probability of having $A$ charged particles for fixed charge $Q$ becomes,
-\begin{eqnarray}\label{eq:PAgivenQcanonical}
-P(A|Q)&=&\frac{Z_{A,Q}}{\sum_A Z_{A,Q}},\\
-&=& \frac{z^A}{[(A/2)!]^2}\left\{\sum_A \frac{z^A}{[(A/2)!]^2}\right\}^{-1},~Q=0.
+From \cite{Savchuk:2019xfg}, the probability that $N$ charged particles with total charge $Q$ will result in a measured charge $q$ due to a uniform efficiency $\alpha$ is the convolution of two binomial distributions
+\begin{eqnarray}
+P(q|M,Q)&=&\sum_{n_+=0}^{(M+Q)/2}\sum_{n_-=0}^{(N-Q)/2}\frac{[(M+Q)/2]![(M-Q)/2]!}{[(M+Q)/2-n_+]![(M-Q)/2-n_-]!n_+!n_-!}
+\alpha^{n_++n_-}(1-\alpha)^{M-n_+-n_-}.
 \end{eqnarray}
+After some tedious algebra, one can find the cumulants for fixed multiplicity,
+\begin{eqnarray}
+C'_1&=&\bar{q}=\alpha Q,\\
+\nonumber
+C'_2&=&\langle (q-\bar{q})^2\rangle_M = \alpha(1-\alpha)M,\\
+\nonumber
+C'_3&=&\langle (q-\bar{q})^3\rangle_M = \alpha(1-\alpha)(1-2\alpha)Q,\\
+\nonumber
+C'_4&=&\langle(q-\bar{q})^4\rangle_M -3\langle(q-\bar{q})^2\rangle_M^2\\
+\nonumber
+&=&\alpha(1-\alpha)-6\alpha^2(1-\alpha)^2M.
+\end{eqnarray}
+Here, the primes emphasize that the averages $\langle\cdots\rangle_M$. denote that they consider only those events with fixed base multiplicities $M$. The even moments are all linear in $M$, while the odd moments are linear in $Q$. It might appear that due to the linearity one might replace $M$ with $\langle M\rangle$ for a fluctuating base multiplicity, but the second term in the fourth cumulant
+\begin{eqnarray}
+-3\sum_M P(M) \langle(q-\bar{q})^2\rangle_M^2 &\ne&
+-3\langle(q-\bar)^2\rangle^2.
+\end{eqnarray}
+Instead,
+\begin{eqnarray}
+\langle(q-\bar)^2\rangle^2&=&\alpha^2(1-\alpha)^2\bar{M}^2.
+\end{eqnarray}
+This provides a contribution to $C_4$ and the cumulants and their ratios become \cite{Savchuk:2019xfg},
+\begin{eqnarray}
+\label{eq:savchuck}
+C_1&=&\alpha Q,\\
+\nonumber
+C_2&=&\alpha(1-\alpha)\bar{M},\\
+\nonumber
+C_3&=&\alpha(1-\alpha)(1-2\alpha)Q,\\
+\nonumber
+C_4&=&\alpha(1-\alpha)-6\alpha^2(1-\alpha)^2\bar{M}\\
+\nonumber
+&&+3^2\alpha(1-\alpha)^2\langle(M-\bar{M})^2\rangle,\\
+\nonumber
+\frac{C_2}{C_1}&=&(1-\alpha)\frac{\bar{M}}{Q},\\
+\nonumber
+\frac{C_3}{C_1}&=&(1-\alpha)(1-2\alpha),\\
+\nonumber
+\frac{C_3}{C_2}&=&(1-2\alpha)\frac{Q}{\bar{M}},\\
+\nonumber
+\frac{C_4}{C_2}&=&1+3\alpha(1-\alpha)(\omega_M-2),\\
+\nonumber
+\omega_M&\equiv&\frac{\langle(M-\bar{M})^2\rangle}{\bar{M}}.
+\end{eqnarray}
+The relative variance of the multiplicity of the base distribution, $\omega_M$, is unity for a Poissonian distribution. In that case $C_3/C_1$ and $C_4/C_2$ fall below unity for non-zero $\alpha$. The only assumptions for this relation are that the charge is fixed and that the efficiency is uniform. This is important as it implies that if one understands the efficiency and the second moment of the base multiplicity distribution, one can construct a baseline of cumulant ratios, and attribute any deviation from the baseline as due to fluctuations in $Q$, which is precisely the goal.
+
+A reasonable value of $\alpha$ can be taken from balance function analyses. If a charge is observed, there should be a balancing charge emitted nearby, and detected with probability $\alpha$. This should correspond to the integrated strength of the charge balance function, which for electric charge is in the neighborhood of 0.4. Of course, $\alpha$ is not a constant. If a charge is observed in the center of the detector, its balancing charge has a better chance of being observed than for one observed near the periphery of the acceptance. Nonetheless, for the purposes of roughly setting expectations, this suggests that $C_4/C_2$ can be significantly differ from unity. 
+
+Equation (\ref{eq:savchuck}) is crucial as it demonstrates that the fourth moment of the charge distribution is determined completely by the efficiency and the relative variance of the base multiplicity distribution, if the total base charge $Q$ is fixed. Next, we consider how various effects, aside from fluctuating the base charge $Q$, might push $\omega_M$ to be either super-Poissonian, $\omega_M>1$ or sub-Possonian. We discuss the effects of volume fluctuations, equilibrated charge distributions, decays and Bose condensation.
+
+\subsection{Volume Fluctuations}
+
+Experiments measure a variety of events of heavy ion collisions, which cover a range of impact parameters. Even for a fixed impact parameter, energy deposition might significantly vary depending on how many nucleons actually collided or how many jets were produced. If more energy is deposited into a fixed volume, it might expand further before it hadronizes, resulting in larger final volumes. Experimental analyses attempt to minimize these fluctuations by constraining a given fluctuation measurement to a specific centrality bin, where ``centrality'' might be defined by multiplicity, transverse energy, or energy deposition in a forward calorimeter. To reduce auto-correlation centrality measurements are usually constrained to particles other than those used to construct the moments. Nonetheless, it is inevitable that a range of initial conditions is explored within any bin, and one might thus expect the base multiplicity distribution to broaden.
+
+However, as seen in Eq. (\ref{eq:savchuck}), if the base charge $Q$ is fixed this affects the result only through the relative variance, $\omega_M$, of the base multiplicity distribution, which can be determined by the first and second moments of the  multiplicity analysis. For example, the ratio $C_4/C_2$ reported by STAR for electric charge fluctuations is $\gtrsim 2$, which requires $\omega_M\gtrsim 3$, which would suggest volumes would have to fluctuate over a range of a factor of two or more in a given centrality bin. Indeed, the centrality bins applied by STAR were not particularly narrow, but unfortunately STAR has not provided the corresponding value of $\omega_M$ to best gauge the impact of volume fluctuations on the result. Further, it is odd to see that whereas $C_4/C_2\gtrsim 2$ for charged particles, it mainly stays below unity for net protons. Thus, the larger values of $C_4/C_2$ reported by STAR suggest that the source might be true variations in the base distributions of $Q$. Phase transitions are usually posed as a means to separate baryon number, much more so than electric charge, so having $C_4/C_2$ large for net charge, but low for net protons seems to go against the rough expectations presented here for fixed charge, and also against the expectations one might have for fluctuations derived from phase transitions. 
+
+\subsection{Chemically Equilibrated Distribution}
+
+One can also calculate $\omega_M$ for an equilibrated system of a single type of charge, where the measurement directly samples the equilibrated distribution. This ignores decays, which in later stages proceed without the regeneration needed to maintain equilibrium. The results of the equilibrated canonical ensemble in Eq. (\ref{eq:PAgivenQcanonical}) can be used to find $\omega_M$, and thus generate the moments using Eq. (\ref{eq:savchuck}). For large average multiplicities, $\bar{M}$, the value of $\omega_M$ approaches unity, the Poissonian limit. For small $\bar{M}$ it approaches two. This is expected, because for a fixed charge, you can only add particles pair-wise. In fact, as will be shown in the next section, if one generated a Poissonian number of pairs, the relative variance would be $\omega_M=2$ for all multiplicities. With $\omega_M$ near unity for any system of significant size the values of $C_4/C_2$ and $C_3/C_1$ stay below unity as shown in Fig. \ref{fig:chemeq_savchuck}.
+
+
+
+\subsection{Decays}
+
+In addition to the results from the canonical ensemble, a system of uncorrelated neutral particles that decays to charged particles is also presented to illustrate the difference in charge conservation manifests itself in fluctuation observables depending on whether the charges arise directly from an equilibrated system, or whether they arise from the decays of uncorrelated neutral particles.
 
 Decays produce equal amounts of positive and negative charge, but if the decays occur after chemical freezeout, there is no balancing back reaction. This leads to a qualitatively different multiplicity distribution than that of the equilibrated system of charges described in Eq. (\ref{eq:PAgivenQcanonical}). For example if one has uncorrelated emission of neutral particles that decay to form charged pairs, the probability of having $A_0$ decaying particles is Poissonian, and the probability of having $A$ final particles is
 \begin{eqnarray}
