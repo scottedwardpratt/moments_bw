@@ -3,6 +3,7 @@
 \usepackage{graphicx}
 \usepackage{comment}
 \usepackage{float}
+%\usepackage{mathabx}
 \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
 
 \begin{document}
@@ -236,7 +237,7 @@ Given that symmetrization is only being applied to pions, which are bosons, one 
 
 It is well known that bosonic effects can broaden multiplicity distributions \cite{negativebinomial}, making them super-Poissonian. One of the goals of this study is to discern how bosonic statistics alter the kurtosis or skewness. 
 
-\section{Simple Model with Uniform Efficiency and Fixed Charge}
+\section{Simple Models with Uniform Efficiency and Fixed Charge}
 
 Even for a volume of fixed charge, finite efficiency and acceptance leads to non-zero fluctuations. The degree to which these fluctuations affect the skewness and kurtosis was worked out in \cite{Savchuk:2019xfg} for emission of a fixed charge where the probability of any charge being observed was a constant $\alpha$. If $\alpha$ were zero or unity, there would be no fluctuations, and because the charge on those particles that are not observed must fluctuate exactly opposite to the charge that is observed, the even moments must be symmetric about $\alpha=1/2$, and the odd moments must be anti-symmetric. One of the most important results of \cite{Savchuk:2019xfg} is that for fixed $Q$ and $\alpha$ the ratios cumulants depends only on $\alpha$ and the variance and mean of the underlying multiplicity distribution. Even though $Q$ is fixed, the net number of charged particles $M$ can fluctuate. 
 
@@ -264,30 +265,30 @@ Here, the primes emphasize that the averages $\langle\cdots\rangle_M$. denote th
 \end{eqnarray}
 Instead,
 \begin{eqnarray}
-\langle(q-\bar)^2\rangle^2&=&\alpha^2(1-\alpha)^2\bar{M}^2.
+\langle(q-\bar)^2\rangle^2&=&\alpha^2(1-\alpha)^2\overline{M}^2.
 \end{eqnarray}
 This provides a contribution to $C_4$ and the cumulants and their ratios become \cite{Savchuk:2019xfg},
 \begin{eqnarray}
 \label{eq:savchuck}
 C_1&=&\alpha Q,\\
 \nonumber
-C_2&=&\alpha(1-\alpha)\bar{M},\\
+C_2&=&\alpha(1-\alpha)\overline{M},\\
 \nonumber
 C_3&=&\alpha(1-\alpha)(1-2\alpha)Q,\\
 \nonumber
-C_4&=&\alpha(1-\alpha)-6\alpha^2(1-\alpha)^2\bar{M}\\
+C_4&=&\alpha(1-\alpha)-6\alpha^2(1-\alpha)^2\overline{M}\\
 \nonumber
-&&+3^2\alpha(1-\alpha)^2\langle(M-\bar{M})^2\rangle,\\
+&&+3^2\alpha(1-\alpha)^2\langle(M-\overline{M})^2\rangle,\\
 \nonumber
-\frac{C_2}{C_1}&=&(1-\alpha)\frac{\bar{M}}{Q},\\
+\frac{C_2}{C_1}&=&(1-\alpha)\frac{\overline{M}}{Q},\\
 \nonumber
 \frac{C_3}{C_1}&=&(1-\alpha)(1-2\alpha),\\
 \nonumber
-\frac{C_3}{C_2}&=&(1-2\alpha)\frac{Q}{\bar{M}},\\
+\frac{C_3}{C_2}&=&(1-2\alpha)\frac{Q}{\overline{M}},\\
 \nonumber
 \frac{C_4}{C_2}&=&1+3\alpha(1-\alpha)(\omega_M-2),\\
 \nonumber
-\omega_M&\equiv&\frac{\langle(M-\bar{M})^2\rangle}{\bar{M}}.
+\omega_M&\equiv&\frac{\langle(M-\overline{M})^2\rangle}{\overline{M}}.
 \end{eqnarray}
 The relative variance of the multiplicity of the base distribution, $\omega_M$, is unity for a Poissonian distribution. In that case $C_3/C_1$ and $C_4/C_2$ fall below unity for non-zero $\alpha$. The only assumptions for this relation are that the charge is fixed and that the efficiency is uniform. This is important as it implies that if one understands the efficiency and the second moment of the base multiplicity distribution, one can construct a baseline of cumulant ratios, and attribute any deviation from the baseline as due to fluctuations in $Q$, which is precisely the goal.
 
@@ -303,21 +304,31 @@ However, as seen in Eq. (\ref{eq:savchuck}), if the base charge $Q$ is fixed thi
 
 \subsection{Chemically Equilibrated Distribution}
 
-One can also calculate $\omega_M$ for an equilibrated system of a single type of charge, where the measurement directly samples the equilibrated distribution. This ignores decays, which in later stages proceed without the regeneration needed to maintain equilibrium. The results of the equilibrated canonical ensemble in Eq. (\ref{eq:PAgivenQcanonical}) can be used to find $\omega_M$, and thus generate the moments using Eq. (\ref{eq:savchuck}). For large average multiplicities, $\bar{M}$, the value of $\omega_M$ approaches unity, the Poissonian limit. For small $\bar{M}$ it approaches two. This is expected, because for a fixed charge, you can only add particles pair-wise. In fact, as will be shown in the next section, if one generated a Poissonian number of pairs, the relative variance would be $\omega_M=2$ for all multiplicities. With $\omega_M$ near unity for any system of significant size the values of $C_4/C_2$ and $C_3/C_1$ stay below unity as shown in Fig. \ref{fig:chemeq_savchuck}.
+One can also calculate $\omega_M$ for an equilibrated system of a single type of charge, where the measurement directly samples the equilibrated distribution. This ignores decays, which in later stages proceed without the regeneration needed to maintain equilibrium. The results of the equilibrated canonical ensemble in Eq. (\ref{eq:PAgivenQcanonical}) can be used to find $\omega_M$, and thus generate the moments using Eq. (\ref{eq:savchuck}). For large average multiplicities, $\overline{M}$, the value of $\omega_M$ approaches unity, the Poissonian limit. For small $\overline{M}$ it approaches two. This is expected, because for a fixed charge, you can only add particles pair-wise. In fact, as will be shown in the next section, if one generated a Poissonian number of pairs, the relative variance would be $\omega_M=2$ for all multiplicities. With $\omega_M$ near unity for any system of significant size the values of $C_4/C_2$ and $C_3/C_1$ stay below unity as shown in Fig. \ref{fig:savchuck}. 
 
-
+\begin{figure}
+\centerline{\includegraphics[width=0.5\textwidth]{figs/savchuck}}
+\caption{\label{fig:savchuck}
+The relative variance of the charged multiplicity distribution is shown for three cases in the upper panel for a system carrying only a single type of unit $\pm$unit charge. For a neutral equilibrated system $\omega$ approaches the Poissonian limit for higher mean multiplicities, $\overline{M}$. This contrasts to a system where one has a Poissonian distribution of neutral particles which all decay into pairs. In this case $\omega=2$ and if the number of charged particles coming from the decay, $N_{\rm bodies}$, of the neutral decay were $n$, one would have $\omega=n$. Using Eq. (\ref{eq:savchuck}) from \cite{savchuck} the ratio $C_4/C_2$ is plotted for the cases above for different fixed efficiencies $\alpha$. For $\omega<2$, $C_4/C_2$ falls below unity, and for $\omega>2$ the ratio exceeds unity. The difference from unity is strongest for $\alpha$ near $1/2$, and the result is symmetric for reflecting $\alpha$ about $1/2$. For $\alpha$ approaching zero or unity $C_4/C_2\rightarrow 1$.}
+\end{figure}
 
 \subsection{Decays}
 
-In addition to the results from the canonical ensemble, a system of uncorrelated neutral particles that decays to charged particles is also presented to illustrate the difference in charge conservation manifests itself in fluctuation observables depending on whether the charges arise directly from an equilibrated system, or whether they arise from the decays of uncorrelated neutral particles.
-
-Decays produce equal amounts of positive and negative charge, but if the decays occur after chemical freezeout, there is no balancing back reaction. This leads to a qualitatively different multiplicity distribution than that of the equilibrated system of charges described in Eq. (\ref{eq:PAgivenQcanonical}). For example if one has uncorrelated emission of neutral particles that decay to form charged pairs, the probability of having $A_0$ decaying particles is Poissonian, and the probability of having $A$ final particles is
+In addition to the results from the canonical ensemble, a system of uncorrelated neutral particles that decays to charged particles is also presented to illustrate the difference in how charge conservation manifests itself in fluctuation observables depending on whether the charges arise directly from an equilibrated system, or whether they arise from the decays of uncorrelated neutral particles. Here, the multiplicity of the uncorrelated neutral particles is assumed to be Poissonian. If each neutral particle decays into $N_{\rm bodies}$ charged particles, where the charges are $\pm 1$, the charged particle multiplicity distributions become 
 \begin{eqnarray}
-P(A|Q=0)&=&P_0(A/2)=\frac{\eta^n}{(A/2)!}e^{-\bar{A}/2},~~~A=0,2,4\cdots.
+\langle M_{\rm ch}\rangle&=&N_{\rm bodies}\overline{M}_0,\\
+\nonumber
+\langle(M_{\rm ch}-\overline{M}_{\rm ch})^2\rangle&=&N_{\rm bodies}\langle(M_0-\overline{M}_0)^2\rangle,\\
+\omega_M&=&\frac{\langle(M_{\rm ch}-\overline{M}_{\rm ch})^2\rangle}{\overline{M}_{\rm ch}}\\
+&=&N_{\rm bodies}\frac{\langle(M_0-\overline{M}_0)^2\rangle}{\overline{M}_0}.
 \end{eqnarray}
+Fig. \ref{fig:savchuck} illustrates how this picture affects $C_4/C_2$. In this case, because $\omega$ depends only on $N_{\rm bodies}$ and does not change with multiplicity or system size, the cumulants are also independent of multiplicity. For $N_{\rm bodies}=2$ the cumulant ratios does not even depend on the efficiency. For $N_{\rm bodies}>2$ the ratio $C_4/C_2$ exceeds unity, so if charge creation proceeded through the creation and decay of neutral clusters it would be easy to generate large values of $C_4/C_2$. 
 
+In an equilibrated system decays and recombination have equal rates. However, as the system decouples recombination stops and decays proceed until only stable hadrons remain. Very few decays proceed via more than on charged pair. During the hadronic phase the number of charged particles nearly doubles due to these decays. Thus, if the systems do equilibrate, then decay after chemical freeze-out, one would expect the ratio $C_4/C_2$ to lie somewhere between the value for the canonical ensemble in Fig. \ref{fig:savchuck} and the value for pure decays with $N_{\rm bodies}=2$. STAR's experimental results for net proton fluctuations indeed satisfy this expectation, but their measured $C_4/C_2$ for net charge fluctuations well exceed unity. This discrepancy could be due to volume fluctuations or the decay of larger clusters, or perhaps some shortcoming in this overly simple picture, e.g. the neglect of other conservation laws or Bose condensation. 
 
-\section{Hadron Gas with Uniform Efficiency}\label{sec:ideal}
+\subsection{Bose correlations}
+
+\subsection{Hadron Gas}
 
 Canonical partition functions depend on the temperature $T$, the volume $V$, the conserved charges $\vec{Q}=(Q,B,S)$, and whether or not Bose corrections are included. Of course, charges don't fluctuate in a canonical ensemble if all the particles are measured, so to understand moments of the charge distribution, acceptance and efficiency must be included. Thus, in addition to $T,V$ and $\vec{Q}$, one needs to understand how the acceptance and efficiency change the result. In this section, to better understand how fluctuations are affected by the parameters above, a grossly simplified acceptance and efficiency is employed. Each particle has a probability $\alpha$ of being observed, regardless of its momentum. 
 
@@ -326,11 +337,7 @@ First, we set the net charges to zero, and study the effects of changing $T,V$ a
 The dependence on the efficiency $\alpha$ is illustrated in Fig. \ref{fig:eff_T150V100B0}. The volume was fixed at $V=100$ fm$^3$, the temperature was set to $T=150$ MeV, with all the charges set to zero. The results have a mirror symmetry about $\alpha=0.5$ as expected from the discussion surrounding Eq. (\ref{eq:alphasymm}), and the kurtosis approaches the Skellam limit as $\alpha$ nears either zero or unity. The kurtosis dips significantly compared to that of a Skellam distribution for $\alpha\sim 1/2$. 
 
 
-\begin{figure}
-%\centerline{\includegraphics[width=0.7\textwidth]{figs/eff_T150V100B0}}
-\caption{\label{fig:eff_T150V100B0}
-Blah blah...}
-\end{figure}
+
 
 \section{Blast Wave Model and Comparison to STAR Results}\label{sec:blast}
 
