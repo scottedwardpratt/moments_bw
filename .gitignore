@@ -3,3 +3,8 @@ software/lib
 rachelrun/data
 rachelrun/altdata
 rachelrun/crap
+*.a
+*.o
+*.bbl
+*.blg
+*.bib
