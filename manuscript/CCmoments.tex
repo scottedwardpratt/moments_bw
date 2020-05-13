@@ -237,7 +237,7 @@ Given that symmetrization is only being applied to pions, which are bosons, one 
 
 It is well known that bosonic effects can broaden multiplicity distributions \cite{negativebinomial}, making them super-Poissonian. One of the goals of this study is to discern how bosonic statistics alter the kurtosis or skewness. 
 
-\section{Simple Models with Uniform Efficiency and Fixed Charge}
+\section{Models with Uniform Efficiency and Fixed Charge}
 
 Even for a volume of fixed charge, finite efficiency and acceptance leads to non-zero fluctuations. The degree to which these fluctuations affect the skewness and kurtosis was worked out in \cite{Savchuk:2019xfg} for emission of a fixed charge where the probability of any charge being observed was a constant $\alpha$. If $\alpha$ were zero or unity, there would be no fluctuations, and because the charge on those particles that are not observed must fluctuate exactly opposite to the charge that is observed, the even moments must be symmetric about $\alpha=1/2$, and the odd moments must be anti-symmetric. One of the most important results of \cite{Savchuk:2019xfg} is that for fixed $Q$ and $\alpha$ the ratios cumulants depends only on $\alpha$ and the variance and mean of the underlying multiplicity distribution. Even though $Q$ is fixed, the net number of charged particles $M$ can fluctuate. 
 
@@ -328,6 +328,16 @@ In an equilibrated system decays and recombination have equal rates. However, as
 
 \subsection{Bose correlations}
 
+It has long been understood that Bose correlations induce super-Poissonian fluctuations. Here, we illustrate how Bose effects combine with charge conservation to determine $C_4/C_2$. Partition functions for a gas of positive and negative pions, $m_\pi=139.57$ MeV/$c^2$, were considered to be kinetically equilibrated but with a chemical potential enforcing a fixed average density. If a gas is created at chemical equilibrium one expects $\mu=0$, but if it cools while maintaining a fixed number of pions, and if the pion number is fed by decays, a non-zero value of $\mu$ is expected. At decoupling one expects kinetic temperatures to fall near 100 MeV and the pion chemical potential to grow to perhaps 75 MeV \cite{Greiner:1993jn}. This estimate can be understood by the fact that the phase space occupancies should stay roughly constant for fixed entropy per particle for a fixed number expansion, which suggests a chemical potential of approximately 50 MeV by the time the system cools to 100 MeV. Decay products can then further feed the phase space occupancy. Pion condensation occurs when this chemical potential reaches the pion mass. In the absence of Bose effects, this requires roughly doubling the phase space density of pions. However, once such conditions are set Bose effects can result in super-radiance \cite{}, which should be accompanied by large multiplicity fluctuations. 
+
+As a function of the effective chemical potential $\mu$, the partition function for a pion gas in a volume of 500 fm$^3$ and at a temperature of 100 MeV was calculated from Eq. (\ref{eq:Zbf}). For $\mu$ in the range of of 75 MeV the relative variance of the charged multiplicity distribution is $\omega_M\approx 1.2$, which modestly increase $C_4/C_2$ as shown in Fig. \ref{fig:cheapbose} for a fixed efficiency of $\alpha=0.3$. More dramatic results for $C_4/C_2$ are not expected unless the chemical potential would get within a few MeV of the pion mass. As described above, this is not expected. However, if the number of pion sources fluctuated wildly from one event to another, and if there were some events with twice the number of sources emitting into the same phase space, super-radiance might occur in some small fraction of the events. Such behavior would strongly contradict expectations based on chemical equilibrium. 
+\begin{figure}
+\centerline{\includegraphics[width=0.5\textwidth]{figs/C4_bose}}
+\caption{\label{fig:cheapbose}
+Fluctuations for a canonical ensemble at fixed charge, $Q=0$, with an effective chemical potential, $\mu$, applied to adjust the net pion number in a volume of 500 fm$^3$ at a temperature of 100 MeV. The relative variance of the multiplicity distribution (dashed red line) and the ratio $C_4/C_2$ of the net-charge distribution (solid green line) grow dramatically as $\mu$ approaches the pion mass. Super-radiant effects can take place once $\mu$ reaches $m_\pi=139.57$ MeV. Heavy-ion collisions are expected to decouple with effective chemical potentials near 75 MeV, which is well below the onset of large fluctuations.
+}
+\end{figure}
+
 \subsection{Hadron Gas}
 
 Canonical partition functions depend on the temperature $T$, the volume $V$, the conserved charges $\vec{Q}=(Q,B,S)$, and whether or not Bose corrections are included. Of course, charges don't fluctuate in a canonical ensemble if all the particles are measured, so to understand moments of the charge distribution, acceptance and efficiency must be included. Thus, in addition to $T,V$ and $\vec{Q}$, one needs to understand how the acceptance and efficiency change the result. In this section, to better understand how fluctuations are affected by the parameters above, a grossly simplified acceptance and efficiency is employed. Each particle has a probability $\alpha$ of being observed, regardless of its momentum. 
@@ -392,9 +402,22 @@ doi:10.1103/PhysRevC.68.024904
 [arXiv:nucl-th/0303043 [nucl-th]].
 %6 citations counted in INSPIRE as of 30 Mar 2020
 
+%\cite{Greiner:1993jn}
+\bibitem{Greiner:1993jn}
+C.~Greiner, C.~Gong and B.~Muller,
+%``Some remarks on pion condensation in relativistic heavy ion collisions,''
+Phys. Lett. B \textbf{316} (1993), 226-230
+doi:10.1016/0370-2693(93)90317-B
+[arXiv:hep-ph/9307336 [hep-ph]].
+%67 citations counted in INSPIRE as of 13 May 2020
 
-
-
+%\cite{Pratt:1993uy}
+\bibitem{Pratt:1993uy}
+S.~Pratt,
+%``Pion lasers from high-energy collisions,''
+Phys. Lett. B \textbf{301} (1993), 159-164
+doi:10.1016/0370-2693(93)90682-8
+%136 citations counted in INSPIRE as of 13 May 2020
 
 
 
