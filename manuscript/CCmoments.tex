@@ -296,7 +296,7 @@ A reasonable value of $\alpha$ can be taken from balance function analyses. If a
 
 Equation (\ref{eq:savchuck}) is crucial as it demonstrates that the fourth moment of the charge distribution is determined completely by the efficiency and the relative variance of the base multiplicity distribution, if the total base charge $Q$ is fixed. Next, we consider how various effects, aside from fluctuating the base charge $Q$, might push $\omega_M$ to be either super-Poissonian, $\omega_M>1$ or sub-Possonian. We discuss the effects of volume fluctuations, equilibrated charge distributions, decays and Bose condensation.
 
-\subsection{Volume Fluctuations}
+\subsection{Volume Fluctuations}\label{sec:volumefluc}
 
 Experiments measure a variety of events of heavy ion collisions, which cover a range of impact parameters. Even for a fixed impact parameter, energy deposition might significantly vary depending on how many nucleons actually collided or how many jets were produced. If more energy is deposited into a fixed volume, it might expand further before it hadronizes, resulting in larger final volumes. Experimental analyses attempt to minimize these fluctuations by constraining a given fluctuation measurement to a specific centrality bin, where ``centrality'' might be defined by multiplicity, transverse energy, or energy deposition in a forward calorimeter. To reduce auto-correlation centrality measurements are usually constrained to particles other than those used to construct the moments. Nonetheless, it is inevitable that a range of initial conditions is explored within any bin, and one might thus expect the base multiplicity distribution to broaden.
 
@@ -338,15 +338,19 @@ Fluctuations for a canonical ensemble at fixed charge, $Q=0$, with an effective 
 }
 \end{figure}
 
-\subsection{Hadron Gas}
+\subsection{Hadron Gas}\label{sec:hadrongas_cheap}
 
-Canonical partition functions depend on the temperature $T$, the volume $V$, the conserved charges $\vec{Q}=(Q,B,S)$, and whether or not Bose corrections are included. Of course, charges don't fluctuate in a canonical ensemble if all the particles are measured, so to understand moments of the charge distribution, acceptance and efficiency must be included. Thus, in addition to $T,V$ and $\vec{Q}$, one needs to understand how the acceptance and efficiency change the result. In this section, to better understand how fluctuations are affected by the parameters above, a grossly simplified acceptance and efficiency is employed. Each particle has a probability $\alpha$ of being observed, regardless of its momentum. 
+Thus far, all the simple examples presented in this section considered a system with one type of conserved charge, whereas a hadron gas obeys the conservation of baryon number, strangeness and electric charge. This invalidates the use of the recurrence relation of Eq. (\ref{eq:savchuck}) and requires the application of Eq. (\ref{eq:recurrence}), or if Bose corrections are included, Eq. (\ref{eq:bose}). Here, we calculate the canonical ensemble, $Z_A(Q,B,S)$, using the recurrence relation, then apply the Monte Carlo techniques of Sec. \ref{sec:theoryMC} to generate sample sets of particles. The calculation is based on a large number, $\sim 300$, hadron resonances listed in \cite{Tanabashi:2018oca}. After generating the particles, unstable resonances are decayed. For this section, a uniform efficiency $\alpha$ is assumed, independent of species, momenta, or whether the products came from a weak decay (charged pions and kaons were not decayed).
 
-First, we set the net charges to zero, and study the effects of changing $T,V$ and $\alpha$. Ensembles of particles are generated according to the Monte Carlo procedure described in Sec. \ref{sec:theory} according to $T$ and $V$. Unstable particles are then decayed with the relative momenta of the particles determined by the invariant mass of the decaying particles. For these calculations all unstable resonances are produced according to their pole mass. Each particle is then randomly kept or ignored with probability $\alpha$. 
+Emission is assumed to come from sub-volumes, referred to as patches in \cite{}, of fixed size. Because each volume is independent, there are no correlations between the various sub-volumes and because cumulants scale linearly with the number of sub-volumes, the ratios of cumulants depend only on the patch volume, not on the overall volume. However, if the number of sub-volumes fluctuates, the result would be modified by volume fluctuations. One would expect similar modifications as shown in Sec. \ref{sec:volumefluc}.
 
-The dependence on the efficiency $\alpha$ is illustrated in Fig. \ref{fig:eff_T150V100B0}. The volume was fixed at $V=100$ fm$^3$, the temperature was set to $T=150$ MeV, with all the charges set to zero. The results have a mirror symmetry about $\alpha=0.5$ as expected from the discussion surrounding Eq. (\ref{eq:alphasymm}), and the kurtosis approaches the Skellam limit as $\alpha$ nears either zero or unity. The kurtosis dips significantly compared to that of a Skellam distribution for $\alpha\sim 1/2$. 
-
-
+% RACHEL -- make figures for
+% Default T=150 MeV, Patch Volume=200 fm^3, alpha=0.3
+% A. C_4/C_2 for net protons and for net charge with default+ rho_B=0 vs Volume
+% B. C_4/C_2 for net protons and for net charge with default+ rho_B=0 vs alpha
+% C. C_4/C_2 and C_3/C_1 for net protons and for net charge for default vs rho_B=0={0,0.02,0.04,0.06..., 0.3} with fixed charge
+% D. Same as (C) but with "fixed" charge fluctuating according to Poisson about average
+%
 
 
 \section{Blast Wave Model and Comparison to STAR Results}\label{sec:blast}
@@ -358,6 +362,14 @@ This work was supported by the Department of Energy Office of Science through gr
 \end{acknowledgments}
 
 \begin{thebibliography}{99}
+
+%\cite{Tanabashi:2018oca}
+\bibitem{Tanabashi:2018oca}
+M.~Tanabashi \textit{et al.} [Particle Data Group],
+%``Review of Particle Physics,''
+Phys. Rev. D \textbf{98} (2018) no.3, 030001
+doi:10.1103/PhysRevD.98.030001
+%4561 citations counted in INSPIRE as of 13 May 2020
 
 %\cite{Savchuk:2019xfg}
 \bibitem{Savchuk:2019xfg}
