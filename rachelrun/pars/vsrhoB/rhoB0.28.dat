@@ -2,7 +2,7 @@ string B3D_RESONANCES_INFO_FILE	resinfo/resonances_pdg_weak.dat
 string B3D_RESONANCES_DECAYS_FILE resinfo/decays_pdg_weak.dat
 int NhadMAX 150
 double OMEGA 200
-double RHOB 0.06
+double RHOB 0.28
 double T 150.0
 double ACCEPTANCE 0.3
 int NEVENTS 100000000
@@ -14,6 +14,6 @@ double BW_UPERPX 0.9
 double BW_UPERPY 0.9
 double BW_SIGMA_ETA 0.6
 double BW_SIGMA_UPERP 0.25
-string FILE_TAG rhoB0.06
+string FILE_TAG rhoB0.28
 int N_BOSE_TERMS 5
 bool USE_BOSE_TERMS true
