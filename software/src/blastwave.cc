@@ -26,7 +26,7 @@ void CblastWave::GenerateParts(vector<CResInfo *> &resinfovec,vector<Cpart> &par
 	for(ipart0=0;ipart0<nparts0;ipart0++){
 		resinfo=resinfovec[ipart0];
 		if (resinfo->bose_pion==true) {
-			Ti=Tf/(resinfo->code%100); //i is hidden in the imaginary code for bose corrections
+			Ti=Tf/abs(double(resinfo->code%100)); //i is hidden in the imaginary code for bose corrections
 			//resinfo=reslist->GetResInfoPtr(int(resinfo->code/1000)); //recover the correct code
 		}
 		else Ti=Tf;
