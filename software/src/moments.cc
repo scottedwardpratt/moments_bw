@@ -30,8 +30,14 @@ void Cmoments::IncrementMoments(vector<CResInfo *> &resinfovec){
 	for(i=0;i<mult;i++){
 		if(acceptance->Acceptance(resinfovec[i])){
 			if(abs(resinfovec[i]->charge)==1){
-				NetQ+=resinfovec[i]->charge;
-				TotQ+=1;
+				if(resinfovec[i]->bose_pion==true){
+					NetQ+=resinfovec[i]->charge*(resinfovec[i]->code%100);
+					TotQ+=resinfovec[i]->code%100;
+				}
+				else {
+					NetQ+=resinfovec[i]->charge;
+					TotQ+=1;
+				}
 			}
 			if(abs(resinfovec[i]->code)==2212){
 				NetP+=resinfovec[i]->charge;
@@ -42,8 +48,14 @@ void Cmoments::IncrementMoments(vector<CResInfo *> &resinfovec){
 				TotK+=1;
 			}
 			if(abs(resinfovec[i]->code)==211){
-				NetPi+=resinfovec[i]->charge;
-				TotPi+=1;
+				if(resinfovec[i]->bose_pion==true){
+					NetPi+=resinfovec[i]->charge*(resinfovec[i]->code%100);
+					TotPi+=(resinfovec[i]->code%100);
+				}
+				else {
+					NetPi+=resinfovec[i]->charge;
+					TotPi+=1;
+				}
 			}
 			if(abs(resinfovec[i]->baryon)==1){
 				NetB+=resinfovec[i]->baryon;
