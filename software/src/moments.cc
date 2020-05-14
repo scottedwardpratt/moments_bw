@@ -88,8 +88,14 @@ void Cmoments::IncrementMoments(vector<Cpart> &partvec){
 		acceptance->Acceptance(&partvec[ipart],acceptQ,acceptP,acceptK,acceptPi,acceptB);
 		//acceptQ=acceptP=acceptK=acceptPi=true;
 		if(abs(resinfo->charge)==1 && acceptQ){
-			NetQ+=resinfo->charge;
-			TotQ+=1;
+			if(resinfo->bose_pion==true){
+				NetQ+=resinfo->charge*(resinfo->code%100);
+				TotQ+=resinfo->code%100;
+			}
+			else {
+				NetQ+=resinfo->charge;
+				TotQ+=1;
+			}
 		} else {
 			altNetQ+=resinfo->charge;
 			altTotQ+=1;
@@ -112,9 +118,15 @@ void Cmoments::IncrementMoments(vector<Cpart> &partvec){
 			altTotK+=1;
 			altmeanpt_kaons+=pt;
 		}
-		if(abs(resinfo->code)==211 && acceptPi){
-			NetPi+=resinfo->charge;
-			TotPi+=1;
+		if((abs(resinfo->code)==211 || resinfo->bose_pion) && acceptPi){
+			if(resinfo->bose_pion==true){
+				NetPi+=resinfo->charge*(resinfo->code%100);
+				TotPi+=resinfo->code%100;
+			}
+			else {
+				NetPi+=resinfo->charge;
+				TotPi+=1;
+			}
 			meanpt_pions+=pt;
 		} else {
 			altNetPi+=resinfo->charge;
