@@ -375,7 +375,7 @@ void CResList::ReadResInfo(){
 				if (resinfoptr->code<0) sgn=-1;
 				bresinfoptr->code=resinfoptr->code*1000+(i+2)*sgn; //no real resonance has this code
 				bresinfoptr->mass=resinfoptr->mass;
-				bresinfoptr->charge=resinfoptr->charge;
+				bresinfoptr->charge=resinfoptr->charge*(i+2);
 				bresinfoptr->baryon=resinfoptr->baryon;
 				bresinfoptr->strange=resinfoptr->strange;
 				bresinfoptr->spin=resinfoptr->spin;

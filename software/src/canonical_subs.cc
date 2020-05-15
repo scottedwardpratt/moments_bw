@@ -11,6 +11,8 @@ CpartitionFunction::CpartitionFunction(parameterMap &parmap){
 	Omega=parameter::getD(parmap,"OMEGA",100.0); // Volume in fm^3
 	Omega0=parameter::getD(parmap,"OMEGA0",4.0); // V in fm^3 for calcZ, scaled by Omega later (don't change usually)
 	NhadMAX=parameter::getI(parmap,"NhadMAX",35+lrint(0.5*Omega)); // max no. of hadrons in volume, should be even no.
+	use_bose_terms=parameter::getB(parmap,"USE_BOSE_TERMS",false);
+	n_bose_terms=parameter::getI(parmap,"N_BOSE_TERMS",1);
 	if(NhadMAX%2==1)
 		NhadMAX+=1;
 	T=parameter::getD(parmap,"T",150.0); // Temperature in MeV
@@ -161,10 +163,26 @@ void CpartitionFunction::CheckQminQmax(int ihad,int b,int q,int s){
 
 void CpartitionFunction::GetQminQmax(int ihad,int b,int &qqmin,int &qqmax){
 	int bprime,ibprime,qmin1,qmax1,db,dq,ihcharge;
-	const int nhcharge=11;
-	int hcharge[nhcharge][2]={{1,-1},{1,0},{1,1},{1,2},
+	const int temp_nhcharge=11;
+	int nhcharge=temp_nhcharge;
+	if (use_bose_terms) nhcharge+=(n_bose_terms-1)*2;
+	int hcharge[nhcharge][2];
+	int temp_hcharge[temp_nhcharge][2]={{1,-1},{1,0},{1,1},{1,2},
 	{-1,1},{-1,0},{-1,-1},{-1,-2},
 	{0,1},{0,0},{0,-1}};
+	for (int i=0;i<temp_nhcharge;i++) {
+		for (int j=0;j<2;j++) {
+			hcharge[i][j]=temp_hcharge[i][j];
+		}
+	}
+	if (use_bose_terms) {
+		for (int i=0;i<n_bose_terms-1;i++) {
+			hcharge[temp_nhcharge+2*i][0]=0;
+			hcharge[temp_nhcharge+2*i][1]=i+2;
+			hcharge[temp_nhcharge+2*i+1][0]=0;
+			hcharge[temp_nhcharge+2*i+1][1]=-(i+2);
+		}
+	}
 	qmin1=qmax1=qqmin=qqmax=0;
 	if(ihad>0){
 		for(ihcharge=0;ihcharge<nhcharge;ihcharge++){
@@ -185,8 +203,11 @@ void CpartitionFunction::GetQminQmax(int ihad,int b,int &qqmin,int &qqmax){
 void CpartitionFunction::GetSminSmax(int ihad,int b,int q,int &ssmin,int &ssmax){
 	int bprime,ibprime,qprime,iqprime,smin1,smax1;
 	int db,dq,ds,ihcharge;
-	const int nhcharge=27;
-	const int hcharge[nhcharge][3]={{1,-1,0},{1,0,0},{1,1,0},{1,2,0},
+	const int temp_nhcharge=27;
+	int nhcharge=temp_nhcharge;
+	if (use_bose_terms) nhcharge+=(n_bose_terms-1)*2;
+	int hcharge[nhcharge][3];
+	const int temp_hcharge[temp_nhcharge][3]={{1,-1,0},{1,0,0},{1,1,0},{1,2,0},
 	{1,-1,-1},{1,0,-1},{1,1,-1},
 	{1,-1,-2},{1,0,-2},
 	{1,-1,-3},
@@ -196,6 +217,22 @@ void CpartitionFunction::GetSminSmax(int ihad,int b,int q,int &ssmin,int &ssmax)
 	{-1,1,3},
 	{0,1,1},{0,-1,-1},{0,0,1},{0,0,-1},
 	{0,1,0},{0,0,0},{0-1,0}};
+	for (int i=0;i<temp_nhcharge;i++) {
+		for (int j=0;j<3;j++) {
+			hcharge[i][j]=temp_hcharge[i][j];
+		}
+	}
+	if (use_bose_terms) {
+		for (int i=0;i<n_bose_terms-1;i++) {
+			hcharge[temp_nhcharge+2*i][0]=0;
+			hcharge[temp_nhcharge+2*i][1]=i+2;
+			hcharge[temp_nhcharge+2*i][2]=0;
+			hcharge[temp_nhcharge+2*i+1][0]=0;
+			hcharge[temp_nhcharge+2*i+1][1]=-(i+2);
+			hcharge[temp_nhcharge+2*i+1][2]=0;
+		}
+	}
+
 	smin1=smax1=0;
 	ssmin=0;
 	ssmax=0;
@@ -246,7 +283,6 @@ void CpartitionFunction::Calcz(){
 			}
 		}
 	}
-
 	for(rpos=reslist->resmap.begin();rpos!=reslist->resmap.end();rpos++){
 		resinfo=rpos->second;
 		ires=resinfo->ires;
@@ -257,11 +293,13 @@ void CpartitionFunction::Calcz(){
 		if(resinfo->code!=22){
 			b=resinfo->baryon;
 			q=resinfo->charge;
+			if (resinfo->bose_pion==true) {
+				Ti=T/(abs(resinfo->code)%100);
+			}
+			else Ti=T;
 			s=resinfo->strange;
 			CheckQminQmax(1,b,q,s);
 			m=resinfo->mass;
-			if (resinfo->bose_pion==true) Ti=T/(abs(resinfo->code)%100);
-			else Ti=T;
 			reslist->freegascalc_onespecies(m,Ti,e,p,dens,sigma2,dedt);
 			z[ires]=Omega0*dens*(2*resinfo->spin+1.0);
 			rhoH+=z[ires]/Omega0;

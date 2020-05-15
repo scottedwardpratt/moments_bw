@@ -35,6 +35,8 @@ public:
 	void Calcz();
 	CResList *reslist;
 	int nres,NhadMAX;
+	bool use_bose_terms;
+	int n_bose_terms;
 	double Omega,Omega0;  // Omega0 is just for calculating Z before scaling for real volume
 	void Getibiqis(int ihad,int b,int q,int s,int &ib,int &iq,int &is);
 	int PickNhad(int b0,int q0,int s0);
