@@ -27,27 +27,31 @@ Michigan State University, East Lansing, MI 48824~~USA}
 
 \section{Introduction}\label{sec:intro}
 
-The fluctuation of conserved charges is a standard means by which to investigate and gauge phase transitions. At the critical point correlation lengths diverge, which results in peaks in charge fluctuations as one approaches the critical point. For systems with first-order phase transitions, fluctuations become infinite whenever one is in a region of phase separation, as the liquid and gas regions prefer to become infinite in extent when the surface energy is non-zero. The growth of fluctuations becomes increasing dramatic as one considers progressively higher-order fluctuations. In a volume $V$, fluctuations of a charge $Q$ can be defined as
+The fluctuation of conserved charges is a standard means by which to investigate and classify phase transitions. At the critical point correlation lengths diverge, which results in peaks in charge fluctuations as one approaches the critical point. For systems with first-order phase transitions, fluctuations become infinite whenever one is in a region of phase separation, as the liquid and gas regions prefer to become infinite in extent when the surface energy is non-zero. The growth of fluctuations becomes increasingly dramatic as one considers progressively higher-order fluctuations. In a volume $V$, fluctuations of a charge $Q$ can be defined as
 \begin{eqnarray}\label{eq:kappadef}
 \mathcal{M}_N&\equiv&\frac{1}{V}\langle(Q-\bar{Q})^N\rangle=\frac{1}{V}\sum_n P_n(n-\bar{n})^N,
 \end{eqnarray}
-when particles have unit charge. The measure is increasingly sensitive to the tails of the multiplicity distribution, $P_n$, as $N$ increases. The free energy, $F\sim a_2(n-\bar{n})^2 + a_3(n-\bar{n})^3\cdots$, is minimized for $n=\bar{n}$, but the quadratic part vanishes at the critical point, $a_2\rightarrow 0$, which allow the fluctuations to grow and be dominated by higher-order terms which manifest themselves in the tails of the distribution. 
+when particles have unit charge. The measure is increasingly sensitive to the tails of the multiplicity distribution, $P_n$, as $N$ increases. The free energy, $F\sim a_2(n-\bar{n})^2 + a_3(n-\bar{n})^3\cdots$, is minimized for $n=\bar{n}$, but the quadratic part vanishes at the critical point, $a_2\rightarrow 0$, which allow the fluctuations to grow and be dominated by higher-order terms. The shape of the tails of the distribution can be profoundly altered. 
 
 The properties of the QCD  transition, deconfinement and the restoration of chiral symmetry, are not well understood at finite baryon density. There exists the possibility that this transition is a true phase transition, with a critical point at several times nuclear density and with a critical temperature close to the pion mass. If this is the case, it begs the question as to whether the conditions for phase separation or for critical phenomena can be reproduced in the laboratory. Heavy ion collisions at high energy, measured at the Relativistic Heavy Ion Collider (RHIC) or a the LHC, can produce mesoscopic regions a temperatures of a few hundred MeV, which is well above the expectations for a critical temperature, and densities of several times nuclear matter density. 
 
 High-energy heavy ion collisions are characterized by strong explosive collective flow. Measurement is confined to the outgoing asymptotic momenta, but because of strong flow, correlations in coordinate space manifest themselves as correlations in relative momentum. Thus, measurements of correlations binned by relative momentum or charge fluctuations within some defined region of momentum space serve as surrogates for the corresponding observables in coordinate space. Indeed, measurements of charge and baryon number fluctuations have been performed at RHIC. By adjusting the beam energy of the colliding nuclei, experiments at RHIC have explored conditions at which novel phase phenomena might occur. Fluctuations of electric charge and baryon number have been especially popular. An initial scan of beam energies was rather inconclusive, but measurements with greatly improved statistics are currently being analyzed. 
 
-In addition to the finite system size (event multiplicities might number in the thousands), the novel states of matter created in heavy-ion collisions persist for $\lesssim 10$ fm/$c$. This severely limits the degree to which phases can separate or to which critical fluctuations can grow. From the initial overlap of the colliding nuclei, until the mean time at which emitted particles experience their last collision, the collision lasts a few tens of fm/$c$. This limits the degree to which conserved charges can separate from one another. For example if a strange and an anti-strange quanta are produced together, their separation is limited by diffusion, and the enhancement of seeing a second charge of opposite sign having seen a first charge are known as charge-balance correlations.
+In addition to the finite system size (event multiplicities might number in the thousands), the novel states of matter created in heavy-ion collisions persist for $\lesssim 10$ fm/$c$. This severely limits the degree to which phases can separate or to which critical fluctuations can grow. From the initial overlap of the colliding nuclei, until the mean time at which emitted particles experience their last collision, the collision lasts a few tens of fm/$c$. This limits the degree to which conserved charges can separate from one another. For example if a strange and an anti-strange quanta are produced together, their separation is limited by diffusion, and fluctuations of strangeness, or any other charge, requires that charges be given sufficient time to leave and enter the defining volume.
 
-The goal of this paper is to gauge the degree to which charge-balance correlations affect higher-order correlations. Such correlations need to be understood as potential sources of background before making firm arguments to have observed phenomena related to phase transitions. It is well known that charge-balance correlations are readily measurable at the two particle level, $N=2$ in Eq. (\ref{eq:kappadef}), and that they explain the bulk of the $N=2$ fluctuation measurement. However, their impact on $N=3,4$ fluctuations has not be investigated in great detail. For instance, the four-particle measure of correlation,
+The goal of this paper is to gauge the degree to which charge-balance correlations affect higher-order correlations. In addition to making it difficult for phases to separate or for critical correlations to emerge, conservation also represents its own source of correlation, which needs to be understood as a potential sourcs of background before making firm arguments to have observed phenomena related to phase transitions. It is well known that charge-balance correlations are readily measurable at the two particle level, $N=2$ in Eq. (\ref{eq:kappadef}), and that they explain the bulk of the $N=2$ fluctuation measurement. However, their impact on $N=3,4$ fluctuations has not be investigated in great detail. For instance, the four-particle measure of correlation,
 \begin{eqnarray}
 C_4&=&\mathcal{M}_4-3\mathcal{M}_2^2,
 \end{eqnarray}
-which is based on cumulants, subtracts much of the contribution to the $\mathcal{M}_4$ coming from purely two-particle correlations. However, charge conservation can involve multiple particles, and it is not clear the degree to which a cumulant-based measure, like the kurtosis, is affected by charge conservation. A simple model, where charge conservation is invoked through sampling a canonical ensemble, is presented in the next section. Although the method is different, this is similar to ideas that have been pursued recently \cite{Oliinychenko:2020cmr}. But with the method used here, events can be generated in a more efficient algorithm, which then enables the more systematic set of studies presented here.
+which is based on cumulants, subtracts much of the contribution to the $\mathcal{M}_4$ coming from purely two-particle correlations. However, charge conservation can involve multiple particles, and the degree to which a cumulant-based measure, like the kurtosis, is affected by charge conservation is not fully understood. Relations based on a uniform acceptance probability and for a single type of charge were worked out in \cite{Savchuk:2019xfg}, which provide significant insight into how higher-order correlations are affected by charge conservation. The goal of this study is to extend such ideas to a more realistic picture, which takes into account the conservation of all three types of charge (baryon number, electric charge and strangeness) and applies a more realistic model of experimental acceptance and efficiency. The interplays of charge conservation with chemical equilibrium, decays and Bose statistics are all considered.
 
-After a brief review of cumulants and the definitions of skewness and kurtosis in Sec. \ref{sec:cumulaants}, the method for exact solution of the canonical ensemble describing a multi-component, multi-charge hadron gas is presented in Sec. \ref{sec:theory}. The method includes all species and can account for Bose or Fermi statistics, but neglects interaction between hadrons. These techniques extend those used for canonical ensembles used to study isospin fluctuations of a hadron gas \cite{}, nuclear fragmentation \cite{}, the level density of a Fermi gas, and the effect of restricting a quark-gluon plasma (QGP) to having fixed charge, including being in an overall color singlet \cite{}. Exact methods for calculating correlations up to fourth-order are presented. Unfortunately, to include realistic acceptance effects and complex decays, the exact expressions are no longer viable. However, as shown in Sec. \ref{sec:theoryMC}, the exact expressions show how sample events can be generated. An event, defined by a set of particles and momenta, are generated with perfect independence from one another, and perfectly reproduce the canonical expressions from Sec. \ref{sec:theoryexact}. 
+To understand the role of chemical equilibrium and decays, a model is presented which creates small volumes in which the net charge, $B,Q$ and $S$, is fixed at some value. Even if the net charges are all zero, charged particles exist but in combinations that conserve the net charge. Theoretical methods for exact calculation of the canonical ensemble and a method for Monte Carlo generation of statistically independent events are presented here. The method lends itself to including decays and accounting for experimental acceptance and efficiency. The physical picture of treating small volumes as independent patches was previously done for calculation of charge balance functions in \cite{Schlichting:2010qia,Schlichting:2010na}, and was also applied in \cite{Oliinychenko:2020cmr}. Following the terminology in \cite{Oliinychenko:2020cmr}, we refer to these sub-volumes as patches. The method presented here creates perfectly independent samplings, and can generate billions of such patches within a few hours. This enables highly accurate calculations of high moments with minimal numeric costs.
 
-Conservation of charge is modeled by imagining independent sub-volume ``patches'' which individually conserve charge. The patch volume is set by how far charges have separated from another by the time chemical freezeout occurs, just after hadronization. After this time, the volumes may grow and overlap, but the chemical makeup of the particles originating from each patch is assumed to be fixed. Sections \ref{sec:ideal1} and \ref{sec:ideal3} shows how fluctuation observables from charge conservation depend of patch size, measurement efficiency, and the chemical decoupling temperature by investigating systems with fixed efficiency. A very simplified system with a single charge, as already investigated in detail in \cite{}, is reviewed in Sec. \ref{sec:ideal1}, while the full hadron gas, with three conserved charges, is presented in Sec. \ref{sec:ideal3}. The importance of Bose corrections for pions is also studied. Charge from the initial nuclei existed before the collision and might randomly populate the entire collision volume, whereas charge created from the breakup of color flux tubes, hadronization and decays, should be conserved locally. Thus, the effect of random placing some of the initial charge across the entire collision volume is also investigated. A more realistic picture of the acceptance and efficiency is presented in Sec. \ref{sec:blast}. A blast-wave model, which is a thermal model superimposed onto a simplified model of collective flow, is combined with a sampling of a canonical ensemble of a given patch. The resulting particles are then analyzed using a simulation of the acceptance and efficiency of the STAR Collaboration at RHIC. Results are compared to measurements at STAR to discern whether charge conservation effects might be responsible for a significant part of the observed correlation. Results are then summarized in Sec. \ref{sec:summary}.
+The next section reviews the definition of cumulants, skewness and kurtosis. Theoretical methods are presented in the next section. This includes a review of how one can exactly calculate canonical ensembles for multiple charges in a hadron gas and independently generate sets of particles for a given sub-volume, or patch.  Simplified expressions for a single type of charge with a fixed efficiency, which were derived and presented in \cite{Savchuk:2019xfg}, are also listed here as they provide a strong base from which to understand the behavior of more complicated treatments.
+
+After a brief review of cumulants and the definitions of skewness and kurtosis in Sec. \ref{sec:cumulaants}, the method for exact solution of the canonical ensemble describing a multi-component, multi-charge hadron gas is presented in Sec. \ref{sec:theory}. These techniques extend those used for canonical ensembles used to study isospin fluctuations of a hadron gas \cite{}, nuclear fragmentation \cite{}, the level density of a Fermi gas, and the effect of restricting a quark-gluon plasma (QGP) to having fixed charge, including being in an overall color singlet \cite{}. Exact methods for calculating correlations up to fourth-order are presented. Unfortunately, to include realistic acceptance effects and complex decays, the exact expressions are no longer viable. However, as shown in Sec. \ref{sec:theoryMC}, the exact expressions show how sample events can be generated. An event, defined by a set of particles and momenta, are generated with perfect independence from one another, and perfectly reproduce the canonical expressions from Sec. \ref{sec:theoryexact}. Section \ref{sec:theorybosefermi} extends the previous sections to show how Bose correlations can be included. Section \ref{sec:uniformeff} considers the case of a single type of charge and a uniform efficiency, i.e. the probability of any particle being recorded is set to some fixed value. Much of this discussion repeats what is said in \cite{Savchuck:2019xfg}, and is included for completeness. This provides for a physical discussion of how charge conservation, volume fluctuations, chemical equilibrium, decays, clustering, and Bose corrections should affect higher moments.
+
+The heart of this study is presented in Sec. \ref{sec:blastwave}. Here, the patches are assigned collective velocities consistent with the collective flow deduced from heavy-ion collisions. A canonical sampling of particles are generated from each patch, followed by a simulation of their decays. The particles were then overlaid onto the acceptance of the STAR detector at RHIC. Each patch is uncorrelated with any other patch, so moments can be calculated by averaging over the independent contributions from the patches. Results are displayed alongside results from the STAR Collaboration. The size and sign of the fluctuations of the net-proton distributions are consistent with observations, but the calculations of the net charge distributions differs qualitatively from STAR observations. A detailed discussion of the lessons derived from this study is presented in Sec. \ref{sec:summary}.
 
 \section{Cumulants, Skewness and Kurtosis}
 
@@ -237,7 +241,7 @@ Given that symmetrization is only being applied to pions, which are bosons, one 
 
 It is well known that bosonic effects can broaden multiplicity distributions \cite{negativebinomial}, making them super-Poissonian. One of the goals of this study is to discern how bosonic statistics alter the kurtosis or skewness. 
 
-\section{Models with Uniform Efficiency and Fixed Charge}
+\section{Models with Uniform Efficiency and Fixed Charge}\label{sec:uniformeff}
 
 Even for a volume of fixed charge, finite efficiency and acceptance leads to non-zero fluctuations. The degree to which these fluctuations affect the skewness and kurtosis was worked out in \cite{Savchuk:2019xfg} for emission of a fixed charge where the probability of any charge being observed was a constant $\alpha$. If $\alpha$ were zero or unity, there would be no fluctuations, and because the charge on those particles that are not observed must fluctuate exactly opposite to the charge that is observed, the even moments must be symmetric about $\alpha=1/2$, and the odd moments must be anti-symmetric. One of the most important results of \cite{Savchuk:2019xfg} is that for fixed $Q$ and $\alpha$ the ratios cumulants depends only on $\alpha$ and the variance and mean of the underlying multiplicity distribution. Even though $Q$ is fixed, the net number of charged particles $M$ can fluctuate. 
 
@@ -298,7 +302,26 @@ Equation (\ref{eq:savchuck}) is crucial as it demonstrates that the fourth momen
 
 \subsection{Volume Fluctuations}\label{sec:volumefluc}
 
-Experiments measure a variety of events of heavy ion collisions, which cover a range of impact parameters. Even for a fixed impact parameter, energy deposition might significantly vary depending on how many nucleons actually collided or how many jets were produced. If more energy is deposited into a fixed volume, it might expand further before it hadronizes, resulting in larger final volumes. Experimental analyses attempt to minimize these fluctuations by constraining a given fluctuation measurement to a specific centrality bin, where ``centrality'' might be defined by multiplicity, transverse energy, or energy deposition in a forward calorimeter. To reduce auto-correlation centrality measurements are usually constrained to particles other than those used to construct the moments. Nonetheless, it is inevitable that a range of initial conditions is explored within any bin, and one might thus expect the base multiplicity distribution to broaden.
+Experiments measure a variety of events of heavy ion collisions, which cover a range of impact parameters. Even for a fixed impact parameter, energy deposition might significantly vary depending on how many nucleons actually collided or how many jets were produced. If more energy is deposited into a fixed volume, it might expand further before it hadronizes, resulting in larger final volumes. Experimental analyses attempt to minimize these fluctuations by constraining a given fluctuation measurement to a specific centrality bin, where ``centrality'' might be defined by multiplicity, transverse energy, or energy deposition in a forward calorimeter. To reduce auto-correlation centrality measurements are usually constrained to particles other than those used to construct the moments. Nonetheless, it is inevitable that a range of initial conditions is explored within any bin, and one might thus expect the base multiplicity distribution to broaden. If the patch volumes are fixed at some constant value, volume fluctuations can be thought of as a fluctuation in the number of patches. 
+
+It is tempting to expect that the ratio of cumulants would be independent of the number of patches, and thus impervious to volume fluctuations. Independently, each cumulant, $C_n$, scales linearly with the number of patches because there are no cross correlations between patches. Thus,
+if $P_p(N)$ is the probability of having $N$ patches, and if $c_n$ is the cumulant for a single patch, the cumulant for the overall system is
+\begin{eqnarray}
+C_n&=&\sum_NP_p(N) Nc_n,
+\end{eqnarray}
+and the ratio of cumulants is 
+\begin{eqnarray}
+\frac{C_n}{C_m}&=&\frac{\sum_NP_p(N)Nc_n}{\sum_MP_p(M)Mc_m}\\
+\nonumber
+&=&\frac{c_n}{c_m}.
+\end{eqnarray}
+Note that this suggests that results might be independent of the number of patches, and thus the overall volume, but they might still depend on the volume of an individual path.
+
+Unfortunately, the discussion above is misleading once one considers $C_n$ for $n\ge 4$. In that case the cumulant for a single patche is
+\begin{eqnarray}
+c_4&=&\langle(Q-\bar{Q})^4\rangle-3\langle(Q-\bar{Q})^2\rangle^2. 
+\end{eqnarray}
+If one knew the variance, $\langle(Q-\bar{Q})^2\rangle$, for a single patch, the arguments above would be valid. Unfortunately, one typically calculates the variance from a range of systems with different number of patches. ......................
 
 However, as seen in Eq. (\ref{eq:savchuck}), if the base charge $Q$ is fixed this affects the result only through the relative variance, $\omega_M$, of the base multiplicity distribution, which can be determined by the first and second moments of the  multiplicity analysis. For example, the ratio $C_4/C_2$ reported by STAR for electric charge fluctuations is $\gtrsim 2$, which requires $\omega_M\gtrsim 3$, which would suggest volumes would have to fluctuate over a range of a factor of two or more in a given centrality bin. Indeed, the centrality bins applied by STAR were not particularly narrow, but unfortunately STAR has not provided the corresponding value of $\omega_M$ to best gauge the impact of volume fluctuations on the result. Further, it is odd to see that whereas $C_4/C_2\gtrsim 2$ for charged particles, it mainly stays below unity for net protons. Thus, the larger values of $C_4/C_2$ reported by STAR suggest that the source might be true variations in the base distributions of $Q$. Phase transitions are usually posed as a means to separate baryon number, much more so than electric charge, so having $C_4/C_2$ large for net charge, but low for net protons seems to go against the rough expectations presented here for fixed charge, and also against the expectations one might have for fluctuations derived from phase transitions. 
 
@@ -322,7 +345,7 @@ In addition to the results from the canonical ensemble, a system of uncorrelated
 \omega_M&=&\frac{\langle(M_{\rm ch}-\overline{M}_{\rm ch})^2\rangle}{\overline{M}_{\rm ch}}\\
 &=&N_{\rm bodies}\frac{\langle(M_0-\overline{M}_0)^2\rangle}{\overline{M}_0}.
 \end{eqnarray}
-Fig. \ref{fig:savchuck} illustrates how this picture affects $C_4/C_2$. In this case, because $\omega$ depends only on $N_{\rm bodies}$ and does not change with multiplicity or system size, the cumulants are also independent of multiplicity. For $N_{\rm bodies}=2$ the cumulant ratios does not even depend on the efficiency. For $N_{\rm bodies}>2$ the ratio $C_4/C_2$ exceeds unity, so if charge creation proceeded through the creation and decay of neutral clusters it would be easy to generate large values of $C_4/C_2$. 
+Fig. \ref{fig:savchuck} illustrates how this picture affects $C_4/C_2$. In this case, because $\omega$ depends only on $N_{\rm bodies}$ and does not change with multiplicity or system size, the cumulants are also independent of multiplicity. For $N_{\rm bodies}=2$ the cumulant ratios does not even depend on the efficiency. For $N_{\rm bodies}>2$ the ratio $C_4/C_2$ exceeds unity, so if charge creation proceeded through the creation and decay of neutral clusters it would be easy to generate large values of $C_4/C_2$. This has been discussed at length in \cite{Bzdak:2018uhv}.
 
 In an equilibrated system decays and recombination have equal rates. However, as the system decouples recombination stops and decays proceed until only stable hadrons remain. Very few decays proceed via more than on charged pair. During the hadronic phase the number of charged particles nearly doubles due to these decays. Thus, if the systems do equilibrate, then decay after chemical freeze-out, one would expect the ratio $C_4/C_2$ to lie somewhere between the value for the canonical ensemble in Fig. \ref{fig:savchuck} and the value for pure decays with $N_{\rm bodies}=2$. STAR's experimental results for net proton fluctuations indeed satisfy this expectation, but their measured $C_4/C_2$ for net charge fluctuations well exceed unity. This discrepancy could be due to volume fluctuations or the decay of larger clusters, or perhaps some shortcoming in this overly simple picture, e.g. the neglect of other conservation laws or Bose condensation. 
 
@@ -362,6 +385,38 @@ This work was supported by the Department of Energy Office of Science through gr
 \end{acknowledgments}
 
 \begin{thebibliography}{99}
+
+%\cite{Schlichting:2010qia}
+\bibitem{Schlichting:2010qia}
+S.~Schlichting and S.~Pratt,
+%``Charge conservation at energies available at the BNL Relativistic Heavy Ion Collider and contributions to local parity violation observables,''
+Phys. Rev. C \textbf{83} (2011), 014913
+doi:10.1103/PhysRevC.83.014913
+[arXiv:1009.4283 [nucl-th]].
+%149 citations counted in INSPIRE as of 19 May 2020
+
+%\cite{Pratt:2010zn}
+\bibitem{Pratt:2010zn}
+S.~Pratt, S.~Schlichting and S.~Gavin,
+%``Effects of Momentum Conservation and Flow on Angular Correlations at RHIC,''
+Phys. Rev. C \textbf{84} (2011), 024909
+doi:10.1103/PhysRevC.84.024909
+[arXiv:1011.6053 [nucl-th]].
+%95 citations counted in INSPIRE as of 19 May 2020
+
+%\cite{Schlichting:2010na}
+\bibitem{Schlichting:2010na}
+S.~Schlichting and S.~Pratt,
+%``Effects of Charge Conservation and Flow on Fluctuations of parity-odd Observables ar RHIC,''
+[arXiv:1005.5341 [nucl-th]].
+%28 citations counted in INSPIRE as of 19 May 2020
+
+%\cite{Oliinychenko:2020cmr}
+\bibitem{Oliinychenko:2020cmr}
+D.~Oliinychenko, S.~Shi and V.~Koch,
+%``Effects of local event-by-event conservation laws in ultra-relativistic heavy ion collisions at the particlization,''
+[arXiv:2001.08176 [hep-ph]].
+%0 citations counted in INSPIRE as of 19 May 2020
 
 %\cite{Tanabashi:2018oca}
 \bibitem{Tanabashi:2018oca}
@@ -431,6 +486,14 @@ Phys. Lett. B \textbf{301} (1993), 159-164
 doi:10.1016/0370-2693(93)90682-8
 %136 citations counted in INSPIRE as of 13 May 2020
 
+%\cite{Bzdak:2018uhv}
+\bibitem{Bzdak:2018uhv}
+A.~Bzdak, V.~Koch, D.~Oliinychenko and J.~Steinheimer,
+%``Large proton cumulants from the superposition of ordinary multiplicity distributions,''
+Phys. Rev. C \textbf{98} (2018) no.5, 054901
+doi:10.1103/PhysRevC.98.054901
+[arXiv:1804.04463 [nucl-th]].
+%11 citations counted in INSPIRE as of 13 May 2020
 
 
 
