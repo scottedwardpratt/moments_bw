@@ -85,57 +85,71 @@ void Cmoments::IncrementMoments(vector<Cpart> &partvec){
 	for(int ipart=0;ipart<partvec.size();ipart++){
 		resinfo=partvec[ipart].resinfo;
 		pt=sqrt(partvec[ipart].p[1]*partvec[ipart].p[1]+partvec[ipart].p[2]*partvec[ipart].p[2]);
-		acceptance->Acceptance(&partvec[ipart],acceptQ,acceptP,acceptK,acceptPi,acceptB);
-		//acceptQ=acceptP=acceptK=acceptPi=true;
-		if(abs(resinfo->charge)==1 && acceptQ){
-			if(resinfo->bose_pion==true){
-				NetQ+=resinfo->charge;
-				TotQ+=abs(resinfo->code%100);
+		if(resinfo->bose_pion==true) {
+			int n=abs(resinfo->code%100);
+			for (int i=1;i<=n;i++) {
+				acceptance->Acceptance(&partvec[ipart],acceptQ,acceptP,acceptK,acceptPi,acceptB);
+				if (acceptPi) {
+					NetQ+=resinfo->charge/double(n);
+					TotQ+=1;
+					NetPi+=resinfo->charge/double(n);
+					TotPi+=1;
+				}
 			}
-			else {
-				NetQ+=resinfo->charge;
-				TotQ+=1;
+		}
+		else {
+			acceptance->Acceptance(&partvec[ipart],acceptQ,acceptP,acceptK,acceptPi,acceptB);
+			//acceptQ=acceptP=acceptK=acceptPi=true;
+			if(abs(resinfo->charge)==1 && acceptQ){
+				if(false) { //(resinfo->bose_pion==true){
+					NetQ+=resinfo->charge;
+					TotQ+=abs(resinfo->code%100);
+				}
+				else {
+					NetQ+=resinfo->charge;
+					TotQ+=1;
+				}
+			} else {
+				altNetQ+=resinfo->charge;
+				altTotQ+=1;
 			}
-		} else {
-			altNetQ+=resinfo->charge;
-			altTotQ+=1;
-		}
-		if(abs(resinfo->code)==2212 && acceptP){
-			NetP+=resinfo->charge;
-			TotP+=1;
-			meanpt_protons+=pt;
-		} else {
-			altNetP+=resinfo->charge;
-			altTotP+=1;
-			altmeanpt_protons+=pt;
-		}
-		if(abs(resinfo->code)==321 && acceptK){
-			NetK+=resinfo->charge;
-			TotK+=1;
-			meanpt_kaons+=pt;
-		} else {
-			altNetK+=resinfo->charge;
-			altTotK+=1;
-			altmeanpt_kaons+=pt;
-		}
-		if((abs(resinfo->code)==211 || resinfo->bose_pion) && acceptPi){
-			if(resinfo->bose_pion==true){
-				NetPi+=resinfo->charge;
-				TotPi+=abs(resinfo->code%100);
+			if(abs(resinfo->code)==2212 && acceptP){
+				NetP+=resinfo->charge;
+				TotP+=1;
+				meanpt_protons+=pt;
+			} else {
+				altNetP+=resinfo->charge;
+				altTotP+=1;
+				altmeanpt_protons+=pt;
 			}
-			else {
-				NetPi+=resinfo->charge;
-				TotPi+=1;
+			if(abs(resinfo->code)==321 && acceptK){
+				NetK+=resinfo->charge;
+				TotK+=1;
+				meanpt_kaons+=pt;
+			} else {
+				altNetK+=resinfo->charge;
+				altTotK+=1;
+				altmeanpt_kaons+=pt;
 			}
-			meanpt_pions+=pt;
-		} else {
-			altNetPi+=resinfo->charge;
-			altTotPi+=1;
-			altmeanpt_pions+=pt;
-		}
-		if(abs(resinfo->baryon)==1 && acceptB){
-			NetB+=resinfo->baryon;
-			TotB+=1;
+			if((abs(resinfo->code)==211 || resinfo->bose_pion) && acceptPi){
+				if(false) { //if(resinfo->bose_pion==true){
+					NetPi+=resinfo->charge;
+					TotPi+=abs(resinfo->code%100);
+				}
+				else {
+					NetPi+=resinfo->charge;
+					TotPi+=1;
+				}
+				meanpt_pions+=pt;
+			} else {
+				altNetPi+=resinfo->charge;
+				altTotPi+=1;
+				altmeanpt_pions+=pt;
+			}
+			if(abs(resinfo->baryon)==1 && acceptB){
+				NetB+=resinfo->baryon;
+				TotB+=1;
+			}
 		}
 	}
 	Bbar+=NetB; B2bar+=NetB*NetB; B3bar+=pow(NetB,3); B4bar+=pow(NetB,4);
