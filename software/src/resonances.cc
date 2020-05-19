@@ -370,12 +370,12 @@ void CResList::ReadResInfo(){
 			if (resinfoptr->code==211) j=0;
 			if (resinfoptr->code==-211) j=1;
 			if (resinfoptr->code==111) j=2;
-			for (int i=0;i<n_bose_terms;i++){ //make extra imaginary resonances for bose corrections
+			for (int i=0;i<n_bose_terms-1;i++){ //make extra imaginary resonances for bose corrections
 				bresinfoptr=new CResInfo();
 				if (resinfoptr->code<0) sgn=-1;
 				bresinfoptr->code=resinfoptr->code*1000+(i+2)*sgn; //no real resonance has this code
 				bresinfoptr->mass=resinfoptr->mass;
-				bresinfoptr->charge=resinfoptr->charge;
+				bresinfoptr->charge=resinfoptr->charge*(i+2);
 				bresinfoptr->baryon=resinfoptr->baryon;
 				bresinfoptr->strange=resinfoptr->strange;
 				bresinfoptr->spin=resinfoptr->spin;

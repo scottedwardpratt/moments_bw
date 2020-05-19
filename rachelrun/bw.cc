@@ -37,7 +37,7 @@ int main(int argc,char *argv[]){
 	//pf.WriteZ();
 	//pf.ReadZ();
 
-	nevents=10000000; //parameter::getI(parmap,"NEVENTS",100);
+	nevents=1000000; //parameter::getI(parmap,"NEVENTS",100);
 	/*
 	double pbound=4000;
 	int ndp=50,nparts;
@@ -63,8 +63,8 @@ int main(int argc,char *argv[]){
 	pf.ScaleZ(Omega);
 	printf("----------- Z Calculated -----------\n");
 
-	file="data/"+tag+".dat";
-	altfile="altdata/"+tag+".dat";
+	file="data/bose_decay_"+tag+".dat";
+	altfile="altdata/bose_decay_"+tag+".dat";
 	//FILE *fptr=fopen(file.c_str(),"w");
 	//strcat(file,const char(roots));
 	//muBoverT=GetMuBOverT(roots[roots]);
