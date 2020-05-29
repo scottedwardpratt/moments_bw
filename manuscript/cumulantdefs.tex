@@ -1,21 +1,21 @@
 % !TEX root =  CCmoments.tex
 
-\section{Cumulants, Skewness and Kurtosis}
+\section{Cumulants, Skewness and Kurtosis}\label{sec:cumulants}
 
 To keep the more manuscript self-contained, a brief review of cumulants and the definition of skewness and kurtosis is presented here.
 
 Cumulants of a charge distribution are defined by 
-\begin{eqnarray}
-C_1&=\langle Q\rangle,\\
-C_2&=\langle(Q-\overline{Q})^2\rangle,\\
-C_3&=\langle(Q-\overline{Q})^3\rangle,\\
-C_4&=\langle(Q-\overline{Q})^4\rangle-C_2^2,
-\end{eqnarray}
+\begin{align}
+C_1 &= \langle Q\rangle,\\
+C_2 &= \langle(Q-\overline{Q})^2\rangle,\\
+C_3 &= \langle(Q-\overline{Q})^3\rangle,\\
+C_4 &= \langle(Q-\overline{Q})^4\rangle-C_2^2,
+\end{align}
 where $Q$ is the net charge. Here, $Q$ might refer to baryon number, to strangeness, or to the electric charge measured in units of $e$.
 
 Rather than showing the cumulants $C_n$, ratios are presented to help minimize trivial dependences on system size. The skewness, $S$, is a measure of the third moment,
 \begin{eqnarray}
-S&=\frac{C_4}{C_2^{3/2}}.
+S&=\frac{C_3}{C_2^{3/2}}.
 \end{eqnarray}
 This definition has the advantage in being dimensionless, but it does not become independent of volume in the limit of large volumes. Thus, it is more common to consider the ratio
 \begin{eqnarray}
@@ -32,27 +32,27 @@ K\sigma^2&=\frac{C_4}{C_2},
 to find an intensive measure of the fluctuation, at least for large volumes. 
 
 The measures $S\sigma$ and $K\sigma^2$ approach simple values in the limit that the distributions would be Poissonian. For Poissonian emission the observation of a charge in one region of momentum space is uncorrelated with the emission into any other space. Thus, particles are correlated only with themselves. If charges appear only in integral positive units, one can apply the usual expression for the Poissonian moments where the mean is $\eta$, 
-\begin{eqnarray}
+\begin{align}
 C_1&=\overline{n}=\eta\\
 C_2&=\langle(n-\overline{n})^2\rangle=\eta,\\
 C_3&=\langle(n-\overline{n})^3\rangle=\eta=C_1,\\
 C_4&=\langle(n-\overline{n})^4\rangle-3C_2^2=\eta.
-\end{eqnarray}
+\end{align}
 If there exist both positive and negative charges, the distribution of the net charge can be derived by convoluting the two distributions. Convoluting two Poissonians results in a Skellam distribution. If the mean number of positives is $\eta_+$ and the mean number of negatives is $\eta_-$, the distribution of net charge for a Skellam distribution, $Q=n_+-n_-$, yields the following cumulants
-\begin{eqnarray}
+\begin{align}
 C_1&=\eta_+-\eta_-,\\
 C_2&=\eta_++\eta_-,\\
 C_3&=\eta_+-\eta_-=C_1,\\
 C_4&=\eta_++\eta_-=C_2.
-\end{eqnarray}
+\end{align}
 Thus, if charges are produced in an uncorrelated fashion in increments of either $\pm 1$, the skewness and kurtosis become
 \begin{eqnarray}
 S\sigma&=\frac{C_3}{\sigma^2}=\frac{C_1}{\sigma^2},\\
 K\sigma^2&=\frac{C_4}{\sigma^2}=1,
 \end{eqnarray}
-where $\sigma^2\equiv\langle(Q-\overline{Q})^2\rangle=\eta_++\eta_-$. It might have made more sense to consider $C_3/C_1$ rather than $S\sigma$, as that ratio would be unity in the limit that emission is uncorrelated. However, because experimental analyses have often concentrated on the two ratios above, higher order correlations in this paper will also be presented in terms of these ratios.
+where $\sigma^2\equiv\langle(Q-\overline{Q})^2\rangle=\eta_++\eta_-$. Sec. \ref{sec:uniformeff} considers $C_3/C_1$ rather than $S\sigma$, as that ratio is unity in the limit that emission is uncorrelated. However, because experimental analyses have often concentrated on the two ratios above, higher order correlations in Sec. \ref{sec:blast} will be presented in terms of these ratios.
 
-Moments depend on the efficiency $\alpha$ with which particles are measured. In the limit of vanishing efficiency all distributions of positives or of negatives tend to become Poissonian, and the distribution of the net charge will thus become a Skellam.  This can be understood by having the probability of observing a positive charge being $\alpha\rightarrow 0$ and the probability of observing two charges being proportional to $\alpha^2$ being negligible. This assumption would fall through if all positive charges were measured in pairs, i.e. multiple charges on each measured particle, but for final-state hadrons the charges are only $\pm 1$. As $\alpha\rightarrow 0$, the moments are dominated by the probability of observing either zero charges or a single charge, and the moments for counting particles of a given charge are
+Moments depend on the efficiency $\alpha$ with which particles are measured. In the limit of vanishing efficiency all distributions of positives or of negatives tend to become Poissonian, and the distribution of the net charge will thus become Skellam.  This can be understood by having the probability of observing a positive charge being $\alpha\rightarrow 0$ and the probability of observing two charges being proportional to $\alpha^2$ being negligible. This assumption would fall through if all positive charges were measured in pairs, i.e. multiple charges on each measured particle, but for final-state hadrons the charges are only $\pm 1$. As $\alpha\rightarrow 0$, the moments are dominated by the probability of observing either zero charges or a single charge, and the moments for counting particles of a given charge are
 \begin{eqnarray}
 \langle n^m\rangle&=\alpha,
 \end{eqnarray}

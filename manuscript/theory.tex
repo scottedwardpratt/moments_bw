@@ -14,7 +14,7 @@ The recursive procedure begins with
 \begin{eqnarray}
 Z_{A=0}(0,0,0)&=&1,
 \end{eqnarray}
-is the canonical partition function of the vacuum. The contribution for a given $A$, $Z_A(Q,B,S)$, can be written as 
+the canonical partition function of the vacuum. The contribution for a given $A$, $Z_A(Q,B,S)$, can be written as 
 \begin{eqnarray}\label{eq:recurrence}
 Z_A(Q,B,S)&=&=\frac{1}{A}\sum_h z_hZ_{A-1}(Q-q_h,B-b_h,S-s_h),
 \end{eqnarray}
@@ -22,7 +22,7 @@ where $z_h$ is the single-particle partition function for hadron species $h$, wh
 \begin{eqnarray}
 P(A)&=&\frac{Z_A(Q,B,S)}{\sum_A Z_A(Q,B,S)}=\frac{Z_A(Q,B,S)}{Z(Q,B,S)}.
 \end{eqnarray}
-In practice, the sum over $A$ is cut off at some $A_{\rm max}$, but in our studies here that cutoff is made large enough that contributions to $Z$ for $A>A_{\rm max}$ are negligible. Thus, once builds the partition function from $A=0$ to $A_{\rm max}$ one has the partition function for all $Q,B,S$. 
+In practice, the sum over $A$ is cut off at some $A_{\rm max}$, but in our studies here that cutoff is made large enough that contributions to $Z$ for $A>A_{\rm max}$ are negligible. Thus, once one builds the partition function from $A=0$ to $A_{\rm max}$ one has the partition function for all $Q,B,S$. 
 
 Once the partition function is calculated one can also calculate the multiplicities and moments of observing specific species. For example, the multiplicity of species $h$ in a system with charge $Q,B,S$ is
 \begin{eqnarray}
@@ -43,12 +43,7 @@ Higher moments can also be extracted,
 \end{eqnarray}
 It is straightforward to extend this expression to the fluctuation of charges.
 
-These expressions can also be extended to consider non-additive conservation laws. Net isospin conservation of a hadron gas was invoked in \cite{Cheng:2002jb}, i.e. restricting the states to being in an iso-singlet.  For quark-gluon states were restricted to being in both an iso-singlet and a color singlet in \cite{Pratt:2003jd}. For Bose corrections,
-\begin{eqnarray}\label{eq:bose}
-Z_A(B,Q,S)&=&\frac{1}{A}\sum_{h,n}z_{h,n}Z_{A-1}(Q-nq_h,B-nb_h,S-ns_h),\\
-z_{h,n}&=&(2s+1)\sum_p e^{-nE_p/T}.
-\end{eqnarray}
-For the conditions of a hadron gas in high-energy heavy-ion collisions only pions are significantly affected by quantum degeneracy. 
+These expressions can also be extended to consider non-additive conservation laws. Net isospin conservation of a hadron gas was invoked in \cite{Cheng:2002jb}, i.e. restricting the states to being in an iso-singlet.  For quark-gluon states were restricted to being in both an iso-singlet and a color singlet in \cite{Pratt:2003jd}. Bose and Fermi corrections are discussed in Sec. \ref{sec:bose}.
 
 For the case of a single kind of charge, one can see how the the recursive method above yields the same result as what one would expect by writing down the partition function for a system with $(A-Q)/2$ negative charges and $(A+Q)/2$ positive charges,
 \begin{eqnarray}
@@ -70,11 +65,7 @@ This result is also equivalent to expectations based on setting reaction rates e
 \begin{equation}\label{eq:ratesequal}
 \alpha \frac{(A-Q)(A+Q)}{4}Z_{A,Q}=\beta Z_{A-2,Q}.
 \end{equation}
-One can not see that if one chooses $\beta/\alpha=z$ that Eq.s (\ref{eq:ratesequal}) and (\ref{eq:singlecharge}) are consistent.
-
-
-
-Indeed, this result satisfies the recurrence relations above. If the net charge is zero, the result is even simpler,
+One can see that if one chooses $\beta/\alpha=z$ that Eq.s (\ref{eq:ratesequal}) and (\ref{eq:singlecharge}) are consistent. If the net charge is zero, the result is even simpler,
 \begin{eqnarray}
 \label{eq:PAgivenQcanonical}
 P(A|Q)&=&\frac{Z_{A,Q}}{\sum_A Z_{A,Q}},\\
@@ -82,11 +73,4 @@ P(A|Q)&=&\frac{Z_{A,Q}}{\sum_A Z_{A,Q}},\\
 P(A|Q=0)&=& \frac{z^A}{[(A/2)!]^2}\left\{\sum_{A={\rm even}} \frac{z^A}{[(A/2)!]^2}\right\}^{-1}.
 \end{eqnarray}
 
-Aside from the assumptions that $Q$ is fixed and there exists only one kind of charge, Eq.(\ref{eq:rateresult}) also requires that Bose and Fermi quantum statistical corrections are negligible, and that the charges come in unit charges. Despite these shortcomings, this picture is useful in that it allows one to see how multiplicities fluctuations are affected by charge conservation in a simple picture. 
-
-One can also find $\omega_M$ by considering an equilibrated system. Here, we first consider an extremely simplified model of a system with only one conserved charge, and where the species all have charge of either $-1$ or $+1$. Again, the partition functions are labeled by the charge $Q$ and by the net number of hadrons $A$. Because particles have charges only of $\pm 1$, the partition function for $z=Z_{A=1,Q=1}=Z_{A=1,Q=-1}$ forms the basis of all other partition functions. From the methods of the previous section
-\begin{eqnarray}
-Z_{A,Q}&=\frac{z}{A}\left[Z_{A-1,Q-1}+Z_{A-1,Q+1}\right].
-\end{eqnarray}
-This relation rapidly reproduces the partition function for all $A$ and $Q$ for $A$ of the order of a few hundred.
-
+Aside from the assumptions that $Q$ is fixed and there exists only one kind of charge, Eq.(\ref{eq:ratesequal}) also requires that Bose and Fermi quantum statistical corrections are negligible, and that only unit charges exist. Despite these shortcomings, this picture is useful in that it allows one to see how multiplicity fluctuations are affected by charge conservation in a simple picture. 
