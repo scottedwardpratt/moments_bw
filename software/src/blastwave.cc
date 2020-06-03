@@ -10,6 +10,7 @@ CblastWave::CblastWave(parameterMap &parmap,CRandom *randyset,CResList *reslists
 	uperpy=parameter::getD(parmap,"BW_UPERPY",0.9);
 	sigma_eta=parameter::getD(parmap,"BW_SIGMA_ETA",0.3);
 	sigma_uperp=parameter::getD(parmap,"BW_SIGMA_UPERP",0.2);
+	Ybeam=5.3;
 }
 
 void CblastWave::GenerateParts(vector<CResInfo *> &resinfovec,vector<Cpart> &partvec){
@@ -22,8 +23,9 @@ void CblastWave::GenerateParts(vector<CResInfo *> &resinfovec,vector<Cpart> &par
 	int imother,ibody,nbodies,ipart0,nparts0=resinfovec.size();
 	double mtot,Ti;
 	CResInfo *resinfo;
-
+	int motherid=0,nproducts;
 	for(ipart0=0;ipart0<nparts0;ipart0++){
+		nproducts=0;
 		resinfo=resinfovec[ipart0];
 		if (resinfo->bose_pion==true) {
 			Ti=Tf/abs(double(resinfo->code%100)); //i is hidden in the imaginary code for bose corrections
@@ -31,12 +33,14 @@ void CblastWave::GenerateParts(vector<CResInfo *> &resinfovec,vector<Cpart> &par
 		}
 		else Ti=Tf;
 		part=new Cpart(resinfo);
+		part->motherid=motherid;
 		randy->generate_boltzmann(resinfo->mass,Ti,part->p);
 		if(resinfo->decay){
 			mothervec.push_back(part);
 		}
 		else{
 			partvec.push_back(*part);
+			nproducts+=1;
 			delete part;
 		}
 		while(mothervec.size()>0){
@@ -50,6 +54,7 @@ void CblastWave::GenerateParts(vector<CResInfo *> &resinfovec,vector<Cpart> &par
 			}while(mtot>mothervec[imother]->resinfo->mass);
 			for(ibody=0;ibody<nbodies;ibody++){
 				part=new Cpart(daughterresinfo[ibody]);
+				part->motherid=motherid;
 				daughtervec.push_back(part);
 			}
 			GetDecayMomenta(mothervec[imother],nbodies,daughtervec);
@@ -60,8 +65,9 @@ void CblastWave::GenerateParts(vector<CResInfo *> &resinfovec,vector<Cpart> &par
 					mothervec.push_back(daughtervec[ibody]);
 				}
 				else{
-					if(daughtervec[ibody]->resinfo->charge!=0 || daughtervec[ibody]->resinfo->baryon!=0){
+					if(daughtervec[ibody]->resinfo->charge!=0 || daughtervec[ibody]->resinfo->baryon!=0 || daughtervec[ibody]->resinfo->strange!=0){
 						partvec.push_back(*daughtervec[ibody]);
+						nproducts+=1;
 						delete(daughtervec[ibody]);
 					}
 					else
@@ -70,6 +76,9 @@ void CblastWave::GenerateParts(vector<CResInfo *> &resinfovec,vector<Cpart> &par
 			}
 			daughtervec.clear();
 		}
+		if(nproducts>0){
+			motherid+=1;
+		}
 	}
 	BoostParts(partvec);
 }
@@ -77,32 +86,37 @@ void CblastWave::GenerateParts(vector<CResInfo *> &resinfovec,vector<Cpart> &par
 void CblastWave::BoostParts(vector<Cpart> &partvec){
 	int ipart,nparts=partvec.size();
 	FourVector u,ubar;
-	double y,yboost,eta,ymax=1.0;
+	int oldmotherid=-1;
+	double yboost,eta;
 	Cpart *part;
 	randy->gauss2(&ubar[1],&ubar[2]);
 	ubar[1]*=sqrt(uperpx*uperpx-sigma_uperp*sigma_uperp);
 	ubar[2]*=sqrt(uperpx*uperpx-sigma_uperp*sigma_uperp);
 	for(ipart=0;ipart<nparts;ipart++){
 		part=&partvec[ipart];
-		randy->generate_boltzmann(part->resinfo->mass,Tf,part->p);
-		randy->gauss2(&u[1],&u[2]);
-		u[1]*=sigma_uperp;
-		u[2]*=sigma_uperp;
-		u[1]+=ubar[1];
-		u[2]+=ubar[2];
-		eta=sigma_eta*randy->gauss();
-		u[3]=sqrt(1.0+u[1]*u[1]+u[2]*u[2])*sinh(eta);
-		u[0]=sqrt(1.0+u[1]*u[1]+u[2]*u[2]+u[3]*u[3]);
+		if(part->motherid!=oldmotherid && part->motherid!=oldmotherid+1){
+			printf("OUCH !!!!!!!!!!!!!!!!!!!!!!!!! motherid not expected value\n");
+			exit(1);
+		}
+		if(part->motherid!=oldmotherid){
+			//randy->generate_boltzmann(part->resinfo->mass,Tf,part->p);
+			randy->gauss2(&u[1],&u[2]);
+			u[1]*=sigma_uperp;
+			u[2]*=sigma_uperp;
+			u[1]+=ubar[1];
+			u[2]+=ubar[2];
+			eta=sigma_eta*randy->gauss();
+			u[3]=sqrt(1.0+u[1]*u[1]+u[2]*u[2])*sinh(eta);
+			u[0]=sqrt(1.0+u[1]*u[1]+u[2]*u[2]+u[3]*u[3]);
+		}
 		Misc::Boost(u,part->p,part->p);
-/*		if(abs(part->resinfo->code)==2212){
-			double pt=sqrt(part->p[1]*part->p[1]+part->p[2]*part->p[2]);
-			printf("pt=%g\n",pt);
+		oldmotherid=part->motherid;
+		/*		if(abs(part->resinfo->code)==2212){
+		double pt=sqrt(part->p[1]*part->p[1]+part->p[2]*part->p[2]);
+		printf("pt=%g\n",pt);
 		}*/
 	}
-	ipart=floorl(nparts*randy->ran());
-	part=&partvec[ipart];
-	y=atanh(part->p[3]/part->p[0]);
-	yboost=ymax*(1.0-2.0*randy->ran())-y;
+	yboost=sigma_source*randy->gauss();
 	u[3]=sinh(yboost);
 	u[1]=u[2]=0.0;
 	u[3]=sqrt(1.0+u[3]*u[3]);
@@ -110,6 +124,12 @@ void CblastWave::BoostParts(vector<Cpart> &partvec){
 		part=&partvec[ipart];
 		Misc::Boost(u,part->p,part->p);
 	}
+}
+
+void CblastWave::SetYbeam(double roots){
+	double e=0.5*roots,mass=0.939;
+	Ybeam=acosh(e/mass);
+	sigma_source=sqrt(((Ybeam*-1.0)*(Ybeam-1.0)/3.0)-sigma_eta*sigma_eta);
 }
 
 void CblastWave::GetDecayMomenta(Cpart *mother,int &nbodies,vector<Cpart *> &daughtervec){

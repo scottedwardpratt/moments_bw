@@ -14,11 +14,12 @@ using namespace std;
 
 class Cpart{
 public:
+	FourVector p;
+	int motherid;
+	CResInfo *resinfo;
 	Cpart(CResInfo *resinfoset){
 		resinfo=resinfoset;
 	}
-	FourVector p;
-	CResInfo *resinfo;
 };
 
 class CpartitionFunction{
@@ -107,12 +108,14 @@ class CblastWave{
 public:
 	CRandom *randy;
 	double Tf,uperpx,uperpy;
+	double Ybeam,sigma_source;
 	double sigma_eta,sigma_uperp;
 	CResList *reslist;
 	CblastWave(parameterMap &parmap,CRandom *randyset,CResList *reslistset);
 	void GenerateParts(vector<CResInfo *> &resinfovec,vector<Cpart> &partvec);
 	void BoostParts(vector<Cpart> &partvec);
 	void GetDecayMomenta(Cpart *mother,int &nbodies,vector<Cpart *> &daughterpartvec);
+	void SetYbeam(double roots);
 };
 
 class Cmoments{
