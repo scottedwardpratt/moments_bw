@@ -129,7 +129,13 @@ void CblastWave::BoostParts(vector<Cpart> &partvec){
 void CblastWave::SetYbeam(double roots){
 	double e=0.5*roots,mass=0.939;
 	Ybeam=acosh(e/mass);
-	sigma_source=sqrt(((Ybeam*-1.0)*(Ybeam-1.0)/3.0)-sigma_eta*sigma_eta);
+	sigma_source=0.4*Ybeam;
+	printf("roots=%g, Ybeam=%g, sigma_source=%g, rap_spread for pions=%g\n",roots,Ybeam,sigma_source,sqrt(sigma_source*sigma_source+0.6*0.6));
+	if(sigma_source<sigma_eta){
+		printf("roots=%g, Ybeam=%g, sigma_eta=%g, is too big!, sigma_source=%g\n",roots,Ybeam,sigma_source,sigma_eta);
+		exit(1);
+	}
+	sigma_source=sqrt(sigma_source*sigma_source-sigma_eta*sigma_eta);
 }
 
 void CblastWave::GetDecayMomenta(Cpart *mother,int &nbodies,vector<Cpart *> &daughtervec){

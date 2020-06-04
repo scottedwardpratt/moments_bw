@@ -15,28 +15,30 @@ all :
 	make bw
 	make cleymans
 	make bw_alt
-#make canonical
+	
+software :
+	make -C ../software
 
-canonical : canonical.cc ../software/lib/libcanonical.a
+canonical : canonical.cc software
 	${MADAI_CPP} -o canonical canonical.cc ${MADAI_CFLAGS} ${LIBRARY} ${INCLUDE} -lcanonical -lgsl -lgslcblas
 
-bw : bw.cc ../software/lib/libcanonical.a
+bw : bw.cc software
 	${MADAI_CPP} -o bw bw.cc ${MADAI_CFLAGS} ${LIBRARY} ${INCLUDE} -lcanonical -lgsl -lgslcblas
 
-ideal : ideal.cc ../software/lib/libcanonical.a
+ideal : ideal.cc software
 	${MADAI_CPP} -o ideal ideal.cc ${MADAI_CFLAGS} ${LIBRARY} ${INCLUDE} -lcanonical -lgsl -lgslcblas
 
-bw_alt : bw_alt.cc ../software/lib/libcanonical.a
+bw_alt : bw_alt.cc software
 	${MADAI_CPP} -o bw_alt bw_alt.cc ${MADAI_CFLAGS} ${LIBRARY} ${INCLUDE} -lcanonical -lgsl -lgslcblas
 
-cleymans : cleymans.cc ../software/lib/libcanonical.a
+cleymans : cleymans.cc software
 	${MADAI_CPP} -o cleymans cleymans.cc ${MADAI_CFLAGS} ${LIBRARY} ${INCLUDE} -lcanonical -lgsl -lgslcblas
 
-writemults : writemults.cc ../software/lib/libcanonical.a
+writemults : writemults.cc software
 	${MADAI_CPP} -o writemults writemults.cc ${MADAI_CFLAGS} ${LIBRARY} ${INCLUDE} -lcanonical -lgsl -lgslcblas
 
-analyzemults : analyzemults.cc ../software/lib/libcanonical.a
+analyzemults : analyzemults.cc software
 	${MADAI_CPP} -o analyzemults analyzemults.cc ${MADAI_CFLAGS} ${LIBRARY} ${INCLUDE} -lcanonical -lgsl -lgslcblas
 
-mtester : mtester.cc ../software/lib/libcanonical.a
+mtester : mtester.cc software
 	${MADAI_CPP} -o mtester mtester.cc ${MADAI_CFLAGS} ${LIBRARY} ${INCLUDE} -lcanonical -lgsl -lgslcblas
