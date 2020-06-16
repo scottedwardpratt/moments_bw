@@ -4,9 +4,9 @@
 
 Even for a volume of fixed charge, finite efficiency and acceptance leads to non-zero fluctuations. The degree to which these fluctuations affect the skewness and kurtosis was worked out in \cite{Savchuk:2019xfg} for emission of a fixed charge where the probability of any charge being observed was a constant $\alpha$. If $\alpha$ were zero or unity, there would be no fluctuations, and because the charge on those particles that are not observed must fluctuate exactly opposite to the charge that is observed, the even moments must be symmetric about $\alpha=1/2$, and the odd moments must be anti-symmetric. One of the most important results of \cite{Savchuk:2019xfg} is that for fixed $Q$ and $\alpha$ the ratios cumulants depends only on $\alpha$ and the variance and mean of the underlying multiplicity distribution. Even though $Q$ is fixed, the net number of charged particles $M$ can fluctuate. 
 
-From \cite{Savchuk:2019xfg}, the probability that $N$ charged particles with total charge $Q$ will result in a measured charge $q$ due to a uniform efficiency $\alpha$ is the convolution of two binomial distributions
+From \cite{Savchuk:2019xfg}, the probability that $M$ charged particles with total charge $Q$ will result in a measured charge $q=n_+ - n_-$ due to a uniform efficiency $\alpha$ is the convolution of two binomial distributions
 \begin{eqnarray}
-P(q|M,Q)&=&\sum_{n_+=0}^{(M+Q)/2}\sum_{n_-=0}^{(N-Q)/2}\frac{[(M+Q)/2]![(M-Q)/2]!}{[(M+Q)/2-n_+]![(M-Q)/2-n_-]!n_+!n_-!}
+P(q|M,Q)&=&\sum_{n_+=0}^{(M+Q)/2}\sum_{n_-=0}^{(M-Q)/2}\frac{[(M+Q)/2]![(M-Q)/2]!}{[(M+Q)/2-n_+]![(M-Q)/2-n_-]!n_+!n_-!}
 \alpha^{n_++n_-}(1-\alpha)^{M-n_+-n_-}.
 \end{eqnarray}
 After some tedious algebra, one can find the cumulants for fixed multiplicity,
@@ -24,11 +24,11 @@ C'_4&=&\langle(q-\overline{q})^4\rangle_M -3\langle(q-\overline{q})^2\rangle_M^2
 Here, the primes emphasize that the averages $\langle\cdots\rangle_M$. denote that they consider only those events with fixed base multiplicities $M$. The even moments are all linear in $M$, while the odd moments are linear in $Q$. It might appear that due to the linearity one might replace $M$ with $\langle M\rangle$ for a fluctuating base multiplicity, but the second term in the fourth cumulant
 \begin{eqnarray}
 -3\sum_M P(M) \langle(q-\overline{q})^2\rangle_M^2 &\ne&
--3\langle(q-\bar)^2\rangle^2.
+-3\langle(q-\overline{q})^2\rangle^2.
 \end{eqnarray}
 Instead,
 \begin{eqnarray}
-\langle(q-\bar)^2\rangle^2&=&\alpha^2(1-\alpha)^2\overline{M}^2.
+\langle(q-\overline{q})^2\rangle^2&=&\alpha^2(1-\alpha)^2\overline{M}^2.
 \end{eqnarray}
 This provides a contribution to $C_4$ and the cumulants and their ratios become \cite{Savchuk:2019xfg},
 \begin{eqnarray}
@@ -39,9 +39,9 @@ C_2&=&\alpha(1-\alpha)\overline{M},\\
 \nonumber
 C_3&=&\alpha(1-\alpha)(1-2\alpha)Q,\\
 \nonumber
-C_4&=&\alpha(1-\alpha)-6\alpha^2(1-\alpha)^2\overline{M}\\
+C_4&=&\alpha(1-\alpha)\overline{M}-6\alpha^2(1-\alpha)^2\overline{M}\\
 \nonumber
-&&+3^2\alpha(1-\alpha)^2\langle(M-\overline{M})^2\rangle,\\
+&&+3 \alpha^2 (1-\alpha)^2\langle(M-\overline{M})^2\rangle,\\
 \nonumber
 \frac{C_2}{C_1}&=&(1-\alpha)\frac{\overline{M}}{Q},\\
 \nonumber
@@ -113,11 +113,11 @@ Equations (\ref{eq:volfluc}) and (\ref{eq:kappadef}) are built on the assumption
 
 One can also calculate $\omega_M$ for an equilibrated system of a single type of charge, where the measurement directly samples the equilibrated distribution. This ignores decays, which in later stages proceed without the regeneration needed to maintain equilibrium. The results of the equilibrated canonical ensemble in Eq. (\ref{eq:PAgivenQcanonical}) can be used to find $\omega_M$, and thus generate the moments using Eq. (\ref{eq:savchuck}). For large average multiplicities, $\overline{M}$, the value of $\omega_M$ approaches unity, the Poissonian limit. For small $\overline{M}$ it approaches two. This is expected, because for a fixed charge, you can only add particles pair-wise. In fact, as will be shown in the next section, if one generated a Poissonian number of pairs, the relative variance would be $\omega_M=2$ for all multiplicities. With $\omega_M$ near unity for any system of significant size the values of $C_4/C_2$ and $C_3/C_1$ stay below unity as shown in Fig. \ref{fig:savchuck}. 
 
-\begin{figure}
-\centerline{\includegraphics[width=0.5\textwidth]{figs/savchuck}}
-\caption{\label{fig:savchuck}
-The relative variance of the charged multiplicity distribution is shown for three cases in the upper panel for a system carrying only a single type of unit $\pm$unit charge. For a neutral equilibrated system $\omega$ approaches the Poissonian limit for higher mean multiplicities, $\overline{M}$. This contrasts to a system where one has a Poissonian distribution of neutral particles which all decay into pairs. In this case $\omega=2$ and if the number of charged particles coming from the decay, $N_{\rm bodies}$, of the neutral decay were $n$, one would have $\omega=n$. Using Eq. (\ref{eq:savchuck}) from \cite{savchuck} the ratio $C_4/C_2$ is plotted for the cases above for different fixed efficiencies $\alpha$. For $\omega<2$, $C_4/C_2$ falls below unity, and for $\omega>2$ the ratio exceeds unity. The difference from unity is strongest for $\alpha$ near $1/2$, and the result is symmetric for reflecting $\alpha$ about $1/2$. For $\alpha$ approaching zero or unity $C_4/C_2\rightarrow 1$.}
-\end{figure}
+%\begin{figure}
+%\centerline{\includegraphics[width=0.5\textwidth]{figs/savchuck}}
+%\caption{\label{fig:savchuck}
+%The relative variance of the charged multiplicity distribution is shown for three cases in the upper panel for a system carrying only a single type of unit $\pm$unit charge. For a neutral equilibrated system $\omega$ approaches the Poissonian limit for higher mean multiplicities, $\overline{M}$. This contrasts to a system where one has a Poissonian distribution of neutral particles which all decay into pairs. In this case $\omega=2$ and if the number of charged particles coming from the decay, $N_{\rm bodies}$, of the neutral decay were $n$, one would have $\omega=n$. Using Eq. (\ref{eq:savchuck}) from \cite{savchuck} the ratio $C_4/C_2$ is plotted for the cases above for different fixed efficiencies $\alpha$. For $\omega<2$, $C_4/C_2$ falls below unity, and for $\omega>2$ the ratio exceeds unity. The difference from unity is strongest for $\alpha$ near $1/2$, and the result is symmetric for reflecting $\alpha$ about $1/2$. For $\alpha$ approaching zero or unity $C_4/C_2\rightarrow 1$.}
+%\end{figure}
 
 \subsection{Decays}
 
@@ -133,18 +133,18 @@ In addition to the results from the canonical ensemble, a system of uncorrelated
 \end{eqnarray}
 Fig. \ref{fig:savchuck} illustrates how this picture affects $C_4/C_2$. In this case, because $\omega$ depends only on $N_{\rm bodies}$ and does not change with multiplicity or system size, the cumulants are also independent of multiplicity. For $N_{\rm bodies}=2$ the cumulant ratios does not even depend on the efficiency. For $N_{\rm bodies}>2$ the ratio $C_4/C_2$ exceeds unity, so if charge creation proceeded through the creation and decay of neutral clusters it would be easy to generate large values of $C_4/C_2$. This has been discussed at length in \cite{Bzdak:2018uhv}.
 
-In an equilibrated system decays and recombination have equal rates. However, as the system decouples recombination stops and decays proceed until only stable hadrons remain. Very few decays proceed via more than on charged pair. During the hadronic phase the number of charged particles nearly doubles due to these decays. Thus, if the systems do equilibrate, then decay after chemical freeze-out, one would expect the ratio $C_4/C_2$ to lie somewhere between the value for the canonical ensemble in Fig. \ref{fig:savchuck} and the value for pure decays with $N_{\rm bodies}=2$. STAR's experimental results for net proton fluctuations indeed satisfy this expectation, but their measured $C_4/C_2$ for net charge fluctuations well exceed unity. This discrepancy could be due to volume fluctuations or the decay of larger clusters, or perhaps some shortcoming in this overly simple picture, e.g. the neglect of other conservation laws or Bose condensation. 
+In an equilibrated system decays and recombination have equal rates. However, as the system decouples recombination stops and decays proceed until only stable hadrons remain. Very few decays proceed via more than one charged pair. During the hadronic phase the number of charged particles nearly doubles due to these decays. Thus, if the systems do equilibrate, then decay after chemical freeze-out, one would expect the ratio $C_4/C_2$ to lie somewhere between the value for the canonical ensemble in Fig. \ref{fig:savchuck} and the value for pure decays with $N_{\rm bodies}=2$. STAR's experimental results for net proton fluctuations indeed satisfy this expectation, but their measured $C_4/C_2$ for net charge fluctuations well exceed unity. This discrepancy could be due to volume fluctuations or the decay of larger clusters, or perhaps some shortcoming in this overly simple picture, e.g. the neglect of other conservation laws or Bose condensation. 
 
 \subsection{Bose correlations}
 
 It has long been understood that Bose correlations induce super-Poissonian fluctuations. Here, we illustrate how Bose effects combine with charge conservation to determine $C_4/C_2$. Partition functions for a gas of positive and negative pions, $m_\pi=139.57$ MeV/$c^2$, were considered to be kinetically equilibrated but with a chemical potential enforcing a fixed average density. If a gas is created at chemical equilibrium one expects $\mu=0$, but if it cools while maintaining a fixed number of pions, and if the pion number is fed by decays, a non-zero value of $\mu$ is required. At decoupling one expects kinetic temperatures to fall near 100 MeV and the pion chemical potential to grow to perhaps as high as 75 MeV \cite{Greiner:1993jn}. This estimate can be understood by the fact that the phase space occupancies should stay roughly constant for fixed entropy per particle for an expansiony at fixed entropy, which suggests a chemical potential of approximately 50 MeV by the time the system cools to 100 MeV. Decay products can then further feed the phase space occupancy. Pion condensation occurs when this chemical potential reaches the pion mass. In the absence of Bose effects, this requires roughly doubling the phase space density of pions as compared to the expectations above. If such conditions were realized Bose effects could result in super-radiance \cite{}, which should be accompanied by large multiplicity fluctuations. 
 
-\begin{figure}
-\centerline{\includegraphics[width=0.4\textwidth]{figs/C4_bose}}
-\caption{\label{fig:cheapbose}
-Fluctuations for a canonical ensemble at fixed charge, $Q=0$, with an effective chemical potential, $\mu$, applied to adjust the net pion number in a volume of 500 fm$^3$ at a temperature of 100 MeV. The relative variance of the multiplicity distribution (dashed red line) and the ratio $C_4/C_2$ of the net-charge distribution (solid green line) grow dramatically as $\mu$ approaches the pion mass. Super-radiant effects can take place once $\mu$ reaches $m_\pi=139.57$ MeV. Heavy-ion collisions are expected to decouple with effective chemical potentials near 75 MeV, which is well below the onset of large fluctuations.
-}
-\end{figure}
+%\begin{figure}
+%\centerline{\includegraphics[width=0.4\textwidth]{figs/C4_bose}}
+%\caption{\label{fig:cheapbose}
+%Fluctuations for a canonical ensemble at fixed charge, $Q=0$, with an effective chemical potential, $\mu$, applied to adjust the net pion number in a volume of 500 fm$^3$ at a temperature of 100 MeV. The relative variance of the multiplicity distribution (dashed red line) and the ratio $C_4/C_2$ of the net-charge distribution (solid green line) grow dramatically as $\mu$ approaches the pion mass. Super-radiant effects can take place once $\mu$ reaches $m_\pi=139.57$ MeV. Heavy-ion collisions are expected to decouple with effective chemical potentials near 75 MeV, which is well below the onset of large fluctuations.
+%}
+%\end{figure}
 As a function of the effective chemical potential $\mu$, the partition function for a pion gas in a volume of 500 fm$^3$ and at a temperature of 100 MeV was calculated from Eq. (\ref{eq:Zbf}). For $\mu$ in the range of of 75 MeV the relative variance of the charged multiplicity distribution is $\omega_M\approx 1.2$, which modestly increase $C_4/C_2$ as shown in Fig. \ref{fig:cheapbose} for a fixed efficiency of $\alpha=0.3$. More dramatic results for $C_4/C_2$ are not expected unless the chemical potential would get within a few MeV of the pion mass. As discussed above, this is not expected. However, if the number of pion sources fluctuated wildly from one event to another, and if there were some events with twice the number of sources emitting into the same phase space, super-radiance might occur in some small fraction of the events. Such behavior would strongly contradict expectations based on chemical equilibrium. 
 
 
@@ -157,32 +157,32 @@ Emission is assumed to come from sub-volumes, or patches, of fixed size. Because
 Here, the sensitivity to three parameters is investigated. The three parameters are the patch volume, the baryon density, and the fixed efficiency. When one parameter is varied, the other two are set at default values. The default calculation is that the temperature is set at $T=150$ MeV, the baryon density is set to $\rho_B=0$, the efficiency is $\alpha=0.3$ and the default patch volume is 200 fm$^3$. The net electric charge is set to by 0.4 times the average baryon density. After these sensitivities are studied, a calculation at finite baryon density is modified so that the net baryon charge responsible for the non-zero charge density is allowed to fluctuate according to a Poissonian distribution. This is motivated by the fact that the non-zero baryon density comes from charges transported far away from mid-rapidity at early times, so that local charge conservation should play little role for its distribution.
 
 First, the dependence on patch size is exhibited in  Fig. \ref{fig:uniform_vs_volume}. For small patches the emission of baryons is discouraged because each baryon must be accompanied by the existence of an anti-baryon. Thus, the Boltzmann factor, $e^{-M/T}$, for the mass is compounded by the necessity of having a second accompanying massive particle. Once the volumes become larger, and the mean number of baryon pairs exceeds unity, the observation of a baryon might be accompanied by seeing one fewer baryon in the remainder of the system, rather than seeing an extra anti-baryon. In fact, this is exactly what happens in a canonical ensemble in the large volume limit. If a baryon is observed in some small amount of phase space, the mean number of baryons observed in the remainder of the system is reduced by one half. The mean number of anti-baryons then increases by one half. It is expected that the dependence on patch size should disappear as the patch size increases beyond the threshold for the mean baryon density to be unity. Figure \ref{fig:uniform_vs_V} displays this behavior by displaying the ratio $C_4/C_2$ as a function of patch volume. Because the mean multiplicity for charged particles exceeds unity at a smaller volume, the ratio levels off faster for net charge than for net protons. Qualitatively, the same behavior was seen for a system with a single type of charge in Fig. \ref{fig:savchuck}.
-\begin{figure}
-\centerline{\includegraphics[width=0.4\textwidth]{figs/m_vs_volume}}
-\caption{\label{fig:uniform_vs_volume}
-The ratio of cumulants is shown for a $\rho_B=0$ system as a function of the patch volume. For small patches a baryon is always accompanied by an extra anti-baryon, whereas for large patches the observation of a baryon is as likely to reduce the chance of observing an extra baryon as it is to enhance the observation of anti-baryons.}
-\end{figure}
+%\begin{figure}
+%\centerline{\includegraphics[width=0.4\textwidth]{figs/m_vs_volume}}
+%\caption{\label{fig:uniform_vs_volume}
+%The ratio of cumulants is shown for a $\rho_B=0$ system as a function of the patch volume. For small patches a baryon is always accompanied by an extra anti-baryon, whereas for large patches the observation of a baryon is as likely to reduce the chance of observing an extra baryon as it is to enhance the observation of anti-baryons.}
+%\end{figure}
 
 The sensitivity to the acceptance probability, $\alpha$, is displayed in Fig. \ref{fig:uniform_vs_alpha}. As $\alpha$ approaches zero, distributions tend to become Poissonian, because the mean number of particles is only zero or unity. For a system of a single type of charge, Eq. (\ref{eq:savchuck}) describes similar behavior. For net charge, the ratio is symmetric about $\alpha=0.5$. This is because those charges not measured fluctuate exactly the same as those that are measured. The same property is apparent in Eq. (\ref{eq:savchuck}). However, the distribution of net protons considers only protons and anti-protons does not represent the entirety of particles that carry baryon number of electric charge. Thus, that distribution is not symmetric about $\alpha=0.5$ and fluctuations are large even for $\alpha=1$.
-\begin{figure}
-\centerline{\includegraphics[width=0.4\textwidth]{figs/m_vs_alpha}}
-\caption{\label{fig:uniform_vs_alpha}
-As the fixed acceptance probability, $\alpha$, approaches zero, distribution become Poissonian and the ratios, $C_4/C_2$, approach unity. Even for perfect acceptance, the fluctuations are non-zero for a multi-charge system because the conserved charges carried by a proton can be balanced by an array of other species, and charge within the proton and anti-proton sector is not conserved. Thus, the ratio is not symmetric about $\alpha=0.5$, unlike what might be inferred from Eq. (\ref{eq:savchuck}), because protons and anti-protons only represent a fraction of the species that carry electric charge and baryon number.}
-\end{figure}
+%\begin{figure}
+%\centerline{\includegraphics[width=0.4\textwidth]{figs/m_vs_alpha}}
+%\caption{\label{fig:uniform_vs_alpha}
+%As the fixed acceptance probability, $\alpha$, approaches zero, distribution become Poissonian and the ratios, $C_4/C_2$, approach unity. Even for perfect acceptance, the fluctuations are non-zero for a multi-charge system because the conserved charges carried by a proton can be balanced by an array of other species, and charge within the proton and anti-proton sector is not conserved. Thus, the ratio is not symmetric about $\alpha=0.5$, unlike what might be inferred from Eq. (\ref{eq:savchuck}), because protons and anti-protons only represent a fraction of the species that carry electric charge and baryon number.}
+%\end{figure}
 
 Figure \ref{fig:uniform_vs_rho_fixedQ} presents $C_4/C_2$ and $C_3/C_1$ as a function of baryon density. The patch volume is fixed at 200 fm$^3$ and the densities chosen correspond to a fixed number, $4,8,12\cdots$, of baryons. The choice is made to display $C_3/C_1$ rather than $C_3/C_2$ because $C_3/C_1$ would be unity for uncorrelated emission. The ratios all decrease, moving further from unity, as baryon density increases. The densities displayed cover the range of what might reached for heavy-ion systems at the point when temperatures fall below 150 MeV. 
-\begin{figure}
-\centerline{\includegraphics[width=0.4\textwidth]{figs/m_vs_rho_fixedQ}}
-\caption{\label{fig:uniform_vs_rho_fixed_Q}
-The ratios $C_4/C_2$ and $C_3/C_1$ are shown for net charge and for net baryon number as a function of the baryon density. The ratios fall increasingly below the Poissonian limit of unity as the baryon number is increased. For this calculation the net baryon charge was fixed at $B=\rho_BV$ and the net electric charge was fixed at $Q=B/2$.}
-\end{figure}
+%\begin{figure}
+%\centerline{\includegraphics[width=0.4\textwidth]{figs/m_vs_rho_fixedQ}}
+%\caption{\label{fig:uniform_vs_rho_fixed_Q}
+%The ratios $C_4/C_2$ and $C_3/C_1$ are shown for net charge and for net baryon number as a function of the baryon density. The ratios fall increasingly below the Poissonian limit of unity as the baryon number is increased. For this calculation the net baryon charge was fixed at $B=\rho_BV$ and the net electric charge was fixed at $Q=B/2$.}
+%\end{figure}
 
 For the calculation illustrated in Fig. \ref{fig:uniform_vs_rho_fixedQ}, the net baryon number, electric charge and strangeness, were all fixed. Balancing charges created after the collision is constrained by local charge conservation and the limits of diffusion to stay within the same neighborhood. This constraint motivated the choice of patches with finite volumes. However, even for measurements at mid-rapidity, non-zero charges can arise due to the transfer of baryon number and electric charge from the projectile and target rapidities. This transfer happens either due to hard collisions or to diffusion of baryon number from higher baryon density regions. It makes little sense to consider the charge balance of these charges in the same manner as the local conservation of created charges and balancing charges is encapsulated by enforcing a canonical ensemble within a patch. These intruder charges are not typically balanced by charges within the acceptance of the detector, and thus their fluctuation should be considered separately. Figure \ref{fig:uniform_vs_rho_fluctuatingQ} shows how $C_4/C_2$ and $C_3/C_1$ behave as a function of baryon density, if the non-zero baryon number and electric charge are chosen to fluctuate within the patch according to a Poissonian distribution. As expected, the ratios rise as compared to the fixed case shown in Fig. \ref{fig:uniform_vs_rho_fixedQ}, but they do not exceed unity. These fluctuation, of the actual net charges, are precisely those that are of interest to discern. These results suggest that the starting point for the ratios $C_4/C_2$ and $C_3/C_1$ for random uncorrelated net charges, but accompanied by an ensemble of baryon charges, is below unity.
-\begin{figure}
-\centerline{\includegraphics[width=0.4\textwidth]{figs/m_vs_rho_fluctuatingQ}}
-\caption{\label{fig:uniform_vs_rho_fluctuatingQ}
-The ratios $C_4/C_2$ and $C_3/C_1$ are shown for net charge and for net baryon number as a function of the baryon density. Calculations differ from those in Fig. \ref{fig:uniform_vs_rho_fixedQ} in that the net charge fluctuates according to a Poissonian distribution. The ratios rise relative to those in the fixed-charge case, but they remain below unity.}
-\end{figure}
+%\begin{figure}
+%\centerline{\includegraphics[width=0.4\textwidth]{figs/m_vs_rho_fluctuatingQ}}
+%\caption{\label{fig:uniform_vs_rho_fluctuatingQ}
+%The ratios $C_4/C_2$ and $C_3/C_1$ are shown for net charge and for net baryon number as a function of the baryon density. Calculations differ from those in Fig. \ref{fig:uniform_vs_rho_fixedQ} in that the net charge fluctuates according to a Poissonian distribution. The ratios rise relative to those in the fixed-charge case, but they remain below unity.}
+%\end{figure}
 
 
 % RACHEL -- make figures for
