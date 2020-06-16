@@ -86,7 +86,6 @@ CpartitionFunction::CpartitionFunction(parameterMap &parmap){
 			}
 		}
 	}
-
 	resinfobycharge.resize(3);
 	for(ib=0;ib<3;ib++){
 		b=bmin[1]+ib;
@@ -409,16 +408,20 @@ int CpartitionFunction::PickNhad(int B0,int Q0,int S0){
 	int nhad=-1,ib,iq,is;
 	double rancheck,ransum,nfact=1.0;
 	Getibiqis(NhadMAX/2,B0,Q0,S0,ib,iq,is);
-	rancheck=Ztot0[ib][iq][is]*randy->ran();
+	rancheck=Ztot0[ib][iq][is]; //Ztot0[ib][iq][is]*randy->ran();
+	printf("rancheck=%lf\n",rancheck);
 	ransum=0.0;
 	do{
 		nhad+=1;
 		if(CheckRelevance(nhad,B0,Q0,S0)){
 			Getibiqis(nhad,B0,Q0,S0,ib,iq,is);
 			ransum+=pow(Omega/Omega0,nhad)*Z[nhad][ib][iq][is]/nfact;
+			printf("Z[%d] contribution: %lf ransum: %Lf\n",nhad,pow(Omega/Omega0,nhad)*Z[nhad][ib][iq][is]/nfact,ransum);
 		}
 		nfact*=(nhad+1.0);
 	}while(rancheck>ransum);
+	printf("done!\n");
+	exit(1);
 	return nhad;
 }
 
