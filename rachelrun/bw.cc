@@ -36,47 +36,28 @@ int main(int argc,char *argv[]){
 	//pf.WriteZ();
 	//pf.ReadZ();
 
-	nevents=1000000; //parameter::getI(parmap,"NEVENTS",100);
-	/*
-	double pbound=4000;
-	int ndp=50,nparts;
-  double dp=pbound/double(ndp);
-	double dN_dp_p2[ndp];
-	for (int i=0;i<ndp;i++) {
-		dN_dp_p2[i]=0;
-	}
-	double pi=3.1415926536;
-	double hbarc=197.3269718;
-	double pmag;
-	int ibin,code;
-	Cpart *ipart;
-	*/
+	nevents=10000; //parameter::getI(parmap,"NEVENTS",100);
 	Omega=parameter::getD(parmap,"OMEGA",100);
 	string tag=parameter::getS(parmap,"FILE_TAG","_");
-	//string file=parameter::getS(parmap,"MOMENTS_OUTPUT_FILE","moments.dat");
 	//pf.SetOmega(Omega);
-
-	for(iroots=0;iroots<NROOTS;iroots++){
+	for(iroots=0;iroots<1;iroots++){
 		printf("____ roots=%lf ____ pf.T=%g ____ pf.Omega=%g ____\n",roots[iroots],pf.T,pf.Omega);
 		pf.CalcZofOmega0(T[iroots]);
 		pf.ScaleZ(Omega);
 		printf("----------- Z Calculated -----------\n");
 
-		file="data/STAR"+tag+".dat";
-		altfile="altdata/STAR"+tag+".dat";
-		//FILE *fptr=fopen(file.c_str(),"w");
-		//strcat(file,const char(roots));
-		//muBoverT=GetMuBOverT(roots[iroots]);
+		file="data/"+tag+".dat";
+		altfile="altdata/"+tag+".dat";
+
 		ff=log(1.0+ffa*(roots[iroots]-roots[0])/(roots[NROOTS-1]-roots[0]))/log(1.0+ffa); // interpolating weight from zero to 1
 		blastwave.Tf=120.0-20*ff;
 		blastwave.uperpx=0.5+(0.74-0.5)*ff;
 		blastwave.uperpy=blastwave.uperpx;
-
 		for(int irun=0;irun<nruns;irun++){
 			printf("run: %d\n",irun);
 			moments.Clear();
 			for(ievent=0;ievent<int(nevents/nruns);ievent++){
-
+				/*
 				do{
 					b0=pf.randy->GetNPoissonian(rhoB[iroots]*Omega);
 					q0=pf.randy->GetNPoissonian(0.5*rhoB[iroots]*Omega);
@@ -85,35 +66,17 @@ int main(int argc,char *argv[]){
 						printf("If this happens often, increase pf.NhadMAX\n");
 					}
 				}while(!pf.CheckRelevance(pf.NhadMAX/2,b0,q0,s0));
-
-				//b0=0; //rhoB*Omega;
-				//q0=0; //0.5*rhoB*Omega;
+				*/
+				b0=0; //rhoB[iroots]*Omega;
+				q0=0; //0.5*rhoB[iroots]*Omega;
 				pf.GenEvent(b0,q0,s0,resinfovec);
 				blastwave.GenerateParts(resinfovec,partvec);
 				moments.IncrementMoments(partvec);
-				/*
-				nparts=partvec.size();
-				for (int i=0;i<nparts;i++) {
-					ipart=&partvec[i];
-					code=ipart->resinfo->code;
-					if (code==211 || code==-211 || code==111) {
-						pmag=sqrt(ipart->p[1]*ipart->p[1]+ipart->p[2]*ipart->p[2]+ipart->p[3]*ipart->p[3]);
-		      	ibin=floorl(pmag/dp);
-		      	if (ibin<ndp) dN_dp_p2[ibin]+=(2*pi*pi*hbarc*hbarc*hbarc)/(3*(ibin*dp+dp/2)*(ibin*dp+dp/2)*dp);
-					}
-				}
-				*/
 				partvec.clear();
 			}
 			moments.Summarize(file,altfile,Omega,rhoB[iroots],0.5*rhoB[iroots],roots[iroots],T[iroots]);
 			moments.Clear();
 		}
-		/*
-		for (ibin=0;ibin<ndp;ibin++) {
-			fprintf(fptr,"%lf %lf\n",ibin*dp+dp/2,dN_dp_p2[ibin]/Omega);
-		}
-		fclose(fptr);
-		*/
 	}
 
 	return 0;
