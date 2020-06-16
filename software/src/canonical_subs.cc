@@ -9,7 +9,7 @@ CpartitionFunction::CpartitionFunction(parameterMap &parmap){
 	CResInfo *resinfo;
 	DECAY=true;
 	Omega=parameter::getD(parmap,"OMEGA",100.0); // Volume in fm^3
-	Omega0=parameter::getD(parmap,"OMEGA0",4.0); // V in fm^3 for calcZ, scaled by Omega later (don't change usually)
+	Omega0=parameter::getD(parmap,"OMEGA0",20.0); // V in fm^3 for calcZ, scaled by Omega later (don't change usually)
 	NhadMAX=parameter::getI(parmap,"NhadMAX",35+lrint(0.5*Omega)); // max no. of hadrons in volume, should be even no.
 	use_bose_terms=parameter::getB(parmap,"USE_BOSE_TERMS",false);
 	n_bose_terms=parameter::getI(parmap,"N_BOSE_TERMS",1);
