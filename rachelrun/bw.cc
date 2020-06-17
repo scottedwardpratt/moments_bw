@@ -13,6 +13,7 @@ int main(int argc,char *argv[]){
 	int nruns=10;
 	string file;
 	string altfile;
+	bool fixedcharge;
 	double Omega,muBoverT,ff,ffa=1.0;
 	parameterMap parmap;
 	parameter::ReadParsFromFile(parmap,string(argv[1]));
@@ -36,18 +37,29 @@ int main(int argc,char *argv[]){
 	//pf.WriteZ();
 	//pf.ReadZ();
 
-	nevents=10000; //parameter::getI(parmap,"NEVENTS",100);
+	nevents=1000000; //parameter::getI(parmap,"NEVENTS",100);
 	Omega=parameter::getD(parmap,"OMEGA",100);
 	string tag=parameter::getS(parmap,"FILE_TAG","_");
 	//pf.SetOmega(Omega);
-	for(iroots=0;iroots<1;iroots++){
+	if(parameter::getB(parmap,"FIXEDCHARGE",true))
+            fixedcharge=true;
+    else
+            fixedcharge=false;
+    if(fixedcharge) printf("fixed charge\n");
+	for(iroots=0;iroots<NROOTS;iroots++){
 		printf("____ roots=%lf ____ pf.T=%g ____ pf.Omega=%g ____\n",roots[iroots],pf.T,pf.Omega);
 		pf.CalcZofOmega0(T[iroots]);
 		pf.ScaleZ(Omega);
 		printf("----------- Z Calculated -----------\n");
 
-		file="data/"+tag+".dat";
-		altfile="altdata/"+tag+".dat";
+		if (fixedcharge){
+			file="data/"+tag+".dat";
+			altfile="altdata/"+tag+".dat";
+		}
+		else {
+			file="data/"+tag+"poissonQ.dat";
+			altfile="altdata/"+tag+"poissonQ.dat";
+		}
 
 		ff=log(1.0+ffa*(roots[iroots]-roots[0])/(roots[NROOTS-1]-roots[0]))/log(1.0+ffa); // interpolating weight from zero to 1
 		blastwave.Tf=120.0-20*ff;
@@ -57,18 +69,21 @@ int main(int argc,char *argv[]){
 			printf("run: %d\n",irun);
 			moments.Clear();
 			for(ievent=0;ievent<int(nevents/nruns);ievent++){
-				/*
-				do{
-					b0=pf.randy->GetNPoissonian(rhoB[iroots]*Omega);
-					q0=pf.randy->GetNPoissonian(0.5*rhoB[iroots]*Omega);
-					if(!pf.CheckRelevance(pf.NhadMAX/2,b0,q0,s0)){
-						printf("picked b0=%d or q0=%d out of bounds\n",b0,q0);
-						printf("If this happens often, increase pf.NhadMAX\n");
-					}
-				}while(!pf.CheckRelevance(pf.NhadMAX/2,b0,q0,s0));
-				*/
-				b0=0; //rhoB[iroots]*Omega;
-				q0=0; //0.5*rhoB[iroots]*Omega;
+				if(fixedcharge){
+                    b0=Omega*rhoB[iroots]; //parameter::getD(parmap,"RHOB",0.0);
+                    q0=b0/2.0;
+                    //if(ievent==0 && irun==0) printf("b0=%d\n",b0);
+                }
+                else{
+                    do{
+                        b0=pf.randy->GetNPoissonian(rhoB[iroots]*Omega); //(parameter::getD(parmap,"RHOB",0.0)*Omega);
+                        q0=pf.randy->GetNPoissonian(0.5*rhoB[iroots]*Omega); //(0.5*parameter::getD(parmap,"RHOB",0.0)*Omega);
+                        if(!pf.CheckRelevance(pf.NhadMAX/2,b0,q0,s0)){
+                            printf("picked b0=%d or q0=%d out of bounds\n",b0,q0);
+                            printf("If this happens often, increase pf.NhadMAX\n");
+                        }
+                    }while(!pf.CheckRelevance(pf.NhadMAX/2,b0,q0,s0));
+                }
 				pf.GenEvent(b0,q0,s0,resinfovec);
 				blastwave.GenerateParts(resinfovec,partvec);
 				moments.IncrementMoments(partvec);
