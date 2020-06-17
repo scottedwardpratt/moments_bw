@@ -406,22 +406,25 @@ void CpartitionFunction::CalcZofOmega0(double TSet){
 
 int CpartitionFunction::PickNhad(int B0,int Q0,int S0){
 	int nhad=-1,ib,iq,is;
-	double rancheck,ransum,nfact=1.0;
+	double rancheck,ransum,nfact=1.0,sqrtnfact=0;
 	Getibiqis(NhadMAX/2,B0,Q0,S0,ib,iq,is);
 	rancheck=Ztot0[ib][iq][is]*randy->ran();
-	//printf("rancheck=%lf\n",rancheck);
 	ransum=0.0;
 	do{
 		nhad+=1;
 		if(CheckRelevance(nhad,B0,Q0,S0)){
 			Getibiqis(nhad,B0,Q0,S0,ib,iq,is);
-			ransum+=pow(Omega/Omega0,nhad)*Z[nhad][ib][iq][is]/nfact;
-			//printf("Z[%d] contribution: %lf ransum: %Lf\n",nhad,pow(Omega/Omega0,nhad)*Z[nhad][ib][iq][is]/nfact,ransum);
+			if (nhad<150) {
+				ransum+=Z[nhad][ib][iq][is]*(pow(Omega/Omega0,nhad)/nfact);
+			}
+			else {
+				sqrtnfact=(pow(nhad,nhad/2.0)*exp(-nhad/2.0)*pow(2*3.14159265*nhad,.25)); //Stirling's approximation (to prevent overflow)
+				ransum+=(Z[nhad][ib][iq][is]/sqrtnfact)*(pow(Omega/Omega0,nhad)/sqrtnfact);
+			}
+			if(log(Omega/Omega0)*nhad>704) printf("warning!! near overflow, consider increasing Omega0 (nhad=%d)\n",nhad);
 		}
 		nfact*=(nhad+1.0);
 	}while(rancheck>ransum);
-	//printf("done!\n");
-	//exit(1);
 	return nhad;
 }
 
