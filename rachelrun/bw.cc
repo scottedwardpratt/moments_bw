@@ -37,7 +37,7 @@ int main(int argc,char *argv[]){
 	//pf.WriteZ();
 	//pf.ReadZ();
 
-	nevents=1000000; //parameter::getI(parmap,"NEVENTS",100);
+	nevents=10000; //parameter::getI(parmap,"NEVENTS",100);
 	Omega=parameter::getD(parmap,"OMEGA",100);
 	string tag=parameter::getS(parmap,"FILE_TAG","_");
 	//pf.SetOmega(Omega);
@@ -63,6 +63,8 @@ int main(int argc,char *argv[]){
 
 		ff=log(1.0+ffa*(roots[iroots]-roots[0])/(roots[NROOTS-1]-roots[0]))/log(1.0+ffa); // interpolating weight from zero to 1
 		blastwave.Tf=120.0-20*ff;
+		blastwave.SetYbeam(roots[iroots]);
+		printf("sigma_source=%g\n",blastwave.sigma_source);
 		blastwave.uperpx=0.5+(0.74-0.5)*ff;
 		blastwave.uperpy=blastwave.uperpx;
 		for(int irun=0;irun<nruns;irun++){
