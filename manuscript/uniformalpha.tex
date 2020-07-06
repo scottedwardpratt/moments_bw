@@ -2,7 +2,7 @@
 
 \section{Models with Uniform Efficiency and Fixed Charge}\label{sec:uniformeff}
 
-Even for a volume of fixed charge, finite efficiency and acceptance leads to non-zero fluctuations. The degree to which these fluctuations affect the skewness and kurtosis was worked out in \cite{Savchuk:2019xfg} for emission of a fixed charge where the probability of any charge being observed was a constant $\alpha$. If $\alpha$ were zero or unity, there would be no fluctuations, and because the charge on those particles that are not observed must fluctuate exactly opposite to the charge that is observed, the even moments must be symmetric about $\alpha=1/2$, and the odd moments must be anti-symmetric. One of the most important results of \cite{Savchuk:2019xfg} is that for fixed $Q$ and $\alpha$ the ratios cumulants depends only on $\alpha$ and the variance and mean of the underlying multiplicity distribution. Even though $Q$ is fixed, the net number of charged particles $M$ can fluctuate. 
+Even for a volume of fixed charge, finite efficiency and acceptance leads to non-zero fluctuations. The degree to which these fluctuations affect the skewness and kurtosis was worked out in \cite{Savchuk:2019xfg} for emission of a fixed charge where the probability of any charge being observed was a constant $\alpha$. If $\alpha$ were zero or unity, there would be no fluctuations, and because the charge on those particles that are not observed must fluctuate exactly opposite to the charge that is observed, the even moments must be symmetric about $\alpha=1/2$, and the odd moments must be anti-symmetric. One of the most important results of \cite{Savchuk:2019xfg} is that for fixed $Q$ and $\alpha$ the ratios of cumulants depend only on $\alpha$ and the variance and mean of the underlying multiplicity distribution. Even though $Q$ is fixed, the net number of charged particles $M$ can fluctuate. 
 
 From \cite{Savchuk:2019xfg}, the probability that $M$ charged particles with total charge $Q$ will result in a measured charge $q=n_+ - n_-$ due to a uniform efficiency $\alpha$ is the convolution of two binomial distributions
 \begin{eqnarray}
@@ -53,11 +53,9 @@ C_4&=&\alpha(1-\alpha)\overline{M}-6\alpha^2(1-\alpha)^2\overline{M}\\
 \nonumber
 \omega_M&\equiv&\frac{\langle(M-\overline{M})^2\rangle}{\overline{M}}.
 \end{eqnarray}
-The relative variance of the multiplicity of the base distribution, $\omega_M$, is unity for a Poissonian distribution. In that case $C_3/C_1$ and $C_4/C_2$ fall below unity for non-zero $\alpha$. The only assumptions for this relation are that the charge is fixed and that the efficiency is uniform. This is important as it implies that if one understands the efficiency and the second moment of the base multiplicity distribution, one can construct a baseline of cumulant ratios, and attribute any deviation from the baseline as due to fluctuations in $Q$, which is precisely the goal.
+The relative variance of the multiplicity of the base distribution, $\omega_M$, is unity for a Poissonian distribution. In that case $C_3/C_1$ and $C_4/C_2$ fall below unity for non-zero $\alpha$. The assumptions for this relation are that the charge and volume are fixed, that the efficiency is uniform, and that Bose and Fermi symmetrization is ignored. This relation is important as it implies that if one understands the efficiency and the second moment of the base multiplicity distribution, one can construct a baseline of cumulant ratios, and attribute any deviation from the baseline as due to fluctuations in $Q$, which is precisely the goal.
 
-A reasonable value of $\alpha$ can be taken from balance function analyses. If a charge is observed, there should be a balancing charge emitted nearby, and detected with probability $\alpha$. This should correspond to the integrated strength of the charge balance function, which for electric charge is in the neighborhood of 0.4. Of course, $\alpha$ is not a constant. If a charge is observed in the center of the detector, its balancing charge has a better chance of being observed than for one observed near the periphery of the acceptance. Nonetheless, for the purposes of roughly setting expectations, this suggests that $C_4/C_2$ can be significantly differ from unity. 
-
-Equation (\ref{eq:savchuck}) is crucial as it demonstrates that the fourth moment of the charge distribution is determined completely by the efficiency and the relative variance of the base multiplicity distribution, if the total base charge $Q$ is fixed. Next, we consider how various effects, aside from fluctuating the base charge $Q$, might push $\omega_M$ to be either super-Poissonian, $\omega_M>1$ or sub-Possonian. We discuss the effects of volume fluctuations, equilibrated charge distributions, decays and Bose condensation.
+A reasonable value of $\alpha$ can be taken from balance function analyses. If a charge is observed, there should be a balancing charge emitted nearby, and detected with probability $\alpha$. This should correspond to the integrated strength of the charge balance function, which for electric charge is in the neighborhood of 0.4. Of course, $\alpha$ is not a constant. If a charge is observed in the center of the detector, its balancing charge has a better chance of being observed than for one observed near the periphery of the acceptance. Nonetheless, for the purposes of roughly setting expectations, this suggests that $C_4/C_2$ and $C_3/C_1$ can significantly differ from unity. Next, we consider how various effects, aside from fluctuating the base charge $Q$, might push $\omega_M$ to be either super-Poissonian, $\omega_M>1$ or sub-Possonian. We discuss the effects of volume fluctuations, equilibrated charge distributions, decays and Bose condensation.
 
 \subsection{Volume Fluctuations}\label{sec:volumefluc}
 
@@ -80,6 +78,7 @@ Thus, the ratio of cumulants is independent of the number of patches, and thus i
 Unfortunately, although the ratios of cumulants are independent of the overall volume, they are not impervious to fluctuations of the overall volume, or equivalently, to fluctuations of the number of patches \cite{volumefluc}. To illustrate this, one can consider a system with a distribution $P_p(N)$  as in Eq. (\ref{eq:patchprob}), where the average number of patches is $\overline{N}$. For $n>1$ the cumulants are expressed in terms of $\delta Q=Q-\overline{Q}$. Because $\overline{Q}$ varies with the number of patches we rewrite it as
 \begin{eqnarray}
 \delta Q&=&\delta Q_N+\delta N\overline{Q}_1,\\
+\nonumber
 \delta Q_N&\equiv&Q-N\overline{Q}_1,
 \end{eqnarray}
 where $\overline{Q}_1=c_1$ is the average charge in a single patch. Here $\delta Q_N$ is the fluctuation of the charge for a specific number $N$ of patches, and $\delta N=N-\overline{N}$. Inserting these definitions into the expressions for the cumulants,
@@ -102,7 +101,7 @@ where $\kappa_n$ are the cumulants of $P_p(N)$,
 \nonumber
 \kappa_3&=&\sum_N (N-\overline{N})^3P_p(N),\\
 \nonumber
-\kappa_4&=&\sum_N (N-\overline{N})^4P_p(N)-3\kappa_2^2.\\
+\kappa_4&=&\sum_N (N-\overline{N})^4P_p(N)-3\kappa_2^2.
 \end{eqnarray}
 If the number of patches are fixed, i.e. the overall volume does not fluctuate, then $\kappa_{n>1}=0$ and each cumulant satisfies $C_n=\overline{N} c_n$. The ratio of cumulants then cancels the factor $\overline{N}$. 
 Once the volume fluctuates the ratios of cumulants of the charge distribution depends on the ratio of cumulants of $P_p(N)$. Methods have been constructed to eliminate the dependence volume fluctuations \cite{Begun:2014boa,Gazdzicki:2013ana,Gorenstein:2011vq,Sangaline:2015bma}. These methods are built on the assumption that the observable used to identify the volume is correlated to the fluctuating charge only through the fact that they both scale with the volume. If the phase space used for the centrality measure is clearly distinct of the phase space over which charge is measured, this should be a good approximation. 
