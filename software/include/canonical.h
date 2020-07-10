@@ -114,27 +114,40 @@ public:
 	CblastWave(parameterMap &parmap,CRandom *randyset,CResList *reslistset);
 	void GenerateParts(vector<CResInfo *> &resinfovec,vector<Cpart> &partvec);
 	void BoostParts(vector<Cpart> &partvec);
+	void BoostParts(vector<Cpart> &partvec,int ipatch_eta,int ipatch_uperp);
 	void GetDecayMomenta(Cpart *mother,int &nbodies,vector<Cpart *> &daughterpartvec);
 	void SetYbeam(double roots);
+	int NPATCHES_ETA,NPATCHES_UPERP;
 };
 
 class Cmoments{
 public:
 	Cmoments(){};
+	// moments (not cumulants)
 	long long int Qbar,Q2bar,Q3bar,Q4bar,Pbar,P2bar,P3bar,P4bar,Kbar,K2bar,K3bar,K4bar,Pibar,Pi2bar,Pi3bar,Pi4bar,Bbar,B2bar,B3bar,B4bar;
 	long long int TotQbar,TotPbar,TotKbar,TotPibar,TotBbar;
+	long long int NetQ,NetP,NetK,NetPi,NetB,TotQ,TotP,TotK,TotPi,TotB;
+	// kappa refers to cumulants
+	double qbar,kappaq2,kappaq3,kappaq4;
+	double bbar,kappab2,kappab3,kappab4;
+	double pbar,kappap2,kappap3,kappap4;
+	double kbar,kappak2,kappak3,kappak4;
+	double pibar,kappapi2,kappapi3,kappapi4;
+	double totb,totq,totp,totk,totpi;
 
 	long long int altQbar,altQ2bar,altQ3bar,altQ4bar,altPbar,altP2bar,altP3bar,altP4bar,altKbar,altK2bar,altK3bar,altK4bar,altPibar,altPi2bar,altPi3bar,altPi4bar;
 	long long int altTotQbar,altTotPbar,altTotKbar,altTotPibar;
 
-	long long int ncalls;
+	long long int nevents;
 	double meanpt_pions,meanpt_kaons,meanpt_protons;
 	double altmeanpt_pions,altmeanpt_kaons,altmeanpt_protons;
 
 	Cmoments(Cacceptance *acceptanceset);
-	void Summarize(string file,string altfile,double Omega,double rhoB,double rhoQ,double roots,double T);
-	void IncrementMoments(vector<CResInfo *> &resinfovec);
+	void ResetEvent();
+	void Summarize(string filename,double Omega,double rhoB,double rhoQ,double roots,double T);
+	void CalcCumulants();
 	void IncrementMoments(vector<Cpart> &partvec);
 	void Clear();
+	void Sum(vector<vector<Cmoments *>> &moments);
 	Cacceptance *acceptance;
 };

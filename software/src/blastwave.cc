@@ -1,4 +1,5 @@
 #include "canonical.h"
+#include <boost/math/special_functions/erf.hpp>
 
 using namespace std;
 
@@ -10,6 +11,8 @@ CblastWave::CblastWave(parameterMap &parmap,CRandom *randyset,CResList *reslists
 	uperpy=parameter::getD(parmap,"BW_UPERPY",0.9);
 	sigma_eta=parameter::getD(parmap,"BW_SIGMA_ETA",0.3);
 	sigma_uperp=parameter::getD(parmap,"BW_SIGMA_UPERP",0.2);
+	NPATCHES_ETA=parameter::getI(parmap,"BW_NPATCHES_ETA",100);
+	NPATCHES_UPERP=parameter::getI(parmap,"BW_NPATCHES_UPERP",100);
 	Ybeam=5.3;
 }
 
@@ -28,6 +31,7 @@ void CblastWave::GenerateParts(vector<CResInfo *> &resinfovec,vector<Cpart> &par
 		nproducts=0;
 		resinfo=resinfovec[ipart0];
 		if (resinfo->bose_pion==true) {
+			printf("bose_pion is true\n");
 			Ti=Tf/abs(double(resinfo->code%100)); //i is hidden in the imaginary code for bose corrections
 			//resinfo=reslist->GetResInfoPtr(int(resinfo->code/1000)); //recover the correct code
 		}
@@ -80,7 +84,6 @@ void CblastWave::GenerateParts(vector<CResInfo *> &resinfovec,vector<Cpart> &par
 			motherid+=1;
 		}
 	}
-	BoostParts(partvec);
 }
 
 void CblastWave::BoostParts(vector<Cpart> &partvec){
@@ -119,7 +122,57 @@ void CblastWave::BoostParts(vector<Cpart> &partvec){
 	yboost=sigma_source*randy->gauss();
 	u[3]=sinh(yboost);
 	u[1]=u[2]=0.0;
-	u[3]=sqrt(1.0+u[3]*u[3]);
+	u[0]=sqrt(1.0+u[3]*u[3]);
+	for(ipart=0;ipart<nparts;ipart++){
+		part=&partvec[ipart];
+		Misc::Boost(u,part->p,part->p);
+	}
+}
+
+void CblastWave::BoostParts(vector<Cpart> &partvec,int ipatch_eta,int ipatch_uperp){
+	int ipart,nparts=partvec.size();
+	FourVector u,ubar;
+	int oldmotherid=-1;
+	double yboost,eta,uperp2;
+	Cpart *part;
+	//randy->gauss2(&ubar[1],&ubar[2]);
+	//ubar[1]*=sqrt(uperpx*uperpx-sigma_uperp*sigma_uperp);
+	//ubar[2]*=sqrt(uperpx*uperpx-sigma_uperp*sigma_uperp);
+	uperp2=-2.0*(uperpx*uperpx-sigma_uperp*sigma_uperp)*log(double(ipatch_uperp+0.5)/double(NPATCHES_UPERP));
+	ubar[1]=sqrt(uperp2);
+	//ubar[1]=0.0;
+	ubar[2]=0.0;
+	for(ipart=0;ipart<nparts;ipart++){
+		part=&partvec[ipart];
+		if(part->motherid!=oldmotherid && part->motherid!=oldmotherid+1){
+			printf("OUCH !!!!!!!!!!!!!!!!!!!!!!!!! motherid not expected value\n");
+			exit(1);
+		}
+		if(part->motherid!=oldmotherid){
+			//randy->generate_boltzmann(part->resinfo->mass,Tf,part->p);
+			randy->gauss2(&u[1],&u[2]);
+			u[1]*=sigma_uperp;
+			u[2]*=sigma_uperp;
+			u[1]+=ubar[1];
+			u[2]+=ubar[2];
+			eta=sigma_eta*randy->gauss();
+			u[3]=sqrt(1.0+u[1]*u[1]+u[2]*u[2])*sinh(eta);
+			u[0]=sqrt(1.0+u[1]*u[1]+u[2]*u[2]+u[3]*u[3]);
+		}
+		Misc::Boost(u,part->p,part->p);
+		oldmotherid=part->motherid;
+		/*		if(abs(part->resinfo->code)==2212){
+		double pt=sqrt(part->p[1]*part->p[1]+part->p[2]*part->p[2]);
+		printf("pt=%g\n",pt);
+		}*/
+	}
+	//yboost=sigma_source*randy->gauss();
+	double x=double(0.5+ipatch_eta)/double(NPATCHES_ETA);
+	yboost=sqrt(2.0)*sigma_source*boost::math::erfc_inv(x);
+	//yboost=0.0;
+	u[3]=sinh(yboost);
+	u[1]=u[2]=0.0;
+	u[0]=sqrt(1.0+u[3]*u[3]);
 	for(ipart=0;ipart<nparts;ipart++){
 		part=&partvec[ipart];
 		Misc::Boost(u,part->p,part->p);
