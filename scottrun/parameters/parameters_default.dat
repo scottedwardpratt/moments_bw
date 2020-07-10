@@ -1,0 +1,15 @@
+string B3D_RESONANCES_INFO_FILE	resinfo/resonances_pdg_weak.dat
+string B3D_RESONANCES_DECAYS_FILE resinfo/decays_pdg_weak.dat
+int NhadMAX 250
+double OMEGA 50
+double OMEGA0 10
+double T 155
+double RHOB 0.05
+bool FIXEDCHARGE false
+double BW_SIGMA_ETA 0.3
+double BW_SIGMA_UPERP 0.2
+int BW_NPATCHES_ETA 10
+int BW_NPATCHES_UPERP 10
+int NEVENTS 100000
+
+double ACCEPTANCE 0.5
