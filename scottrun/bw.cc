@@ -57,56 +57,59 @@ int main(int argc,char *argv[]){
 	//pf.WriteZ();
 	//pf.ReadZ();
 
-	for(iroots=0;iroots<NROOTS;iroots++){
-		printf("____ iroots=%d ____ roots=%g ____ pf.T=%g ____\n",iroots,roots[iroots],T[iroots]);
-		printf("NPATCHES_ETA=%d, NPATCHES_UPERP=%d\n",blastwave.NPATCHES_ETA,blastwave.NPATCHES_UPERP);
-		blastwave.Tf=120.0-20*ff;
-		blastwave.SetYbeam(roots[iroots]);
-		ff=log(1.0+ffa*(roots[iroots]-roots[0])/(roots[NROOTS-1]-roots[0]))/log(1.0+ffa); // interpolating weight from zero to 1
-		blastwave.uperpx=0.5+(0.74-0.5)*ff;
-		blastwave.uperpy=blastwave.uperpx;
-		
-		pf.CalcZofOmega0(T[iroots]);
-		printf("----------- Z Calculated, T=%g -----------\n",T[iroots]);
-		
-		// Calc for different Omega
-		for(irun=0;irun<NRUNS;irun++){
-			blastwave.sigma_eta=sigmaeta[irun];
-			pf.ScaleZ(Omega[irun]);
-			sprintf(filename,"results/sigmaeta%g_Omega%g.dat",sigmaeta[irun],Omega[irun]);
-			
-			for(ipatch_eta=0;ipatch_eta<blastwave.NPATCHES_ETA;ipatch_eta++){
-				for(ipatch_uperp=0;ipatch_uperp<blastwave.NPATCHES_UPERP;ipatch_uperp++){
-					for(ievent=0;ievent<nevents;ievent++){
-						moments[ipatch_eta][ipatch_uperp]->ResetEvent();
-						// poissonian fluctuation of net B and net Q=B/2
-						do{
-							b0=pf.randy->GetNPoissonian(rhoB[iroots]*Omega[irun]);
-							q0=pf.randy->GetNPoissonian(0.5*rhoB[iroots]*Omega[irun]);
-							if(!pf.CheckRelevance(pf.NhadMAX/2,b0,q0,s0)){
-								printf("picked b0=%d or q0=%d out of bounds\n",b0,q0);
-								printf("If this happens often, increase pf.NhadMAX\n");
-							}
-						}while(!pf.CheckRelevance(pf.NhadMAX/2,b0,q0,s0));
-						pf.GenEvent(b0,q0,s0,resinfovec);
-						blastwave.GenerateParts(resinfovec,partvec);
-						blastwave.BoostParts(partvec,ipatch_eta,ipatch_uperp);
-						moments[ipatch_eta][ipatch_uperp]->IncrementMoments(partvec);
-						partvec.clear();
-					}
-					moments[ipatch_eta][ipatch_uperp]->CalcCumulants();
-				}
-			}
-			moments_sum.Sum(moments);
-			for(ipatch_eta=0;ipatch_eta<blastwave.NPATCHES_ETA;ipatch_eta++){
-				for(ipatch_uperp=0;ipatch_uperp<blastwave.NPATCHES_UPERP;ipatch_uperp++){
-					moments[ipatch_eta][ipatch_uperp]->Clear();
-				}
-			}
-			moments_sum.Summarize(string(filename),Omega[irun],rhoB[iroots],0.5*rhoB[iroots],roots[iroots],T[iroots]);
-			moments_sum.Clear();
-		}	
+	//for(iroots=0;iroots<NROOTS;iroots++){
+	printf("Enter iroots (from zero to 6):");
+	scanf("%d",&iroots);
 	
-	}
+	printf("____ iroots=%d ____ roots=%g ____ pf.T=%g ____\n",iroots,roots[iroots],T[iroots]);
+	printf("NPATCHES_ETA=%d, NPATCHES_UPERP=%d\n",blastwave.NPATCHES_ETA,blastwave.NPATCHES_UPERP);
+	blastwave.SetYbeam(roots[iroots]);
+	ff=log(1.0+ffa*(roots[iroots]-roots[0])/(roots[NROOTS-1]-roots[0]))/log(1.0+ffa); // interpolating weight from zero to 1
+	blastwave.Tf=120.0-20*ff;
+	blastwave.uperpx=0.5+(0.74-0.5)*ff;
+	blastwave.uperpy=blastwave.uperpx;
+		
+	pf.CalcZofOmega0(T[iroots]);
+	printf("----------- Z Calculated, T=%g -----------\n",T[iroots]);
+		
+	// Calc for different Omega
+	for(irun=0;irun<NRUNS;irun++){
+		blastwave.sigma_eta=sigmaeta[irun];
+		pf.ScaleZ(Omega[irun]);
+		sprintf(filename,"results/sigmaeta%g_Omega%g.dat",sigmaeta[irun],Omega[irun]);
+			
+		for(ipatch_eta=0;ipatch_eta<blastwave.NPATCHES_ETA;ipatch_eta++){
+			for(ipatch_uperp=0;ipatch_uperp<blastwave.NPATCHES_UPERP;ipatch_uperp++){
+				for(ievent=0;ievent<nevents;ievent++){
+					moments[ipatch_eta][ipatch_uperp]->ResetEvent();
+					// poissonian fluctuation of net B and net Q=B/2
+					do{
+						b0=pf.randy->GetNPoissonian(rhoB[iroots]*Omega[irun]);
+						q0=pf.randy->GetNPoissonian(0.5*rhoB[iroots]*Omega[irun]);
+						if(!pf.CheckRelevance(pf.NhadMAX/2,b0,q0,s0)){
+							printf("picked b0=%d or q0=%d out of bounds\n",b0,q0);
+							printf("If this happens often, increase pf.NhadMAX\n");
+						}
+					}while(!pf.CheckRelevance(pf.NhadMAX/2,b0,q0,s0));
+					pf.GenEvent(b0,q0,s0,resinfovec);
+					blastwave.GenerateParts(resinfovec,partvec);
+					blastwave.BoostParts(partvec,ipatch_eta,ipatch_uperp);
+					moments[ipatch_eta][ipatch_uperp]->IncrementMoments(partvec);
+					partvec.clear();
+				}
+				moments[ipatch_eta][ipatch_uperp]->CalcCumulants();
+			}
+		}
+		moments_sum.Sum(moments);
+		for(ipatch_eta=0;ipatch_eta<blastwave.NPATCHES_ETA;ipatch_eta++){
+			for(ipatch_uperp=0;ipatch_uperp<blastwave.NPATCHES_UPERP;ipatch_uperp++){
+				moments[ipatch_eta][ipatch_uperp]->Clear();
+			}
+		}
+		moments_sum.Summarize(string(filename),Omega[irun],rhoB[iroots],0.5*rhoB[iroots],roots[iroots],T[iroots]);
+		moments_sum.Clear();
+	}	
+	
+	//}
 	return 0;
 }
