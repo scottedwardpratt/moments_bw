@@ -59,7 +59,7 @@ Ksigma2q5=Mydata5[12]
 Skellamp5=sigma2p5/(pbar5*Omega)
 Skellamq5=sigma2q5/(qbar5*Omega)
 
-Mydata7=np.loadtxt('../results/sigmaeta0.3_Omega100.dat',skiprows=1,unpack=True)
+Mydata7=np.loadtxt('../results/sigmaeta0.7_Omega100.dat',skiprows=1,unpack=True)
 roots7=Mydata7[1]
 pbar7=Mydata7[5]
 sigma2p7=Mydata7[6]
