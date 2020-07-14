@@ -381,19 +381,19 @@ void Cmoments::Sum(vector<vector<Cmoments *>> &moments){
 			kbar+=moments[ieta][iuperp]->kbar;
 			pibar+=moments[ieta][iuperp]->pibar;
 
-			kappap2+=moments[ieta][iuperp]->kappaq2;
+			kappap2+=moments[ieta][iuperp]->kappap2;
 			kappaq2+=moments[ieta][iuperp]->kappaq2;
 			kappab2+=moments[ieta][iuperp]->kappab2;
 			kappak2+=moments[ieta][iuperp]->kappak2;
 			kappapi2+=moments[ieta][iuperp]->kappapi2;
 			
-			kappap3+=moments[ieta][iuperp]->kappaq3;
+			kappap3+=moments[ieta][iuperp]->kappap3;
 			kappaq3+=moments[ieta][iuperp]->kappaq3;
 			kappab3+=moments[ieta][iuperp]->kappab3;
 			kappak3+=moments[ieta][iuperp]->kappak3;
 			kappapi3+=moments[ieta][iuperp]->kappapi3;
 			
-			kappap4+=moments[ieta][iuperp]->kappaq4;
+			kappap4+=moments[ieta][iuperp]->kappap4;
 			kappaq4+=moments[ieta][iuperp]->kappaq4;
 			kappab4+=moments[ieta][iuperp]->kappab4;
 			kappak4+=moments[ieta][iuperp]->kappak4;
