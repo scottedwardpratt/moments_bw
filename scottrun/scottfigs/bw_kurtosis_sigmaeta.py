@@ -74,6 +74,7 @@ Skellamq7=sigma2q7/(qbar7*Omega)
 
 #################################################################
 ######## LOWER PANEL protons
+
 ax = fig.add_axes([0.15,0.12,0.84,0.43])
 
 #plt.plot(roots,Ssigmap*Skellamp,linestyle='-',linewidth=2,color='r',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=0.3: $C_3/C_1$')
@@ -90,17 +91,19 @@ ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%d'))
 ax.xaxis.set_major_formatter(sformatter)
 plt.xlim(0,210)
 
-ax.set_yticks(np.arange(-1,2.5,0.5), minor=False)
-ax.set_yticklabels(np.arange(-1,2.5,0.5), minor=False, family='serif')
-ax.set_yticks(np.arange(-1,2.5,0.1), minor=True)
-plt.ylim(0.0,1.7)
+ax.set_yticks(np.arange(-1,2.5,0.2), minor=False)
+ax.set_yticklabels(np.arange(-1,2.5,0.2), minor=False, family='serif')
+ax.set_yticks(np.arange(-1,2.5,0.05), minor=True)
+plt.ylim(0.25,1.05)
 ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%1f'))
 ax.yaxis.set_major_formatter(sformatter)
 
-ax.legend(loc=(0.54,0.1),fontsize=20);
+ax.legend(loc=(0.6,0.01),fontsize=18);
 
-plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=18 , weight='normal')
-plt.ylabel('$K\sigma^2=C_4/C_2$', fontsize=24, weight='normal')
+plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=22 , weight='normal')
+plt.ylabel('$K\sigma^2=C_4/C_2$', fontsize=22, weight='normal')
+
+text(120,0.45,'net protons',fontsize=22,ha='right')
 
 ######## Upper Panel charge
 ax = fig.add_axes([0.15,0.55,0.84,0.43])
@@ -119,17 +122,18 @@ ax.set_xticks(np.arange(0,250,50), minor=True)
 #ax.xaxis.set_major_formatter(sformatter)
 plt.xlim(0,210)
 
-ax.set_yticks(np.arange(-1,2.5,0.5), minor=False)
-ax.set_yticklabels(np.arange(-1,2.5,0.5), minor=False, family='serif')
-ax.set_yticks(np.arange(-1,2.5,0.1), minor=True)
-plt.ylim(0.0,2.5)
+ax.set_yticks(np.arange(-1,2.5,0.2), minor=False)
+ax.set_yticklabels(np.arange(-1,2.5,0.2), minor=False, family='serif')
+ax.set_yticks(np.arange(-1,2.5,0.05), minor=True)
+plt.ylim(0.25,1.05)
 ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%1f'))
 ax.yaxis.set_major_formatter(sformatter)
 
-ax.legend(loc=(0.54,0.1),fontsize=20);
+ax.legend(loc=(0.6,0.01),fontsize=18);
 
 #plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=18 , weight='normal')
-plt.ylabel('$K\sigma^2=C_4/C_2$', fontsize=24, weight='normal')
+plt.ylabel('$K\sigma^2=C_4/C_2$', fontsize=22, weight='normal')
+text(120,0.45,'net charge',fontsize=22,ha='right')
 
 #########################################
 plt.savefig('bw_kurtosis_sigmaeta.pdf',format='pdf')
