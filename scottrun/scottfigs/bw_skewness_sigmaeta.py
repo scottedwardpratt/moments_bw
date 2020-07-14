@@ -76,11 +76,11 @@ Skellamq7=sigma2q7/(qbar7*Omega)
 ######## LOWER PANEL protons
 ax = fig.add_axes([0.15,0.12,0.84,0.43])
 
-#plt.plot(roots,Ssigmap*Skellamp,linestyle='-',linewidth=2,color='r',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=0.3: $C_3/C_1$')
-plt.plot(roots1,Ssigmap1,linestyle='--',linewidth=2,color='r',markersize=10, marker='s', markerfacecolor='r', markeredgecolor='r',label='$\sigma_\eta=0.1$')
-plt.plot(roots3,Ssigmap3,linestyle='--',linewidth=2,color='k',markersize=10, marker='s', markerfacecolor='k', markeredgecolor='k',label='$\sigma_\eta=0.3$')
-plt.plot(roots5,Ssigmap5,linestyle='--',linewidth=2,color='g',markersize=10, marker='s', markerfacecolor='g', markeredgecolor='g',label='$\sigma_\eta=0.5$')
-plt.plot(roots7,Ssigmap7,linestyle='--',linewidth=2,color='b',markersize=10, marker='s', markerfacecolor='b', markeredgecolor='b',label='$\sigma_\eta=0.7$')
+#plt.plot(roots,Ssigmap*Skellamp,linestyle='-',linewidth=2,color='r',markersize=8, marker='^', markerfacecolor=None, markeredgecolor=None,label='ETA=0.3: $C_3/C_1$')
+plt.plot(roots1,Ssigmap1,linestyle='--',linewidth=2,color='r',markersize=10, marker='^', markerfacecolor='r', markeredgecolor='r',label='$\sigma_\eta=0.1$')
+plt.plot(roots3,Ssigmap3,linestyle='--',linewidth=2,color='k',markersize=10, marker='^', markerfacecolor='k', markeredgecolor='k',label='$\sigma_\eta=0.3$')
+plt.plot(roots5,Ssigmap5,linestyle='--',linewidth=2,color='g',markersize=10, marker='^', markerfacecolor='g', markeredgecolor='g',label='$\sigma_\eta=0.5$')
+plt.plot(roots7,Ssigmap7,linestyle='--',linewidth=2,color='b',markersize=10, marker='^', markerfacecolor='b', markeredgecolor='b',label='$\sigma_\eta=0.7$')
 
 ax.tick_params(axis='both', which='major', labelsize=14)
 ax.set_xticks(np.arange(0,250,50), minor=False)
@@ -100,17 +100,17 @@ ax.yaxis.set_major_formatter(sformatter)
 ax.legend(loc=(0.6,0.38),fontsize=18);
 
 plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=22 , weight='normal')
-plt.ylabel('$S\sigma=C_3/C_1$', fontsize=22, weight='normal')
+plt.ylabel('$S\sigma=C_3/C_2$', fontsize=22, weight='normal')
 text(200,0.95,'net protons',fontsize=22,ha='right')
 
 ######## Upper Panel charge
 ax = fig.add_axes([0.15,0.55,0.84,0.43])
 
-#plt.plot(roots,Ssigmap*Skellamp,linestyle='-',linewidth=2,color='r',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=0.3: $C_3/C_1$')
-plt.plot(roots1,Ssigmaq1,linestyle='--',linewidth=2,color='r',markersize=10, marker='s', markerfacecolor='r', markeredgecolor='r',label='$\sigma_\eta=0.1$')
-plt.plot(roots3,Ssigmaq3,linestyle='--',linewidth=2,color='k',markersize=10, marker='s', markerfacecolor='k', markeredgecolor='k',label='$\sigma_\eta=0.3$')
-plt.plot(roots5,Ssigmaq5,linestyle='--',linewidth=2,color='g',markersize=10, marker='s', markerfacecolor='g', markeredgecolor='g',label='$\sigma_\eta=0.5$')
-plt.plot(roots7,Ssigmaq7,linestyle='--',linewidth=2,color='b',markersize=10, marker='s', markerfacecolor='b', markeredgecolor='b',label='$\sigma_\eta=0.7$')
+#plt.plot(roots,Ssigmap*Skellamp,linestyle='-',linewidth=2,color='r',markersize=8, marker='^', markerfacecolor=None, markeredgecolor=None,label='ETA=0.3: $C_3/C_1$')
+plt.plot(roots1,Ssigmaq1,linestyle='--',linewidth=2,color='r',markersize=10, marker='^', markerfacecolor='r', markeredgecolor='r',label='$\sigma_\eta=0.1$')
+plt.plot(roots3,Ssigmaq3,linestyle='--',linewidth=2,color='k',markersize=10, marker='^', markerfacecolor='k', markeredgecolor='k',label='$\sigma_\eta=0.3$')
+plt.plot(roots5,Ssigmaq5,linestyle='--',linewidth=2,color='g',markersize=10, marker='^', markerfacecolor='g', markeredgecolor='g',label='$\sigma_\eta=0.5$')
+plt.plot(roots7,Ssigmaq7,linestyle='--',linewidth=2,color='b',markersize=10, marker='^', markerfacecolor='b', markeredgecolor='b',label='$\sigma_\eta=0.7$')
 
 ax.tick_params(axis='both', which='major', labelsize=14)
 ax.set_xticks(np.arange(0,250,50), minor=False)
@@ -130,7 +130,7 @@ ax.yaxis.set_major_formatter(sformatter)
 ax.legend(loc=(0.6,0.38),fontsize=18);
 
 #plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=18 , weight='normal')
-plt.ylabel('$S\sigma=C_3/C_1$', fontsize=22, weight='normal')
+plt.ylabel('$S\sigma=C_3/C_2$', fontsize=22, weight='normal')
 text(200,0.23,'net charge',fontsize=22,ha='right')
 
 #########################################
