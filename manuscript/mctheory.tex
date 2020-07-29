@@ -3,7 +3,7 @@
 
 \section{Generation of Uncorrelated Sample Events}\label{sec:theoryMC}
 
-Complicated experimental acceptances are difficult to incorporate into expressions for the moments. It is then easiest to generate entire events via Monte Carlo, and filter the events through the acceptance. The Monte Carlo procedure involves choosing a hadron proportional the number of ways the system might have such hadron, i.e. a product of the partition function of the individual hadron multiplied by the partition function of the remainder. The procedure becomes:
+Complicated experimental acceptances are difficult to incorporate into expressions for the moments. It is then easiest to generate entire events via Monte Carlo, and filter the events through the acceptance. The Monte Carlo procedure involves choosing a hadron proportional to the number of ways the system might have such hadron, i.e. a product of the partition function of the individual hadron multiplied by the partition function of the remainder. The procedure becomes:
 \begin{enumerate}
 \item Calculate and store the partition function, $Z_A(Q,B,S)$, up to some size $A\le A_{\rm max}$ for all $Q,B,S$ that might ultimately couple back to a given $A=A_{\rm max}$ for the given total values $Q,B,S$. 
 \item For total charge $Q,B,S$, choose the number of hadrons $A$ proportional to $Z_A(Q,B,S)/Z(Q,B,S)$, where $Z(Q,B,S) = \sum_{A\le A_{max}}Z_A(Q,B,S)$.

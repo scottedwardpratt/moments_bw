@@ -16,7 +16,7 @@ Z_{A=0}(0,0,0)&=&1,
 \end{eqnarray}
 the canonical partition function of the vacuum. The contribution for a given $A$, $Z_A(Q,B,S)$, can be written as 
 \begin{eqnarray}\label{eq:recurrence}
-Z_A(Q,B,S)&=&=\frac{1}{A}\sum_h z_hZ_{A-1}(Q-q_h,B-b_h,S-s_h),
+Z_A(Q,B,S)&=&\frac{1}{A}\sum_h z_hZ_{A-1}(Q-q_h,B-b_h,S-s_h),
 \end{eqnarray}
 where $z_h$ is the single-particle partition function for hadron species $h$, which has charges $q_h,b_h$ and $s_h$. This was proved in \cite{Pratt:1999ht}, and can be understood by realizing that one can count all the ways to arrange $A$ hadrons with a given charge by considering all the ways to arrange one hadron multiplied by all the ways to arrange the remaining hadrons. To avoid double counting, a factor of $1/A$ is applied. For a fixed charge the probability to have $A$ hadrons is,
 \begin{eqnarray}
@@ -38,8 +38,7 @@ Spectra can also be calculated
 \end{eqnarray}
 Higher moments can also be extracted,
 \begin{eqnarray}
-\langle N_hN_{h'}\rangle &= \delta_{hh'}z_h\frac{Z(Q-q_h,B-b_h,S-s_h)}{Z(Q,B,S)}\\
-&\hspace*{-30pt}+z_hz_{h'}\frac{Z(Q-q_h-q_{h'},B-b_h-b_{h'},S-s_h-s_{h'})}{Z(Q,B,S)}.
+\langle N_hN_{h'}\rangle &=& \delta_{hh'}z_h\frac{Z(Q-q_h,B-b_h,S-s_h)}{Z(Q,B,S)}+z_hz_{h'}\frac{Z(Q-q_h-q_{h'},B-b_h-b_{h'},S-s_h-s_{h'})}{Z(Q,B,S)}.
 \end{eqnarray}
 It is straightforward to extend this expression to the fluctuation of charges.
 

@@ -6,10 +6,10 @@ For the manuscript to be more self-contained, a brief review of cumulants and th
 
 Cumulants of a charge distribution are defined by 
 \begin{align}
-C_1 &= \langle Q\rangle,\\
-C_2 &= \langle(Q-\overline{Q})^2\rangle,\\
-C_3 &= \langle(Q-\overline{Q})^3\rangle,\\
-C_4 &= \langle(Q-\overline{Q})^4\rangle-C_2^2,
+C_1 &= \langle Q\rangle,\\ \nonumber
+C_2 &= \langle(Q-\overline{Q})^2\rangle,\\ \nonumber
+C_3 &= \langle(Q-\overline{Q})^3\rangle,\\ \nonumber
+C_4 &= \langle(Q-\overline{Q})^4\rangle-C_2^2, \nonumber
 \end{align}
 where $Q$ is the net charge. Here, $Q$ might refer to baryon number, to strangeness, or to the electric charge measured in units of $e$.
 
@@ -33,30 +33,27 @@ where $\sigma^2=C_2$, to find an intensive measure of the fluctuation. For a mea
 
 The measures $S\sigma$ and $K\sigma^2$ approach simple values in the limit that the distributions would be Poissonian. For Poissonian emission the observation of a charge in one region of momentum space is uncorrelated with the emission into any other space. Thus, particles are correlated only with themselves. If charges appear only in integral positive units, one can apply the usual expression for the Poissonian moments where the mean is $\eta$, 
 \begin{align}
-C_1&=\overline{n}=\eta\\
-C_2&=\langle(n-\overline{n})^2\rangle=\eta,\\
-C_3&=\langle(n-\overline{n})^3\rangle=\eta=C_1,\\
-C_4&=\langle(n-\overline{n})^4\rangle-3C_2^2=\eta.
+C_1&=\overline{n}=\eta\\ \nonumber
+C_2&=\langle(n-\overline{n})^2\rangle=\eta,\\ \nonumber
+C_3&=\langle(n-\overline{n})^3\rangle=\eta=C_1,\\ \nonumber
+C_4&=\langle(n-\overline{n})^4\rangle-3C_2^2=\eta. \nonumber
 \end{align}
 If there exist both positive and negative charges, the distribution of the net charge can be derived by convoluting the two distributions. Convoluting two Poissonians results in a Skellam distribution. If the mean number of positives is $\eta_+$ and the mean number of negatives is $\eta_-$, the distribution of net charge for a Skellam distribution, $Q=n_+-n_-$, yields the following cumulants
 \begin{align}
-C_1&=\eta_+-\eta_-,\\
-C_2&=\eta_++\eta_-,\\
-C_3&=\eta_+-\eta_-=C_1,\\
-C_4&=\eta_++\eta_-=C_2.
+\label{eq:skellam}
+C_1&=\eta_+-\eta_-,\\ \nonumber
+C_2&=\eta_++\eta_-,\\ \nonumber
+C_3&=\eta_+-\eta_-=C_1,\\ \nonumber
+C_4&=\eta_++\eta_-=C_2. \nonumber
 \end{align}
 Thus, if charges are produced in an uncorrelated fashion in increments of either $\pm 1$, the skewness and kurtosis become
 \begin{eqnarray}
-S\sigma&=\frac{C_3}{\sigma^2}=\frac{C_1}{\sigma^2},\\
-K\sigma^2&=\frac{C_4}{\sigma^2}=1,
+S\sigma&=\frac{C_3}{\sigma^2}=\frac{C_1}{\sigma^2},\\ \nonumber
+K\sigma^2&=\frac{C_4}{\sigma^2}=1, \nonumber
 \end{eqnarray}
 where $\sigma^2\equiv\langle(Q-\overline{Q})^2\rangle=\eta_++\eta_-$. Sec. \ref{sec:uniformeff} considers $C_3/C_1$ rather than $S\sigma$, as that ratio is unity in the limit that emission is uncorrelated. However, because experimental analyses have often concentrated on the two ratios above, higher order correlations in Sec. \ref{sec:blast}, where calculations are compared to STAR results, will be presented in terms of these ratios.
 
-Moments depend on the efficiency $\alpha$ with which particles are measured. In the limit of vanishing efficiency all distributions of positives or of negatives tend to become Poissonian \cite{Bzdak:2012ab}, and the distribution of the net charge will thus become Skellam.  This can be understood by having the probability of observing a positive charge being $\alpha\rightarrow 0$ and the probability of observing two charges being proportional to $\alpha^2$ being negligible. This assumption would fall through if charges are measured in pairs, i.e. multiple charges on each measured particle, but for final-state hadrons the charges are only $\pm 1$. As $\alpha\rightarrow 0$, the moments are dominated by the probability of observing either zero charges or a single charge, and the moments for counting particles of a given charge are
-\begin{eqnarray}
-\langle n^m\rangle&=\alpha,
-\end{eqnarray}
-for all $m>0$. It is then easy to see that $\langle (n-\overline{n})^m\rangle=\alpha$, which quickly leads to the result that as $C_4/C2=C_3/C_1=1$.
+Moments depend on the efficiency $\alpha$ with which particles are measured. In the limit of vanishing efficiency all distributions of positives or of negatives tend to become Poissonian \cite{Bzdak:2012ab}, and the distribution of the net charge will thus become Skellam. Then Eq. (\ref{eq:skellam}) gives that as $\alpha\rightarrow 0$, $C_4/C_2=C_3/C_1=1$. This can be understood by seeing that as $\alpha\rightarrow 0$, the moments are dominated by the probability of observing either zero charges or a single charge. The probability of observing a single charge is $\alpha\rightarrow 0$, while the probability of observing two charges is proportional to $\alpha^2$, which is negligible. This assumption would fall through if charges are measured in pairs, i.e. multiple charges on each measured particle, but for final-state hadrons the charges are only $\pm 1$.
 
 If the net charge is fixed, a non-perfect efficiency is required to produce fluctuations. For fixed charge, the efficiency divides into two sets, the measured and non-measured. Each set fluctuates equally, but oppositely, relative to the mean. Thus, all the even moments of net charge will have an even reflection symmetry about an efficiency of $1/2$, and the odd moments will have an odd symmetry,
 \begin{eqnarray}
