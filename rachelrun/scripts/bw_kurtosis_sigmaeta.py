@@ -16,11 +16,11 @@ font = {'family' : 'serif',
         'size'   : 14}
 plt.rc('font', **font)
 plt.rc('text', usetex=False)
-plt.figure(figsize=(6,12))
+plt.figure(figsize=(7,12))
 fig = plt.figure(1)
 
 Omega=100
-Mydata1=np.loadtxt('../data/sigmaeta0.1_Omega100.dat',skiprows=1,unpack=True)
+Mydata1=np.loadtxt('../data/sigmaeta00.1_Omega100.dat',skiprows=1,unpack=True)
 roots1=Mydata1[1]
 pbar1=Mydata1[5]
 sigma2p1=Mydata1[6]
@@ -38,7 +38,7 @@ Skellamp1=sigma2p1/(pbar1*Omega)
 Skellamq1=sigma2q1/(qbar1*Omega)
 Skellamk1=sigma2k1/(kbar1*Omega)
 
-Mydata3=np.loadtxt('../data/sigmaeta0.3_Omega100.dat',skiprows=1,unpack=True)
+Mydata3=np.loadtxt('../data/sigmaeta00.3_Omega100.dat',skiprows=1,unpack=True)
 roots3=Mydata3[1]
 pbar3=Mydata3[5]
 sigma2p3=Mydata3[6]
@@ -56,7 +56,7 @@ Skellamp3=sigma2p3/(pbar3*Omega)
 Skellamq3=sigma2q3/(qbar3*Omega)
 Skellamk3=sigma2k3/(kbar3*Omega)
 
-Mydata5=np.loadtxt('../data/sigmaeta0.5_Omega100.dat',skiprows=1,unpack=True)
+Mydata5=np.loadtxt('../data/sigmaeta00.5_Omega100.dat',skiprows=1,unpack=True)
 roots5=Mydata5[1]
 pbar5=Mydata5[5]
 sigma2p5=Mydata5[6]
@@ -74,7 +74,7 @@ Skellamp5=sigma2p5/(pbar5*Omega)
 Skellamq5=sigma2q5/(qbar5*Omega)
 Skellamk5=sigma2k5/(kbar5*Omega)
 
-Mydata7=np.loadtxt('../data/sigmaeta0.7_Omega100.dat',skiprows=1,unpack=True)
+Mydata7=np.loadtxt('../data/sigmaeta00.7_Omega100.dat',skiprows=1,unpack=True)
 roots7=Mydata7[1]
 pbar7=Mydata7[5]
 sigma2p7=Mydata7[6]
@@ -92,14 +92,10 @@ Skellamp7=sigma2p7/(pbar7*Omega)
 Skellamq7=sigma2q7/(qbar7*Omega)
 Skellamk7=sigma2k7/(kbar7*Omega)
 
-stardata = np.loadtxt('../data/cumulants_vs_E.txt',skiprows=1,unpack=True)
+stardata = np.loadtxt('../data/starmoments_netp.txt',skiprows=1,unpack=True)
 roots_star=stardata[0]
-C2=stardata[7]
-C2error=sqrt(stardata[8]*stardata[8]+stardata[9]*stardata[9])
-C4=stardata[13]
-C4error=sqrt(stardata[14]*stardata[14]+stardata[15]*stardata[15])
-Ksigma2 = C4/C2
-Kerror=Ksigma2*sqrt((C4error/C4)**2+(C2error/C2)**2)
+Ksigma2=stardata[4]
+Kerror=sqrt(stardata[5]*stardata[5]+stardata[6]*stardata[6])
 
 #################################################################
 ######## LOWER PANEL protons
@@ -121,27 +117,27 @@ ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%d'))
 ax.xaxis.set_major_formatter(sformatter)
 plt.xlim(0,210)
 
-ax.set_yticks(np.arange(-1,2.5,0.2), minor=False)
-ax.set_yticklabels(np.arange(-1,2.5,0.2), minor=False, family='serif')
-ax.set_yticks(np.arange(-1,2.5,0.05), minor=True)
-plt.ylim(0.25,1.1)
+ax.set_yticks(np.arange(-1,5,.5), minor=False)
+ax.set_yticklabels(np.arange(-1,5,.5), minor=False, family='serif')
+ax.set_yticks(np.arange(-1,5,0.25), minor=True)
+plt.ylim(0,3.95)
 ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%1f'))
 ax.yaxis.set_major_formatter(sformatter)
 
-ax.legend(loc=(0.58,0.01),fontsize=17)
+ax.legend(loc=(0.58,0.25),fontsize=17)
 
 plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=22 , weight='normal')
 #plt.ylabel('$K\sigma^2=C_4/C_2$', fontsize=22, weight='normal')
 
-text(195,1.0,'net protons',fontsize=22,ha='right')
+text(195,3.5,'(f) net protons',fontsize=22,ha='right')
 
 ######## Upper Panel charge
 ax = fig.add_axes([0.15,0.68,0.84,0.28])
 
-stardata = np.loadtxt('../data/starmoments_netcharge.txt',skiprows=1,unpack=True)
+stardata = np.loadtxt('../data/starmoments_netq.txt',skiprows=1,unpack=True)
 roots_star=stardata[0]
-Ksigma2=stardata[16]
-Kerror=sqrt(stardata[17]*stardata[17]+stardata[18]*stardata[18])
+Ksigma2=stardata[4]
+Kerror=sqrt(stardata[5]*stardata[5]+stardata[6]*stardata[6])
 
 #plt.plot(roots,Ssigmap*Skellamp,linestyle='-',linewidth=2,color='r',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=0.3: $C_3/C_1$')
 plt.plot(roots7,Ksigma2q7,linestyle=':',linewidth=2,color='b',markersize=10, marker='s', markerfacecolor='b', markeredgecolor='b')
@@ -158,10 +154,10 @@ ax.set_xticks(np.arange(0,250,50), minor=True)
 #ax.xaxis.set_major_formatter(sformatter)
 plt.xlim(0,210)
 
-ax.set_yticks(np.arange(-1,2.5,0.5), minor=False)
-ax.set_yticklabels(np.arange(-1,2.5,0.5), minor=False, family='serif')
-ax.set_yticks(np.arange(-1,2.5,0.1), minor=True)
-plt.ylim(0.25,2.35)
+ax.set_yticks(np.arange(-4,3.5,1), minor=False)
+ax.set_yticklabels(np.arange(-4,3.5,1), minor=False, family='serif')
+ax.set_yticks(np.arange(-4,3.5,0.25), minor=True)
+plt.ylim(-2.2,3)
 ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%1f'))
 ax.yaxis.set_major_formatter(sformatter)
 
@@ -169,7 +165,7 @@ ax.legend(loc=(0.63,0.05),fontsize=18)
 
 #plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=18 , weight='normal')
 #plt.ylabel('$K\sigma^2=C_4/C_2$', fontsize=22, weight='normal')
-text(195,2.1,'net charge',fontsize=22,ha='right')
+text(195,2.4,'(d) net charge',fontsize=22,ha='right')
 
 ######## Middle Panel kaons
 ax = fig.add_axes([0.15,0.4,0.84,0.28])
@@ -194,16 +190,16 @@ ax.set_xticks(np.arange(0,250,50), minor=True)
 #ax.xaxis.set_major_formatter(sformatter)
 plt.xlim(0,210)
 
-ax.set_yticks(np.arange(-1,2.5,0.5), minor=False)
-ax.set_yticklabels(np.arange(-1,2.5,0.5), minor=False, family='serif')
-ax.set_yticks(np.arange(-1,2.5,0.1), minor=True)
-plt.ylim(0.25,2.35)
+ax.set_yticks(np.arange(-2,2.5,0.5), minor=False)
+ax.set_yticklabels(np.arange(-2,2.5,0.5), minor=False, family='serif')
+ax.set_yticks(np.arange(-2,2.5,0.25), minor=True)
+plt.ylim(-1.5,1.7)
 ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%1f'))
 ax.yaxis.set_major_formatter(sformatter)
 
 #plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=18 , weight='normal')
 plt.ylabel('$K\sigma^2=C_4/C_2$', fontsize=22, weight='normal')
-text(195,2.1,'net kaons',fontsize=22,ha='right')
+text(195,1.35,'(e) net kaons',fontsize=22,ha='right')
 
 #########################################
 plt.savefig('bw_kurtosis_sigmaeta.pdf',format='pdf')

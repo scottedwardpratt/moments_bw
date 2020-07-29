@@ -20,7 +20,7 @@ plt.figure(figsize=(6,12))
 fig = plt.figure(1)
 
 Omega=25
-Mydata25=np.loadtxt('../data/sigmaeta0.3_Omega25.dat',skiprows=1,unpack=True)
+Mydata25=np.loadtxt('../data/sigmaeta00.3_Omega25.dat',skiprows=1,unpack=True)
 roots25=Mydata25[1]
 pbar25=Mydata25[5]
 sigma2p25=Mydata25[6]
@@ -40,7 +40,7 @@ Skellamq25=sigma2q25/(qbar25*Omega)
 
 
 Omega=50
-Mydata50=np.loadtxt('../data/sigmaeta0.3_Omega50.dat',skiprows=1,unpack=True)
+Mydata50=np.loadtxt('../data/sigmaeta00.3_Omega50.dat',skiprows=1,unpack=True)
 roots50=Mydata50[1]
 pbar50=Mydata50[5]
 sigma2p50=Mydata50[6]
@@ -59,7 +59,7 @@ Skellamp50=sigma2p50/(pbar50*Omega)
 Skellamq50=sigma2q50/(qbar50*Omega)
 
 Omega=100
-Mydata100=np.loadtxt('../data/sigmaeta0.3_Omega100.dat',skiprows=1,unpack=True)
+Mydata100=np.loadtxt('../data/sigmaeta00.3_Omega100.dat',skiprows=1,unpack=True)
 roots100=Mydata100[1]
 pbar100=Mydata100[5]
 sigma2p100=Mydata100[6]
@@ -78,7 +78,7 @@ Skellamp100=sigma2p100/(pbar100*Omega)
 Skellamq100=sigma2q100/(qbar100*Omega)
 
 Omega=200
-Mydata200=np.loadtxt('../data/sigmaeta0.3_Omega200.dat',skiprows=1,unpack=True)
+Mydata200=np.loadtxt('../data/sigmaeta00.3_Omega200.dat',skiprows=1,unpack=True)
 roots200=Mydata200[1]
 pbar200=Mydata200[5]
 sigma2p200=Mydata200[6]
@@ -97,7 +97,7 @@ Skellamp200=sigma2p200/(pbar200*Omega)
 Skellamq200=sigma2q200/(qbar200*Omega)
 
 Omega=400
-Mydata400=np.loadtxt('../data/sigmaeta0.3_Omega400.dat',skiprows=1,unpack=True)
+Mydata400=np.loadtxt('../data/sigmaeta00.3_Omega400.dat',skiprows=1,unpack=True)
 roots400=Mydata400[1]
 pbar400=Mydata400[5]
 sigma2p400=Mydata400[6]
@@ -115,14 +115,10 @@ Skellamk400=sigma2k400/(kbar400*Omega)
 Skellamp400=sigma2p400/(pbar400*Omega)
 Skellamq400=sigma2q400/(qbar400*Omega)
 
-stardata = np.loadtxt('../data/cumulants_vs_E.txt',skiprows=1,unpack=True)
+stardata = np.loadtxt('../data/starmoments_netp.txt',skiprows=1,unpack=True)
 roots_star=stardata[0]
-C2=stardata[7]
-C2error=sqrt(stardata[8]*stardata[8]+stardata[9]*stardata[9])
-C3=stardata[10]
-C3error=sqrt(stardata[11]*stardata[11]+stardata[12]*stardata[12])
-Ssigma = C3/C2
-Serror=Ssigma*sqrt((C3error/C3)**2+(C2error/C2)**2)
+Ssigma=stardata[1]
+Serror=sqrt(stardata[2]*stardata[2]+stardata[3]*stardata[3])
 
 #################################################################
 ######## LOWER PANEL protons
@@ -155,15 +151,15 @@ ax.yaxis.set_major_formatter(sformatter)
 
 plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=18 , weight='normal')
 #plt.ylabel('$K\sigma^2=C_4/C_2$', fontsize=24, weight='normal')
-text(200,1.0,'net protons',fontsize=22,ha='right')
+text(200,1.0,'(c) net protons',fontsize=22,ha='right')
 
 ######## Upper Panel charge
 ax = fig.add_axes([0.15,0.68,0.84,0.28])
 
-stardata = np.loadtxt('../data/starmoments_netcharge.txt',skiprows=1,unpack=True)
+stardata = np.loadtxt('../data/starmoments_netq.txt',skiprows=1,unpack=True)
 roots_star=stardata[0]
-Ssigma=stardata[13]
-Serror=sqrt(stardata[14]*stardata[14]+stardata[15]*stardata[15])
+Ssigma=stardata[1]
+Serror=sqrt(stardata[2]*stardata[2]+stardata[3]*stardata[3])
 
 #plt.plot(roots,Ssigmap*Skellamp,linestyle='-',linewidth=2,color='r',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=0.3: $C_3/C_1$')
 plt.plot(roots25,Ssigmaq25,linestyle='--',linewidth=2,color='r',markersize=10, marker='s', markerfacecolor='r', markeredgecolor='r')
@@ -192,7 +188,7 @@ ax.legend(loc=(0.65,0.1),fontsize=18);
 
 #plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=18 , weight='normal')
 #plt.ylabel('$K\sigma^2=C_4/C_2$', fontsize=24, weight='normal')
-text(200,0.58,'net charge',fontsize=22,ha='right')
+text(200,0.58,'(a) net charge',fontsize=22,ha='right')
 
 ######## Middle Panel kaons
 ax = fig.add_axes([0.15,0.4,0.84,0.28])
@@ -228,8 +224,8 @@ ax.yaxis.set_major_formatter(sformatter)
 ax.legend(loc=(0.6,0.1),fontsize=18);
 
 #plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=18 , weight='normal')
-plt.ylabel('$K\sigma^2=C_4/C_2$', fontsize=24, weight='normal')
-text(200,0.58,'net kaons',fontsize=22,ha='right')
+plt.ylabel('$S\sigma=C_3/C_2$', fontsize=24, weight='normal')
+text(200,0.58,'(b) net kaons',fontsize=22,ha='right')
 
 #########################################
 plt.savefig('bw_skewness_omega.pdf',format='pdf')
