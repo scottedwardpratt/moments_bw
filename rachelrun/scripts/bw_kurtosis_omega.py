@@ -16,11 +16,11 @@ font = {'family' : 'serif',
         'size'   : 14}
 plt.rc('font', **font)
 plt.rc('text', usetex=False)
-plt.figure(figsize=(6,12))
+plt.figure(figsize=(7,12))
 fig = plt.figure(1)
 
 Omega=25
-Mydata25=np.loadtxt('../data/sigmaeta0.3_Omega25.dat',skiprows=1,unpack=True)
+Mydata25=np.loadtxt('../data/sigmaeta00.3_Omega25.dat',skiprows=1,unpack=True)
 roots25=Mydata25[1]
 pbar25=Mydata25[5]
 sigma2p25=Mydata25[6]
@@ -34,13 +34,18 @@ kbar25=Mydata25[17]
 sigma2k25=Mydata25[18]
 Ssigmak25=Mydata25[19]
 Ksigma2k25=Mydata25[20]
+pibar25=Mydata25[21]
+sigma2pi25=Mydata25[22]
+Ssigmapi25=Mydata25[23]
+Ksigma2pi25=Mydata25[24]
+Skellampi25=sigma2pi25/(pibar25*Omega)
 Skellamk25=sigma2k25/(kbar25*Omega)
 Skellamp25=sigma2p25/(pbar25*Omega)
 Skellamq25=sigma2q25/(qbar25*Omega)
 
 
 Omega=50
-Mydata50=np.loadtxt('../data/sigmaeta0.3_Omega50.dat',skiprows=1,unpack=True)
+Mydata50=np.loadtxt('../data/sigmaeta00.3_Omega50.dat',skiprows=1,unpack=True)
 roots50=Mydata50[1]
 pbar50=Mydata50[5]
 sigma2p50=Mydata50[6]
@@ -54,12 +59,17 @@ kbar50=Mydata50[17]
 sigma2k50=Mydata50[18]
 Ssigmak50=Mydata50[19]
 Ksigma2k50=Mydata50[20]
+pibar50=Mydata50[21]
+sigma2pi50=Mydata50[22]
+Ssigmapi50=Mydata50[23]
+Ksigma2pi50=Mydata50[24]
+Skellampi50=sigma2pi50/(pibar50*Omega)
 Skellamk50=sigma2k50/(kbar50*Omega)
 Skellamp50=sigma2p50/(pbar50*Omega)
 Skellamq50=sigma2q50/(qbar50*Omega)
 
 Omega=100
-Mydata100=np.loadtxt('../data/sigmaeta0.3_Omega100.dat',skiprows=1,unpack=True)
+Mydata100=np.loadtxt('../data/sigmaeta00.3_Omega100.dat',skiprows=1,unpack=True)
 roots100=Mydata100[1]
 pbar100=Mydata100[5]
 sigma2p100=Mydata100[6]
@@ -73,12 +83,17 @@ kbar100=Mydata100[17]
 sigma2k100=Mydata100[18]
 Ssigmak100=Mydata100[19]
 Ksigma2k100=Mydata100[20]
+pibar100=Mydata100[21]
+sigma2pi100=Mydata100[22]
+Ssigmapi100=Mydata100[23]
+Ksigma2pi100=Mydata100[24]
+Skellampi100=sigma2pi100/(pibar100*Omega)
 Skellamk100=sigma2k100/(kbar100*Omega)
 Skellamp100=sigma2p100/(pbar100*Omega)
 Skellamq100=sigma2q100/(qbar100*Omega)
 
 Omega=200
-Mydata200=np.loadtxt('../data/sigmaeta0.3_Omega200.dat',skiprows=1,unpack=True)
+Mydata200=np.loadtxt('../data/sigmaeta00.3_Omega200.dat',skiprows=1,unpack=True)
 roots200=Mydata200[1]
 pbar200=Mydata200[5]
 sigma2p200=Mydata200[6]
@@ -92,12 +107,17 @@ kbar200=Mydata200[17]
 sigma2k200=Mydata200[18]
 Ssigmak200=Mydata200[19]
 Ksigma2k200=Mydata200[20]
+pibar200=Mydata200[21]
+sigma2pi200=Mydata200[22]
+Ssigmapi200=Mydata200[23]
+Ksigma2pi200=Mydata200[24]
+Skellampi200=sigma2pi200/(pibar200*Omega)
 Skellamk200=sigma2k200/(kbar200*Omega)
 Skellamp200=sigma2p200/(pbar200*Omega)
 Skellamq200=sigma2q200/(qbar200*Omega)
 
 Omega=400
-Mydata400=np.loadtxt('../data/sigmaeta0.3_Omega400.dat',skiprows=1,unpack=True)
+Mydata400=np.loadtxt('../data/sigmaeta00.3_Omega400.dat',skiprows=1,unpack=True)
 roots400=Mydata400[1]
 pbar400=Mydata400[5]
 sigma2p400=Mydata400[6]
@@ -111,18 +131,19 @@ kbar400=Mydata400[17]
 sigma2k400=Mydata400[18]
 Ssigmak400=Mydata400[19]
 Ksigma2k400=Mydata400[20]
+pibar400=Mydata400[21]
+sigma2pi400=Mydata400[22]
+Ssigmapi400=Mydata400[23]
+Ksigma2pi400=Mydata400[24]
+Skellampi400=sigma2pi400/(pibar400*Omega)
 Skellamk400=sigma2k400/(kbar400*Omega)
 Skellamp400=sigma2p400/(pbar400*Omega)
 Skellamq400=sigma2q400/(qbar400*Omega)
 
-stardata = np.loadtxt('../data/cumulants_vs_E.txt',skiprows=1,unpack=True)
+stardata = np.loadtxt('../data/starmoments_netp.txt',skiprows=1,unpack=True)
 roots_star=stardata[0]
-C2=stardata[7]
-C2error=sqrt(stardata[8]*stardata[8]+stardata[9]*stardata[9])
-C4=stardata[13]
-C4error=sqrt(stardata[14]*stardata[14]+stardata[15]*stardata[15])
-Ksigma2 = C4/C2
-Kerror=Ksigma2*sqrt((C4error/C4)**2+(C2error/C2)**2)
+Ksigma2=stardata[4]
+Kerror=sqrt(stardata[5]*stardata[5]+stardata[6]*stardata[6])
 
 #################################################################
 ######## LOWER PANEL protons
@@ -144,26 +165,26 @@ ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%d'))
 ax.xaxis.set_major_formatter(sformatter)
 plt.xlim(0,210)
 
-ax.set_yticks(np.arange(-1,2.5,0.2), minor=False)
-ax.set_yticklabels(np.arange(-1,2.5,0.2), minor=False, family='serif')
-ax.set_yticks(np.arange(-1,2.5,0.05), minor=True)
-plt.ylim(0,1.1)
+ax.set_yticks(np.arange(-1,4,0.5), minor=False)
+ax.set_yticklabels(np.arange(-1,4,0.5), minor=False, family='serif')
+ax.set_yticks(np.arange(-1,4,0.25), minor=True)
+plt.ylim(0,3.95)
 ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%1f'))
 ax.yaxis.set_major_formatter(sformatter)
 
-ax.legend(loc=(0.6,0.01),fontsize=18);
+ax.legend(loc=(0.55,0.25),fontsize=18);
 
 plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=18 , weight='normal')
 #plt.ylabel('$K\sigma^2=C_4/C_2$', fontsize=24, weight='normal')
-text(195,1.0,'net protons',fontsize=22,ha='right')
+text(195,3.5,'(f) net protons',fontsize=22,ha='right')
 
 ######## Upper Panel charge
 ax = fig.add_axes([0.15,0.68,0.84,0.28])
 
-stardata = np.loadtxt('../data/starmoments_netcharge.txt',skiprows=1,unpack=True)
+stardata = np.loadtxt('../data/starmoments_netq.txt',skiprows=1,unpack=True)
 roots_star=stardata[0]
-Ksigma2=stardata[16]
-Kerror=sqrt(stardata[17]*stardata[17]+stardata[18]*stardata[18])
+Ksigma2=stardata[4]
+Kerror=sqrt(stardata[5]*stardata[5]+stardata[6]*stardata[6])
 
 #plt.plot(roots,Ssigmap*Skellamp,linestyle='-',linewidth=2,color='r',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=0.3: $C_3/C_1$')
 plt.plot(roots25,Ksigma2q25,linestyle='--',linewidth=2,color='r',markersize=10, marker='s', markerfacecolor='r', markeredgecolor='r')
@@ -181,18 +202,18 @@ ax.set_xticks(np.arange(0,250,50), minor=True)
 #ax.xaxis.set_major_formatter(sformatter)
 plt.xlim(0,210)
 
-ax.set_yticks(np.arange(-1,2.5,0.5), minor=False)
-ax.set_yticklabels(np.arange(-1,2.5,0.5), minor=False, family='serif')
-ax.set_yticks(np.arange(-1,2.5,0.1), minor=True)
-plt.ylim(0,2.35)
+ax.set_yticks(np.arange(-5,3,1), minor=False)
+ax.set_yticklabels(np.arange(-5,3,1), minor=False, family='serif')
+ax.set_yticks(np.arange(-5,3,0.25), minor=True)
+plt.ylim(-2.2,3)
 ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%1f'))
 ax.yaxis.set_major_formatter(sformatter)
 
-ax.legend(loc=(0.65,0.1),fontsize=18);
+ax.legend(loc=(0.6,0.1),fontsize=18);
 
 #plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=18 , weight='normal')
 #plt.ylabel('$K\sigma^2=C_4/C_2$', fontsize=24, weight='normal')
-text(195,2.1,'net charge',fontsize=22,ha='right')
+text(195,2.4,'(d) net charge',fontsize=22,ha='right')
 
 ######## Middle Panel kaons
 ax = fig.add_axes([0.15,0.4,0.84,0.28])
@@ -218,10 +239,10 @@ ax.set_xticks(np.arange(0,250,50), minor=True)
 #ax.xaxis.set_major_formatter(sformatter)
 plt.xlim(0,210)
 
-ax.set_yticks(np.arange(-1,2.5,0.5), minor=False)
-ax.set_yticklabels(np.arange(-1,2.5,0.5), minor=False, family='serif')
-ax.set_yticks(np.arange(-1,2.5,0.1), minor=True)
-plt.ylim(0,2.35)
+ax.set_yticks(np.arange(-2,2.5,0.5), minor=False)
+ax.set_yticklabels(np.arange(-2,2.5,0.5), minor=False, family='serif')
+ax.set_yticks(np.arange(-2,2.5,0.25), minor=True)
+plt.ylim(-1.5,1.7)
 ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%1f'))
 ax.yaxis.set_major_formatter(sformatter)
 
@@ -229,7 +250,7 @@ ax.yaxis.set_major_formatter(sformatter)
 
 #plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=18 , weight='normal')
 plt.ylabel('$K\sigma^2=C_4/C_2$', fontsize=24, weight='normal')
-text(195,2.1,'net kaons',fontsize=22,ha='right')
+text(195,1.35,'(e) net kaons',fontsize=22,ha='right')
 
 #########################################
 plt.savefig('bw_kurtosis_omega.pdf',format='pdf')
