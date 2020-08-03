@@ -16,7 +16,7 @@ font = {'family' : 'serif',
         'size'   : 14}
 plt.rc('font', **font)
 plt.rc('text', usetex=False)
-plt.figure(figsize=(7,12))
+plt.figure(figsize=(6,12))
 fig = plt.figure(1)
 
 Omega=100
@@ -100,7 +100,7 @@ Kerror=sqrt(stardata[5]*stardata[5]+stardata[6]*stardata[6])
 #################################################################
 ######## LOWER PANEL protons
 
-ax = fig.add_axes([0.15,0.12,0.84,0.28])
+ax = fig.add_axes([0.17,0.06,0.82,0.31])
 
 #plt.plot(roots,Ssigmap*Skellamp,linestyle='-',linewidth=2,color='r',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=0.3: $C_3/C_1$')
 plt.plot(roots7,Ksigma2p7,linestyle=':',linewidth=2,color='b',markersize=10, marker='s', markerfacecolor='b', markeredgecolor='b',label='$\sigma_\eta=0.7$')
@@ -132,7 +132,7 @@ plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=22 , weight='normal')
 text(195,3.5,'(f) net protons',fontsize=22,ha='right')
 
 ######## Upper Panel charge
-ax = fig.add_axes([0.15,0.68,0.84,0.28])
+ax = fig.add_axes([0.17,0.68,0.82,0.31])
 
 stardata = np.loadtxt('../data/starmoments_netq.txt',skiprows=1,unpack=True)
 roots_star=stardata[0]
@@ -168,7 +168,7 @@ ax.legend(loc=(0.63,0.05),fontsize=18)
 text(195,2.4,'(d) net charge',fontsize=22,ha='right')
 
 ######## Middle Panel kaons
-ax = fig.add_axes([0.15,0.4,0.84,0.28])
+ax = fig.add_axes([0.17,0.37,0.82,0.31])
 
 stardata = np.loadtxt('../data/starmoments_netk.txt',skiprows=1,unpack=True)
 roots_star=stardata[0]
