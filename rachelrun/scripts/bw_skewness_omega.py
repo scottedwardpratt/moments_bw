@@ -134,8 +134,8 @@ plt.errorbar(roots_star,Ssigma,Serror,linestyle=' ',linewidth=2,color='purple',m
 
 ax.tick_params(axis='both', which='major', labelsize=14)
 ax.set_xticks(np.arange(0,250,50), minor=False)
-ax.set_xticklabels(np.arange(0,250,25), minor=False, family='serif')
-ax.set_xticks(np.arange(0,250,50), minor=True)
+ax.set_xticklabels(np.arange(0,250,50), minor=False, family='serif')
+ax.set_xticks(np.arange(0,250,25), minor=True)
 ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%d'))
 ax.xaxis.set_major_formatter(sformatter)
 plt.xlim(0,210)
@@ -229,7 +229,8 @@ text(200,0.58,'(b) net kaons',fontsize=22,ha='right')
 
 #########################################
 plt.savefig('bw_skewness_omega.pdf',format='pdf')
-os.system('xdg-open bw_skewness_omega.pdf')
+#os.system('xdg-open bw_skewness_omega.pdf')
+os.system('open -a Preview bw_skewness_omega.pdf')
 
 
 
