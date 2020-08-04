@@ -26,23 +26,23 @@ In practice, the sum over $A$ is cut off at some $A_{\rm max}$, but in our studi
 
 Once the partition function is calculated one can also calculate the multiplicities and moments of observing specific species. For example, the multiplicity of species $h$ in a system with charge $Q,B,S$ is
 \begin{eqnarray}
-\langle N_h\rangle &= z_h\frac{Z(Q-q_h,B-b_h,S-s_h)}{Z(Q,B,S)}.
+\langle N_h\rangle &=& z_h\frac{Z(Q-q_h,B-b_h,S-s_h)}{Z(Q,B,S)}.
 \end{eqnarray}
 This also provides expressions for the various charges, e.g.,
 \begin{eqnarray}
-\langle Q\rangle &= \sum_h q_hz_h\frac{Z(Q-q_h,B-b_h,S-S_h)}{Z(Q,B,S)}.
+\langle Q\rangle &=& \sum_h q_hz_h\frac{Z(Q-q_h,B-b_h,S-S_h)}{Z(Q,B,S)}.
 \end{eqnarray}
 Spectra can also be calculated
 \begin{eqnarray}
-\frac{dN_h}{d^3p}&=\frac{(2s_h+1)\Omega}{(2\pi\hbar)^3}e^{-E_h(p)}\frac{Z(Q-q_h,B-b_h,S-S_h)}{Z(Q,B,S)}.
+\frac{dN_h}{d^3p}&=&\frac{(2s_h+1)\Omega}{(2\pi\hbar)^3}e^{-E_h(p)}\frac{Z(Q-q_h,B-b_h,S-S_h)}{Z(Q,B,S)}.
 \end{eqnarray}
 Higher moments can also be extracted,
 \begin{eqnarray}
 \langle N_hN_{h'}\rangle &=& \delta_{hh'}z_h\frac{Z(Q-q_h,B-b_h,S-s_h)}{Z(Q,B,S)}+z_hz_{h'}\frac{Z(Q-q_h-q_{h'},B-b_h-b_{h'},S-s_h-s_{h'})}{Z(Q,B,S)}.
 \end{eqnarray}
-It is straightforward to extend this expression to the fluctuation of charges.
+It is straightforward to extend this expression to higher-order fluctuations.
 
-These expressions can also be extended to consider non-additive conservation laws. Net isospin conservation of a hadron gas was invoked in \cite{Cheng:2002jb}, i.e. restricting the states to being in an iso-singlet.  Quark-gluon states restricted to being in both an iso-singlet and a color singlet are addressed in \cite{Pratt:2003jd}. Bose and Fermi corrections are discussed in Sec. \ref{sec:bose}.
+These expressions can also be extended to consider non-additive conservation laws. Net isospin conservation of a hadron gas was invoked in \cite{Cheng:2002jb}, i.e. restricting the states to being in an iso-singlet.  Quark-gluon states restricted to being in both an iso-singlet and a color singlet were addressed in \cite{Pratt:2003jd}. Bose and Fermi corrections are discussed in Sec. \ref{sec:bose}.
 
 For the case of a single kind of charge, one can see how the the recursive method above yields the same result as what one would expect by writing down the partition function for a system with $(A-Q)/2$ negative charges and $(A+Q)/2$ positive charges as shown in \cite{Savchuk:2019xfg},
 \begin{eqnarray}
@@ -72,4 +72,4 @@ P(A|Q)&=&\frac{Z_{A,Q}}{\sum_A Z_{A,Q}},\\
 P(A|Q=0)&=& \frac{z^A}{[(A/2)!]^2}\left\{\sum_{A={\rm even}} \frac{z^A}{[(A/2)!]^2}\right\}^{-1}.
 \end{eqnarray}
 
-Aside from the assumptions that $Q$ is fixed and that there exists only one kind of charge, Eq.(\ref{eq:ratesequal}) also requires that Bose and Fermi quantum statistical corrections are negligible, and that only unit charges exist. Despite these shortcomings, this picture is useful in that it allows one to see how multiplicity fluctuations are affected by charge conservation in a simple picture. 
+Aside from the assumptions that $Q$ is fixed and that there exists only one kind of charge, Eq.(\ref{eq:ratesequal}) also requires that Bose and Fermi quantum statistical corrections are negligible, and that only unit charges exist. Despite these shortcomings, this picture is useful in that it allows one to see how multiplicity fluctuations are affected by charge conservation in a simple model. 
