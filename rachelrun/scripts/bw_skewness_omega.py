@@ -156,7 +156,7 @@ text(200,1.0,'(c) net protons',fontsize=22,ha='right')
 ######## Upper Panel charge
 ax = fig.add_axes([0.17,0.68,0.82,0.31])
 
-stardata = np.loadtxt('../data/starmoments_netq.txt',skiprows=1,unpack=True)
+stardata = np.loadtxt('../data/starmoments_netq_corr.txt',skiprows=1,unpack=True)
 roots_star=stardata[0]
 Ssigma=stardata[1]
 Serror=sqrt(stardata[2]*stardata[2]+stardata[3]*stardata[3])
@@ -229,8 +229,8 @@ text(200,0.58,'(b) net kaons',fontsize=22,ha='right')
 
 #########################################
 plt.savefig('bw_skewness_omega.pdf',format='pdf')
-#os.system('xdg-open bw_skewness_omega.pdf')
-os.system('open -a Preview bw_skewness_omega.pdf')
+os.system('xdg-open bw_skewness_omega.pdf')
+#os.system('open -a Preview bw_skewness_omega.pdf')
 
 
 
