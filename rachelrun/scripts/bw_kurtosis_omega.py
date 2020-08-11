@@ -181,7 +181,7 @@ text(195,3.5,'(f) net protons',fontsize=22,ha='right')
 ######## Upper Panel charge
 ax = fig.add_axes([0.17,0.68,0.82,0.31])
 
-stardata = np.loadtxt('../data/starmoments_netq.txt',skiprows=1,unpack=True)
+stardata = np.loadtxt('../data/starmoments_netq_corr.txt',skiprows=1,unpack=True)
 roots_star=stardata[0]
 Ksigma2=stardata[4]
 Kerror=sqrt(stardata[5]*stardata[5]+stardata[6]*stardata[6])
@@ -202,10 +202,10 @@ ax.set_xticks(np.arange(0,250,50), minor=True)
 #ax.xaxis.set_major_formatter(sformatter)
 plt.xlim(0,210)
 
-ax.set_yticks(np.arange(-5,3,1), minor=False)
-ax.set_yticklabels(np.arange(-5,3,1), minor=False, family='serif')
-ax.set_yticks(np.arange(-5,3,0.25), minor=True)
-plt.ylim(-2.2,3)
+ax.set_yticks(np.arange(-15,13,5), minor=False)
+ax.set_yticklabels(np.arange(-15,13,5), minor=False, family='serif')
+ax.set_yticks(np.arange(-15,13,1), minor=True)
+plt.ylim(-11,5)
 ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%1f'))
 ax.yaxis.set_major_formatter(sformatter)
 
@@ -254,8 +254,8 @@ text(195,1.35,'(e) net kaons',fontsize=22,ha='right')
 
 #########################################
 plt.savefig('bw_kurtosis_omega.pdf',format='pdf')
-#os.system('xdg-open bw_kurtosis_omega.pdf')
-os.system('open -a Preview bw_kurtosis_omega.pdf')
+os.system('xdg-open bw_kurtosis_omega.pdf')
+#os.system('open -a Preview bw_kurtosis_omega.pdf')
 
 
 
