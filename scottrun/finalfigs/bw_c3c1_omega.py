@@ -34,9 +34,9 @@ kbar25=Mydata25[17]
 sigma2k25=Mydata25[18]
 Ssigmak25=Mydata25[19]
 Ksigma2k25=Mydata25[20]
-Skellamk25=sigma2k25/(kbar25*Omega)
-Skellamp25=sigma2p25/(pbar25*Omega)
-Skellamq25=sigma2q25/(qbar25*Omega)
+c2c1k25=sigma2k25/(kbar25*Omega)
+c2c1p25=sigma2p25/(pbar25*Omega)
+c2c1q25=sigma2q25/(qbar25*Omega)
 c3c1p25=Ssigmap25*sigma2p25/(Omega*pbar25)
 c3c1k25=Ssigmak25*sigma2k25/(Omega*kbar25)
 c3c1q25=Ssigmaq25*sigma2q25/(Omega*qbar25)
@@ -57,9 +57,9 @@ kbar50=Mydata50[17]
 sigma2k50=Mydata50[18]
 Ssigmak50=Mydata50[19]
 Ksigma2k50=Mydata50[20]
-Skellamk50=sigma2k50/(kbar50*Omega)
-Skellamp50=sigma2p50/(pbar50*Omega)
-Skellamq50=sigma2q50/(qbar50*Omega)
+c2c1k50=sigma2k50/(kbar50*Omega)
+c2c1p50=sigma2p50/(pbar50*Omega)
+c2c1q50=sigma2q50/(qbar50*Omega)
 c3c1p50=Ssigmap50*sigma2p50/(Omega*pbar50)
 c3c1k50=Ssigmak50*sigma2k50/(Omega*kbar50)
 c3c1q50=Ssigmaq50*sigma2q50/(Omega*qbar50)
@@ -79,9 +79,9 @@ kbar100=Mydata100[17]
 sigma2k100=Mydata100[18]
 Ssigmak100=Mydata100[19]
 Ksigma2k100=Mydata100[20]
-Skellamk100=sigma2k100/(kbar100*Omega)
-Skellamp100=sigma2p100/(pbar100*Omega)
-Skellamq100=sigma2q100/(qbar100*Omega)
+c2c1k100=sigma2k100/(kbar100*Omega)
+c2c1p100=sigma2p100/(pbar100*Omega)
+c2c1q100=sigma2q100/(qbar100*Omega)
 c3c1p100=Ssigmap100*sigma2p100/(Omega*pbar100)
 c3c1k100=Ssigmak100*sigma2k100/(Omega*kbar100)
 c3c1q100=Ssigmaq100*sigma2q100/(Omega*qbar100)
@@ -101,9 +101,9 @@ kbar200=Mydata200[17]
 sigma2k200=Mydata200[18]
 Ssigmak200=Mydata200[19]
 Ksigma2k200=Mydata200[20]
-Skellamk200=sigma2k200/(kbar200*Omega)
-Skellamp200=sigma2p200/(pbar200*Omega)
-Skellamq200=sigma2q200/(qbar200*Omega)
+c2c1k200=sigma2k200/(kbar200*Omega)
+c2c1p200=sigma2p200/(pbar200*Omega)
+c2c1q200=sigma2q200/(qbar200*Omega)
 c3c1p200=Ssigmap200*sigma2p200/(Omega*pbar200)
 c3c1k200=Ssigmak200*sigma2k200/(Omega*kbar200)
 c3c1q200=Ssigmaq200*sigma2q200/(Omega*qbar200)
@@ -123,109 +123,106 @@ kbar400=Mydata400[17]
 sigma2k400=Mydata400[18]
 Ssigmak400=Mydata400[19]
 Ksigma2k400=Mydata400[20]
-Skellamk400=sigma2k400/(kbar400*Omega)
-Skellamp400=sigma2p400/(pbar400*Omega)
-Skellamq400=sigma2q400/(qbar400*Omega)
+c2c1k400=sigma2k400/(kbar400*Omega)
+c2c1p400=sigma2p400/(pbar400*Omega)
+c2c1q400=sigma2q400/(qbar400*Omega)
 c3c1p400=Ssigmap400*sigma2p400/(Omega*pbar400)
 c3c1k400=Ssigmak400*sigma2k400/(Omega*kbar400)
 c3c1q400=Ssigmaq400*sigma2q400/(Omega*qbar400)
 
-#stardata = np.loadtxt('data/starmoments_netp.txt',skiprows=1,unpack=True)
-stardata = np.loadtxt('data/star_netprotons_c3c1.txt',skiprows=1)
-roots_star=stardata[0]
-c1_protons_star=stardata[1]
-c3_protons_star=stardata[4]
-c3c1_protons_star=c3_protons_star/c1_protons_star
-staterror1=stardata[2]/c1_protons_star
-syserror1=stardata[3]/c1_protons_star
-staterror3=stardata[5]/c3_protons_star
-syserror3=stardata[6]/c3_protons_star
-Serror=sqrt(syserror3*syserror3+staterror3*staterror3+syserror1*syserror1+staterror1*staterror1)
 
+stardata = np.loadtxt('data/star_netprotons_c1c2c3c4.txt',unpack=False,skiprows=1)
+roots_star=stardata[0]
+
+c1_protons_star=stardata[1]
+stat1=stardata[2]
+sys1=stardata[3]
+c1_error_star=sqrt(stat1*stat1+sys1*sys1)
+c1_relerror_star=c1_error_star/c1_protons_star
+
+c2_protons_star=stardata[4]
+stat2=stardata[5]
+sys2=stardata[6]
+c2_error_star=sqrt(stat2*stat2+sys2*sys2)
+c2_relerror_star=c2_error_star/c2_protons_star
+
+c3_protons_star=stardata[7]
+stat3=stardata[8]
+sys3=stardata[9]
+c3_error_star=sqrt(stat3*stat3+sys3*sys3)
+c3_relerror_star=c3_error_star/c3_protons_star
+
+c4_protons_star=stardata[10]
+stat4=stardata[11]
+sys4=stardata[12]
+c4_error_star=sqrt(stat4*stat4+sys4*sys4)
+c4_relerror_star=c4_error_star/c4_protons_star
+
+c2c1_protons_star=c1_protons_star/c2_protons_star
+c2c1_protons_error_star=c2c1_protons_star*sqrt(c1_relerror_star*c1_relerror_star+c2_relerror_star*c2_relerror_star)
+
+c3c1_protons_star=c3_protons_star/c1_protons_star
+c3c1_protons_error_star=c3c1_protons_star*sqrt(c1_relerror_star*c1_relerror_star+c3_relerror_star*c3_relerror_star)
+
+c4c2_protons_star=c4_protons_star/c2_protons_star
+c4c2_protons_error_star=c4c2_protons_star*sqrt(c2_relerror_star*c2_relerror_star+c4_relerror_star*c4_relerror_star)
+
+c3c2_protons_star=c3_protons_star/c2_protons_star
+c3c2_protons_error_star=c3c2_protons_star*sqrt(c2_relerror_star*c2_relerror_star+c3_relerror_star*c3_relerror_star)
 
 #################################################################
 ######## LOWER PANEL protons
 ax = fig.add_axes([0.17,0.06,0.82,0.31])
 
-#plt.plot(roots,Ssigmap*Skellamp,linestyle='-',linewidth=2,color='r',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=0.3: $C_3/C_1$')
+#plt.plot(roots,Ssigmap*c2c1p,linestyle='-',linewidth=2,color='r',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=0.3: $C_3/C_1$')
 plt.plot(roots25,c3c1p25,linestyle='--',linewidth=2,color='r',markersize=10, marker='s', markerfacecolor='r', markeredgecolor='r',label='$\Omega=25$')
 plt.plot(roots50,c3c1p50,linestyle='-',linewidth=2,color='k',markersize=10, marker='s', markerfacecolor='k', markeredgecolor='k',label='$\Omega=50$')
 plt.plot(roots100,c3c1p100,linestyle=(0, (3, 10, 1, 10)),linewidth=2,color='g',markersize=10, marker='s', markerfacecolor='g', markeredgecolor='g',label='$\Omega=100$')
 plt.plot(roots200,c3c1p200,linestyle=':',linewidth=2,color='b',markersize=10, marker='s', markerfacecolor='b', markeredgecolor='b',label='$\Omega=200$')
 plt.plot(roots400,c3c1p400,linestyle=(0, (3, 1, 1, 1, 1, 1)),linewidth=2,color='cyan',markersize=10, marker='s', markerfacecolor='cyan', markeredgecolor='cyan',label='$\Omega=400$')
-plt.errorbar(roots_star,c3c1_protons_star,Serror,linestyle=' ',linewidth=2,color='purple',markersize=11, marker='*', markerfacecolor=None, markeredgecolor=None)
+plt.errorbar(roots_star,c3c1_protons_star,c3c1_protons_error_star,linestyle=' ',linewidth=2,color='purple',markersize=11, marker='*', markerfacecolor=None, markeredgecolor=None)
 
-ax.tick_params(axis='both', which='major', labelsize=14)
+ax.tick_params(axis='both', which='major', labelsize=16)
 ax.set_xticks(np.arange(0,250,50), minor=False)
-ax.set_xticklabels(np.arange(0,250,50), minor=False, family='serif')
+ax.set_xticklabels(np.arange(0,250,50), minor=False, family='serif',fontsize="14")
 ax.set_xticks(np.arange(0,250,25), minor=True)
 ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%d'))
 ax.xaxis.set_major_formatter(sformatter)
 plt.xlim(0,210)
 
 ax.set_yticks(np.arange(-1,2.5,0.2), minor=False)
-ax.set_yticklabels(np.arange(-1,2.5,0.2), minor=False, family='serif')
+ax.set_yticklabels(np.arange(-1,2.5,0.2), minor=False, family='serif',fontsize="14")
 ax.set_yticks(np.arange(-1,2.5,0.05), minor=True)
-plt.ylim(0,1.1)
+plt.ylim(0.4,1.1)
 ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%1f'))
 ax.yaxis.set_major_formatter(sformatter)
 
 #ax.legend(loc=(0.6,0.4),fontsize=18);
 
-plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=18 , weight='normal')
-text(200,1.0,'(c) net protons',fontsize=22,ha='right')
-
-######## Upper Panel charge
-ax = fig.add_axes([0.17,0.68,0.82,0.31])
-
-stardata = np.loadtxt('data/starmoments_netq.txt',skiprows=1,unpack=True)
-roots_star=stardata[0]
-Ssigma=stardata[1]
-Serror=sqrt(stardata[2]*stardata[2]+stardata[3]*stardata[3])
-
-#plt.plot(roots,Ssigmap*Skellamp,linestyle='-',linewidth=2,color='r',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=0.3: $C_3/C_1$')
-plt.plot(roots25,Ssigmaq25,linestyle='--',linewidth=2,color='r',markersize=10, marker='s', markerfacecolor='r', markeredgecolor='r')
-plt.plot(roots50,Ssigmaq50,linestyle='-',linewidth=2,color='k',markersize=10, marker='s', markerfacecolor='k', markeredgecolor='k')
-plt.plot(roots100,Ssigmaq100,linestyle=(0, (3, 10, 1, 10)),linewidth=2,color='g',markersize=10, marker='s', markerfacecolor='g', markeredgecolor='g')
-plt.plot(roots200,Ssigmaq200,linestyle=':',linewidth=2,color='b',markersize=10, marker='s', markerfacecolor='b', markeredgecolor='b')
-plt.plot(roots400,Ssigmaq400,linestyle=(0, (3, 1, 1, 1, 1, 1)),linewidth=2,color='cyan',markersize=10, marker='s', markerfacecolor='cyan', markeredgecolor='cyan')
-plt.errorbar(roots_star,Ssigma,Serror,linestyle=' ',linewidth=2,color='purple',markersize=11, marker='*', markerfacecolor=None, markeredgecolor=None,label='STAR')
-
-ax.tick_params(axis='both', which='major', labelsize=14)
-ax.set_xticks(np.arange(0,250,50), minor=False)
-ax.set_xticklabels([])
-ax.set_xticks(np.arange(0,250,50), minor=True)
-#ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%d'))
-#ax.xaxis.set_major_formatter(sformatter)
-plt.xlim(0,210)
-
-ax.set_yticks(np.arange(-1,2.5,0.1), minor=False)
-ax.set_yticklabels(np.arange(-1,2.5,0.1), minor=False, family='serif')
-ax.set_yticks(np.arange(-1,2.5,0.025), minor=True)
-plt.ylim(0,.65)
-ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%1f'))
-ax.yaxis.set_major_formatter(sformatter)
-
-ax.legend(loc=(0.65,0.1),fontsize=18);
-
-#plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=18 , weight='normal')
-text(200,0.58,'(a) net charge',fontsize=22,ha='right')
+plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=24 , weight='normal')
+text(100,0.43,'(f) net protons',fontsize=22,ha='left')
 
 ######## Middle Panel kaons
 ax = fig.add_axes([0.17,0.37,0.82,0.31])
 
-stardata = np.loadtxt('data/starmoments_netk.txt',skiprows=1,unpack=True)
+stardata = np.loadtxt('data/star_netkaons_c3c1.txt',skiprows=1,unpack=True)
 roots_star=stardata[0]
-Ssigma=stardata[1]
-Serror=sqrt(stardata[2]*stardata[2]+stardata[3]*stardata[3])
+c12_kaons_star=stardata[1]
+c32_kaons_star=stardata[3]
+c3c1_kaons_star=c32_kaons_star/c12_kaons_star
+error12=stardata[2]/c12_kaons_star
+error32=stardata[4]/c32_kaons_star
+Serror=sqrt(error12*error12+error32*error32)
 
-#plt.plot(roots,Ssigmap*Skellamp,linestyle='-',linewidth=2,color='r',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=0.3: $C_3/C_1$')
-#plt.plot(roots25,c3c1,linestyle='--',linewidth=2,color='r',markersize=10, marker='s', markerfacecolor='r', markeredgecolor='r',label='$\Omega=25$')
-plt.plot(roots50,Ssigmak50,linestyle='-',linewidth=2,color='k',markersize=10, marker='s', markerfacecolor='k', markeredgecolor='k',label='$\Omega=50$')
-plt.plot(roots100,Ssigmak100,linestyle=(0, (3, 10, 1, 10)),linewidth=2,color='g',markersize=10, marker='s', markerfacecolor='g', markeredgecolor='g',label='$\Omega=100$')
-plt.plot(roots200,Ssigmak200,linestyle=':',linewidth=2,color='b',markersize=10, marker='s', markerfacecolor='b', markeredgecolor='b',label='$\Omega=200$')
-plt.plot(roots400,Ssigmak400,linestyle=(0, (3, 1, 1, 1, 1, 1)),linewidth=2,color='cyan',markersize=10, marker='s', markerfacecolor='cyan', markeredgecolor='cyan',label='$\Omega=400$')
-plt.errorbar(roots_star,Ssigma,Serror,linestyle=' ',linewidth=2,color='purple',markersize=11, marker='*', markerfacecolor=None, markeredgecolor=None)
+print(c32_kaons_star)
+
+#plt.plot(roots,Ssigmap*c2c1p,linestyle='-',linewidth=2,color='r',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=0.3: $C_3/C_1$')
+plt.plot(roots25,c3c1k25,linestyle='--',linewidth=2,color='r',markersize=10, marker='s', markerfacecolor='r', markeredgecolor='r',label='$\Omega=25$')
+plt.plot(roots50,c3c1k50,linestyle='-',linewidth=2,color='k',markersize=10, marker='s', markerfacecolor='k', markeredgecolor='k',label='$\Omega=50$')
+plt.plot(roots100,c3c1k100,linestyle=(0, (3, 10, 1, 10)),linewidth=2,color='g',markersize=10, marker='s', markerfacecolor='g', markeredgecolor='g',label='$\Omega=100$')
+plt.plot(roots200,c3c1k200,linestyle=':',linewidth=2,color='b',markersize=10, marker='s', markerfacecolor='b', markeredgecolor='b',label='$\Omega=200$')
+plt.plot(roots400,c3c1k400,linestyle=(0, (3, 1, 1, 1, 1, 1)),linewidth=2,color='cyan',markersize=10, marker='s', markerfacecolor='cyan', markeredgecolor='cyan',label='$\Omega=400$')
+plt.errorbar(roots_star,c3c1_kaons_star,Serror,linestyle=' ',linewidth=2,color='purple',markersize=11, marker='*', markerfacecolor=None, markeredgecolor=None)
 
 ax.tick_params(axis='both', which='major', labelsize=14)
 ax.set_xticks(np.arange(0,250,50), minor=False)
@@ -235,23 +232,63 @@ ax.set_xticks(np.arange(0,250,50), minor=True)
 #ax.xaxis.set_major_formatter(sformatter)
 plt.xlim(0,210)
 
-ax.set_yticks(np.arange(-1,2.5,0.1), minor=False)
-ax.set_yticklabels(np.arange(-1,2.5,0.1), minor=False, family='serif')
-ax.set_yticks(np.arange(-1,2.5,0.025), minor=True)
-plt.ylim(0,.65)
+ax.set_yticks(np.arange(-1,2.5,0.5), minor=False)
+ax.set_yticklabels(np.arange(-1,2.5,0.5), minor=False, family='serif',fontsize="14")
+ax.set_yticks(np.arange(-1,2.5,0.1), minor=True)
+plt.ylim(0,1.8)
 ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%1f'))
 ax.yaxis.set_major_formatter(sformatter)
 
-ax.legend(loc=(0.6,0.1),fontsize=18);
 
 #plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=18 , weight='normal')
 plt.ylabel('$C_3/C_1$', fontsize=24, weight='normal')
-text(200,0.58,'(b) net kaons',fontsize=22,ha='right')
+text(100,0.1,'(e) net kaons',fontsize=22,ha='left')
+######## Upper Panel charge
+ax = fig.add_axes([0.17,0.68,0.82,0.31])
+
+stardata = np.loadtxt('data/star_netcharge_c3c1.txt',skiprows=1,unpack=True)
+roots_star=stardata[0]
+c21_charge_star=stardata[1]
+c32_charge_star=stardata[4]
+c3c1_charge_star=c32_charge_star*c21_charge_star
+staterror1=stardata[2]/c21_charge_star
+syserror1=stardata[3]/c21_charge_star
+staterror3=stardata[5]/c32_charge_star
+syserror3=stardata[6]/c32_charge_star
+Serror=sqrt(syserror3*syserror3+staterror3*staterror3+syserror1*syserror1+staterror1*staterror1)
+
+#plt.plot(roots,Ssigmap*c2c1p,linestyle='-',linewidth=2,color='r',markersize=8, marker='s', markerfacecolor=None, markeredgecolor=None,label='ETA=0.3: $C_3/C_1$')
+plt.plot(roots25,c3c1q25,linestyle='--',linewidth=2,color='r',markersize=10, marker='s', markerfacecolor='r', markeredgecolor='r',label='$\Omega=25$')
+plt.plot(roots50,c3c1q50,linestyle='-',linewidth=2,color='k',markersize=10, marker='s', markerfacecolor='k', markeredgecolor='k',label='$\Omega=50$')
+plt.plot(roots100,c3c1q100,linestyle=(0, (3, 10, 1, 10)),linewidth=2,color='g',markersize=10, marker='s', markerfacecolor='g', markeredgecolor='g',label='$\Omega=100$')
+plt.plot(roots200,c3c1q200,linestyle=':',linewidth=2,color='b',markersize=10, marker='s', markerfacecolor='b', markeredgecolor='b',label='$\Omega=200$')
+plt.plot(roots400,c3c1q400,linestyle=(0, (3, 1, 1, 1, 1, 1)),linewidth=2,color='cyan',markersize=10, marker='s', markerfacecolor='cyan', markeredgecolor='cyan',label='$\Omega=400$')
+plt.errorbar(roots_star,c3c1_charge_star,Serror,linestyle=' ',linewidth=2,color='purple',markersize=11, marker='*', markerfacecolor=None, markeredgecolor=None,label='STAR\n(preliminary)')
+
+ax.tick_params(axis='both', which='major', labelsize=14)
+ax.set_xticks(np.arange(0,250,50), minor=False)
+ax.set_xticklabels([])
+ax.set_xticks(np.arange(0,250,50), minor=True)
+#ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%d'))
+#ax.xaxis.set_major_formatter(sformatter)
+plt.xlim(0,210)
+
+ax.set_yticks(np.arange(-1,6.5,1.0), minor=False)
+ax.set_yticklabels(np.arange(-1,6.5,1.0), minor=False, family='serif',fontsize="14")
+ax.set_yticks(np.arange(-1,6.5,0.5), minor=True)
+plt.ylim(-0.5,4.5)
+ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%1f'))
+ax.yaxis.set_major_formatter(sformatter)
+
+#plt.xlabel('$\sqrt{s}_{NN}$ (GeV)',fontsize=18 , weight='normal')
+text(100,-0.2,'(d) net charge',fontsize=22,ha='left')
+
+ax.legend(loc=(0.4,0.285),fontsize=18);
 
 #########################################
-plt.savefig('bw_skewness_omega.pdf',format='pdf')
-os.system('open -a Preview bw_skewness_omega.pdf')
-#os.system('open -a Preview bw_skewness_omega.pdf')
+plt.savefig('bw_c3c1_omega.pdf',format='pdf')
+os.system('open -a Preview bw_c3c1_omega.pdf')
+#os.system('open -a Preview bw_c3c1_omega.pdf')
 
 
 
